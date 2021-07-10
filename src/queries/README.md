@@ -9,7 +9,7 @@ data_set_construction.sql - construct the data set (using the [GeneralGitHub Big
 
 dataset_properties.sql - descriptive statistics about the data set.
 
-length_distriutions.sql - generate length (char/word) distributions
+length_distributions.sql - generate length (char/word) distributions
 
 main.sql - instruction for construction
 
