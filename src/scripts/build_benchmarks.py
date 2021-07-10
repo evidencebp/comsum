@@ -5,18 +5,20 @@ from rouge_score import rouge_scorer
 
 from configuration import DATA_PATH, COMMITS_SAMPLES, COMMITS_SAMPLES_METIRCS, RELATED_COMMITS_SAMPLES\
 , RELATED_COMMITS_SAMPLES_METIRCS, SEMANTIC_COMMITS_SAMPLES, SEMANTIC_NO_SUB_COMMITS_SAMPLES_METIRCS\
-    , COMMITS_NO_SUB_SAMPLES_METIRCS, RELATED_FIXES_SAMPLES, RELATED_FIXES_SAMPLES_METIRCS
+    , COMMITS_NO_SUB_SAMPLES_METIRCS, RELATED_FIXES_SAMPLES, RELATED_FIXES_SAMPLES_METIRCS, BASE_PATH
 
 
 
 from feature_pair_analysis import pretty_print
 
+SAMPLES_PATH = BASE_PATH + 'data/samples/inputs/'
+TRAIN_FILE = 'train_sample_b1.csv'
 
 # TODO - message without_subject message_without_subject
 # TODO - semantic
 def compute_message_text_benchmark():
-    df = pd.read_csv(join(DATA_PATH
-                            , COMMITS_SAMPLES))
+    df = pd.read_csv(join(SAMPLES_PATH
+                            , TRAIN_FILE))
 
     benchmarks_df = compute_text_metrics(df
         , original_text= 'message'
@@ -26,8 +28,8 @@ def compute_message_text_benchmark():
                                 , COMMITS_SAMPLES_METIRCS))
 
 def compute_message_no_sub_text_benchmark():
-    df = pd.read_csv(join(DATA_PATH
-                            , COMMITS_SAMPLES))
+    df = pd.read_csv(join(SAMPLES_PATH
+                            , TRAIN_FILE))
 
     benchmarks_df = compute_text_metrics(df
         , original_text= 'message_without_subject'
@@ -38,7 +40,7 @@ def compute_message_no_sub_text_benchmark():
 
 
 def compute_related_commits_benchmark():
-    df = pd.read_csv(join(DATA_PATH
+    df = pd.read_csv(join(SAMPLES_PATH
                             , RELATED_COMMITS_SAMPLES))
 
     benchmarks_df = compute_text_metrics(df
@@ -50,7 +52,7 @@ def compute_related_commits_benchmark():
 
 
 def compute_related_corrective_commits_benchmark():
-    df = pd.read_csv(join(DATA_PATH
+    df = pd.read_csv(join(SAMPLES_PATH
                             , RELATED_FIXES_SAMPLES))
 
     benchmarks_df = compute_text_metrics(df

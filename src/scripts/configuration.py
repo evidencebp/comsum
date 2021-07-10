@@ -17,10 +17,10 @@ COMMITS_SAMPLES = 'commits_batch1.csv'
 COMMITS_SAMPLES_METIRCS = 'commits_batch1_metrics.csv'
 COMMITS_NO_SUB_SAMPLES_METIRCS = 'commits_no_sub_batch1_metrics.csv'
 
-RELATED_COMMITS_SAMPLES = 'related_commits_batch2.csv'
+RELATED_COMMITS_SAMPLES = 'related_train_sample_b1.csv'
 RELATED_COMMITS_SAMPLES_METIRCS = 'related_commits_metrics.csv'
 
-RELATED_FIXES_SAMPLES = 'related_commits_batch2.csv'
+RELATED_FIXES_SAMPLES = 'related_corrective_train_sample_b1.csv'
 RELATED_FIXES_SAMPLES_METIRCS = 'related_corrective_commits_metrics.csv'
 
 
