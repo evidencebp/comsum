@@ -1,4 +1,4 @@
-
+# into core_terms_stats.csv
 select
 count(distinct commit) as commits
 
