@@ -11,9 +11,10 @@ Specific cases
 
 
  1. Summary
-      1. A summary should reflect information in the message, **not** to add **new information**.
-      1. In a summary, the subject should capture the **essence** of the message.
-      1. Specific cases:
+      1. We consider only English messages (99% of the commits). The messgae must be in English to be considered a summary.
+      2. A summary should reflect information in the message, **not** to add **new information**.
+      3. In a summary, the subject should capture the **essence** of the message.
+      4. Specific cases:
           1. If the subject appears in the rest of the message (as in extractive summarization), this is a summary.
           1. Change/detail,  the subject describes a change and the message describes its details, it is a summary.
           1. If the commit classification of the subject is different from the message, this is not a summary.
