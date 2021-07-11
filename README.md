@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/384742703.svg)](https://zenodo.org/badge/latestdoi/384742703)
+
 # comsum
 
 This repository contains the code and documantation of "ComSum: Commit Messages Summarization and Meaning Preservation" by Leshem Choshen and Idan Amit.
