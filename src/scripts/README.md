@@ -5,12 +5,12 @@ build_benchmarks.py	- Builds the none machine learning benchmark - entire messga
 
 configuration.py	- common constants, directory locations, etc.
 
-convert_csv.py		
+convert_csv.py		- convert csvs into the format of data huggingface expects (a folder with files names train\val\test.source\target)
 
 evaluate_concept_stability.py - evaluates meaning preserving per concept.
 
 evaluate_meaning_preserving.py - evaluate meaning preserving.
 
-finetune_distillbart_comsum.sh
+finetune_distillbart_comsum.sh - an examples of finetuning a model
 
 requirments.txt - pyhton libraries used in this project
