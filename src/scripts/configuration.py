@@ -9,6 +9,8 @@ sys.path.append(LANGUAGE_PATH)
 
 BASE_PATH = r'/Users/idan/src/comsum/'
 DATA_PATH = BASE_PATH + r'data/'
+AUX_DATA_PATH = DATA_PATH + r'aux_datasets/'
+LABELS_PATH = DATA_PATH + r'labels/'
 FIGURES_PATH = BASE_PATH + r'figures/'
 PERFORMANCE_PATH = BASE_PATH + r'performance/'
 MODELS_PATH = BASE_PATH + r'models/'
@@ -28,3 +30,6 @@ SEMANTIC_COMMITS_SAMPLES = 'semmantic_commits_batch1.csv'
 SEMANTIC_NO_SUB_COMMITS_SAMPLES_METIRCS = 'semmantic_commits_batch1_nosub_metrics.csv'
 
 SEMANTIC_COMMITS_SUMMARY = 'semmantic_commits_batch1_summary.txt'
+
+MERGE_COMMIT_FILES = 'comsum_merge_commits.csv'
+SPLIT_FILE = 'repos_split.csv'
