@@ -1,4 +1,3 @@
-[![DOI](https://zenodo.org/badge/384742703.svg)](https://zenodo.org/badge/latestdoi/384742703)
 
 # comsum
 
@@ -14,3 +13,8 @@ Not that file level explanations (e.g., explanation about the code), appears in 
 Source code used for this research.
 Divided into Sql queries and scripts (mostly python).
 
+# Versions
+
+Live version is updating at https://github.com/evidencebp/comsum/
+
+Version 1.0 is at [![DOI](https://zenodo.org/badge/384742703.svg)](https://zenodo.org/badge/latestdoi/384742703)
