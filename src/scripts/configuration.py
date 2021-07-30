@@ -7,7 +7,7 @@ sys.path.append(ANALYSIS_PATH)
 LANGUAGE_PATH = '/Users/idan/src/commit-classification'
 sys.path.append(LANGUAGE_PATH)
 
-BASE_PATH = r'/Users/idan/src/Commit-Summarization/'
+BASE_PATH = r'/Users/idan/src/comsum/'
 DATA_PATH = BASE_PATH + r'data/'
 FIGURES_PATH = BASE_PATH + r'figures/'
 PERFORMANCE_PATH = BASE_PATH + r'performance/'
