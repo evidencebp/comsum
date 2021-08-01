@@ -3,6 +3,8 @@ import os
 import pandas as pd
 import re
 
+from configuration import FULL_DATA_PATH, SPLIT_DATA_PATH
+
 
 def normalize(string):
     if not isinstance(string, str):
@@ -14,15 +16,19 @@ def normalize(string):
 
 
 def csv_to_data(work_dir, out_dir, csv_paths, val_size=1000, test_size=1000, force=False):
-    if not force and os.path.isdir(out_dir):
-        print(f"Skipping, pass force=True to overwrite. Dir exists {os.path.abspath(out_dir)}")
-        return
     os.makedirs(out_dir, exist_ok=True)
     dfs = []
     for csv_path in csv_paths:
+        print(f"Reading {csv_path}")
         df = pd.read_csv(f"{csv_path}")
         dfs.append(df)
     df = pd.concat(dfs)
+    print(f"DF length: {len(df)}")
+    if not force and os.path.isdir(out_dir) and os.listdir(out_dir):
+        print(f"Skipping, pass force=True to overwrite. Dir exists {os.path.abspath(out_dir)}")
+        return
+    df = df[df["message_without_subject"].notnull() & df["subject"]]
+    print(f"DF length after removing nans: {len(df)}")
     df["message_without_subject"] = df["message_without_subject"].apply(normalize)
     df["subject"] = df["subject"].apply(normalize)
     if "dataset_type" in df.columns:
@@ -89,42 +95,81 @@ def csv_to_data(work_dir, out_dir, csv_paths, val_size=1000, test_size=1000, for
 
 
 if __name__ == '__main__':
-    # force = True
-    force = False
-    out_dir = "data/train1batch/"
-    working_dir = "data"
-    csv_path = "data/commits_batch1.csv"
-    csv_to_data(working_dir, out_dir, [csv_path])
-
-    out_dir = "data/semantic"
-    csv_path = "data/semmantic_commits_batch1.csv"
-    csv_to_data(working_dir, out_dir, [csv_path], 0, 0)
-
-    out_dir = "data/adaptive"
-    csv_path = "data/mp_not_adaptive_commits_batch1.csv"
-    csv_to_data(working_dir, out_dir, [csv_path], 0, 0, force=force)
-
-    out_dir = "data/corrective"
-    csv_path = "data/mp_not_corrective_commits_batch1.csv"
-    csv_to_data(working_dir, out_dir, [csv_path], 0, 0, force=force)
-
-    out_dir = "data/refactor"
-    csv_path = "data/mp_not_refactor_commits_batch1.csv"
-    csv_to_data(working_dir, out_dir, [csv_path], 0, 0, force=force)
-
-    out_dir = "data/train5m"
-    csv_path = "data/plain_commits_batch1.csv"
-    csv_to_data(working_dir, out_dir, [csv_path], force=force)
-
-    out_dir = "data/train1m"
-    csv_paths = ["data/plain_commits_batch_1m00000000000" + str(i) for i in range(3)]
-    csv_to_data(working_dir, out_dir, csv_paths, force=force)
-
-    out_dir = "data/train2m"
-    csv_paths = ["data/plain_commits_batch_2m00000000000" + str(i) for i in range(6)]
-    csv_to_data(working_dir, out_dir, csv_paths, force=force)
-
     force = True
-    out_dir = "data/train"
-    csv_paths = ["data//Full/Train/plain_commits_dataset_train00000000000" + str(i) for i in range(10)] + ["data//Full/Train/plain_commits_dataset_train0000000000" + str(i) for i in range(10, 16)]
+    force = False
+    working_dir = FULL_DATA_PATH
+
+    # out_dir =os.path.join(FULL_DATA_PATH, "train1batch/)"
+    # csv_path =os.path.join(FULL_DATA_PATH, "commits_batch1.csv")
+    # csv_to_data(working_dir, out_dir, [csv_path], force=force)
+
+    # out_dir =os.path.join(FULL_DATA_PATH, "semantic")
+    # csv_path =os.path.join(FULL_DATA_PATH, "semmantic_commits_batch1.csv")
+    # csv_to_data(working_dir, out_dir, [csv_path], 0, 0, force=force)
+
+    # out_dir =os.path.join(FULL_DATA_PATH, "adaptive")
+    # csv_path =os.path.join(FULL_DATA_PATH, "mp_not_adaptive_commits_batch_1.csv")
+    # csv_to_data(working_dir, out_dir, [csv_path], 0, 0, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "corrective")
+    # csv_path =os.path.join(FULL_DATA_PATH, "mp_not_corrective_commits.csv")
+    # csv_to_data(working_dir, out_dir, [csv_path], 0, 0, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "refactor")
+    # csv_path =os.path.join(FULL_DATA_PATH, "mp_not_refactor_commits.csv")
+    # csv_to_data(working_dir, out_dir, [csv_path], 0, 0, force=force)
+
+    # out_dir =os.path.join(FULL_DATA_PATH, "train5m")
+    # csv_path =os.path.join(FULL_DATA_PATH, "plain_commits_batch1.csv")
+    # csv_to_data(working_dir, out_dir, [csv_path], force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "train1m")
+    # csv_paths = ["../data/dataset/plain_commits_batch_1m00000000000" + str(i) for i in range(3)]
+    # csv_to_data(working_dir, out_dir, csv_paths, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "train2m")
+    # csv_paths = ["../data/dataset/plain_commits_batch_2m00000000000" + str(i) for i in range(6)]
+    # csv_to_data(working_dir, out_dir, csv_paths, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "train")
+    # csv_paths = ["../data/dataset//Full/Train/plain_commits_dataset_train00000000000" + str(i) for i in range(10)] + ["../data/dataset//Full/Train/plain_commits_dataset_train0000000000" + str(i) for i in range(10, 16)]
+    # csv_to_data(working_dir, out_dir, csv_paths, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "train")
+    # csv_paths = ["../data/dataset/plain_commits_dataset_train00000000000" + str(i) + "/plain_commits_dataset_train00000000000" + str(i) for i in range(10)] + ["../data/dataset/plain_commits_dataset_train0000000000" + str(i) + "/plain_commits_dataset_train0000000000" + str(i) for i in range(10, 14)]
+    # csv_to_data(working_dir, out_dir, csv_paths, force=force)
+
+    # out_dir =os.path.join(FULL_DATA_PATH, "test")
+    # csv_paths = ["../data/dataset/plain_commits_dataset_test/plain_commits_dataset_test.csv"]
+    # csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "test_sample")
+    # csv_paths = ["../data/dataset/test_sample_b1.csv"]
+    # csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "train_sample")
+    # csv_paths = ["../data/dataset/train_sample_b1.csv"]
+    # csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "adapdive_sample")
+    # csv_paths = ["../data/dataset/mp_not_adaptive_commits_sample_b1.csv"]
+    # csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "corrective_sample")
+    # csv_paths = ["../data/dataset/mp_not_corrective_commits_sample_b1.csv"]
+    # csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
+    #
+    # out_dir =os.path.join(FULL_DATA_PATH, "refactor_sample")
+    # csv_paths = ["../data/dataset/mp_not_refactor_commits_sample_b1.csv"]
+    # csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
+
+    working_dir = SPLIT_DATA_PATH
+
+    out_dir = os.path.join(SPLIT_DATA_PATH, "train")
+    csv_paths = [os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_train00000000000" + str(i)) for i in range(10)] + [
+                    os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_train0000000000" + str(i)) for i in range(10, 14)]
     csv_to_data(working_dir, out_dir, csv_paths, force=force)
+
+    out_dir = os.path.join(SPLIT_DATA_PATH, "test")
+    csv_paths = [os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_test.csv")]
+    csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)

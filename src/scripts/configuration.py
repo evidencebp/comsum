@@ -1,19 +1,23 @@
 import sys
+import os
 
 ANALYSIS_PATH = '/Users/idan/src/analysis_utils'
 sys.path.append(ANALYSIS_PATH)
 
 
-LANGUAGE_PATH = '/Users/idan/src/commit-classification'
-sys.path.append(LANGUAGE_PATH)
 
-BASE_PATH = r'/Users/idan/src/comsum/'
-DATA_PATH = BASE_PATH + r'data/'
-AUX_DATA_PATH = DATA_PATH + r'aux_datasets/'
-LABELS_PATH = DATA_PATH + r'labels/'
-FIGURES_PATH = BASE_PATH + r'figures/'
-PERFORMANCE_PATH = BASE_PATH + r'performance/'
-MODELS_PATH = BASE_PATH + r'models/'
+BASE_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
+# e.g. BASE_PATH = r'/Users/idan/src/comsum/'
+sys.path.append(BASE_PATH)
+
+DATA_PATH = os.path.join(BASE_PATH, r'data')
+FULL_DATA_PATH = os.path.join(DATA_PATH, r'dataset')
+SPLIT_DATA_PATH = os.path.join(DATA_PATH, r'split')
+AUX_DATA_PATH = os.path.join(DATA_PATH, r'aux_datasets')
+LABELS_PATH = os.path.join(DATA_PATH, r'labels')
+FIGURES_PATH = os.path.join(BASE_PATH, r'figures')
+PERFORMANCE_PATH = os.path.join(BASE_PATH, r'performance')
+MODELS_PATH = os.path.join(BASE_PATH, r'models')
 
 COMMITS_SAMPLES = 'commits_batch1.csv'
 COMMITS_SAMPLES_METIRCS = 'commits_batch1_metrics.csv'
