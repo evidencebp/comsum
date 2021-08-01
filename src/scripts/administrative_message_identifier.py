@@ -1,10 +1,10 @@
 from os.path import join
 import pandas as pd
 
-from configuration import DATA_PATH
+from configuration import DATA_PATH, LABELS_PATH
 from file_utils import apply_function_to_file
 
-LABELED_FILE = 'cumsum_random_batch_9_july_2021.csv'
+LABELED_FILE = 'comsum_random_batch_12_july_2021_labels.csv'
 LABELED_FILE_WITH_DISTANCE = 'cumsum_random_batch_9_july_2021_with_distance.csv'
 
 administrative_terms = ['Acked-by:',
@@ -60,7 +60,7 @@ def manual_test_adminstrative_distance():
 
 def evaluate_distance():
 
-    df = pd.read_csv(join(DATA_PATH
+    df = pd.read_csv(join(LABELS_PATH
                           , LABELED_FILE))
     df = label_df_as_administrative(df)
     print(df[DISTANCE_COL].value_counts(normalize=True).sort_index()[:50])
@@ -84,7 +84,7 @@ def label_file_as_administrative(file):
                            , output_file=file)
 
 if __name__ == "__main__":
-    #manual_test_adminstrative_distance()
-    #evaluate_distance()
+    manual_test_adminstrative_distance()
+    evaluate_distance()
     label_file_as_administrative(join(DATA_PATH + '/labels/'
                                       , 'comsum_random_batch_12_july_2021.csv'))
