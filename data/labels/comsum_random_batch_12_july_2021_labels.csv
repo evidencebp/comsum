@@ -1,0 +1,2463 @@
+repo_name,commit,subject,message_without_subject,multiple_parents,Is_Summary,Is_Generic,Category,Comment,Certain,Labler,Sampling,distance,administrative_pred
+apple/swift,9514ba5a7d9b6f5d9fcc6751852d71a5074a21d0,[irgen] Lower fix_lifetime => swift_keepAlive().,"
+
+I introduced a function swift_keepAlive2() which has a different signature from
+swift_keepAlive() until I can verify that the stdlib is using the new
+infrastructure.
+
+The difference in signature is that swift_keepAlive2 takes just a pointer while
+swift_keepAlive also takes a metadata value that is not necessary for our
+purposes anymore.
+
+Swift SVN r21718
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+google/closure-library,5bdb54d221dbf7c6177ba5ba6901c012981501ec,Migrate Closure from goog.base to static base class methods.,"
+
+Refactoring: j
+Note: this refactoring currently requires a patch to the compiler so that goog.base isn't rewritten prior to AST inspection.
+
+-------------
+Created by MOE: http://code.google.com/p/moe-java
+MOE_MIGRATED_REVID=61519834
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+inveniosoftware/invenio-accounts,18b5c4a29e7c07d52e0551e5866f9285e7eadd81,tests: E2E tests disabled locally by default,"
+
+* Disables E2E tests locally by default. They can still be run by
+  setting E2E_WEBDRIVER_BROWSERS.
+
+Signed-off-by: Sami Hiltunen <ebafb54bedf33e7dd12950a4634d6a0f6ba63e44@cern.ch>
+",FALSE,TRUE,FALSE,change/details,subject appears in message almost exactly,,,comsum_random_batch_12_july_2021,103,FALSE
+PlayFab/SDKGenerator,0d6aa4a026326dec9533c99a527f7179baa43330,Toddbell/quick unity fix (#588),"
+
+* Update PlayFab_InstanceAPI.cs.ejs
+
+Quick revert. We were supposedly making this public and removing the getter.
+
+* Update UUnitIncrementalTestRunner.cs
+
+removed a getter. This should have been removed with that change.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+KDE/kwin,f8ff40271e4d5e13646281244b5d259ee65b7669,"Removed the ""fastblur"" path","
+
+Summary:
+Since the new blur is more efficient ""fastblur"" or ""simpleblur"" is not needed anymore for fullscreen blur.
+Even my old low-end laptop from 2009 (with Intel T3300) can easily do fullscreen blur now with the new method without any hitch at all.
+
+Reviewers: graesslin, #kwin, #plasma, #vdg, fredrik
+
+Reviewed By: #vdg, fredrik
+
+Subscribers: avaragic, fredrik, ngraham, plasma-devel, kwin, #kwin
+
+Tags: #kwin
+
+Differential Revision: https://phabricator.kde.org/D10181
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+AndroidX/androidx,2a421a23c797a6008047a61e39fa6f203c9b802e,Formatting for ktlint 0.39.0,"
+
+Mostly automated, partially manual
+
+Bug: 166292916
+Test: ./busytown/androidx.sh
+
+This change includes files under ./collection
+
+Change-Id: Iaff845f41531f59e2177fb3a5d1224750d86da20
+",FALSE,FALSE,FALSE,,explains how the change was done,FALSE,,comsum_random_batch_12_july_2021,130,FALSE
+zephyrproject-rtos/zephyr,779fd135f3395d5423bd508a5f31899d6d189d16,Bluetooth: Mesh: Fixes wrong app_key_idx parameters,"
+
+`app_key_del` first param should be key_app_idx,
+not key_net_idx.
+
+The effect is that app_key_del is broken.
+
+It's a regression in eca014115
+Bluetooth: Mesh: Isolate cryptographic material
+
+Fixes: 30468
+
+Signed-off-by: Lingao Meng <d107961e9e4fef34975d9e927886461599dc7eda@xiaomi.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,206,FALSE
+spring-projects/spring-framework,973ee9b8522790cc6c6da7190daca85f750f520f,(Re)introduce DefaultMultipartMessageReader,"
+
+This commit introduces the DefaultMultipartMessageReader, a fully
+reactive multipart parser without third party dependencies.
+
+An earlier version of this code was introduced in fb642ce, but removed
+again in 77c24aa because of buffering issues.
+
+Closes gh-21659
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+google/CodeCity,ff5032a632032b8a0fd2948770a2be0c8be65dbd,Introduce Dumper.options.skipBindings,"
+
+Provide a mechanism to get ObjectDumper.prototype.dumpBinding to skip specified bindings by part (rather than by full selector path, as existing skip system does).
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,11e3b725cfc282efe9d4a354153e99d86a16af08,crypto: arm64/aes-blk - honour iv_out requirement in CBC and CTR modes,"
+
+Update the ARMv8 Crypto Extensions and the plain NEON AES implementations
+in CBC and CTR modes to return the next IV back to the skcipher API client.
+This is necessary for chaining to work correctly.
+
+Note that for CTR, this is only done if the request is a round multiple of
+the block size, since otherwise, chaining is impossible anyway.
+
+Cc: <4fbacc2fa0ffdbb11bf1ad6925b886ebd08dd15f@vger.kernel.org> # v3.16+
+Signed-off-by: Ard Biesheuvel <66d3c5fdaeea7ff1f996ad04f2c45e08ab38e2f5@linaro.org>
+Signed-off-by: Herbert Xu <ef65de1c7be0aa837fe7b25ba9a7739905af6a55@gondor.apana.org.au>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,415,FALSE
+openstack/tripleo-heat-templates,10e74c4abe246fd0abaadca295fe7132817bea27,Run sensu-client container with --pid=host,"
+
+We need the same pid for the container to be able to fully access systemd
+data via systemctl from within the container.
+
+Change-Id: Id61dc657ddc06da96166f3e813e2658af77878be
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,123,FALSE
+openstack/openstack-ansible,085e57d11a11655e8b7061a7e92a617c26be6823,Enable Gnocchi by default,"
+
+Ceilometer is set to use Gnocchi dispatch when Gnocchi is deployed.
+All references to MongoDB in the AIO are removed.
+
+Partial-Blueprint: role-gnocchi
+Depends-On: I94e7d461376a8032a76ea34b57190077a60a0fb5
+Change-Id: Ia41141e947d48426c7d490497639d62e8dff6f8e
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,207,FALSE
+kjambunathan/org-mode-ox-odt,ba20e937aecd58f8c2d2e7517212cc18aed3c8e7,ob-exp: Fix duplicate evaluation with :wrap src,"
+
+* lisp/ob-exp.el (org-babel-exp-process-buffer): Fix duplicate
+  evaluation with :wrap src.
+(org-babel-exp-non-block-elements): Removed function.
+* testing/lisp/test-ob-lob.el (test-ob-lob/export-lob-lines): Fix test.
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+chromium/chromium,65c5d4c44cd4cc58790b9ca59b90be2258bb53f5,Disable NativeMessagingLaunchApiTest.InvalidConnectId on Win dbg.,"
+
+TBR=dbertoni@chromium.org
+BUG:1065344
+
+Change-Id: Ib760d8263dc8cdd75c750a07770244a5e3ff779b
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2124311
+Reviewed-by: Tim Schumann <ee46dbaf4abf06d980493318d93ae9c7de119afd@chromium.org>
+Commit-Queue: Tim Schumann <ee46dbaf4abf06d980493318d93ae9c7de119afd@chromium.org>
+Auto-Submit: Tim Schumann <ee46dbaf4abf06d980493318d93ae9c7de119afd@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#753973}
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,41,FALSE
+GNOME/recipes,25a90ae69ebee3cddecb1c37466e2caed2db3a45,Use --export-dynamic for finding get_type functions,"
+
+This is the typical way to do it. For some reason, it fails
+for GrQueryEditor, so help GtkBuilder out by explicitly
+specifying the get_type function for this type.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+jazzband/django-axes,12a806be28b660cceb0081174f23e4b150f17b65,Update author and licence information,"
+
+Add Jazzband as maintainer from 2016 onwards when the
+project started receiving contributions from Jazzband.
+
+Fixes #409
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,feed7efe82409a369d9a475d6c4e8cf36d1b4b49,Introduces chromium_resources.gyp to factor out Chrome resource generation,"
+
+1. Factors out Chrome/Chromium resource generation into a separate
+chrome_resources.gyp file.
+2. Eliminates repetition between Mac and other platforms.
+3. Breaks long ""repack"" actions out into separate files for greater readability.
+4. Eliminates circular dependencies in the Aura shell, the Views components, and
+the compositor when utilizing Chrome resources.
+
+BUG=none
+TEST=try bots run gyps and build correctly.
+
+Review URL: http://codereview.chromium.org/8425002
+
+git-svn-id: de016e52bd170d2d4f2344f9bf92d50478b649e0@107967 0039d316-1c4b-4281-b951-d872f2087c98
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,471,FALSE
+angular/universal,889dd7faf5c003283912c0eace524f8189076461,fix(build): fix dist/ output structure and packaging,"
+
+Casued by regression in ngc - https://github.com/angular/angular/issues/19339.
+
+Worked around by adding ""skipTemplateCodegen"": ""true"" (but that is anyway needed).
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+openembedded/meta-openembedded,397dba1ab21184317019e9808a3cc36e61050680,systemd: create empty machine-id to fix first boot failures,"
+
+Acked-by: Denys Dmytriyenko <d29de71aea38aad3a87d486929cb0aad173ae612@ti.com>
+Signed-off-by: Koen Kooi <42e3d96910f922bdd7dd1805fe3f8aff634f391d@dominion.thruhere.net>
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,2,TRUE
+opendaylight/controller,2cfa8aed573b09cfc6ab6ba9edc02476635b0896,Initial clustering feature,"
+
+Besides the clustering feature changes a couple of other changes
+had to be made to the distributed data store and remote rpc modules
+to make the solution work with karaf
+
+1. The akka.conf in sal-clustering-config has now been changed so that
+it works in a single node cluster out of the box. Specifically the hostnames
+have been set to 127.0.0.1 and the member role has been set to member-1
+
+2. The distributed-data-store and the remote-rpcconnector now load akka
+configuration from the configuration/initial folder. The positive thing about
+this is that even in a multi-node cluster one does not need to pass the location
+of akka.conf on the command line. The negative thing about this is that you
+cannot change the location from which the akka configuration can be picked up.
+Though this should be ok because we specifically pick modules.conf and
+module-shards.conf from the configuration/initial folder as well.
+
+3. The Protobuf bundle has now been wrapped and a Dynamic Import has been
+added to it so that it can deserialized specific protocol buffer messages
+
+4. The RestConfProvider was not written to shutdown correctly. While this is
+not normally an issue it does become an issue when the clustering feature is
+loaded for the first time because in that case the RestConfProvider may need
+to be shutdown by the config sub-system
+
+Change-Id: I1701ae8e9508c82779483963fb73b6af91095d7d
+Signed-off-by: Ed Warnicke <bd21dacf50ae0c2a81d439ae755251c53052fe92@cisco.com>
+Signed-off-by: Moiz Raja <a0248e9982316d46e09a09fbbfb21cc58d7cc4d2@cisco.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,1339,FALSE
+nwjs/chromium.src,184b4198c0bdee9dfbb146b26796945916419dbe,Disable GalleryBrowserTest.RotateImageOnDrive for Chrome OS debug build,"
+
+BUG=690983
+TBR=yamaguchi@chromium.org
+
+Review-Url: https://codereview.chromium.org/2695803005
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#450304}
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,41,FALSE
+artyom-poptsov/guile-ssh,8e2dea9d0e64912068e6ac9612efd445ffe7e085,sftp.scm (sftp-get-error): Return an error name as a symbol,"
+
+* libguile-ssh/sftp-session-func.c (gssh_sftp_get_error): Return an error name
+  as a symbol
+* modules/ssh/sftp.scm (sftp-get-error): Update the docstring.
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nawawi/openstack,8dd89e52d04da2230914deceaee7c4d41e73ccc2,Update docs building,"
+
+Switch to ""modern"" way of building docs using sphinx-build directly,
+remove now unsed parts from setup.cfg.
+
+Upgrade to openstackdocstheme 1.20 and remove obsolete variables from
+conf.py.
+
+Convert external links to internal RST links so that Sphinx can verify
+that they are correct.
+
+Replace redirected links with new targets.
+
+Use opendev.org instead of github.com where appropriate.
+
+Change-Id: Iedcc008b170821aa74acefc02ec6a243a0dc307c
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,388,FALSE
+samba-team/samba,0d2de5380d13d544c382e3626e3b84fbea4b70a7,use LIB_PATH_VAR in selftest.sh if we have it,"
+
+if we have LIB_PATH_VAR we should use it, otherwise we'll unobtrusively
+complain about not having it and use the most likely LD_LIBRARY_PATH.
+
+Signed-off-by: Jelmer Vernooij <9648816b5a0c45426c88e14104568baf9283dd28@samba.org>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,145,FALSE
+SimpleITK/SimpleITK,6cc5f6ca4e84c65574e49a4872e865a73e15abc2,Include unistd.h for non-Windows systems.,"
+
+On g++-4.7.1 on Debian unistd.h wasn't getting included.  Somehow on other/older
+systems it was getting included indirectly.  This wasn't happened on Debian/g++-4.7.1,
+so an explicit include is needed.
+
+Change-Id: I18a2c3b1e04facf80a40f431a13e8f6e6a190053
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,205,FALSE
+tprrt/linux-stable,cc8b8faea417bd264d23fa5d017da52b75bbdf94,Merge branch 'drm-fixes' of git://people.freedesktop.org/~airlied/linux,"
+
+Pull drm fixes from Dave Airlie:
+ ""Most of the GPU drivers people were at XDC last week, so I didn't get
+  much to send, so I let it rollover until this week.
+
+  Also Alex was away for 3 weeks so amdgpu/radeon got a bit more stuff
+  than usual in one go.
+
+  I've been trying to figure out some 4.2 issues with i915 still (that
+  are fixed in 4.3, but bisecting ends up in a merge commit).  Hopefully
+  next week I or i915 people can work that out""
+
+* 'drm-fixes' of git://people.freedesktop.org/~airlied/linux: (46 commits)
+  drm: Allow also control clients to check the drm version
+  drm/vmwgfx: Fix uninitialized return in vmw_kms_helper_dirty()
+  drm/vmwgfx: Fix uninitialized return in vmw_cotable_unbind()
+  drm/layerscape: fix handling fsl_dcu_drm_plane_index result
+  drm/mgag200: Fix driver_load error handling
+  drm/mgag200: Fix error handling paths in fbdev driver
+  drm/qxl: only report first monitor as connected if we have no state
+  drm/radeon: add quirk for MSI R7 370
+  drm/amdgpu: Sprinkle drm_modeset_lock_all to appease locking checks
+  drm/radeon: Sprinkle drm_modeset_lock_all to appease locking checks
+  drm/amdgpu: sync ce and me with SWITCH_BUFFER(2)
+  drm/amdgpu: integer overflow in amdgpu_mode_dumb_create()
+  drm/amdgpu: info leak in amdgpu_gem_metadata_ioctl()
+  drm/amdgpu: integer overflow in amdgpu_info_ioctl()
+  drm/amdgpu: unwind properly in amdgpu_cs_parser_init()
+  drm/amdgpu: Fix max_vblank_count value for current display engines
+  drm/amdgpu: use kmemdup rather than duplicating its implementation
+  drm/amdgpu: fix UVD suspend and resume for VI APU
+  drm/amdgpu: fix the UVD suspend sequence order
+  drm/amdgpu: make UVD handle checking more strict
+  ...
+",TRUE,FALSE,FALSE,merge,,,,comsum_random_batch_12_july_2021,-1,FALSE
+DMPRoadmap/roadmap,d6e51ed40a13442c59957060ebdf89b9f7186e5d,Added ability to set template visibility for funders,"
+
+enabled template visibility
+
+added ability to set template visibility for funders
+
+fixed typo in scope
+
+removed aria-required
+
+shortened if else for visibility in templates_controller
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+apache/spark,ae08387b4c71876398fd022f5832506741f04832,[SPARK-28616][INFRA] Improve merge-spark-pr script to warn WIP PRs and strip trailing dots,"
+
+## What changes were proposed in this pull request?
+
+This PR aims to improve the `merge-spark-pr` script in the following two ways.
+1. `[WIP]` is useful when we show that a PR is not ready for merge. Apache Spark allows merging `WIP` PRs. However, sometime, we accidentally forgot to clean up the title for the completed PRs. We had better warn once more during merging stage and get a confirmation from the committers.
+2. We have two kinds of PR titles in terms of the ending period. This PR aims to remove the trailing `dot` since the shorter is the better in the commit title. Also, the PR titles without the trailing `dot` is dominant in the Apache Spark commit logs.
+```
+$ git log --oneline | grep '[.]$' | wc -l
+    4090
+$ git log --oneline | grep '[^.]$' | wc -l
+   20747
+```
+
+## How was this patch tested?
+
+Manual.
+```
+$ dev/merge_spark_pr.py
+git rev-parse --abbrev-ref HEAD
+Which pull request would you like to merge? (e.g. 34): 25157
+
+The PR title has `[WIP]`:
+[WIP][SPARK-28396][SQL] Add PathCatalog for data source V2
+Continue? (y/n):
+```
+
+```
+$ dev/merge_spark_pr.py
+git rev-parse --abbrev-ref HEAD
+Which pull request would you like to merge? (e.g. 34): 25304
+I've re-written the title as follows to match the standard format:
+Original: [SPARK-28570][CORE][SHUFFLE] Make UnsafeShuffleWriter use the new API.
+Modified: [SPARK-28570][CORE][SHUFFLE] Make UnsafeShuffleWriter use the new API
+Would you like to use the modified title? (y/n):
+```
+
+Closes #25356 from dongjoon-hyun/SPARK-28616.
+
+Authored-by: Dongjoon Hyun <9b02cb7e37158797a8e22c559f7c5f5ecd28ea57@apple.com>
+Signed-off-by: Dongjoon Hyun <9b02cb7e37158797a8e22c559f7c5f5ecd28ea57@apple.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,1584,FALSE
+grpc/grpc-java,a40b686891920b825171ed90c81fc36d962e75d1,"Revert ""Refactor ExponentialBackoffPolicy""","
+
+This reverts commit a98f8afbbeef1d088e9765102926b6e479ab87a9.
+
+There was no expectation across the languages that we would support
+other policies for connection retry (changing a parameter would be on
+the table, though).
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+zephyrproject-rtos/zephyr,78a125664691260f554beab714d8bbfdab6a9b9e,echo_server: Fix frdm_k64f build in the absence of CC2520,"
+
+Change-Id: Id8a421ad7862c03be0ac4e7293285fa01e8a93e0
+Signed-off-by: Marcus Shawcroft <cf6354583ee83038f2010cbcbe1b1f2adb85107d@arm.com>
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,2,TRUE
+monix/monix,452194b964af5eae8117c25f74f4e7321e0c15d7,Observable.unfoldEval and Observable.unfoldEvalF (#989),"
+
+* adding unfoldeval
+
+* adding documentation for unfoldEval
+
+* adding tests for unfoldEvalF
+
+* formatted code
+
+* removing redundant onComplete()
+",FALSE,TRUE,FALSE,change/details,components name as subject,FALSE,,comsum_random_batch_12_july_2021,-1,FALSE
+hubzero/hubzero-cms,978eb4871a9a7d55bc9dbc896e45ba8d98057e5a,Update products.php,"
+
+I think it would always come up with record with id of 0 in the previous situation if the 'id' param was not sent",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,9cb3b5c14870de1d9fc2d1067fb5b2c619caa6b2,CryptohomeAuthenticator: clean up TriggerResolve usage,"
+
+There's no need to split this into a separate function if we're
+only calling it from one place, so inline it into the one
+callsite in TriggerResolveWithLoginTimeMarker.
+
+BUG=None
+TEST=compile
+
+Change-Id: I02cc6bebab2a0bc07f63e10144d273cbe5fab832
+Reviewed-on: https://chromium-review.googlesource.com/915136
+Reviewed-by: Alexander Alekseev <650c66229cf3451be278bfa0f2899c36ab18a1de@chromium.org>
+Commit-Queue: Eric Caruso <b4dfd424537681137c06263971140211e84cb3c6@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#536501}",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,195,FALSE
+apple/swift-evolution,dca2f84ff9dd910c4d8c648da3a3f727ed918274,[SwiftPM/Package Editing] Update proposal for editable packages.,"
+
+ - Add comments on `swift build --end-edit`.
+
+ - Add comments on `swift build --edit-all`.
+
+ - Add discussion on hiding sources by default.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,2239aa3d15056e4be807eaa8d778b247156ce552,cpufreq: tegra: don't error target() when suspended,"
+
+d4019f0a92ab ""cpufreq: move freq change notifications to cpufreq core""
+added code to the cpufreq core to print an error if a cpufreq driver's
+.target() function returned an error. This exposed the fact that Tegra's
+cpufreq driver returns an error when it is ignoring requests due to the
+system being suspended.
+
+Modify Tegra's .target() function not to return an error in this case;
+this prevents the error prints. The argument is that since the suspend
+hook can't and doesn't inform the cpufreq core when its requests will
+be ignored, there's no way for the cpufreq core to squelch them, so it's
+not an error for the requests to keep coming. This change make the Tegra
+driver consistent with how the Exynos handles the same situation. Note
+that s5pv210-cpufreq.c probably suffers from this same issue though.
+
+Fixes: d4019f0a92ab (cpufreq: move freq change notifications to cpufreq core)
+Signed-off-by: Stephen Warren <5ef2a23ba3aff51d1cfc8c113c1ec34b608b3b13@nvidia.com>
+Signed-off-by: Rafael J. Wysocki <27ffc44a8ec6a212fba98cfc3246c6ce8ab131e0@intel.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,891,FALSE
+google/llvm-propeller,46c39d4f1f2f5059c510e1c408606ae82823e0f2,Added for disassembly the following instructions:,"
+
+o Store Return State (SRSW, SRS)
+o Load/Store Coprocessor (LDC/STC and friends)
+o MSR (immediate)
+
+llvm-svn: 96380
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+materialsproject/pymatgen,e5c3f1b54ab587e7cd3c634f81a1b2de5e31c925,Try testing pymatgen with Travis for Py3.,"
+
+
+Former-commit-id: 3c09da65bcfad778f3705ba7b001fb06ffbaa8d8 [formerly 99322f2ffb5ce55a4f31eb91b97c56daf10474ad]
+Former-commit-id: a01be4a46427b0662b192a840febc89ed7ae1e9d",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,3,TRUE
+GridProtectionAlliance/openPDC,f40366ccd6120dcec546f4c7345c5b8506b46322,Synchrophasor-VS2012: Updated grid solutions framework tool: DataMigrationUtility.,"
+
+git-tfs-id: [https://tfs.codeplex.com/tfs/TFS07]$/openpdc/Synchrophasor/Current Version-VS2012;C96890
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,-1,FALSE
+giuliolunati/ren-c,e99e286d231ebbdde00e5ade7895a556507186df,Support AS for ANY-WORD! types,"
+
+Allows the cheap re-aliasing of words without making a copy of the
+underlying series:
+
+    set-foo: as set-word! 'foo
+
+(TO currently does this as well, but semantically if TO becomes a cast
+operator then it would likely be expected to copy.)
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+microsoft/TypeScript,b94061c5871195642965c2df9fa341758572098f,getEditsForFileRename: Avoid changing import specifier ending (#26177),"
+
+* getEditsForFileRename: Avoid changing import specifier ending
+
+* Support .json and .jsx extensions
+
+* Restore typeRoots tests
+
+* Fix json test
+
+* When --jsx preserve is set, import "".tsx"" file with "".jsx"" extension
+
+* Support ending preference in UserPreferences
+",FALSE,TRUE,FALSE,change/details,subject almost exactly in message,,,comsum_random_batch_12_july_2021,-1,FALSE
+realm/realm-core,b2b18653a955dd9e997e92b85173ec1b32ff01ab,Don't built i386 for OS X,"
+
+We don't support it in the Cocoa binding (it uses an older version of the obj-c
+runtime that doesn't support most of the features added in the last decade or
+so), so building it is just a waste of time.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+facebookexperimental/eden,a7180e2d55ed11806606ab7f1e99c8f94ef13b24,mq: use ui.allowemptycommit to allow empty commits,"
+
+Previously, mq used the force flag to allow empty commits. Now that we have
+ui.allowemptycommit let's switch to that instead. We can't completely remove the
+force flag since it is used for a bunch of other behavior in localrepo.commit.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+GNOME/ostree,d197bfd1331d68a4eac5d1e0dbf7215fb29d8eb3,sysroot: Continue conversion of some simpler functions to new style,"
+
+This is only about 40%, and mostly simpler functions.  It's
+nice to switch to `g_autoptr(GMatchInfo)` instead of our inline version.
+
+I decided to add more usage of `ot_transfer_out_value()`, though it'd
+be nice to try to have a copy of that in libglnx (or possibly glib).
+
+Closes: #791
+Approved by: jlebon
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+lfos/calcurse,990897b2f098f3ed898919e3e66c8830c2e3b450,Resize panels properly,"
+
+Rewrite the panel resize code and remove the code that reinitializes the
+caption and the selected item when the window is resized.
+
+Signed-off-by: Lukas Fleischer <af90e31281d8305af43dc616c5aaca3c7165f8a7@cryptocrack.de>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,134,FALSE
+haskell/haskell-mode,5179049a022f52b456e58c93565664e7dd47241d,Replace interactive-p with called-interactively-p,"
+
+If support for Emacs versions prior to 23.1 is to be dropped (#156) than
+interactive-p (obsolete as of 23.2) can be removed.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,ad377ae01314e1b74db3e7810c151ddfc6daaa7c,Handle certificate generation errors in chromoting host.,"
+
+Sometimes self-signed cert generation may fail. In that case it's better to shutdown
+host instead of crashing.
+
+BUG=146839
+
+
+Review URL: https://chromiumcodereview.appspot.com/10919277
+
+git-svn-id: de016e52bd170d2d4f2344f9bf92d50478b649e0@156736 0039d316-1c4b-4281-b951-d872f2087c98
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,188,FALSE
+tprrt/linux-stable,ad6f27617317bd4343759a95b1f69c11a766d09a,Merge tag 'sunxi-fixes-for-3.8-rc4' of git://github.com/mripard/linux into fixes,"
+
+From Maxime Ripard:
+Sunxi dt fixes for 3.8-rc's
+
+* tag 'sunxi-fixes-for-3.8-rc4' of git://github.com/mripard/linux:
+  ARM: sunxi: Use the Synosys APB UART instead of ns8250
+",TRUE,FALSE,FALSE,merge,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,cb00e99c0abd844b884c64c6b54aa3b7d345ebb1,fix - ensure we don't use bootconsoles after init has been released,"
+
+Gerd Hoffmann pointed out that my patch from yesterday can lead
+to a null pointer dereference if the kernel is booted with no
+console, and no earlyprintk defined. This fixes that issue.
+
+Signed-off-by: Robin Getz <e9953c06f5600a6961c280ee2983a53290f44eef@blackfin.uclinux.org>
+Signed-off-by: Linus Torvalds <69652caca27c8b940640ad396ab71f93cacec34f@linux-foundation.org>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,189,FALSE
+PolyJIT/benchbuild,07a1d422bc384f84144f4b49bddfca5e6bd89527,povray: make povray build its own boost (1st try),"
+
+This doesn't work in testing yet... boost refuses to
+build according to its own documentation and fails with
+an obscure jam build error.
+
+
+Former-commit-id: 011323390d9ad1e6f381f859a7476b91e26cb7d7
+Former-commit-id: cb64c788dbc408b7ec474167c86f6e6cbfa6961c [formerly eadee147cd6df15664ccaaf064a440cc1d773a1e] [formerly be85a527562403bf8c9b9b00b4337e9eb39ab2d4 [formerly 7b3fc452427f3475fc9862e92229097948ae1dcb]]
+Former-commit-id: 040ffb916fe0f59fef016c7bfb7eb74113bf6727 [formerly d9a23b717c141d5f6a2624f0875a554437ee754d]
+Former-commit-id: baadcb16f6f13307ef1f90038a2d5f62b156ca99",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,141,FALSE
+h5bp/server-configs-apache,655446483281854159d51d7fe8d7839ba0d668cd,Bump actions/checkout from v2.3.1 to v2.3.2,"
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from v2.3.1 to v2.3.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.1...2036a08e25fa78bbd946711a407b529a0a1204bf)
+
+Signed-off-by: dependabot[bot] <5bdcd3c0d4d24ae3e71b3b452a024c6324c7e4bb@github.com>",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,333,FALSE
+yona-projects/yona,014af4394bfcb540dedf21d44ce721e08f747a42,docs: Add an exceptional policy for Search feature,"
+
+There is a possibility that the search result will include some contents
+of resources which is not allowed by this document in future because the
+Search feature has its own code to filter the result.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+testing-cabal/mock,fa64f8bfd458102ab0b7805896e0bfb080a50607,bpo-28961: Address my comments from earlier code review (#305),"
+
+Backports: 5aa3856b4f325457e8ec1ccf669369f543e1f6b5
+Signed-off-by: Chris Withers <711c73f64afdce07b7e38039a96d2224209e9a6c@simplistix.co.uk>
+",FALSE,FALSE,TRUE,reference,,,,comsum_random_batch_12_july_2021,54,FALSE
+wireapp/wire-ios-sync-engine,cdbc3cbe3cb2f3e5dc7572a960f5e984b3f63e55,Release 250.0.0,"
+
+Diff with previous:
+https://github.com/wireapp/wire-ios-sync-engine/compare/249.1.3...250.0.0
+
+Commit  | Details
+--------|------
+557b57b6 | Support switch to a custom backend with deeplink (#1011)
+",FALSE,FALSE,TRUE,generic,,,,comsum_random_batch_12_july_2021,-1,FALSE
+coq/coq,7d2f7e1665136f5d7a2882f733ae807e1a55dc7c,Extraction: propagate implicit args in inner fixpoint (bug #4243 part 2),"
+
+ In front of ""let rec f x y = ... in f n m"", if n is now an implicit argument,
+ then the argument x of the inner fixpoint f is also considered as implicit.
+ This optimization is rather ad-hoc, since we only handle MLapp(MLfix()) for
+ now, and the implicit argument should be reused verbatim as argument.
+ Note that it might happen that x cannot be implicit in f. But in this
+ case we would have add an error message about n still occurring somewhere...
+ At least this small heuristic was easy to add, and was sufficient to solve
+ the part 2 of bug #4243.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+openstack/openstack-manuals,6d6f0f63f8692798e37d2782561986607c3939ed,[glossary] Follow the docs conventions,"
+
+* change Image Service to Image service
+* change Identity Service to Identity or Identity service
+
+follow the Documentaion conventions:
+https://wiki.openstack.org/wiki/Documentation/Conventions
+
+Change-Id: Idde7a0881b60984fe92ff76b1d82af6185638779
+",FALSE,TRUE,FALSE,change/details,subject almost exactly in message,,,comsum_random_batch_12_july_2021,197,FALSE
+Zarel/Pokemon-Showdown,978b02cf26508db584b96e89e68b3f6f0ef23e30,Add joim as an alias of join,"
+
+In recognition of your outstanding accomplishments in the field of
+Pokémon sciences, we hereby award you the highest of honors; a
+commemorative alias.
+",FALSE,FALSE,FALSE,,couldn't understand message,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,666435bbf31bfc2aec2afccb2fb54951e573c5c1,powerpc: Deindentify identify_cpu(),"
+
+The for-loop body of identify_cpu() has gotten a little big, so move the
+loop body logic into a separate function. No other changes.
+
+Signed-off-by: Michael Ellerman <17b9e1c64588c7fa6419b4d29dc1f4426279ba01@ellerman.id.au>
+Acked-by: Dave Kleikamp <9bc4ae2e83dabb4524fc335d7c1dac408a99dbe5@linux.vnet.ibm.com>
+Signed-off-by: Benjamin Herrenschmidt <a7089bb6e7e92505d88aaff006cbdd60cc9120b6@kernel.crashing.org>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,136,FALSE
+triplea-game/triplea,00799e874af5b9d34ede73a819ea2dc656348d91,Simplify download file properties (#7519),"
+
+* Simplify DownloadFileProperties
+
+1. Fix up/simplify optional API usage around getVersion,
+   can return an optional directly from DownloadFileProperties
+   to simplify client code
+
+2. Convert saveForZip to be stateful rather than static.
+
+* Remove unused properties in map '*.properties' files, we only use the map version
+
+The map url, time of download, engine version are unused, we only
+need the map version in a '.properties' map suffix file.
+
+* Simplify DownloadFileProperties construction
+
+Rather than construct via no-arg and then inject
+a version value, we can accept the version value
+as a constructor argument.",FALSE,TRUE,FALSE,change/details,subject almost exactly in message,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,ca83542cdb5c14dd369de2539bdca2670d89feea,rtc: s35390a: convert to i2c_new_dummy_device,"
+
+Move from i2c_new_dummy() to i2c_new_dummy_device(), so we now get an
+ERRPTR which we use in error handling.
+
+Signed-off-by: Wolfram Sang <66ab244bc42248f12645ba300439b5263f6a6fca@sang-engineering.com>
+Link: https://lore.kernel.org/r/20190722172618.4061-4-66ab244bc42248f12645ba300439b5263f6a6fca@sang-engineering.com
+Signed-off-by: Alexandre Belloni <a7228e626ecf0022ac91fc1cd8db88e71d0e5e0e@bootlin.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,112,FALSE
+jraska/github-client,47899a3d63727dad27d1b436f0bdee3aeeb6b129,Repo detail (#24),"
+
+* Remove Watchers from RepoHeader
+
+* Basic Repo detail implementation
+
+* Pulling out extra data for RepoDetail
+
+* RealDeepLinkLauncher test
+
+* Finish dummy implementation of RepoDetail. Deep linking just works! :)
+
+* Add launching repo on web, add analytics
+
+* Add Todo for Robolectric test
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,-1,FALSE
+gem/oq-engine,ed13dee02e8de84ba4c7beccb822234af17109d6,Fixed mesh_test,"
+
+
+Former-commit-id: 707a865eb85d8f1fcb20e7fcda8ab29610ecb5be [formerly 9c58eef7e999ba7a3739c482900c2cd2d70009d4]
+Former-commit-id: 41206b2e0f6b77037b4e4aa0ba589e2159889a21",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,3,TRUE
+observantrecords/Observant-Records-WordPress,bb27a3c53ad165517e278f7c6655d79cfbb0a496,Add a blank line preceding a Markdown-formatted ordered list in the DocBlock for the `admin_body_class` filter.,"
+
+Props kpdesign.
+See #30558.
+
+Built from https://develop.svn.wordpress.org/trunk@30756
+
+
+git-svn-id: 4b95c1a29378dac08c481a35c0b6950a1bdff99c@30746 1a063a9b-81f0-0310-95a4-ce76da25c4cd
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,90,FALSE
+hfreire/watch-rtp-play,9e0b146f3383caa470195a6c9428f5fc63552bc3,chore(deps-dev): bump snyk from 1.369.3 to 1.370.0,"
+
+Bumps [snyk](https://github.com/snyk/snyk) from 1.369.3 to 1.370.0.
+- [Release notes](https://github.com/snyk/snyk/releases)
+- [Changelog](https://github.com/snyk/snyk/blob/master/.releaserc)
+- [Commits](https://github.com/snyk/snyk/compare/v1.369.3...v1.370.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <6a4c1c4838f800d1998274cd5234e1f65c55e90c@users.noreply.github.com>",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,265,FALSE
+ember-cli/ember-cli,0885f9037e1da4b700d0ea72f8133ea3fad78bce,"Auto merge of #5752 - martndemus:suffix-not-substring, r=Turbo87","
+
+BUGFIX Unable to name a add-on/project as a substring of ""ember-core""
+
+Fixes #5751
+
+I changed `findAddonByName` from matching on a substring of the requested name
+to matching on the suffix.
+",TRUE,FALSE,FALSE,merge,,,,comsum_random_batch_12_july_2021,-1,FALSE
+facebook/buck,a0e1fa36363d0b8fec965c1f0f24d0a89cc0506c,Avoid getSubgraph calls in in target graph hashing,"
+
+Summary:
+  * `buck target --show-target-hash` commands were making a big number
+    of calls to `TargetGraph#getSubgraph` to find all the transitive
+    dependencies of the specified node. `getSubgraph` however first
+    incrementally builds a `MutableDirectedGraph` and then uses it to
+    construct a `TargetGraph`, whose constructor is fairly inefficient,
+    in particular it checks that the supplied graph is not cyclic.
+  * Since we are only interested in getting all the transitive
+    dependencies of the root node and don't actually need the subgraph,
+    we can avoid the calls to the expensive `TargetGraph` constructor
+    and construct the sets we are interested in using graph traversal.
+  * This significantly speeds up target graph hashing, especially if we
+    are hashing a big number of nodes.
+
+Test Plan:
+  * `buck test`.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tootsuite/mastodon,4d22d03fabc5f249fd2a93037916b980e4d3f99b,Add additional documentation and warnings to the WEB_DOMAIN setting. (#2386),"
+
+* Add additional documentation and warnings to the WEB_DOMAIN setting.
+
+This feature is largely undocumented, and quite a number of users have
+shot them in the feet already despite the warning. Added a bit of documentation
+and expanded the warning until we have a mechanism for dealing with conflicting
+user URIs.
+
+* Change WEB_DOMAIN comments to point to the extensive online documentation
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+UNINETT/nav,afcc77e3a275ae3283adc007ac6e4e742e2ace78,Override and set default pagination class,"
+
+The setting of options has mostly moved to custom classes, thus we need one to
+set pagination options.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+alphagov/verify-frontend,01d3ed74143c67b2eef9b3810d66c8ff70ee6ffc,TT-811: remove logo from redirect to service pages,"
+
+We don't want the logo to appear on the redirect page at the end of the user's journey through Verify because they feel like they have returned to the RP at this point. So this commit hides the logo on that page and reverts the two-thirds width change
+
+Author: da39a3ee5e6b4b0d3255bfef95601890afd80709@hugh-emerson
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+paradajz/OpenDeck,9e91302abb9f35d684c98275800fe1e3c867793f,build: add support for compiling arm binaries with clang,"
+
+Toolchain.mk needs to be modified like this:
+
+C_COMPILER_ARM := clang -target arm-none-eabi
+CPP_COMPILER_ARM := clang++ -target arm-none-eabi
+
+also COMMON_FLAGS for stm32 arch should contain -fshort-enums flag
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+GridProtectionAlliance/openPDC,017c1f3e28d6a6255737b5285f4dd3705350ac12,Synchrophasor-VS2012: Updated grid solutions framework dependencies.,"
+
+git-tfs-id: [https://tfs.codeplex.com/tfs/TFS07]$/openpdc/Synchrophasor/Current Version-VS2012;C93370
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,-1,FALSE
+kubernetes/kubernetes,08a094ca2e10330230559e0622ed27361d6a4e33,Merge pull request #63569 from hanxiaoshuai/bugfix0509,"
+
+Automatic merge from submit-queue (batch tested with PRs 63569, 63918, 63980, 63295, 63989). If you want to cherry-pick this change to another branch, please follow the instructions <a href=""https://github.com/kubernetes/community/blob/master/contributors/devel/cherry-picks.md"">here</a>.
+
+fix a small mistake in function getFieldMeta
+
+**What this PR does / why we need it**:
+fix a small mistake in function getFieldMeta
+**Which issue(s) this PR fixes** *(optional, in `fixes #<issue number>(, fixes #<issue_number>, ...)` format, will close the issue(s) when PR gets merged)*:
+Fixes #
+
+**Special notes for your reviewer**:
+```
+if e, found := ext[""x-kubernetes-patch-strategy""]; found {
+	strategy, ok := e.(string)
+	if !ok {
+		return apply.FieldMetaImpl{}, fmt.Errorf(""Expected string for x-kubernetes-patch-strategy by got %T"", s)
+	}
+}
+```
+According the judgment above, I think we should print the type of e.
+**Release note**:
+
+```release-note
+NONE
+```",TRUE,FALSE,FALSE,merger,,,,comsum_random_batch_12_july_2021,-1,FALSE
+gravitee-io/gravitee-management-webui,2b437cdc67277c6ce23a1426b41e36aadc54cb82,feat(maganement): Create api from a WSDL,"
+
+Allow to import WSDL (from file or URL) in addition of swagger/openapi
+
+fix gravitee-io/issues#322
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+hluk/CopyQ,db52c061a1d69abdc96e650769d711cb30c448d9,COPYQ_LOG_FILE env variable for log file name,"
+
+If COPYQ_LOG_FILE environment variable is set, its value is used as file
+name for logging instead of stderr.
+
+Using this variable allows the monitor process to use the log file too.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+terraform-providers/terraform-provider-aws,4c4f988e0dcdbefcbf4024b25f162f7020131bfd,Correct lb type switch statement and add tests,"
+
+=== RUN   TestAccAWSLB_applicationLoadBalancer_updateDeletionProtection
+--- PASS: TestAccAWSLB_applicationLoadBalancer_updateDeletionProtection (373.19s)
+PASS
+ok  	github.com/terraform-providers/terraform-provider-aws/aws	373.854s
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,-1,FALSE
+jaamsim/jaamsim,289bd46a51c655627aaed6d69ee89d76e4655854,JS: Added support for specular reflection to renderer,"
+
+Currently only collada models can specify specular materials.
+
+Signed-off-by: Matt Chudleigh <0ca390ed93f516590d05286882efa52bb3b35616@ausenco.com>
+Signed-off-by: Harvey Harrison <eadbd6b462bf3c97df0300a934c12bc2e5d1fe51@ausenco.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,65,FALSE
+zhaojh329/xterminal,4b55c76fc43688abf0e49d91994854a0a6899219,Optimize keep-alive mechanism,"
+
+keepalive(heartbeat interval) can be configured by -k
+
+Signed-off-by: Jianhui Zhao <8d133ac9c3777a160289d8ad8989d4d8f2aa6571@gmail.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,57,FALSE
+tprrt/linux-stable,d13b33fa7d76b8f7cbf0212d570aa82887b6db0f,drm/msm: Replace drm_fb_get_bpp_depth() with drm_format_plane_cpp(),"
+
+The driver needs the number of bytes per pixel, not the bpp and depth
+info meant for fbdev compatibility. Use the right API.
+
+Signed-off-by: Laurent Pinchart <3ded2f39a78f0d7044839546f95841842b4d7c96@ideasonboard.com>
+Signed-off-by: Rob Clark <915c10c999604870200b6defbe633d857c856ca0@gmail.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,128,FALSE
+OpenCollective/opencollective-api,b7d7536214222ff8bfeda1718985701065e20509,Graphql transactions (#902),"
+
+* added transactions to the graphql server
+
+* added transactions to the graphql server
+
+* order by id desc
+
+* don't return attachment of the expense if not logged in
+
+* added paymentMethod to Transaction interface
+
+* eslint
+
+* make tests great again
+
+* Sequelize.models => models.
+
+* removed dataloaderSequelize for the User model to make tests pass
+
+* make tests great again
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,-1,FALSE
+GNOME/evince,8df182541ea814a9a5387c996f2f7862b9008c79,ev-toolbar: Fix ev_toolbar_has_visible_popups after cb3d4b2,"
+
+The toolbar was changed to use popovers for the view and actions menus,
+but ev_toolbar_has_visible_popups was still checking if the actions had
+a GtkMenu visible.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,3d9dfd060391928bd615db62ecddea5e1255edfd,IB/uverbs: Add ib_ucontext to uverbs_attr_bundle sent from ioctl and cmd flows,"
+
+Add ib_ucontext to the uverbs_attr_bundle sent down the iocl and cmd flows
+as soon as the flow has ib_uobject.
+
+In addition, remove rdma_get_ucontext helper function that is only used by
+ib_umem_get.
+
+Signed-off-by: Shamir Rabinovitch <d7d72ebaee9d5dbd857d6c3b370ea0688386ca19@oracle.com>
+Signed-off-by: Jason Gunthorpe <eccb403c258866b12abca28dd15483e8ad9be7ff@mellanox.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,203,FALSE
+openstack/openstack-ansible,a1eebe6afd0f042eaa161d41d9bab4ac3c2bfe77,Add ebtables to neutron agent configuration,"
+
+Neutron now uses ebtables as an extra security layer for ARP
+spoof filtering. This patch adds the ebtables package and
+rootwrap to the neutron role to ensure that the agent is able
+to use this subsystem. Without it the networking from the
+instances to the L3 router will fail.
+
+Co-Authored-By: Evan Callicoat <5d11801f06aad6e898c98a78eb7f40470a6dbc00@gmail.com>
+Closes-Bug: #1482756
+Change-Id: Ibc960564a3acfbb10cfbc3cfe0ad60d3366d2443
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,385,FALSE
+tprrt/linux-stable,d6f987c8462ab97591fbd6ed6bea6df61d2919e5,clk: meson: pll: fix rounding and setting a rate that matches precisely,"
+
+Make meson_clk_pll_is_better() consider a rate that precisely matches
+the requested rate to be better than any previous rate (which was
+smaller than the current).
+
+Prior to commit 8eed1db1adec6a (""clk: meson: pll: update driver for the
+g12a"") meson_clk_get_pll_settings() returned early (before calling
+meson_clk_pll_is_better()) if the rate from the current iteration
+matches the requested rate precisely. After this commit
+meson_clk_pll_is_better() is called unconditionally. This requires
+meson_clk_pll_is_better() to work with the case where ""now == rate"".
+
+This fixes a hang during boot on Meson8b / Odroid-C1 for me.
+
+Fixes: 8eed1db1adec6a (""clk: meson: pll: update driver for the g12a"")
+Signed-off-by: Martin Blumenstingl <d6551fe26e010d03a5698ebfdda3aed52f4942a2@googlemail.com>
+Reviewed-by: Jerome Brunet <112e8b3ceb2d19b85876d8b6266daec3a6b188f2@baylibre.com>
+Signed-off-by: Neil Armstrong <619b324efbf5f7848de055bdc8bef4c0dd7c8ef5@baylibre.com>
+Link: https://lkml.kernel.org/r/20190324164327.22590-2-d6551fe26e010d03a5698ebfdda3aed52f4942a2@googlemail.com
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,696,FALSE
+zstackio/zstack,f3c84b00eda470fecad8dba1cbfa2e1ce327feb7,fix reconnect host issue,"
+
+reconnect host check agent package at wrong dir, so md5checker always
+report need to re-deploy agent
+
+Signed-off-by: Mei Lei <d1c6e4e75080176552ef8271b379adabccaa7551@gmail.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,104,FALSE
+tprrt/linux-stable,4916211615e21b1ae80632e57b6e0c8434b126fe,"staging: comedi: core: introduce comedi_chan_range_is_{bi,uni}polar()","
+
+Introduce two helper functions to check if a subdevice range_table_list
+for a given channel/range is bipolar or unipolar.
+
+Signed-off-by: H Hartley Sweeten <382ff55d8e07d1082d179e669636cd1552da4f36@visionengravers.com>
+Reviewed-by: Ian Abbott <9e6ba6483b6a3e14d61f7c987e72ecb5b46122d6@mev.co.uk>
+Signed-off-by: Greg Kroah-Hartman <4645f7897fd33786a2ee1264d590b3c400559d85@linuxfoundation.org>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,125,FALSE
+nwjs/chromium.src,5d84f9807b8ab3abcb9070252005e714c578e0b9,2010-06-18  Dimitri Glazkov  <dglazkov@chromium.org>,"
+
+        Reviewed by Darin Adler.
+
+        Add three more non-core Chromium builders to start testing DumpRenderTree.
+        https://bugs.webkit.org/show_bug.cgi?id=40335
+
+        * BuildSlaveSupport/build.webkit.org-config/config.json: Added 3 builders.
+
+git-svn-id: bf5cd6ccde378db821296732a091cfbcf5285fbd@61469 bbb929c8-8fbe-4397-9dbb-9b2b20218538",FALSE,FALSE,FALSE,administrative,"administrative subject, looks like author's mistake",,,comsum_random_batch_12_july_2021,258,FALSE
+twitter/zipkin,3e8ebe65ff1275809b878970a9a1437b908679d7,Allows elasticsearch-http to accept multiple hosts (#1422),"
+
+Our first version of elasticsearch-http had a TODO to support multiple
+base urls. This implements that feature using round-robin DNS.
+
+Most users will supply a DNS name that's mapped to multiple A or AAAA
+records. For example, `http://elasticsearch:9200` will use normal host
+lookups to get the list of IP addresses.
+
+You can alternatively supply a list of http base urls. This list is used
+to recover from failures. Note that all ports must be the same, and the
+scheme must be http, not https.
+
+Here are some examples:
+
+* http://1.1.1.1:9200,http://2.2.2.2:9200
+* http://1.1.1.1:9200,http://[2001:db8::c001]:9200
+* http://elasticsearch:9200,http://1.2.3.4:9200
+* http://elasticsearch-1:9200,http://elasticsearch-2:9200",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,e60a48f5ab35737118e19bc965c640900a842f02,Merge master.kernel.org:/pub/scm/linux/kernel/git/davej/agpgart,"
+
+* master.kernel.org:/pub/scm/linux/kernel/git/davej/agpgart:
+  [AGPGART] VIA PT880 Ultra support.
+  [AGPGART] Fix Nforce3 suspend on amd64.
+  [AGPGART] Enable SIS AGP driver on x86-64 for EM64T systems
+",TRUE,FALSE,FALSE,merge,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,e9c0ec609b95e13ee67a298bfb41fbe6a50703d5,Remove RawPtr from core/html,"
+
+BUG=585328
+
+Review URL: https://codereview.chromium.org/1876743002
+
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#386371}
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,70,FALSE
+nwjs/chromium.src,4cf366a9f24c7b4a56290cb71bdaaa3da7e244e6,Chromecast test build fix: add mojo dep for direct_dependent includes.,"
+
+See internal build failures for ""content_shell_clang_tot_public"".
+
+Initially triggered in https://codereview.chromium.org/814543006/
+
+R=lcwu@chromium.org
+BUG=None
+
+Review URL: https://codereview.chromium.org/861843002
+
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#312294}
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,221,FALSE
+GNOME/glib,39294664a679dbfa89d0d23ebfea2a44c1dee42b,GApplication test: fix testcase to avoid fork(),"
+
+The GApplication test case tried to fork() while using GMainLoop,
+causing problems.  Avoid doing that by splitting the child process into
+a separate program and spawning it in the usual way.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=658999
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,6960341aa33420a8aadf1d625b486933487e6592,Documentation: gpio: Move GPIO mapping documentation to driver-api,"
+
+Move gpio/board.txt to driver-api/gpio/board.rst and make sure it builds
+cleanly as ReST.
+
+Signed-off-by: Jonathan Neuschäfer <00e62bd9d941047dde4266628ac851b56b1f3fa8@gmx.net>
+Signed-off-by: Linus Walleij <9cd9d802d23c0ed5e224beabf4ae4a5c478746ef@linaro.org>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,93,FALSE
+tprrt/linux-stable,ef8d1d51aa5ebe4b17b5e837d520df1e398b7adb,qla2xxx: setup data needed in ISR before setting up the ISR,"
+
+qla2xxx first calls request_irq() and then does the setup of the queue
+entry data needed in the interrupt handlers in when using MSI-X. This
+could lead to a NULL pointer dereference when an IRQ fires between the
+request_irq() call and the assignment of the qentry data structure to
+the rsp->msix field. A possible case for such a race would be in the
+kdump case when the HBA's IRQs are still enabled but the driver is
+undergoing a new initialisation and thus is not aware of already
+activated IRQs in the HBA.
+
+Signed-off-by: Johannes Thumshirn <76e27a2cf2160151c27b307564ef391a743f57c5@suse.de>
+Reviewed-by: Hannes Reinecke <b0d1e9e4a4e27620745ff49be9000da3174a4cc6@suse.com>
+Reviewed-by: Himanshu Madhani <a1599b7f51f3890722b2125e7c07879c181c9399@qlogic.com>
+Signed-off-by: Martin K. Petersen <0384aaef27f06874adbdb09a807bb339f4aff9fd@oracle.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,513,FALSE
+camunda/feel-scala,543f9a573a3afbd99eb2e53b9ba8b0c6a5464fcd,feat(engine): disable external functions (#116),"
+
+* external functions are disabled by default (security risk)
+* new configuration option to enable external functions
+* parsing of an expression fails if it contains an external function and the option is not enabled",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+palantir/gradle-baseline,70f0853769464ca89a0a5f71b505c62991ace392,Excavator: Upgrade dependencies (#586),"
+
+###### _excavator_ is a bot for automating changes across repositories.
+
+Changes produced by the versions-props/upgrade-all check.
+
+{runtimeCheckDesc}
+To enable or disable this check, please contact the maintainers of Excavator.
+",FALSE,FALSE,FALSE,reference,bot generated,,,comsum_random_batch_12_july_2021,-1,FALSE
+coreboot/coreboot,875e5aa96c8d9e767d24b99015abb66bf7e0ef75,soc/amd: factor out SMBUS controller registers into common header,"
+
+The patch also rewrites the bit definition using shifts to make them
+easier to read.
+
+The older non-SoC chips can probably also use the new header file, but
+for this patch the scope is limited to soc/amd, since the older non-SoC
+chips don't use the SMBUS controller code in soc/amd/common.
+
+TEST=Timeless build for amd/mandolin and amd/gardenia doesn't change.
+
+Change-Id: Ifd5e7e64a41f1cb20cdc4d6ad1e675d7f2de352b
+Signed-off-by: Felix Held <23ae9ad67c7e328722a591f61ca191124af4367e@felixheld.de>
+Reviewed-on: https://review.coreboot.org/c/coreboot/+/48188
+Tested-by: build bot (Jenkins) <8254d1186852c26c9fb3d343db6a5be86317fea9@coreboot.org>
+Reviewed-by: Marshall Dawson <7e1f03060580a936245d826517caa1807214ea35@gmail.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,364,FALSE
+open-policy-agent/opa,502ef13c170a885deebbfc58681f7636e8cd2889,docs/website: Update support page header to match index.html,"
+
+This just updates the support page nav bar to match what is currently
+in index.html.
+
+The links for the OPA logo are also changed to point back to the home
+page.
+
+Signed-off-by: Patrick East <1a015b2c287ee8e96f2ec59ce4953b89b37de4a8@gmail.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,165,FALSE
+Eugeny/terminus,b58d6e1bfd0fa69c6b53691d8bed7f8a7e123f74,Bump keytar from 5.0.0 to 5.1.0 in /app,"
+
+Bumps [keytar](https://github.com/atom/node-keytar) from 5.0.0 to 5.1.0.
+- [Release notes](https://github.com/atom/node-keytar/releases)
+- [Commits](https://github.com/atom/node-keytar/compare/v5.0.0...v5.1.0)
+
+Signed-off-by: dependabot-preview[bot] <5bdcd3c0d4d24ae3e71b3b452a024c6324c7e4bb@dependabot.com>",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,213,FALSE
+gradle/gradle,ae7fb1989122d1bbecae2fc3fe6fda6ee22b0350,Fix bug in watching new sub directories,"
+
+- PlayMultiProjectContinuousBuildIntegrationTest and
+  PlayMultiProjectReloadIntegrationTest failed.
+- needs unit test, tbd
+
++review REVIEW-5860
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+hyperspy/hyperspy,fc61cea2c28f1fac7895f61b11e083ee160d876b,ENH: Load multi-stacks from mulit-signal files,"
+
+When trying to load a stack, previously files that contained multiple
+signals were not allowed. This change allows that as long as each file
+has the same number of signals. If so, one stack will be created for
+each such sub-signal in the files.
+
+Example:
+Files 1-10 each contain 3 signals: A, B and C. With the new changes,
+loading files 1-10 with stack=True, will return 3 signals of 10 signals
+each (A from 1-10, B from 1-10, C from 1-10). The signals are grouped
+simply by order loaded, but possibly some logic could be added that
+checks for names etc.
+
+Practical use case:
+Building stacks from EMI files.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+chromium/chromium,56512597d2cba0a02d5a08529a2d585e4c2b0a0f,Replace pywebsocket with pywebsocket3 in //net,"
+
+This commit replaces the original pywebsocket with pywebsocket3 on //net
+tests, and removes any deprecated features. This also tweaks some of the
+websocket handlers that used the old API to use new ones.
+
+Change-Id: I6b77d0ed524c3ff279aa659b2ca6c4048e5da95e
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2054125
+Reviewed-by: Kentaro Hara <ef1728e9a9ee178abcf3af44b8924f4f0a6f4047@chromium.org>
+Reviewed-by: David Benjamin <348b1b6801801c3d890b2e1589a8e36441d09fdc@chromium.org>
+Reviewed-by: Yutaka Hirano <64dfa6fd53ef17dc6c2ab7819834e6abe125f4c2@chromium.org>
+Reviewed-by: Adam Rice <81d182e993d9621be934e17be5ceea28063f2c1d@chromium.org>
+Commit-Queue: Keita Suzuki <6867f803a502c3651d11c5300fdc8d47297b4546@google.com>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#747618}
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,207,FALSE
+hmrc/amls-frontend,b43bc44e7e95c555ad6a664aadb4d7addc9e8066,Merge remote-tracking branch 'remotes/origin/master' into AMLS-5354,"
+
+* remotes/origin/master: (64 commits)
+  AMLS-5433 | Added release notes
+  AMLS-5433 | Removed unused toggle tests
+  AMLS-5433 | Fixed wrong data being picked up when selecting msb sub
+  AMLS-5412 | Release note
+  AMLS-5412 | Update 'How do you want to pay your fees'
+  AMLS-5367 | Amended casing and full stop
+  Change date validation for LocalDate.now is obtained from a val to a def to avoid a stale comparison
+  AMLS-4789 | Changed edit link to MSB update information
+  AMLS-4789 | Changed routing from no PSR number page
+  AMLS-5367 | Changed case logic and added additional content fields
+  AMLS-4789 | Added select all that apply hint text
+  AMLS-4789 | Fixed small bug relating to which CYA page would appear
+  AMLS-5367 | Changed H1 from we to you
+  AMLS-4789 | Updated hint text on register page
+  AMLS-5333 | Review changes
+  AMLS-5367 | Release Notes added
+  AMLS-5367 | New tests and content logic implemented
+  AMLS-4789 | Moved helper methods to helper and refactored unit test
+  AMLS-5333 | Release Note
+  AMLS-5333 | Fix for AMP data storage
+  ...
+
+# Conflicts:
+#	app/controllers/businessmatching/SummaryController.scala
+#	app/controllers/businessmatching/updateservice/add/AddBusinessTypeSummaryController.scala
+#	app/models/amp/Amp.scala
+#	app/views/businessmatching/updateservice/add/update_services_summary.scala.html
+#	test/controllers/businessmatching/SummaryControllerSpec.scala
+#	test/models/amp/AmpSpec.scala
+#	test/services/UpdateMongoCacheServiceSpec.scala
+#	test/views/businessmatching/updateservice/add/update_services_summarySpec.scala
+",TRUE,FALSE,FALSE,merge,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,84dfc127963de8c2e0821a621da83debf893a22a,Remove heuristic suppression of UI indicators of loading state changes.,"
+
+With c3b2602af580e7c3ce433 these heuristics are deemed no longer useful/
+necessary. They were only enabled behind a flag, so there should be no
+effective user-visible change.
+
+Bug: 734104
+Change-Id: I4c22e7a638dad8d2ed36494663276ef47dbbb495
+Reviewed-on: https://chromium-review.googlesource.com/596830
+Reviewed-by: Scott Violet <5737ef08a3ec16a337ac79a1d719fb91acba20a4@chromium.org>
+Commit-Queue: Evan Stade <e3720ab8f18cfedca393e2fbf6b59137e260fe1a@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#491199}",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,190,FALSE
+department-of-veterans-affairs/vets-website,c80f057810fdd9fd29ea3ffad148dcb24b8eab60,Make new isVAPatient selector (#14751),"
+
+This is an alternate way to see if a user has VA health care. It uses data that already exists on the user model so it does not require making a separate call to ESR to check enrollment status.
+
+This PR also renames the existing selector: `isEnrolledInVAHealthCare` => `isEnrolledInESR`
+
+fix broken import",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+wikimedia/parsoid,72922720c3a12bf0b89bb265efca75dafc4efd02,Bug 58926: Cache perfStatsTypes,"
+
+This query takes minutes each once the stats table has reached a size close to
+RAM. The value rarely changes, so cache the results. Restarting the rt server
+after adding a new stat type is ok.
+
+Change-Id: Iaf3ee8b090a617c3ff00845c129572aaf5fff54f
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,196,FALSE
+nwjs/chromium.src,59fe574e35aecc8732b382751257bfef883514e2,Save favicon during reading list distillation,"
+
+As the lifespan of the DistillerPage is shorter than the one needed by the
+WebState to download the favicon, the WebState needs to outlive the
+DistillerPage.
+As the favicon download should not impact too much the distillation time, the
+next distillation should be launch before the previous one is finished.
+This Dispatcher will makes sure the WebState survive long enough to download
+the Favicon after it is returned.
+
+BUG=664988
+
+Review-Url: https://codereview.chromium.org/2529283002
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#440065}
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,434,FALSE
+AndroidX/androidx,a1a8bb1793d3d04185fd2e92e6f197c196426bb7,fix emulator api 26 Camera2CameraControlTest postsubmit failure,"
+
+skip the tests if 3A regions are not supported.
+
+Test: CameraControlDeviceTest / Camera2CameraControlTest
+Bug: NA
+Change-Id: I37baf395d813efb64d0ce93aebdd4289a84893c9
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,116,FALSE
+dgraph-io/badger,f796303af5fc07723c04ad9531a1cab1378c1680,Fix some go lint warnings. (#668),"
+
+Fix lint warnings, except for those asking for comments on exported
+variables and methods. I will deal with those later.
+
+Remove deprecated function.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+collinbarrett/FilterLists,ab5d70a8397bc26e9651eccfbbe8f473b5fcef29,Bump RestSharp from 106.11.2 to 106.11.3 in /server,"
+
+Bumps [RestSharp](https://github.com/restsharp/RestSharp) from 106.11.2 to 106.11.3.
+- [Release notes](https://github.com/restsharp/RestSharp/releases)
+- [Changelog](https://github.com/restsharp/RestSharp/blob/master/releasenotes.md)
+- [Commits](https://github.com/restsharp/RestSharp/compare/106.11.2...106.11.3)
+
+Signed-off-by: dependabot-preview[bot] <5bdcd3c0d4d24ae3e71b3b452a024c6324c7e4bb@dependabot.com>",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,317,FALSE
+apache/jmeter,3c74dca6da6482642b50655270db22acce804a01,Unnecessary cast,"
+
+git-svn-id: https://svn.apache.org/repos/asf/jmeter/trunk@1784045 13f79535-47bb-0310-9956-ffa450edef68
+
+Former-commit-id: 333d81e76e39009bbf5ff2cb13c48e434872b769",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,2,TRUE
+chromium/chromium,ddfcba236b7dfe790408ce1a45d479387cfffc1f,Roll ANGLE from 1c7f0284516a to 5641e3c185a8 (1 revision),"
+
+https://chromium.googlesource.com/angle/angle.git/+log/1c7f0284516a..5641e3c185a8
+
+2020-10-22 angle-autoroll@skia-public.iam.gserviceaccount.com Roll SwiftShader from 84f5eeb6dd9b to e02d8938821a (3 revisions)
+
+If this roll has caused a breakage, revert this CL and stop the roller
+using the controls here:
+https://autoroll.skia.org/r/angle-chromium-autoroll
+Please CC 682bdb9e7d8ba359ef169b8db374e7a99d394a46@google.com on the revert to ensure that a human
+is aware of the problem.
+
+To report a problem with the AutoRoller itself, please file a bug:
+https://bugs.chromium.org/p/skia/issues/entry?template=Autoroller+Bug
+
+Documentation for the AutoRoller is here:
+https://skia.googlesource.com/buildbot/+doc/master/autoroll/README.md
+
+Cq-Include-Trybots: luci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win-asan;luci.chromium.try:win_optional_gpu_tests_rel;luci.chromium.try:linux-swangle-try-x64;luci.chromium.try:win-swangle-try-x86
+Bug: None
+Tbr: 682bdb9e7d8ba359ef169b8db374e7a99d394a46@google.com
+Change-Id: Ib00743d981ce2ca05a92c6e829563b62febef40e
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2491967
+Reviewed-by: chromium-autoroll <a3680534fa21f849f725bea9c9fb3f7f637bcd8d@skia-public.iam.gserviceaccount.com>
+Commit-Queue: chromium-autoroll <a3680534fa21f849f725bea9c9fb3f7f637bcd8d@skia-public.iam.gserviceaccount.com>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#819881}
+",FALSE,FALSE,,,not sure what's going on,FALSE,,comsum_random_batch_12_july_2021,1115,FALSE
+tprrt/linux-stable,0d3592fa28965a3083d670b430bb59c19efb6abe,ixgbevf: Driver Makefile,"
+
+82599 Virtual Function Device Driver Makefile
+
+Signed-off-by: Greg Rose <fdff95cc3a51f0ebfc2cd0523e9ef9af6ad07484@intel.com>
+Signed-off-by: Jeff Kirsher <87e35f5be20bb3e67f4ba6b86f5f6be3085b1b3a@intel.com>
+Signed-off-by: David S. Miller <fe08d3c717adf2ae63592e4c9aec6e3e404d8e3e@davemloft.net>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,49,FALSE
+tprrt/linux-stable,090da752cdd6f0786eee68c8dea8db7c8abd3798,video:uvesafb: Fix dereference NULL pointer code path,"
+
+platform_device_alloc could failed and return NULL,
+we should check this before call platform_device_put.
+
+Signed-off-by: Wang YanQing <56ca982e301c39f713d7dc27488130819812afde@gmail.com>
+Signed-off-by: Tomi Valkeinen <e1ca4dbb8be1acaf20734fecd2da10ed1d46a9bb@ti.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,109,FALSE
+Homebrew/brew,422ec29363f26d4f343f0a364e9873e0a8d79615,Tests for Pathname+Yeast,"
+
+I removed the rename and mv functions as when I wrote the tests I realised the function implied the pathname object would be updated to reflect the moved or renamed file. However that cannot be done. Also frankly I think writing it out in full makes clearer code.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+apache/arrow,2287ce2cf0dc41374e42be3955763aa10e751ed2,ARROW-7360: [R] Can't use dplyr filter() with variables defined in parent scope,"
+
+Closes #6014 from nealrichardson/dplyr-scope and squashes the following commits:
+
+04d7d37ba <Neal Richardson> Update timestamp test in test-dataset.R
+8017516a7 <Neal Richardson> Assert that dplyr on Arrow errors the same as regular dplyr
+f692d2304 <Neal Richardson> Allow filter methods to access variables in parent scope
+
+Authored-by: Neal Richardson <beb59f0141269d2d04e73d0dcc1967b64ba87e13@gmail.com>
+Signed-off-by: Neal Richardson <beb59f0141269d2d04e73d0dcc1967b64ba87e13@gmail.com>
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,408,FALSE
+openstack/horizon,c7a3e891fe8bc986cee669604c67c29850e9d9dc,Network Rest API for Angular Front End,"
+
+This is the API which abstracts Nova vs Neutron calls
+for the angular front end.
+
+This initial patch will only implement the APIs needed to
+support the launch instance work.
+
+Partially Implements: blueprint launch-instance-redesign
+
+Change-Id: I6967fbae472e6aa944994d94ab327c4fb594b1d0
+Co-Authored-By: Richard Jones <d389d0399f6b3a41eb6ed97baac205c8cf2392cd@gmail.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,235,FALSE
+jstrait/jssynth,af4ca0176533c357fd45b836e924db8196bc79dd,Avoiding unnecessary reference data re-generation,"
+
+Previously, these constants/reference data were re-generated for
+each note in a serialized song, each time a serialized song was
+generated. (I.e., a lot of times during normal usage of the app).
+However, this data never changes so there's no reason to do so.
+
+Although I don't think this had a practical negative impact, it
+seems like an easy thing to avoid.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+Subsurface-divelog/subsurface,48ba01b807cc993e5689abe2ff781d31deb4c91a,Enable downloads from the UEMIS Zurich,"
+
+This behaves somewhat differently from the Gtk version - still needs
+more investigation. But at least now it's hooked in.
+
+Signed-off-by: Dirk Hohndel <a00b27378a09822d5638cdfb8c2e7ccc36d74c56@hohndel.org>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,125,FALSE
+scylladb/scylla,c76296e97e976acd641480189806949ffc942351,scylla-gdb.py: Add boost_intrusive_list_printer,"
+
+It is needed to print the boost::intrusive::list which is used
+by repair_meta_for_masters in repair.
+
+Fixes #7037
+
+Signed-off-by: Botond Dénes <a584fa4d75a0a85d721f44fb6e06315a2853b0b6@scylladb.com>
+Signed-off-by: Asias He <7487d0432e24c09ba3f2ff7de44b9eb030d5ae18@scylladb.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,117,FALSE
+tprrt/linux-stable,82abf33766712d8446ea137a3400165e31bd12c7,"drm/sched: Always trace the dependencies we wait on, to fix a race.","
+
+The entity->dependency can go away completely once we've called
+drm_sched_entity_add_dependency_cb() (if the cb is called before we
+get around to tracing).  The tracepoint is more useful if we trace
+every dependency instead of just ones that get callbacks installed,
+anyway, so just do that.
+
+Fixes any easy-to-produce OOPS when tracing the scheduler on V3D with
+""perf record -a -e gpu_scheduler:.\* glxgears"" and DEBUG_SLAB enabled.
+
+Signed-off-by: Eric Anholt <96f164ad4d9b2b0dacf8ebee2bb1eeb3aa69adf1@anholt.net>
+Reviewed-by: Christian König <c7ea837d7a46effe4232b086213468b8b31643bf@amd.com>
+Cc: 4fbacc2fa0ffdbb11bf1ad6925b886ebd08dd15f@vger.kernel.org
+Signed-off-by: Alex Deucher <08dc22c6156113f2deff178e35e3ed9b24d6af9e@amd.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,437,FALSE
+tprrt/linux-stable,1ae01724ae92004be36a6c11c4d5a9f94e915204,cxgbit: Abort the TCP connection in case of data out timeout,"
+
+If DDP is programmed for a WRITE cmd and data out
+timer gets expired then abort the TCP connection
+before freeing the cmd to avoid any possibility of
+DDP after freeing the cmd.
+
+Signed-off-by: Varun Prakash <da8eeead6ac54aa6b13c398dae2cdaba6c6029fe@chelsio.com>
+Signed-off-by: Nicholas Bellinger <978acd1567d5598152161fdf8bf3ca568f950c9b@linux-iscsi.org>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,180,FALSE
+zephyrproject-rtos/zephyr,b30b52abd5214c03089be8d13ff4082d71424494,doc: fix doxygen INPUT path; brand html output,"
+
+Clean up the INPUT paths for doxygen scanning:
+
+- directory scans include sub-directories so no need
+  to include them explicitly
+- remove excluded (legacy) includes that no longer exist
+
+Sync directory changes in the CMakeLists.txt (as noted in the comments)
+
+Add content to the home page of the doxygen-generated HTML, and add a
+Zephyr branding theme.
+
+Signed-off-by: David B. Kinder <david.b.kinder@intel.com>
+
+Fixes: #6773
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,357,FALSE
+GPUOpen-ProfessionalCompute-Tools/HIP,4bb8bf8dab2ae03aa95848202c34b905efddead3,[HIPIFY] Statistics in CSV file.,"
+
++ Stats by CUDA ref name.
++ Conversion %.
+
+TODO: Calculation of changed code amount, based on actually replaced bytes.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+chromium/chromium,74d7ed318b94e49028ac0cc0f2595635281ec4c2,Fix a dependency on Blink 'core' things from 'platform',"
+
+Some blink/renderer/platform/loader/ code needs to use the mojom enum
+class blink.mojom.ControllerServiceWorkerMode defined in
+service_worker_object.mojom-blink.h, which is generated by the gn target
+blink/public/mojom:mojom_core_blink.
+But, there should have no dependency pathes from Blink platform to
+blink/public/mojom:mojom_core_blink, actually it should just be
+forbidden because 'core' is a higher level than 'platform'.
+
+This CL extracts blink.mojom.ControllerServiceWorkerMode and puts it
+into a new mojom file controller_service_worker_mode.mojom, and
+includes it in the gn target blink/public/mojom:mojom_platform_blink,
+then we can just rely on the dependency path below to get what we want
+originally.
+  blink/renderer/platform/loader:loader --[private]-->
+  blink/renderer/platform:blink_platform_public_deps --[public]-->
+  blink/public/mojom:mojom_platform_blink
+
+BUG=947399
+TBR=haraken@chromium.org
+
+Change-Id: Idfe1df83d80422826e1d96ce67abf87674f99746
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1548737
+Commit-Queue: Leon Han <46c3241c02d6864edaf7af9a1d623e3a29093795@intel.com>
+Reviewed-by: Kinuko Yasuda <2d56fe9c63fe1af9c8ce2e42b52fd958eb89bac3@chromium.org>
+Reviewed-by: Makoto Shimazu <dddc9f6f69c7665dbcdcada7d6cebb1c6a2e5638@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#646754}",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,919,FALSE
+GNOME/gtksourceview,9ff0219e0134e3baaa3d948bf00a92fa3467659a,fixes bug #150490 (POD acronym in gtksourceview seemingly unnecessarily,"
+
+2005-01-07  Paolo Maggi  <paolo@gnome.org>
+
+	* gtksourceview/language-specs/perl.lang: fixes bug #150490 (POD
+	acronym in gtksourceview seemingly unnecessarily expanded)
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+zephyrproject-rtos/zephyr,0f8c2acece5f63f794e7682c6f56f8505b758ae2,tests: net: 6lo: Adapt tests to deal with headers in multiple frames,"
+
+The testcases are adapted to handle more than one net buffer in
+a net_pkt. After the IPHC optimization it is possible that IP header
+is not in the same buffer than the UDP header.
+
+Signed-off-by: Alexander Wachter <ce6e77dabd455f5e273537afd862be63bdedff84@student.tugraz.at>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,183,FALSE
+iphydf/toxcore,330c1bee5ce3ccbca77f62336bfa84a0752a58ff,"nTox: keep bootstrap()ping every 10 seconds, until we get a connection running (the initial one might get lost, it IS done via UDP after all)","
+
+nTox.c:
+- main(): keep calling tox_bootstrap_from_address() every 10 seconds, until the connection is established
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+Homebrew/homebrew-core,217cff177d038d76b7846192ffdc0d546dc1bd96,latexdiff 1.3.1.1,"
+
+Closes #56375.
+
+Signed-off-by: BrewTestBot <8a898ee6867e4f2028e63d2a6319b2224641c06c@users.noreply.github.com>
+",FALSE,FALSE,FALSE,administrative,also reference,,,comsum_random_batch_12_july_2021,18,TRUE
+ros2/rclcpp,360f1b9425f9d080e167e029c13568b454e34ebe,Add CLI args to Node constructor (#461),"
+
+* Add CLI args to Node constructor
+
+Adds arguments and use_global_arguments to NodeBase
+
+* Check for integer overflow
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+viking-gps/viking,75c40effc9732681baa8b74a29a935ae691be1fb,Change warning message to debug as these are not unexpected.,"
+
+Default value lookups can fail particularly if new values have been introduced,
+but are not yet/never been saved into the defaults .ini file.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+apache/spark,f08f6f4314b16fb09c479f6537f99bda77e4c256,[SPARK-23935][SQL][FOLLOWUP] mapEntry throws org.codehaus.commons.compiler.CompileException,"
+
+## What changes were proposed in this pull request?
+
+This PR fixes an exception during the compilation of generated code of `mapEntry`. This error occurs since the current code uses `key` type to store a `value` when `key` and `value` types are primitive type.
+
+```
+     val mid0 = Literal.create(Map(1 -> 1.1, 2 -> 2.2), MapType(IntegerType, DoubleType))
+     checkEvaluation(MapEntries(mid0), Seq(r(1, 1.1), r(2, 2.2)))
+```
+
+```
+[info]   Code generation of map_entries(keys: [1,2], values: [1.1,2.2]) failed:
+[info]   java.util.concurrent.ExecutionException: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 80, Column 20: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 80, Column 20: No applicable constructor/method found for actual parameters ""int, double""; candidates are: ""public void org.apache.spark.sql.catalyst.expressions.UnsafeRow.setInt(int, int)"", ""public void org.apache.spark.sql.catalyst.InternalRow.setInt(int, int)""
+[info]   java.util.concurrent.ExecutionException: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 80, Column 20: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 80, Column 20: No applicable constructor/method found for actual parameters ""int, double""; candidates are: ""public void org.apache.spark.sql.catalyst.expressions.UnsafeRow.setInt(int, int)"", ""public void org.apache.spark.sql.catalyst.InternalRow.setInt(int, int)""
+[info]           at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+[info]           at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+[info]           at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+[info]           at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:135)
+[info]           at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2410)
+[info]           at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2380)
+[info]           at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+[info]           at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+[info]           at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+[info]           at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+[info]           at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+[info]           at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.compile(CodeGenerator.scala:1290)
+...
+```
+
+## How was this patch tested?
+
+Added a new test to `CollectionExpressionsSuite`
+
+Closes #22033 from kiszk/SPARK-23935-followup.
+
+Authored-by: Kazuaki Ishizaki <409019bab0e07036ad6abfa289bcfe098eb16317@jp.ibm.com>
+Signed-off-by: Takuya UESHIN <f070f8f0c50caeda5841963fc7b57e73e59dad56@databricks.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,2850,FALSE
+h5bp/html5-boilerplate,438314d6fc4a3a0bd03f9599cf764a8cf796998b,Bump @babel/core from 7.10.4 to 7.10.5,"
+
+Bumps [@babel/core](https://github.com/babel/babel/tree/HEAD/packages/babel-core) from 7.10.4 to 7.10.5.
+- [Release notes](https://github.com/babel/babel/releases)
+- [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/babel/babel/commits/v7.10.5/packages/babel-core)
+
+Signed-off-by: dependabot[bot] <5bdcd3c0d4d24ae3e71b3b452a024c6324c7e4bb@github.com>",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,316,FALSE
+nwjs/chromium.src,e450e0fd50067940ea98e911565f431c9b3a3085,Use BookmarkBridge instead of ChromeBrowserProvider in the bookmarks widget.,"
+
+ChromeBrowserProviderClient is deprecated. This replaces its use in the
+bookmarks widget with BookmarkBridge.
+
+BUG=583477
+
+Review URL: https://codereview.chromium.org/1749013002
+
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#380187}
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,181,FALSE
+JetBrains/intellij-community,019ab4572a95dccd93201851d26a153627836258,"Revert ""DFA: treat pure no-arg methods as variables""","
+
+This reverts commit 467c594
+Method like `static Object createObject() { return new Object(); }` is considered as pure,
+but `createObject() == createObject()` is false, which does not allow to treat such method as call as a variable. Thus fix is inappropriate.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,a2fa6721c7237b5a666f16f732628c0c09c0b954,staging: r8188eu: Add new USB ID,"
+
+The Elecom WDC-150SU2M uses this chip.
+
+Reported-by: Hiroki Kondo <3dd942397281e8fcdefc592ee1d23045c371d1e7@gmail.com>
+Signed-off-by: Larry Finger <ed0f1d78b8c21b2970494a178da4bdfa8beba2a7@lwfinger.net>
+Cc: stable <4fbacc2fa0ffdbb11bf1ad6925b886ebd08dd15f@vger.kernel.org>
+Signed-off-by: Greg Kroah-Hartman <4645f7897fd33786a2ee1264d590b3c400559d85@linuxfoundation.org>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,121,FALSE
+ministryofjustice/cla_backend,ebd498c3167b4ca6cea27a027e4bb16e79b5198e,"Skip failing test, modify the other to have a weighting change","
+
+The test doesn't fail reliably enough for an expected fail tag, as every
+now and again the assertion would fluke a pass and the test would fail,
+so just skip for now.
+
+The other test was testing for the behaviour we now don't want, so has
+been modified to have a weighting change in it to stop the allocation
+trying to balance out the numbers (rather than because it's a new day),
+which is a behaviour we want to preserve
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,7a999bf0c5eb19b20ac6ab0f21f6e5013400fa51,iwlwifi: add remove station functionality,"
+
+This patch adds remove station functionality, which is required for
+5000 and AP mode.
+
+There are still some gaps in managment that need to be closed but it
+provides sufficient functionality for 5000 HW.
+
+Signed-off-by: Tomas Winkler <002a8af089113a6510dbc00453be711ac350fd80@intel.com>
+Signed-off-by: John W. Linville <2a53bac7a5d324865ef46ec4c38b2c0fba1456b4@tuxdriver.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,206,FALSE
+stinsonga/emacs-mirror,2be772ff45057215c1c70252008c1f9703ef3bff,Document latest changes in make_lispy_position.,"
+
+ doc/lispref/commands.texi (Click Events): Update contents of click event's
+ position list due to last changes in make_lispy_position.
+
+  etc/NEWS: Mention the incompatible change.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+miekg/coredns,9e8b0377e2343b84b7b0c8a91b1fc28553de6500,build(deps): bump github.com/aws/aws-sdk-go from 1.28.13 to 1.29.3 (#3676),"
+
+Bumps [github.com/aws/aws-sdk-go](https://github.com/aws/aws-sdk-go) from 1.28.13 to 1.29.3.
+- [Release notes](https://github.com/aws/aws-sdk-go/releases)
+- [Changelog](https://github.com/aws/aws-sdk-go/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/aws/aws-sdk-go/compare/v1.28.13...v1.29.3)
+
+Signed-off-by: dependabot-preview[bot] <5bdcd3c0d4d24ae3e71b3b452a024c6324c7e4bb@dependabot.com>",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,311,FALSE
+chromium/chromium,2e46d981d45f61472bac48bf0d29d0055316b67c,Roll ANGLE from a2c33e3fa098 to 9d8fd36d3b95 (2 revisions),"
+
+https://chromium.googlesource.com/angle/angle.git/+log/a2c33e3fa098..9d8fd36d3b95
+
+2020-08-21 angle-autoroll@skia-public.iam.gserviceaccount.com Roll Vulkan-Loader from 2979391e5b0c to e1c7eaa74142 (1 revision)
+2020-08-21 angle-autoroll@skia-public.iam.gserviceaccount.com Roll SPIRV-Tools from a711c594b8cc to b79773a35d52 (1 revision)
+
+If this roll has caused a breakage, revert this CL and stop the roller
+using the controls here:
+https://autoroll.skia.org/r/angle-chromium-autoroll
+Please CC 94770d7fe1cce6ea0791fa9927c1107de4d2e37b@google.com on the revert to ensure that a human
+is aware of the problem.
+
+To report a problem with the AutoRoller itself, please file a bug:
+https://bugs.chromium.org/p/skia/issues/entry?template=Autoroller+Bug
+
+Documentation for the AutoRoller is here:
+https://skia.googlesource.com/buildbot/+doc/master/autoroll/README.md
+
+Cq-Include-Trybots: luci.chromium.try:android_optional_gpu_tests_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win-asan;luci.chromium.try:win_optional_gpu_tests_rel;luci.chromium.try:linux-swangle-try-x64;luci.chromium.try:win-swangle-try-x86
+Bug: None
+Tbr: 94770d7fe1cce6ea0791fa9927c1107de4d2e37b@google.com
+Change-Id: Ida343d5391e43bc1c974b6659e75db1761c17c9d
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2368911
+Reviewed-by: chromium-autoroll <a3680534fa21f849f725bea9c9fb3f7f637bcd8d@skia-public.iam.gserviceaccount.com>
+Commit-Queue: chromium-autoroll <a3680534fa21f849f725bea9c9fb3f7f637bcd8d@skia-public.iam.gserviceaccount.com>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#800559}
+",FALSE,TRUE,FALSE,change/reason,quite long message,FALSE,,comsum_random_batch_12_july_2021,1242,FALSE
+tprrt/linux-stable,9386d8bc58e2088f05d2d49a9b8af626ebbe687b,btrfs: Don't pass fs_info to commit_cowonly_roots,"
+
+We already pass a transaction handle which refrences the fs_info so
+we can grab it from there. No functional changes.
+
+Signed-off-by: Nikolay Borisov <142453373c3b88d8ff81b1a9e73f7ad113f58c91@suse.com>
+Signed-off-by: David Sterba <a2ce9d316ca04d17b520237d2846a218b8284e52@suse.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,121,FALSE
+qtproject/qtqa-gerrit,ed69c9882f52ad460d11985d8909f96acf7734fb,Include all fields in toString() for group audit log entries,"
+
+As 'addedOn' is neither returned as part of Key#members nor the parent
+key, it isn't included in the toString() representation of
+AccountGroup{Member|ById}Aud{it}.Key. Hence, it isn't included in the
+toString() representation of AccountGroup{Member|ById}Aud{it} either.
+
+This poses a problem in the context of consistency checks between groups
+in ReviewDb and the ones in NoteDb. If audit entries differ because of
+the 'addedOn' field, we won't see this inconsistency in the logged
+consistency violations. As that is very impractical, we now provide
+an explicit toString() representation for Key which covers all fields.
+
+Change-Id: I6a86b76698b173676337a0ceccb9794e3d240605
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,624,FALSE
+alphagov/contacts-admin,8cdc9c3acd18ace6f2fbfc7ec7de4c8bce67cf1f,Add Dockerfile,"
+
+As part of a project expanding on the existing alphagov/publishing-e2e-tests we are
+adding a basic Dockerfile for use from that repository.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,0119536cd314ef95553604208c25bc35581f7f0a,[POWERPC] Add hand-coded assembly strcmp,"
+
+We have an assembly version of strncmp for the bootwrapper, but not
+for the kernel, so we end up using the C version in the kernel.  This
+takes the strncmp code from the bootup and copies it to the kernel
+proper, adding two instructions so it copes correctly with len==0.
+
+Signed-off-by: Steven Rostedt <9d183ff83abfec5c556edaf86a280a53916a11d8@redhat.com>
+Signed-off-by: Paul Mackerras <19a0ba370c443ba08d20b5061586430ab449ee8c@samba.org>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,275,FALSE
+zcoinofficial/zcoin,e07c943ce8df6c6cb3ece3fc676911ddb43ca184,Add AssertLockHeld for cs_main to ChainActive-using functions,"
+
+All functions that use ChainActive but do not aquire the cs_main
+lock themselves, need to be called with the cs_main lock held.
+
+This commit adds assertions to all externally callable functions
+that use chainActive or chainMostWork.
+
+This will flag usages when built with -DDEBUG_LOCKORDER.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,1f49856bb029779d8f1b63517a3a3b34ffe672c7,ARM: 7789/1: Do not run dummy_flush_tlb_a15_erratum() on non-Cortex-A15,"
+
+Commit 93dc688 (ARM: 7684/1: errata: Workaround for Cortex-A15 erratum 798181 (TLBI/DSB operations)) causes the following undefined instruction error on a mx53 (Cortex-A8):
+
+Internal error: Oops - undefined instruction: 0 [#1] SMP ARM
+CPU: 0 PID: 275 Comm: modprobe Not tainted 3.11.0-rc2-next-20130722-00009-g9b0f371 #881
+task: df46cc00 ti: df48e000 task.ti: df48e000
+PC is at check_and_switch_context+0x17c/0x4d0
+LR is at check_and_switch_context+0xdc/0x4d0
+
+This problem happens because check_and_switch_context() calls dummy_flush_tlb_a15_erratum() without checking if we are really running on a Cortex-A15 or not.
+
+To avoid this issue, only call dummy_flush_tlb_a15_erratum() inside
+check_and_switch_context() if erratum_a15_798181() returns true, which means that we are really running on a Cortex-A15.
+
+Signed-off-by: Fabio Estevam <679188261afeb60eb822cd934fd7b46a48ddd743@freescale.com>
+Acked-by: Catalin Marinas <15ce75b290ebaf27c3f9fd73ab848685ed3d8261@arm.com>
+Reviewed-by: Roger Quadros <eba86029bdfc5762d0419aa8dd4fd0368b2d01d4@ti.com>
+Signed-off-by: Russell King <f6aa0246ff943bfa8602cdf60d40c481b38ed232@arm.linux.org.uk>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,812,FALSE
+nwjs/chromium.src,419ddbe9fa0bd9a52e65b2755822753fadc30c57,Fix timeout in TracingBrowserTest.TestMemoryInfra,"
+
+The test was timing out due to the navigation to chrome://settings.
+This page takes ~15 secs to load. Now changes the link to
+chrome://chrome-urls. The test runs 11secs faster in my system. So,
+should fix the timeouts.
+
+BUG=673568
+
+Review-Url: https://codereview.chromium.org/2565293003
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#438280}
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,234,FALSE
+nwjs/chromium.src,136f999646792e955d7586054b9aa27130dc232f,Attempt to fix issue 344300 by guarding against rootStyle being null.,"
+
+From what I can tell this was introduced in issue 64293008 at Nov 29th 2013. Clusterfuzz also broke at that time with a similar stack trace. 
+
+An alternatively fix could be to assert that rootStyle is never set to null in the constructors of CSSToLengthConversionData. However that seems to be a more involved fix and I will leave that for the owner of the code.
+
+R=ager@chromium.org, erik.corry@gmail.com, haraken@chromium.org, timloh@chromium.org, tkent@chromium.org, vegorov@chromium.org, zerny@chromium.org
+BUG=344300
+
+Review URL: https://codereview.chromium.org/170283003
+
+git-svn-id: bf5cd6ccde378db821296732a091cfbcf5285fbd@167596 bbb929c8-8fbe-4397-9dbb-9b2b20218538
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,580,FALSE
+nightwatchjs/nightwatch,d6b51a95ebd31c735742cd97fb6c5b4653d18662,Update copyright year from 2013 to 2014,"
+
+The copyright year was out of date (2013). Copyright notices must list the current year. This commit updates the listed year to 2014.",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+chef/chef,36269b581c63edc258c41b331aec080f14959834,Bump InSpec/Train/omnibus-software,"
+
+Bump everything to the latest
+
+Signed-off-by: Tim Smith <764ef62106582a09ed09dfa0b6bff7c05fd7d1e4@chef.io>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,33,FALSE
+nwjs/chromium.src,d8caba35bbd0023e00e9fc2ff121b099f7918a64,Update Chromium.app sizes expectations,"
+
+BUG=154446
+
+Review URL: https://codereview.chromium.org/14086004
+
+git-svn-id: de016e52bd170d2d4f2344f9bf92d50478b649e0@193448 0039d316-1c4b-4281-b951-d872f2087c98
+",FALSE,FALSE,TRUE,administrative,,,,comsum_random_batch_12_july_2021,68,FALSE
+apache/spark,6f20a92ca30f9c367009c4556939ea4de4284cb9,[SPARK-17845] [SQL] More self-evident window function frame boundary API,"
+
+## What changes were proposed in this pull request?
+This patch improves the window function frame boundary API to make it more obvious to read and to use. The two high level changes are:
+
+1. Create Window.currentRow, Window.unboundedPreceding, Window.unboundedFollowing to indicate the special values in frame boundaries. These methods map to the special integral values so we are not breaking backward compatibility here. This change makes the frame boundaries more self-evident (instead of Long.MinValue, it becomes Window.unboundedPreceding).
+
+2. In Python, for any value less than or equal to JVM's Long.MinValue, treat it as Window.unboundedPreceding. For any value larger than or equal to JVM's Long.MaxValue, treat it as Window.unboundedFollowing. Before this change, if the user specifies any value that is less than Long.MinValue but not -sys.maxsize (e.g. -sys.maxsize + 1), the number we pass over to the JVM would overflow, resulting in a frame that does not make sense.
+
+Code example required to specify a frame before this patch:
+```
+Window.rowsBetween(-Long.MinValue, 0)
+```
+
+While the above code should still work, the new way is more obvious to read:
+```
+Window.rowsBetween(Window.unboundedPreceding, Window.currentRow)
+```
+
+## How was this patch tested?
+- Updated DataFrameWindowSuite (for Scala/Java)
+- Updated test_window_functions_cumulative_sum (for Python)
+- Renamed DataFrameWindowSuite DataFrameWindowFunctionsSuite to better reflect its purpose
+
+Author: Reynold Xin <rxin@databricks.com>
+
+Closes #15438 from rxin/SPARK-17845.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,586cf2681f527ce8b85b9bd57c8b9f7945fbe051,ide-dma: don't reset request fields on dma_timeout_retry(),"
+
+Impact: drop unnecessary code
+
+Now that everything uses bio and block operations, there is no need to
+reset request fields manually when retrying a request.  Every field is
+guaranteed to be always valid.  Drop unnecessary request field
+resetting from ide_dma_timeout_retry().
+
+Signed-off-by: Tejun Heo <546b05909706652891a87f7bfe385ae147f61f91@kernel.org>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,279,FALSE
+Automattic/wp-calypso,e50bdc06da220ce237bf309703102dec8673436f,Remove prepare script form babel-plugin-i18n-calypso (#40758),"
+
+* Remove prepare script form babel-plugin-i18n-calypso
+
+* Remove scripts entirely from babel-plugin-i18n-calypso",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+pytroll/satpy,3da09c00b001e92208010f7a3443145fa67dd11c,Implement a mipp-free HRIT reader,"
+
+WIP, supports only MSG, no calibration yet.
+
+Signed-off-by: Martin Raspaud <97bf46b91ed38708e3e02c19a45e25fc6a113484@smhi.se>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,47,FALSE
+openstack/oslo.db,24ad2fac3042d4ae817495478a7ec510b1dc019b,Move base migration test classes to common code,"
+
+Moved base migration test classes WalkVersionsMixin(),
+BaseMigrationTestCase() to openctack common module
+openstack.common.db.sqlalchemy.test_migrations.
+Tests modified.
+
+Part of blueprint common-unit-tests
+
+Change-Id: I415e11864a1305cf074f2685eb610ae8ce96e8c5
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,210,FALSE
+BlackHole/enigma2-obh10,c6275cd739f30323bf040d999fa37449540de990,new upgrade command to deal with opkg idiosyncrasies,"
+
+a full ""opkg upgrade"" first deinstalls all installed packages before
+installing the new ones, instead of one package at the time, causing
+upgrades to fail when packages on which other packages depend for their
+tools are removed.
+
+This commit updates these important packages individually and first,
+before updating the test of all packages.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+GNOME/dia,bc632d29765eab1b63251af584df9cc88baab1f3,Updated Canadian English translation.,"
+
+
+2005-11-17  Adam Weinberger  <adamw@gnome.org>
+
+	* en_CA.po: Updated Canadian English translation.
+",FALSE,TRUE,TRUE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+scala/scala,aad6deae7204a7fc95b59ede61b188bb62f51188,Fix for broken non-local returns.,"
+
+Don't change the owner of a return if the new owner is nested
+inside the old owner.  Closes SI-5612.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+erlang/otp,c5d6ce6a07478c5ac19fdf2df244c4b837888d08,Merge branch 'sverk/cross_tests/OTP-10074' into maint,"
+
+* sverk/cross_tests/OTP-10074:
+  Fix include issues in when building tests
+  Fix cross compile of testcases
+  Update cross build system for tests to work
+",TRUE,FALSE,FALSE,merge,,,,comsum_random_batch_12_july_2021,-1,FALSE
+sufficientlysecure/ad-away,0bfbd4fc1a18225f412cac193c324eb8806e5b7b,SELinux support (at least on some ROMs),"
+
+* Added option to symlink hosts file to /data/hosts
+* Added setting SELinux context on symlink target
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+openstack/nova,7fc982e19f94a4624d54c3ac113057bed7750ec4,Add note for automatic determination of compute_rpc version by service,"
+
+Change I679ebedb739a487e2e4e811c4e89b9c07c8b99bc added a new 'auto' value
+for upgrade_levels.compute
+
+Change-Id: I21f2678ab4f68cddb7f76c5c8f9c7b0d878e705a
+",FALSE,FALSE,FALSE,,not clear how action are related,FALSE,,comsum_random_batch_12_july_2021,104,FALSE
+nwjs/chromium.src,7923c790ae1fe65b26cc08bbaf043c28d47e3cc7,GTTF: Replace DCHECK with EXPECT_TRUE in UITestBase.,"
+
+We should avoid crashing entire ui_tests in case of failure.
+With EXPECT_TRUE we still see it, but tests continue to run.
+
+TBR=huanr
+
+Review URL: http://codereview.chromium.org/2868116
+
+git-svn-id: de016e52bd170d2d4f2344f9bf92d50478b649e0@55279 0039d316-1c4b-4281-b951-d872f2087c98
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,188,FALSE
+nwjs/chromium.src,e4cd197d50e9e361aee0a2bbcef4da427832604d,Support Ethernet in WifiConfigView,"
+
+This is a short term solution that allows us to use the existing WifiConfigView dialog to configure ethernet. Rather than renaming the class and/or introducing a helper class, I decided to keep the changes to a minimum since we are planning to replace this class entirely soon.
+
+BUG=344011
+R=pneubeck@chromium.org, tbarzic@chromium.org
+
+Review URL: https://codereview.chromium.org/208813005
+
+git-svn-id: de016e52bd170d2d4f2344f9bf92d50478b649e0@259870 0039d316-1c4b-4281-b951-d872f2087c98
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,394,FALSE
+apache/aries,642437dafb10a518aaccaacb9c79a0f66a2b40a8,[CDI] add rat:check to apache-release profile,"
+
+Signed-off-by: Raymond Auge <rotty3000@apache.org>
+
+git-svn-id: f3027bd689517dd712b868b0d3f5f59c3162b83d@1830608 13f79535-47bb-0310-9956-ffa450edef68
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,2,TRUE
+KDE/kwin,16647c3a3c3eda375af3ea934e34736f176b8930,Require Qt 5.7 and remove pre-5.7 code,"
+
+Summary:
+Increases minimum Qt version to 5.7. This allows to drop the pre-5.7
+virtual keyboard and various ifdefs for now unsupported versions.
+
+Reviewers: #kwin, #plasma
+
+Subscribers: plasma-devel, kwin
+
+Tags: #kwin
+
+Differential Revision: https://phabricator.kde.org/D4485
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,1f6794199df2d74b9b056de8e14e27c1e6f88eff,GCC 4.7 and C++11 https://bugs.webkit.org/show_bug.cgi?id=86465,"
+
+Patch by Allan Sandfeld Jensen <allan.jensen@nokia.com> on 2012-05-21
+Reviewed by Darin Adler.
+
+Set emptyValueIsZero flag so RegExpKey can be used with the non-copyable RegExp values.
+
+* runtime/RegExpKey.h:
+
+git-svn-id: bf5cd6ccde378db821296732a091cfbcf5285fbd@117782 bbb929c8-8fbe-4397-9dbb-9b2b20218538",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,211,FALSE
+googlegenomics/gcp-variant-transforms,56fbb50676e6b33a60c46cbdea0b37b964efc627,Update docker file (#467),"
+
+* Update docker file:
+User can use docker run command to run the tool.
+Update the integration tests to be based on the new image.
+
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+Marginal/EDMarketConnector,6932fdc88322b60e1ec1da7474edf0caab5e956d,EDDB: Use CAPI for system_address/station_marketid only if not already set,"
+
+See issue #586 - a user had incorrect system_address set, but only sometimes.
+
+This could possibly be due to CAPI errors/lag, so only use it as the source
+when the values aren't yet set.  Otherwise Journal should always have provided
+the correct value in a timely manner.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+chromium/chromium,af84768c2e3504982a05ab21c4d76d10026b684a,Fix constants.mojom-forward.h include,"
+
+This was causing flaky compile failures on Linux ChromiumOS Full bots.
+
+Example failure: https://ci.chromium.org/p/chromium/builders/ci/Linux%20ChromiumOS%20Full/139037
+
+TBR=xiaohuic@chromium.org
+
+Change-Id: I60b94045b5d55ff9c627351e25aa5bf25c199ead
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1732745
+Reviewed-by: Chris Sharp <dd3dc011e9080aca77869704edda23ec367e9982@chromium.org>
+Commit-Queue: Chris Sharp <dd3dc011e9080aca77869704edda23ec367e9982@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#683679}
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,199,FALSE
+dslutz/qemu,57f5c1b093e1c3ec185770d2a180259205f980be,target/sh4: do not check for PR bit for fabs instruction,"
+
+The SH4 manual is not fully clear about that, but real hardware do not
+check for the PR bit, which allows to select between single or double
+precision, for the fabs instruction. This is probably what is meant by
+""Same operation is performed regardless of precision.""
+
+Remove the check, and at the same time use a TCG instruction instead of
+a helper to clear one bit.
+
+LP: https://bugs.launchpad.net/qemu/+bug/1701821
+Reported-by: Bruno Haible <660609b171607ff3dcd294929e5d8239736f4298@clisp.org>
+Message-Id: <aaac43fc54571f019f2619fe49e90ae4c2ba0e93@aurel32.net>
+Reviewed-by: Richard Henderson <aea4fd857e97ee7d33f60175ba9388a955b9d916@twiddle.net>
+Signed-off-by: Aurelien Jarno <bceb368e7f2cb351af47298f32034f0587bbe4a6@aurel32.net>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,565,FALSE
+coreboot/coreboot,67a537c35af2720259044036eaa03788783b11dc,arch/x86: Remove some x86_32 vs x86_64 noise,"
+
+Change-Id: Ib98483e5d6fcd66fdc72f6157a5bf185fef13016
+Signed-off-by: Kyösti Mälkki <54bd130f2000c0d5e96442b78dd2a055986fbb66@gmail.com>
+Reviewed-on: https://review.coreboot.org/c/coreboot/+/42162
+Tested-by: build bot (Jenkins) <8254d1186852c26c9fb3d343db6a5be86317fea9@coreboot.org>
+Reviewed-by: Paul Menzel <acd6d3b156327487a919475da61b8867f1e8b249@users.sourceforge.net>
+Reviewed-by: Angel Pons <76a8e2fe64648d90337a108330233865ceccefec@gmail.com>
+Reviewed-by: Patrick Georgi <bc411205f21846a74924ee7b489c75617ec76078@google.com>
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,2,TRUE
+matrix-org/matrix-react-sdk,b7b0991ae927db4825290c8d01ff74ee49c04277,Don't show integrations header if setting not on,"
+
+If the labs setting for integrations was disableds, we still showed
+the header for the integrations section but with nothing underneath
+it.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,5681289580fe89cdca86712878819a8642c33f6b,"Revert 203907 ""Modify base_unittests.exe to use the allocator shims""","
+
+Fails to compile:
+
+88>allocator.lib(allocator_shim.obj) :error LNK2005: ""void * __cdecl operator new[](unsigned int,struct std::nothrow_t const &)"" (??_U@YAPAXIABUnothrow_t@std@@@Z) already defined in libcmt.lib(newaopnt.obj)
+88>..\build\Release\base_unittests.exe : fatalerror LNK1169: one or more multiply defined symbols found
+
+> Modify base_unittests.exe to use the allocator shims
+> required to use tcmalloc on Windows.
+> 
+> This fixes failing SecurityTest.MemoryAllocationRestriction
+> tests which are testing the tcmalloc 2Gb memory limits
+> imposed for security
+> 
+> BUG=242304
+> 
+> Review URL: https://chromiumcodereview.appspot.com/15674003
+
+TBR=wfh@chromium.org
+
+Review URL: https://codereview.chromium.org/16154020
+
+git-svn-id: de016e52bd170d2d4f2344f9bf92d50478b649e0@203911 0039d316-1c4b-4281-b951-d872f2087c98
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,730,FALSE
+CTSRD-CHERI/u-boot,c3772ca1e38f36f2486b44c27094421442414e5e,efi_loader: macro efi_size_in_pages(),"
+
+When allocating EFI memory pages the size in bytes has to be converted to
+pages.
+
+Provide a macro efi_size_in_pages() for this conversion.
+Use it in the EFI subsystem and correct related comments.
+
+Signed-off-by: Heinrich Schuchardt <2cd7bb605d542f55cc27b85da62ad2c96ce31039@gmx.de>
+Signed-off-by: Alexander Graf <3ad82b0c937b9aa51276120cedd545efc822be04@suse.de>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,200,FALSE
+astlinux-project/astlinux,7857ceccfd1434036e425dcbb4cbb5ef85104778,"Add virtio-blk block device system support System wide: runnix, runnix-iso, initrd, and astlinux Enable CONFIG_VIRTIO_BLK=y in the kernels, and support booting off of /dev/vd[a-d]","
+
+Tested via Proxmox and Vultr (hosted).
+
+Note:  The virtblk block device is dynamically allocated starting at 254 and
+decreasing until an unused block device index is found.
+
+With these kernel configs enabled: (devtmpfs)
+--
+CONFIG_DEVTMPFS=y
+CONFIG_DEVTMPFS_MOUNT=y
+--
+The /dev/vd* block devices are automatically created to match the dynamic index,
+as is the case for the astlinux image.
+
+For runnix and runnix-iso, we currently don't enable devtmpfs, and no loadable modules,
+so everything is built-in to the kernel core.  As such we use device_table_dev.txt to
+statically assign virtblk to index 254.
+
+If runnix and runnix-iso ever supported multiple dynamically assigned block devices, it
+may be worth looking at enabling devtmpfs.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+OHDSI/WhiteRabbit,0a7e0c8fed6f37cb0c8d588aad9c7c118724cc58,MappingPanel: try to select highlighted arrows before normal,"
+
+GIve preference to highlighted arrows when testing if a mouse click
+was contained within an arrow.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+isagalaev/highlight.js,ce4a3d29cab9e7bcf57a4b08cae5701d5e261b65,Updated example code,"
+
+Changed sample/test code (made it shorter, removed all the test cases I
+had added for granular testing).
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,8898cb4115ad40f74ff769117295fc2c1d166da1,Merge tag 'sunxi-dt-for-4.6' of https://git.kernel.org/pub/scm/linux/kernel/git/mripard/linux into next/dt,"
+
+Merge ""Allwinner DT Additions for 4.6"" from Maxime Ripard:
+
+Quite a few changes, among which:
+  - Support for the A83t
+  - Support for the eMMC DDR on a few boards
+  - Support for the OTG controller on a few boards
+  - New boards: Itead Ibox, Cubietruck plus, Homlet v2, Lamobo R1
+
+* tag 'sunxi-dt-for-4.6' of https://git.kernel.org/pub/scm/linux/kernel/git/mripard/linux: (34 commits)
+  ARM: dts: sun8i: Add leds and switch on Orangepi Plus boards
+  ARM: dts: sun8i: Add ir receiver nodes to H3 dtsi
+  ARM: dts: sun8i-h3: Add R_PIO controller node to the dtsi
+  dts: sun8i-h3: Add APB0 related clocks and resets
+  ARM: dts: sun7i: Add dts file for the lamobo-r1 board
+  ARM: dts: sun4i: Enable USB DRC on Hyundai-a7hd
+  ARM: dts: sun4i: Enable USB DRC on the MK802
+  ARM: dts: sun8i: q8-common: Add AXP223 PMIC device and regulator nodes
+  ARM: dts: sun8i: sinlinx-sina33: Add AXP223 PMIC device and regulator nodes
+  ARM: dts: sun7i: Enable USB DRC on Olimex A20 EVB
+  ARM: dts: sun7i: Enable USB DRC on MK808C
+  ARM: dts: sunxi: Fix #interrupt-cells for PIO in H3
+  ARM: dts: sun8i-a83t: Correct low speed oscillator clocks
+  ARM: dts: sun9i: a80-optimus: Remove i2c3 and uart4
+  ARM: dts: sun4i: Itead Iteaduino to use common code
+  ARM: dts: sun7i: Add Itead Ibox support
+  ARM: dts: sunxi: Add sunxi-itead-core-common.dtsi
+  ARM: dts: sun9i: cubieboard4: Enable hardware reset and HS-DDR for eMMC
+  ARM: dts: sun9i: a80-optimus: Enable hardware reset and HS-DDR for eMMC
+  ARM: dts: sun9i: Include SDC2_RST pin in mmc2_8bit_pins
+  ...
+",TRUE,FALSE,TRUE,merge,,,,comsum_random_batch_12_july_2021,-1,FALSE
+grivet/dpdk,05096a8be5d2eac6eed6dba926259b97c3fffebd,doc: remove code from KNI example guide,"
+
+The example code is showing how to use KNI, and can be found in
+	examples/kni/
+The documentation guide for this example is explaining the code
+to ease the understanding of the example.
+And inside this documentation, there are a lot of examples code
+which are copy/pasted. It is really too much and hard to maintain.
+
+The code inside this documentation is replaced by the name
+of the functions.
+
+Signed-off-by: Thomas Monjalon <5f50a84c1fa3bcff146405017f36aec1a10a9e38@monjalon.net>
+Acked-by: Ferruh Yigit <ba8734c3c506d2e3557bd4ac8fdaccd25bdb9aa7@intel.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,397,FALSE
+ImageEngine/gaffer,97dd872c5d795131da86a1063211efcd373f2f43,Improved bookmarks support in PathParameterValueWidget.,"
+
+It now finds the appropriate application bookmarks as long as either the window it is in or the plug it represents eventually lead back to an application in some way. This enables bookmarks for parameters in the floating OpDialogues created in the browser app. This implements the most important part of #787.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+kt3k/class-component,d07db0c3c99e7dfefb577b6fe306e673ca87c01d,Greenkeeper/monorepo.babel7 20190717234334 (#162),"
+
+* chore(package): update @babel/core to version 7.5.5
+
+* chore(package): update @babel/plugin-proposal-class-properties to version 7.5.5
+
+* chore(package): update @babel/plugin-transform-typescript to version 7.5.5
+
+* chore(package): update @babel/preset-env to version 7.5.5
+",FALSE,FALSE,FALSE,,subject seems mergish,,,comsum_random_batch_12_july_2021,-1,FALSE
+chromium/chromium,c619cfa22fee6e94908370813fcc2f9bd1e8c177,Rename to mojom directory in //components/contextual_search,"
+
+This CL renames interfaces to mojom and introduces Build.gn
+for mojom in //components/contextual_search.
+
+components/contextual_search/content/common/ => components/contextual_search/content/common/mojom
+
+Bug: 806965
+Change-Id: I3795acbb5d143ba74afcf01b9c163f7fb7878de2
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1702529
+Reviewed-by: Donn Denman <389a6f73d6784d661f9bd5541b2e94406224cb98@chromium.org>
+Reviewed-by: Scott Violet <5737ef08a3ec16a337ac79a1d719fb91acba20a4@chromium.org>
+Reviewed-by: Kinuko Yasuda <2d56fe9c63fe1af9c8ce2e42b52fd958eb89bac3@chromium.org>
+Commit-Queue: Miyoung Shin <7943ea9140ed8fbfd2f31d3803bf986479ad7f21@igalia.com>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#678140}
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,219,FALSE
+GNOME/epiphany,2e13a1425a5f9b52e6b91c395a304cc71b2d6102,Tiny output improvements.,"
+
+2005-11-09  Christian Persch  <chpe@cvs.gnome.org>
+
+	* configure.ac:
+	* m4/gecko.m4:
+
+	Tiny output improvements.
+",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+AndyGrant/Ethereal,98ee8a9bd2a2c50f839a7002ac3d74b70a2f2168,Tune king to passer distance arrays,"
+
+ELO   | 1.74 +- 1.19 (95%)
+SPRT  | 10.0+0.1s Threads=1 Hash=8MB
+LLR   | 2.96 (-2.94, 2.94) [0.00, 4.00]
+Games | N: 139130 W: 29751 L: 29054 D: 80325
+
+ELO   | 2.11 +- 1.70 (95%)
+SPRT  | 60.0+0.6s Threads=1 Hash=64MB
+LLR   | 2.95 (-2.94, 2.94) [0.00, 4.00]
+Games | N: 53370 W: 9038 L: 8714 D: 35618
+
+BENCH : 6,101,721
+",FALSE,FALSE,FALSE,message not clear,,,,comsum_random_batch_12_july_2021,-1,FALSE
+chromium/chromium,9b1023deeb20dbf82d554f9f5aeb6263ce754d4a,Re-use device::BluetoothDevice::ParseAddress() when converting to mojo bluetooth address.,"
+
+Bug: 1021236
+Change-Id: I821d12f4a420a59e61722f85a024ff7253b871a2
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1904759
+Auto-Submit: Eric Roman <0ff3f513126b8ac069086ab3362de387f0f0f6a5@chromium.org>
+Commit-Queue: Daniel Cheng <16123c1b20e8652874389dd38d18c4766d539508@chromium.org>
+Reviewed-by: Daniel Cheng <16123c1b20e8652874389dd38d18c4766d539508@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#713934}
+",FALSE,FALSE,FALSE,administrative,,,,comsum_random_batch_12_july_2021,15,TRUE
+wikimedia/mediawiki-extensions-AbuseFilter,e7f8acf709d72956e75921093bb7dfe978c6a847,Replace usage of SpecialPage::getTitle with getPageTitle,"
+
+Was deprecated in 1.23, see Icdcf5d5295ef5e7f08b1d403e0c123f78738fd40
+
+Change-Id: I67701856297927b94aa443a78376bae7d7860def
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,73,FALSE
+nwjs/chromium.src,4d9bdfafcd1393385860bc9fe947e0c07719c0f4,Allow consumers of MessageLoop to specify the type of MessageLoop they want.,"
+
+This CL introduces a Type enum to MessageLoop, and I also created subclasses of MessageLoop corresponding to the non-default types: MessageLoopForIO and MessageLoopForUI.
+
+I moved all of the platform-specific MessageLoop APIs onto either MessageLoopForIO or MessageLoopForUI.  MessageLoopForIO gets the Watcher API, and MessageLoopForUI gets the Observer and Dispatcher APIs.  Under the hood, both are implemented in terms of MessagePumpWin, but that will change in a future CL.
+
+The Thread class is changed to allow the consumer to specify the Type of MessageLoop they want to have setup on the created thread.
+
+I re-organized message_loop_unittest.cc and timer_unittest.cc so that I could exercise all (or most) of the tests against each type of MessageLoop.
+
+Note:  I know that ""explicit MessageLoop(Type type = TYPE_DEFAULT);"" is in violation to the style-guide's restriction against default arguments.  I'm working on finding a decent solution to that problem.  Please ignore this issue for now.
+
+The corresponding chrome/ changes are coming in a separate CL due to Reitveld data size limitations.
+
+git-svn-id: de016e52bd170d2d4f2344f9bf92d50478b649e0@1362 0039d316-1c4b-4281-b951-d872f2087c98
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,1106,FALSE
+cilium-team/cilium,4b92b43b75ab8be850b118bb4a0225404a7300c9,envoy: add bazel remote caching,"
+
+In order to build bazel in CI without getting cache misses, the flag
+experimental_strict_action_env was added as a bazel flag.
+
+Signed-off-by: André Martins <bc9800b9d52a24cce72a73dd528afed53f10e5fc@cilium.io>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,130,FALSE
+brgl/libgpiod,2c8127eba15eafdc565eb07470903212ee5d7dfd,bindings: python: improve readability,"
+
+Order the arguments in a reverse christmas tree shape in
+gpiod_Chip_find_lines();
+
+Signed-off-by: Bartosz Golaszewski <108de5fbc428215dc26df4468b48691526611148@gmail.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,85,FALSE
+chromium/chromium,b5cdb387471fe5ef70083c53e95a3b9b23bd8b0f,ppapi: Fix nits in some PDF API code.,"
+
+- Mark parameters const for SetAccessibilityViewportInfo() and
+  SetAccessibilityDocInfo().
+- Fix lint errors.
+
+Change-Id: I2d54ac4e4b04acb20b7b86767534b30bfba8541e
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1794502
+Commit-Queue: Lei Zhang <79648d9aca10df37c1b962af0b65ebfac3e19883@chromium.org>
+Reviewed-by: Raymes Khoury <348ad72dc039a127ca70ef38e5de4eebe052b884@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#697217}
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,114,FALSE
+libvirt/libvirt,33a1a7c6f5cae8f7682af98722630b554771ae62,libxl: remove reference to non-existent out label,"
+
+Commit e6336442 changed the 'out:' label to 'cleanup'  in
+libxlDomainAttachNetDevice(), but missed a comment referencing
+the 'out:' label. Remove it from the comment since it is no
+longer accurate anyhow.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+Linutronix/elbe,3adf0ca44d4dce10a94bcd174efee11a7f102a60,Add includepkgs as debootstrapvariant attribute,"
+
+In some situations, you need additional packages during debootstrap.
+Add an attribute includepkgs to the debootstrapvariant element and apply its
+contents as debootstrap --include=""..."".
+
+Add checks and user errors for the following cases:
+With debootstrapvariant minbase and additional repository keys gnupg is needed.
+With HTTPS mirrors (not primary) apt-transport-https is needed.
+
+Closes issue #200.
+
+Signed-off-by: Bastian Germann <01242751093f867760c4420c0cf9915279460c85@linutronix.de>
+Signed-off-by: Manuel Traut <5b9fefc5e24c8c0032a4b1b435e37d15daf2b05f@linutronix.de>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,407,FALSE
+msg7086/x265-Yuuki-Asuna,4a88ef6f31636ddcd5bee8560b9ff4c76623299f,improvement TComTrQuant::calcPatternSigCtx,"
+
+1. replace width/height by size, since there are only NxN
+2. use mask operatior to avoid condition and branch
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,05a6538a9a204999e0c0f7faee00b81b334f4fc7,[SCSI] ipr: Add support for MSI-X and distributed completion,"
+
+The new generation IBM SAS Controllers will support MSI-X interrupts and
+Distributed Completion Processing features. This patch add these support
+in ipr device driver.
+
+Signed-off-by: Wen Xiong <3f05dffe35fb464944196f1f9341b62f07cb8996@linux.vnet.ibm.com>
+Acked-by: Brian King <bf668d4b220231d97fe248d4ae0ba63a1d887e4c@linux.vnet.ibm.com>
+Signed-off-by: James Bottomley <1acebbdca565c7b6b638bdc23b58b5610d1a56b8@Parallels.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,171,FALSE
+tprrt/linux-stable,f459a707ed313f110e4939d634317edcf9e96774,KVM: VMX: modify preemption timer bit only when arming timer,"
+
+Provide a singular location where the VMX preemption timer bit is
+set/cleared so that future usages of the preemption timer can ensure
+the VMCS bit is up-to-date without having to modify unrelated code
+paths.  For example, the preemption timer can be used to force an
+immediate VMExit.  Cache the status of the timer to avoid redundant
+VMREAD and VMWRITE, e.g. if the timer stays armed across multiple
+VMEnters/VMExits.
+
+Signed-off-by: Sean Christopherson <c0cf6ffb699e0a4c98b3fa7c5dd03fa419b94ed2@intel.com>
+Signed-off-by: Paolo Bonzini <69d3ebcf5ee4e7f05a50dc23cd96655b730804b4@redhat.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,423,FALSE
+gem/oq-engine,ceb02ddba56681811589cf52c5bbbf2a6805c711,Update the changelog,"
+
+
+Former-commit-id: 7b6531f582d0cd31db81ef669452a572d0ec3f8f [formerly df472ab53f352b67311619e5fe41be610121dfba]
+Former-commit-id: e3d0d6054542512582f4e6e928c0c5d93493a84b",FALSE,FALSE,TRUE,administrative,,,,comsum_random_batch_12_july_2021,3,TRUE
+zephyrproject-rtos/zephyr,cbc4a2b9b08ae648a625533dfce257d6ab028fb1,net: bt: Add advertise management command,"
+
+This adds NET_REQUEST_BT_ADVERTISE which can be used to advertise
+IPSS service so the remote devices can connect to it.
+
+Jira: ZEP-2451
+
+Signed-off-by: Luiz Augusto von Dentz <8530c5ea66a1bdbc08f98bfcf183c8be901b5990@intel.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,139,FALSE
+richardcochran/linuxptp,fb1b781413f065c4d38172aa2fadf233670ecff7,hwstamp_ctl: explain ERANGE error better,"
+
+ERANGE is used by the kernel to indicate the hardware does not support the
+requested time stamping mode. Explain this error to the user.
+
+Signed-off-by: Jiri Benc <8042a9733e573ff678660cf1b367d055d2c2096d@redhat.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,140,FALSE
+KDE/kwin,976730a4fd0f94098726299730eb768c338ecf93,Use geometry conversion helpers from AbstractClient in InternalClient,"
+
+Summary:
+mapFromClient and mapToClient are equivalent to clientRectToFrameRect and
+frameRectToClientRect, respectively.
+
+Test Plan: Compiles.
+
+Reviewers: #kwin, romangg
+
+Reviewed By: #kwin, romangg
+
+Subscribers: kwin
+
+Tags: #kwin
+
+Differential Revision: https://phabricator.kde.org/D26508
+",FALSE,TRUE,FALSE,change/reason,very semantic,FALSE,,comsum_random_batch_12_july_2021,-1,FALSE
+Meinersbur/isl,595ed948dbaa30e8e1c16a926669621e1ec6d3f9,doc: document isl_set_remove_divs_involving_dims,"
+
+This function is used by CLooG.
+
+Signed-off-by: Sven Verdoolaege <e5350bbed4977f5eb8ae1dc6abd9ae59d21ace75@kotnet.org>
+",FALSE,FALSE,FALSE,,kind of reference,FALSE,,comsum_random_batch_12_july_2021,35,FALSE
+etcd-io/etcd,0011b78bd5a814b2f8b88b2d87f7ad921b12d76d,lease: rate limit revoke runLoop,"
+
+Fix https://github.com/coreos/etcd/issues/8097.
+
+Signed-off-by: Gyu-Ho Lee <3454051ee3341eb69bdf6fca40899cdad4d86496@gmail.com>
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,51,FALSE
+google/nomulus,b1241b98b283d493a54a2c89e4b2f168c03fa88f,Generate sql schema for PollMessage (#582),"
+
+* Generate sql schema for PollMessage
+
+* Rework columns and resolve comments
+
+* Fix datastore schema",FALSE,TRUE,FALSE,subject in message,,,,comsum_random_batch_12_july_2021,-1,FALSE
+docker/docker.github.io,fcdaa2d6b320542325962f949f4149fc9a58eeba,Atomically save libtrust key file,"
+
+The libtrust keyfile which is used to set the ""ID"" property of a daemon must be generated or loaded on every startup.
+If the process crashes during startup this could cause the file to be incomplete causing future startup errors.
+Ensure that the file is written atomically to ensure the file is never in an incomplete state.
+
+Fixes #23985
+
+Signed-off-by: Derek McGowan <e1c79a582b6629e6b39e9679f4bb964d25db4aa8@mcgstyle.net> (github: dmcgowan)
+(cherry picked from commit 9836162446bd0deadecbf0eed38ef3c134754f16)
+Signed-off-by: Tibor Vass <3f1326dff4d85ad4ec938fb33f64575ace96db26@docker.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,342,FALSE
+wordpress-mobile/WordPress-Android,e92b9a2e02580d252918c9f31be20915ba685e95,Loads of changes:,"
+
+ - Updates to the Dashboard interface
+ - New WPTitleBar class to re-use for each view that uses the action bar interface
+ - Corrected the app blog ID (not wp blog id) to be an int instead of a string
+ - Bug fixes",FALSE,FALSE,TRUE,,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,2c531f921ddc67e8fe2a71f09ba7d45ecb7083bc,WebCore:,"
+
+	Remove some user-visible strings. We can't have any strings that need
+	localization in WebCore, given our translation strategy.
+
+        * khtml/html/html_formimpl.cpp: (HTMLInputElementImpl::encoding):
+	Put APPLE_CHANGES around some i18n dialog code.
+        * khtml/khtml_part.cpp: (KHTMLPart::submitForm): Ditto.
+        * khtml/rendering/render_frames.cpp:
+        (RenderPartObject::slotPartLoadingErrorNotify): Ditto.
+        * khtml/ecma/kjs_window.cpp:
+        (Window::get): Ditto.
+        (Window::scheduleClose): Ditto.
+        (WindowFunc::tryCall): Put APPLE_CHANGES in to use JavaScript-specific methods
+        in the part of calling the generic ones from KMessageBox.
+
+        * ForwardingHeaders/kmessagebox.h: Added (empty file).
+
+        * kwq/KWQKHTMLPartImpl.h: Added new runJavaScript functions.
+        * kwq/KWQKHTMLPartImpl.mm:
+        (KWQKHTMLPartImpl::runJavaScriptAlert): Added.
+        (KWQKHTMLPartImpl::runJavaScriptConfirm): Added.
+
+        * kwq/WebCoreViewFactory.h: Added runJavaScriptAlertPanelWithMessage and
+	runJavaScriptConfirmPanelWithMessage.
+
+        * kwq/kdeui/kmessagebox.h: Removed.
+        * kwq/KWQKMessageBox.mm: Removed.
+        * WebCore.pbproj/project.pbxproj: Removed the KMessageBox files.
+
+WebKit:
+
+        * WebCoreSupport.subproj/WebViewFactory.m:
+        (-[WebViewFactory runJavaScriptAlertPanelWithMessage:]): Added.
+        (-[WebViewFactory runJavaScriptConfirmPanelWithMessage:]): Added.
+
+        * English.lproj/Localizable.strings: Update.
+        * English.lproj/StringsNotToBeLocalized.txt: Update.
+
+
+git-svn-id: bf5cd6ccde378db821296732a091cfbcf5285fbd@2476 bbb929c8-8fbe-4397-9dbb-9b2b20218538",FALSE,FALSE,FALSE,,WeCore might be a project bad standard for subjects,,,comsum_random_batch_12_july_2021,1573,FALSE
+GNOME/mutter,7c8faf3eda5e868ffb1a9549ba061ae44c757d3e,Install schema data from builddir not srcdir.,"
+
+2005-01-03  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* src/Makefile.am (install-data-local): Install schema data from
+	builddir not srcdir.
+",FALSE,TRUE,FALSE,subject in message,email pattern might be administrative indicator too,,,comsum_random_batch_12_july_2021,-1,FALSE
+department-of-veterans-affairs/vets-website,95dfd33856744e3c2329b53a0cf86aca4c9c252f,Add analytics to Find VA Benefits feature (#9335),"
+
+* record events when nav-ing to Find VA Benefits page
+
+* record events when hitting a benefit item CTA button
+
+* added transformPreferencesForAnalytics helper
+
+* refactor and properly wire up the new transform helper
+
+* rename `gaCode` to `gaTag` for consistency
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,cf1337f0447e5be8e66daa944f0ea3bcac2b6179,"x64, x2apic/intr-remap: move IOMMU_WAIT_OP() macro to intel-iommu.h","
+
+move IOMMU_WAIT_OP() macro to header file.
+
+This will be used by both DMA-remapping and Intr-remapping.
+
+Signed-off-by: Suresh Siddha <a42fd12510d3895be740fb89f87586733ee62f57@intel.com>
+Cc: 5c1e68b099950c134891f0b6e179498a8ebe9cf9@linux-foundation.org
+Cc: 9043bf4b08f6c93a2cb55d98c3494b123858348f@linux.intel.com
+Cc: dbd122ef7b6a09ffecf5db9c9296320f3c94e707@firstfloor.org
+Cc: 8a741aa8cbd77ebc4a56ddb528ce9fd15d42f034@xmission.com
+Cc: bc7add126c2dbb8382bf1c28ac262b9363a32706@virtuousgeek.org
+Cc: 9fc09c92f9d4898dd6e5af3e81679b627e939258@sgi.com
+Signed-off-by: Ingo Molnar <9dbbbf0688fedc85ad4da37637f1a64b8c718ee2@elte.hu>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,107,FALSE
+collinbarrett/FilterLists,d2127dd7386bdf6881edffb40b400bd432a5d0a3,Bump lint-staged from 10.1.7 to 10.2.0 in /web,"
+
+Bumps [lint-staged](https://github.com/okonet/lint-staged) from 10.1.7 to 10.2.0.
+- [Release notes](https://github.com/okonet/lint-staged/releases)
+- [Commits](https://github.com/okonet/lint-staged/compare/v10.1.7...v10.2.0)
+
+Signed-off-by: dependabot-preview[bot] <5bdcd3c0d4d24ae3e71b3b452a024c6324c7e4bb@dependabot.com>",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,228,FALSE
+LightningNetwork/lnd,630afbdc93279189ef226f9de0beec154015b69d,channeldb: don't return error from HasChannelEdge if single edge doesn't exist,"
+
+This commit modifies the error propagating behavior within the
+HasChannelEdge struct. Rather than exiting the function early when a
+single edge isn’t found, we instead continue to also possibly retrieve
+the second directional edge.
+
+With this change, we avoid a potential infinite gossiping loop in the
+routing package that would result if we’d seen one edge but not the
+other. In this case the timestamps returned for *both* edges would
+always be zero, causing the daemon to always accept and rebroadcast the
+announcement putting all other connected lnd’s into the same loop.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+delmic/odemis,e0ded546614afa45d7fd378638821e563e1d3a05,acq align: separate grid scanning procedures into 2 functions,"
+
+One function for each type of scanning
+
+Also ensures that spot procedure works multiple times in a row.
+
+Add a SPOT_SIZE constant to indicate more clearly the code related to the physical CL spot size
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+grivet/dpdk,0f01a7e38394ceba15bf8ef09de5750ea2031fa2,app/testpmd: fix creating E-Tag and NVGRE flow rules,"
+
+Application fails to create NVGRE and E-Tag flows with
+current configuration, this commit fixes the issue by
+adding flow items for E_TAG and NVGRE.
+
+Fixes: e4840ef2685d (""ethdev: fix incomplete items in flow API"")
+Cc: stable@dpdk.org
+
+Signed-off-by: Beilei Xing <7fb7e49de6d75fb4140bfcdada52e66859d93ebd@intel.com>
+Acked-by: Adrien Mazarguil <9d39ea493ca46c560334f650ac5d4b5ffbcb5cf0@6wind.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,237,FALSE
+nwjs/chromium.src,ee554e80dc1d10fecdec50ae7fbb086c7e9d2041,Add ScreenshotTask for feedback reports.,"
+
+This new class adds functionality to take scaled screenshots to use
+in feedback reports. Before this CL the functionality only lived
+downstream, but it is going to be needed upstream soon, so this
+CL moves the functionality to the public code base.
+
+BUG=386395, 482718
+
+Review URL: https://codereview.chromium.org/1173243004
+
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#334491}
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,328,FALSE
+apache/logging-log4j2,50115b3519b85d1feff3cbcebfcf5998ed1b5832,[LOG4J2-1701],"
+
+Add a Builder to RandomAccessFileAppender and deprecate
+RandomAccessFileAppender.createAppender(). Use ""set"" as the setter
+method prefix.",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,56094edd17971372c7fea078ab41315ebf6214d0,sunrpc: GFP_KERNEL should be GFP_NOFS in crypto code,"
+
+Writes may depend on the auth_gss crypto code, so we shouldn't be
+allocating with GFP_KERNEL there.
+
+This still leaves some crypto_alloc_* calls which end up doing
+GFP_KERNEL allocations in the crypto code.  Those could probably done at
+crypto import time.
+
+Signed-off-by: J. Bruce Fields <51738506c1b2ccb0761f23bdc612c93babf738ea@redhat.com>
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,260,FALSE
+Homebrew/homebrew-core,a1df23104a2955bbcb90da4bd3b00a62ef0241ad,lfe 0.9.1 (new formula),"
+
+Closes Homebrew/homebrew#36696.
+
+Signed-off-by: Mike McQuaid <a17fed27eaa842282862ff7c1b9c8395a26ac320@mikemcquaid.com>
+",FALSE,FALSE,FALSE,reference,,,,comsum_random_batch_12_july_2021,35,FALSE
+concourse/concourse,1a16a4f301c6e86e962e0a5246c590dd77155085,Merge branch 'wip-refactor-container-identifier-139984521',"
+
+seeing this error, but unsure if it's related to our changes - will fix
+in subsequent commit:
+
+    Expected error:
+        <*errors.errorString | 0xc420246490>: {
+            s: ""sql: converting Exec argument #1's type: unsupported type dbng.WorkerState, a string"",
+        }
+        sql: converting Exec argument #1's type: unsupported type dbng.WorkerState, a string
+    not to have occurred
+
+Signed-off-by: Clara Fu <d5c8bdbc15689555c92563892e959c79b3fc425f@pivotal.io>
+",TRUE,FALSE,FALSE,merge,,,,comsum_random_batch_12_july_2021,397,FALSE
+GNOME/dconf-editor,dd27ef43b84334678f0085a8ec095b090560ce7b,engine: allow for NULL value tables,"
+
+This will happen for user databases if the database has never written to
+(ie: first login to fresh user account).
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+nwjs/chromium.src,a83f2f3eda315219880f68392513b89f3e107ec0,CacheStorage: match() should not treat cacheName: '' as unspecified,"
+
+The empty string is a valid cache name, so the code must distinguish
+between not passed (a null string in Blink) and empty. The distinction
+doesn't exist in the Chromium side's string16, so plumb it through
+IPC and into the back-end as an extra boolean.
+
+BUG=441897
+R=jkarlin@chromium.org,cmumford@chromium.org
+
+Review-Url: https://codereview.chromium.org/2227073003
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#411391}
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,314,FALSE
+CartoDB/cartodb,a9bb0c20ef3f1ef7bc20257d9163d8b69cb2f269,Query for api keys in the index endpoint returns them weighted (#14257),"
+
+* Red: Master/Default keys doesnt appear at first positions
+
+It happens when the update_at field is changed for example when the key
+is regenerated
+
+* Query for api keys in the index endpoint returns them weighted
+
+Now we return the api keys ordered by type and every type has a weight.
+First we get the master one, then the default and finally the regular
+ones
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+facebook/mysql-5.6,5d082dafb907ad8792c33dde22736b8ff0a31e8f,Bug #22187476: LOCK IN SHARED MODE AND FOR UPDATE CAUSE TOO                MANY CRASHES.,"
+
+ISSUE:
+------
+The problem occurs in the following circumstances:
+1) When two or more parallel connections result in a
+   deadlock detected by INNODB.
+2) The query that causes the deadlock is a
+   ""SELECT ...GROUP BY ....FOR UPDATE"" that uses loose
+   index scan.
+
+SOLUTION:
+---------
+When INNODB returns ""HA_ERR_LOCK_DEADLOCK"" (or any other
+error code), this is not handled by the part of range
+optimizer that deals with loose index scan. This error
+code will now be passed on to the calling function.
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+tprrt/linux-stable,51dced544e3964b684afc99282ceceaa384b16a8,[S390] init_timer in tty3270.,"
+
+Call init_timer only once fpr tp->timer in tty3270.
+
+Signed-off-by: Jan Glauber <7889a59397e316aef15cf55d94ba51812a74a755@de.ibm.com>
+Signed-off-by: Martin Schwidefsky <52616596d8f5df0d597e85ab515377f92f939c68@de.ibm.com>
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,55,FALSE
+google/go-flow-levee,fce7bdcbab286e7920fcfb9ddfd39c3ccc9a8fe0,Add tests for taint propagation through maps (#46),"
+
+* move slices tests to their own file
+
+* add tests for maps
+
+* improve tests with small tweaks
+
+* clarify test edge case by moving to own test
+
+* fix typo
+
+* extract edge case to own test
+
+* remove duplicate testing logic",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+inveniosoftware/invenio,fb8d63750569ca0ad631dcf39feccc4ad36a502b,installation: inclusion of JS quicktags in tarball,"
+
+* Fixes problem of missing JS quicktags in release tarball introduced
+  in 2232d96c911c1663639fc20ce0822064f4ba3608.
+",FALSE,TRUE,FALSE,change/reason,,,,comsum_random_batch_12_july_2021,-1,FALSE
+chromium/chromium,b71a5395e28fa390d91d20ecb46c0268502b4809,Stop speech in Learn Mode before each new shortcut key sequence,"
+
+Bug: 1052860
+
+Change-Id: I7db938fa7c69d14874a46a55ac624b56cbd90dcb
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2062668
+Reviewed-by: Akihiro Ota <b95b46c7ca299ff43c1682fe634a2cfbf509b673@chromium.org>
+Commit-Queue: David Tseng <57d6711e15f60434c9e159ea3db9eda3f784ef2f@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#743268}
+",FALSE,FALSE,TRUE,administrative,,,,comsum_random_batch_12_july_2021,16,TRUE
+elementary/website,43253d0a9029547f0466a7b2965238c7bcb30b37,Translated using Weblate (Catalan),"
+
+Currently translated at 100.0% (76 of 76 strings)
+
+Translation: Website/docs-learning-the-basics
+Translate-URL: https://weblate.elementary.io/projects/website/docs-learning-basics/ca/
+",FALSE,TRUE,FALSE,change/details,,,,comsum_random_batch_12_july_2021,-1,FALSE
+Oshlack/scRNA-tools,4d7654c6d292ed6097e2c9ab69c2e743d7072f93,new tool: scCancer,"
+
+ New tool: scCancer
+
+The scCancer package focuses on processing and analyzing droplet-based scRNA-seq data for cancer research.
+
+ https://www.scrna-tools.org/tools#scCancer
+",FALSE,TRUE,FALSE,message in subject,,,,comsum_random_batch_12_july_2021,-1,FALSE
