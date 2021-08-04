@@ -11,6 +11,7 @@ BASE_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..")
 sys.path.append(BASE_PATH)
 
 DATA_PATH = os.path.join(BASE_PATH, r'data')
+SAMPLED_DATA_PATH = os.path.join(DATA_PATH, r'samples')
 FULL_DATA_PATH = os.path.join(DATA_PATH, r'dataset')
 SPLIT_DATA_PATH = os.path.join(DATA_PATH, r'split')
 AUX_DATA_PATH = os.path.join(DATA_PATH, r'aux_datasets')

@@ -165,11 +165,19 @@ if __name__ == '__main__':
 
     working_dir = SPLIT_DATA_PATH
 
-    out_dir = os.path.join(SPLIT_DATA_PATH, "train")
-    csv_paths = [os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_train00000000000" + str(i)) for i in range(10)] + [
-                    os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_train0000000000" + str(i)) for i in range(10, 14)]
-    csv_to_data(working_dir, out_dir, csv_paths, force=force)
+    # out_dir = os.path.join(SPLIT_DATA_PATH, "train")
+    # csv_paths = [os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_train00000000000" + str(i)) for i in range(10)] + [
+    #                 os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_train0000000000" + str(i)) for i in range(10, 14)]
+    # csv_to_data(working_dir, out_dir, csv_paths, force=force)
+    #
+    # out_dir = os.path.join(SPLIT_DATA_PATH, "test")
+    # csv_paths = [os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_test.csv")]
+    # csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
 
-    out_dir = os.path.join(SPLIT_DATA_PATH, "test")
-    csv_paths = [os.path.join(SPLIT_DATA_PATH, "plain_commits_dataset_test.csv")]
+    out_dir = os.path.join(SPLIT_DATA_PATH, "test_sample")
+    csv_paths = [os.path.join(SPLIT_DATA_PATH, "test_sample_b1.csv")]
+    csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
+
+    out_dir = os.path.join(SPLIT_DATA_PATH, "train_sample")
+    csv_paths = [os.path.join(SPLIT_DATA_PATH, "train_sample_b1.csv")]
     csv_to_data(working_dir, out_dir, csv_paths, val_size=0, test_size=0, force=force)
