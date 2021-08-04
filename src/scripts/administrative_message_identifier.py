@@ -2,7 +2,6 @@ from os.path import join
 import pandas as pd
 
 from configuration import DATA_PATH, LABELS_PATH
-from file_utils import apply_function_to_file
 
 LABELED_FILE = 'comsum_random_batch_12_july_2021_labels.csv'
 LABELED_FILE_WITH_DISTANCE = 'cumsum_random_batch_9_july_2021_with_distance.csv'
@@ -84,6 +83,8 @@ def label_file_as_administrative(file):
                            , output_file=file)
 
 if __name__ == "__main__":
+    from file_utils import apply_function_to_file
+
     manual_test_adminstrative_distance()
     evaluate_distance()
     label_file_as_administrative(join(DATA_PATH + '/labels/'
