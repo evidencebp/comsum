@@ -25,7 +25,7 @@ def filter_commits(commit_files, filtered_commits_file, split=None):
         split_repos = repos_split_df[repos_split_df.type == split].repo_name.tolist()
         filtered_df = filtered_df[filtered_df.repo_name.isin(split_repos)]
 
-    print(f"Writing to {filtered_commits_file}")
+    print(f"Writing to {filtered_commits_file}, examples:{len(filtered_df)}")
     filtered_df.to_csv(filtered_commits_file, index=False)
 
 
