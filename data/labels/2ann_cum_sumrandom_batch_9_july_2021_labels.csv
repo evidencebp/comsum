@@ -1,0 +1,1261 @@
+repo_name,commit,subject,message_without_subject,Is_Summary,Is_Generic,Comment,Certain,Sampling,Labler,Is_Summary,Is_Generic,Labler
+nwjs/chromium.src,5217d955a5cbec305148b080b4a121cbd06ff49b,Don't dereference null VisiblePosition in CompositeEditCommand::moveParagraphContentsToNewBlockIfNecessary,"
+
+This patch changes CompositeEditCommand::moveParagraphContentsToNewBlockIfNecessary
+to check whether VisiblePosition is null or not before dereferencing it.
+
+BUG=371139
+TEST=LayoutTests/editing/execCommand/justify-right-crash.html
+
+Review URL: https://codereview.chromium.org/296973002
+
+git-svn-id: bf5cd6ccde378db821296732a091cfbcf5285fbd@174828 bbb929c8-8fbe-4397-9dbb-9b2b20218538
+",TRUE,FALSE,dereference prevented,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+advancedtelematic/aktualizr,7ac398bb041948bed5a5e132889f6f83f62a5021,aktualizr-lite: Handle offline repo server properly,"
+
+If a repo server is offline, we'll need to ensure we've loaded the
+local data before trying to iterate the targets. If that fails, we
+can't safely continue.
+
+Signed-off-by: Andy Doan <e3579b1e47f273529f0f929453e939a68ede9fd1@foundries.io>
+",TRUE,FALSE,offline server handling,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+tprrt/linux-stable,3674a87ebe73be57fe412b8906b0004c6372bac4,staging: comedi: me4000: rename local variables used for 'dev->private',"
+
+In comedi drivers the local variable used for the dev->private pointer is
+normally named 'devpriv'. For aesthetics, rename the variables in this
+driver. Also, rename the struct to follow the norm.
+
+Signed-off-by: H Hartley Sweeten <382ff55d8e07d1082d179e669636cd1552da4f36@visionengravers.com>
+Reviewed-by: Ian Abbott <9e6ba6483b6a3e14d61f7c987e72ecb5b46122d6@mev.co.uk>
+Signed-off-by: Greg Kroah-Hartman <4645f7897fd33786a2ee1264d590b3c400559d85@linuxfoundation.org>
+",TRUE,FALSE,rename in component,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+uken/fluent-plugin-elasticsearch,fc8737f80dfc483f33cc9d9e9c4c6a64ec43ef49,Tidy up index_name and deflector_alias,"
+
+* Index rollover feature with deflector_alias should be keep backward
+  compatibility
+* In ILM feature without logstash_format, users want to set up rollover
+  indices are point to index_name.
+",TRUE,FALSE,index changes,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+GoldenCheetah/GoldenCheetah,c09039c7e9d5b40d6265fc286fee42e7f4f5700b,add RideMetric::precision,"
+
+...which specifies how many digits after the decimal we should show when
+displaying the value of a RideMetric.
+",TRUE,FALSE,...which,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+chromium/chromium,50ada85812a81efc8b3589ea3fcdfdc375b6df13,Clean up FontMatchingMetrics::PublishIdentifiabilityMetrics(),"
+
+Converts FontMatchingMetrics::PublishIdentifiabilityMetrics() from using
+the IdentifiabilityDigestHelper to using IdentifiableTokens. Also adds
+IdentifiableSurface::FromTypeAndToken() to enable use of a Token as the
+input digest. Finally, reuses the IdentifiabilityMetricBuilder to
+improve performance.
+
+Bug: 1102934
+Change-Id: I9b05581f56bfd1205db0086e46cbd5a54e013ca5
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2321776
+Reviewed-by: Asanka Herath <06503cd712d62538eecda072a299b88d58e9811c@chromium.org>
+Reviewed-by: Florin Malita <a8262bf13ea8c26821e91ea9bca6740a77c96dcd@chromium.org>
+Commit-Queue: Alex Turner <8887796edd5be8ea631a049fb044ebcdcedef00d@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#797447}
+",TRUE,FALSE,goal/mean clean up by convet,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+Netflix-Skunkworks/iep-apps,cbbc759289387d655ded103fdaff7caa0875057e,enable CI build for jdk11,"
+
+Drops jdk10 and enables jdk11 build. Also changes the jdk8
+build to use openjdk8 instead of oraclejdk8.
+",TRUE,FALSE,enable,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+tprrt/linux-stable,31aa8fd6fd30b0f36416df7d09619768d26b4332,ARM: Add caller information to ioremap,"
+
+This allows the procfs vmallocinfo file to show who created the ioremap
+regions.  Note: __builtin_return_address(0) doesn't do what's expected
+if its used in an inline function, so we leave __arm_ioremap callers
+in such places alone.
+
+Signed-off-by: Russell King <f6aa0246ff943bfa8602cdf60d40c481b38ed232@arm.linux.org.uk>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+couchbase/ns_server,1f65e129a58e62cefefd6125dfda4eef4b3f1dc5,don't crash terse_bucket_info_uploader on missing bucket,"
+
+Change-Id: I238bb373644798ba052b05099df7998a2cd22fd3
+Reviewed-on: http://review.couchbase.org/42360
+Tested-by: Aliaksey Kandratsenka <340b8e09ca65cd3fc686427fcfed17e87eaf61e2@gmail.com>
+Reviewed-by: Aliaksey Artamonau <3c875bcfb3adf2a65b2ae7686ca921e6c9433147@gmail.com>
+",FALSE,FALSE,Administrative message,TRUE,comsum_random_batch_9_july_2021,,FALSE,FALSE,Leshem
+chromium/chromium,391eaa4e253fcbf590384087149eb93015accb65,[sync] Refactor search engines' integration tests,"
+
+This patch migrates the helper libraries to avoid using the concept of
+a 'seed', which was hard to grasp, and instead migrates tests to more
+directly use keywords.
+
+Change-Id: Ibcdae092baade651daca059850ac31f276f47564
+Bug: None
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2495461
+Reviewed-by: Maksim Moskvitin <97fd004f1447e65289374bd3403cef807c828994@google.com>
+Commit-Queue: Mikel Astiz <18861512e85f70b4c630f45341dbd3f51bd93430@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#821819}
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+openstack-infra/project-config,6db5cd3c4fcf6132dc329631502b8c4f4dd46660,Replace fedora-24 jobs with fedora-25,"
+
+The majority of these fedora jobs are non-voting. There is no issue
+moving the ansible roles and windmill to fedora-25, as I can clean up
+issues as they are found.
+
+Change-Id: Ifc2a000858808438b394a1959d7e89700fb41f00
+Signed-off-by: Paul Belanger <e7139c8e6c4ea75cc1c287ce081b2dc0f3ab39ec@redhat.com>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+tprrt/linux-stable,c1f415c9acb5877c408d9311eb837d7d50636a68,drm: atomic helper: do not unreference error pointer,"
+
+562c5b4d8986 didn't quite fix the issue of dealing with an error
+pointer. We can't free/unref an error pointer so reset it to NULL.
+
+Many thanks to Dan Carpenter for pointing this out again.
+
+Signed-off-by: Lionel Landwerlin <9463032a5b99ffad10f36631678a833369a311b5@intel.com>
+Cc: Dan Carpenter <ff341aa343d564f9e53e9dcb6996be8c04859a66@oracle.com>
+Cc: Daniel Stone <62e7e355d5d8400fa8384448796af0bf6be4ffae@collabora.com>
+Cc: Daniel Vetter <c1b6782c4af8f0673da8923a0702a1832e5940f4@ffwll.ch>
+Cc: Matt Roper <f1605a76cb9f6387d99228a0a9260318379b62de@intel.com>
+Cc: e29a046d56d20477d35c94c7163db1056870c39f@lists.freedesktop.org
+Fixes: 562c5b4d8986 (""drm: fix blob pointer check"")
+Signed-off-by: Daniel Vetter <c1b6782c4af8f0673da8923a0702a1832e5940f4@ffwll.ch>
+Link: http://patchwork.freedesktop.org/patch/msgid/1457698646-22231-1-git-send-email-9463032a5b99ffad10f36631678a833369a311b5@intel.com
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+Juniper/contrail-controller,4f318242745442be6ea99b3f8e591fdd05c62574,Optimized UVE read,"
+
+read only the struct necessary
+Partial-Fix: #1432072
+
+Change-Id: I14c67da64804bbb1370530daae55a8e83c143c3d
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+symfony/cache,8b898669ff533606e3eacb691e1d00271d9ac594,Merge branch '3.4',"
+
+* 3.4: (83 commits)
+  add missing version attribute
+  Show exception is checked twice in ExceptionController of twig
+  allow SSI fragments configuration in XML files
+  Display a better error message when the toolbar cannot be displayed
+  [SecurityBundle] Add user impersonation info and exit action to the profiler
+  render hidden _method field in form_rest()
+  Add Doctrine Cache to dev dependencies to fix failing unit tests.
+  return fallback locales whenever possible
+  Fix Predis client cluster with pipeline
+  [Dotenv] Test load() with multiple paths
+  [Console] Fix catching exception type in QuestionHelper
+  Improved the exception page when there is no message
+  [WebProfilerBundle] Eliminate line wrap on count columnt (routing)
+  [Profiler][Validator] Add a validator panel in profiler
+  [Validator] replace hardcoded service id
+  [Routing] Fix XmlFileLoader exception message
+  Remove duplicate changelog entries
+  [DI] Dedup tags when using instanceof/autoconfigure
+  [Translation] Fix FileLoader::loadResource() php doc
+  [Serializer] Fix workaround min php version
+  ...
+",FALSE,TRUE,merge,TRUE,comsum_random_batch_9_july_2021,,FALSE,TRUE,Leshem
+copasi/COPASI,ef93bc115090e296f98456de7a09b40ad590b052,Declaration/definition of,"
+
+  enum CSensProblem::SubTaskType;
+  const CSensProblem::SubTaskType &  CSensProblem::getSubTaskType() const;
+  void CSensProblem::setSubTaskType( const CSensProblem::SubTaskType & type );
+
+  const std::string CSensProblem::SubTaskName[];
+  const char * CSensProblem::XMLSubTask[];
+
+  private:
+   CSensProblem::SubTaskType CSensProblem::mSubTaskType;
+",FALSE,TRUE,generic subject,TRUE,comsum_random_batch_9_july_2021,,FALSE,TRUE,Leshem
+nwjs/chromium.src,1793e0467bb34d2545c0493a557bb038cc2ac6f0,Revert of Fixes for two different HUD issues related to win32k lockdown (patchset #9 id:350001 of https://codereview.chromium.org/900063002/),"
+
+Reason for revert:
+Causes regression in cold start on Android and maybe Mac.
+
+Details in http://crbug.com/457248.
+
+Original issue's description:
+> Fixes for two different HUD issues related to win32k lockdown
+>
+> 1. Using a GDI bitmap -- switch to SkSurface instead
+>
+> 2. Lazily loading a font. This breaks for two different reasons.
+> The first is a DCHECK for doing IO on the Compositor thread. This
+> could have been just ignored in general since it's only for debug
+> usage, the drawbacks of minor jank are limited.
+>
+> However, once lockdown is on, the font load hard fails from the
+> renderer. So, load the typeface before lockdown and pass it into
+> CC and the hud via LayerTreeSettings.
+>
+> R=danakj@chromium.org
+> BUG=453731,455104
+> TEST=run chrome with --enable-win32k-renderer-lockdown --show-fps-counter --ui-show-fps-counter on Win8
+>
+> Committed: https://crrev.com/616a8e656b2d923ed393bde86adc150e555ba799
+> Cr-Commit-Position: refs/heads/master@{#314929}
+
+TBR=enne@chromium.org,danakj@chromium.org,piman@chromium.org
+BUG=453731,455104,457248
+
+Review URL: https://codereview.chromium.org/922293006
+
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#317648}
+",TRUE,FALSE,"change/reason, revert",TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+nwjs/chromium.src,9cb142f0cb33af89ff478e69e803fdf32f09006e,Move PseudoTCP and channel auth out of LibjingleTransportFactory.,"
+
+Previously TransportFactory interface was responsible for creation
+and initialization of several protocol layers, including PseudoTCP and
+authentication (TLS). Simplified it so now it only creates raw datagram
+transport channel. PseudoTcpChannelFactory is now responsible for
+setting up PseudoTcpAdapter and AuthenticatingChannelFactory takes care
+of channel authentication. Also added DatagramChannelFactory for
+Datagram channels.
+
+This change will make it possible to replace PseudoTcpChannelFactory
+with an object that creates SCTP-based channels.
+
+Also fixed a bug in SslHmacChannelAuthenticator. It wasn't working
+properly when deleted from the callback. (base::Callback objects
+shouldn't be deleted while being called because when deleted they
+also destroy reference parameters values they are holding).
+
+BUG=402993
+
+Review URL: https://codereview.chromium.org/551173004
+
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#294653}
+",TRUE,FALSE,change/goal,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+travis-ci/travis-cookbooks,353a547047a1b9f38a9173ccafecdcb6b008811c,"Drop ftp extension, helps with 11.10 compilation issues.","
+
+Move intl and openssl (that cause 11.10 build failures) to the top so that they are easy to disable for testing.
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+symfony/Validator,45e9b6331ce64b5752e3b800097967fe95b35cdc,Merge branch '2.3' into 2.4,"
+
+* 2.3:
+  fixed typos
+  Fixed deprecated method calls
+  Add testing against HHVM at Travis-CI
+  Fixed typo
+  Fixed typo
+  fixed acronyms
+  [Validator] Fixed IBAN validator with 0750447346 value
+
+Conflicts:
+	src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php
+",FALSE,TRUE,merge,TRUE,comsum_random_batch_9_july_2021,,FALSE,TRUE,Leshem
+Arcitectus/Sanderling,21bedaced98bf1438b46192a78d20cd49256fae8,Shortcuts in Probe Scanner window for new training data,"
+
++ Based on the training data sample `process-sample-CB41E62780-brian-eve-online-probe-scanner.zip`
++ Copy the approach to parsing the column heads from the functions for the overview window.
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+cockpit-project/cockpit,30d76cd7559da4072fe57cb8701bedc9d61033f4,shell: Disable idle timeout by default,"
+
+Common Criteria [1] only require the availability of an idle auto-lock,
+not that it's enabled by default. As Cockpit is never the primary
+session on a device, it makes more sense to let the login/window manager
+(desktop) or screen lock (mobile devices) take care of protecting the
+session.
+
+Instead, let's rather implement an automatic timeout of sudo privileges,
+once that rework is in place. That will mimic the behavior of the
+command line (ssh + sudo).
+
+Also add some code cleanups:
+
+ * Only set up the idle timers in the shell if the timeout is non-zero.
+   This isn't as easy to do in the frames, as we currently don't block
+   frames construction on the GetUInt(IdleTimeout), but it helps a bit.
+
+ * Rename setupTimers() to a more specific setupIdleResetTimers().
+
+ * Fix listening to scroll events.
+
+ * In setupIdleResetTimers(), rename the `document` argument (which is a
+   public global variable with well-defined purpose) to `win`, to avoid
+   confusion.
+
+[1] https://www.niap-ccevs.org/MMO/PP/-442-/#FMT_SMF_EXT.1.1
+
+Closes #13931
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+AndroidX/androidx,edb67b0b59ee6657b2d1adb6b2822858db34e8c8,SearchFragment improvments,"
+
+1. Expose startRecognition() for calling from Activity.onNewIntent()
+(When user clicks mic button in search activity)
+
+2. Do not pass text change event when we are in speech recognition.
+
+3. Autofocus back to speech orb when startRecognition() is called.
+
+b/17790589
+
+Change-Id: I3d3c9ce57f467dc6f1f26d3608b13c7b34a8adce
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,FALSE,FALSE,Leshem
+openbmc/openbmc-test-automation,3ef2e92c960cd20a6fe3fdbd0826eb53bed70758,ipmi_client.robot to use new create_ipmi_ext_command_string,"
+
+- Changed the 'external' IPMI functions to use new
+  create_ipmi_ext_command_string and to forego the use of the old
+  IPMI_EXT_CMD global variable.
+- Changed 'Run External IPMI Raw Command' to simply call
+  'Run External IPMI Standard Command'.
+Also:
+- Coding standards:
+  - 2 blank lines betweeen keywords
+  - Consistency: Changed many keyword argument names ""args"" to ""command"".
+  - Added ""Description of argument(s):""
+  - Indented if/else body code
+
+Change-Id: If2c1d6c3e2fbf438e17dc1e125937f76a5bde2b3
+Signed-off-by: Michael Walsh <10404802c7de463f402c4a18638106ca1b12ef61@us.ibm.com>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+gem/oq-engine,d51d38003cdb3b5b3e782798d5672464d5ae9073,Remove the celeryconfig.py from the spec file,"
+
+
+Former-commit-id: 0f9c21281738515445c13d1db1e1df15a9c7e398 [formerly 0f9c21281738515445c13d1db1e1df15a9c7e398 [formerly 54e43ed7b15225c4ad60f1befaf715fe06973d63]]
+Former-commit-id: 8c0c7eaa730149fee84612f0dd212a931b9f4efe
+Former-commit-id: 68c7dbc0488b0d616a704349ebcf00d4e037b0b5",FALSE,FALSE,Administrative message,TRUE,comsum_random_batch_9_july_2021,,FALSE,FALSE,Leshem
+gem/oq-engine,837db10c3b5c657ef05e17f1df0c1c248183e2b7,[skip hazardlib][demos],"
+
+
+Former-commit-id: 9a70df9aadaa6e34a45edd28406493bfdf0431ae [formerly 9a70df9aadaa6e34a45edd28406493bfdf0431ae [formerly b52da957efc5ee19ea4c6c0c470b4f7d0a4c7256]]
+Former-commit-id: 56e84bbbef21811f4a09f2591f1658317cae3064
+Former-commit-id: 1194769c9ebf7e5c6ac013763cb56b5bdbffcad2",FALSE,FALSE,Administrative message,TRUE,comsum_random_batch_9_july_2021,,FALSE,FALSE,Leshem
+servo/servo,ed7686b42c02c5c1d769be952ef58b285f35a7f6,"Auto merge of #16712 - z1mvader:atomize_ns_prefix, r=SimonSapin","
+
+Changed all prefixes from DOMString to the atomic Prefix from html5ever
+
+<!-- Please describe your changes on the following line: -->
+I just changed the `prefix` parameters on the constructors of several HTML elements. The type now is `Option<Prefix>`. I also changed the sizes of the `sizeof.rs` unit test to match the new values.
+
+---
+<!-- Thank you for contributing to Servo! Please replace each `[ ]` by `[X]` when the step is complete, and replace `__` with appropriate data: -->
+- [X] `./mach build -d` does not report any errors
+- [X] `./mach test-tidy` does not report any errors
+- [X] These changes fix #16700  (github issue number if applicable).
+
+<!-- Either: -->
+- [ ] There are tests for these changes OR
+- [X] These changes do not require tests because it should not affect anything else
+
+<!-- Also, please make sure that ""Allow edits from maintainers"" checkbox is checked, so that we can help you if you get stuck somewhere along the way.-->
+
+<!-- Pull requests that do not address these steps are welcome, but they will require additional verification as part of the review process. -->
+
+<!-- Reviewable:start -->
+---
+This change is [<img src=""https://reviewable.io/review_button.svg"" height=""34"" align=""absmiddle"" alt=""Reviewable""/>](https://reviewable.io/reviews/servo/servo/16712)
+<!-- Reviewable:end -->
+",FALSE,FALSE,Subject contnet by reference,TRUE,comsum_random_batch_9_july_2021,,FALSE,FALSE,Leshem
+facebook/folly,678a8567a1e50c9f06503a9a51d582e894eac3a1,Fix for a zerocopy AsyncSocket issue,"
+
+Summary: Fix for a zerocopy AsyncSocket issue
+
+Reviewed By: kevin-vigor
+
+Differential Revision: D24083612
+
+fbshipit-source-id: 607c3daac882c6515bc9d031a84cd3efb8736177
+",TRUE,FALSE,subject in the rest of the message,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+etomica/etomica,e62893d1cf86dd083770a127faf57afd980099f2,Bugzilla 196,"
+
+Used the getDisplayPhasePaintAction method in SimulationGraphic for applications wishing to redraw the graphic from a DisplayPhase.  Previously, applications had been defining their own Action to preform the repaint.
+",FALSE,FALSE,Subject contnet by reference,TRUE,comsum_random_batch_9_july_2021,,FALSE,FALSE,Leshem
+GNOME/gedit,b6d77ad8aa897a1e028c34021b760662662c9359,removed a debug message,"
+
+2006-02-18  Paolo Maggi  <paolo@gnome.org>
+
+	* gedit/gedit-message-area.c (style_set): removed a debug message
+
+	* gedit/gedit-view.c (reset_searched_text): ditto
+",TRUE,TRUE,Administrative message,TRUE,comsum_random_batch_9_july_2021,,TRUE,TRUE,Leshem
+Homebrew/brew,ea30b66ced40a7957b7a8dcce33b70d64f193c2d,manpage: boldface --rebase option,"
+
+This is consistent with how other options are displayed.
+
+Signed-off-by: Jack Nagel <43386ce32af96f5c56f2a88e458cb94cebee3751@gmail.com>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+grivet/dpdk,d291fb3a8d162161897636387910637bbe9cbf17,kni: fix build with kernel 4.15,"
+
+build error:
+.../dpdk/build/build/lib/librte_eal/linuxapp/kni/igb_main.c:2809:2:
+ error: implicit declaration of function ‘setup_timer’;
+ did you mean ‘sk_stop_timer’? [-Werror=implicit-function-declaration]
+  setup_timer(&adapter->watchdog_timer, &igb_watchdog,
+  ^~~~~~~~~~~
+  sk_stop_timer
+cc1: all warnings being treated as errors
+
+error observed whed CONFIG_RTE_KNI_KMOD_ETHTOOL config option enabled.
+
+Because Linux removed setup_timer macros for kernel version >= 4.15
+Linux: 513ae785c63c (""timer: Remove setup_*timer() interface"")
+
+Replaced setup_timer with timer_setup for new kernel versions.
+
+Signed-off-by: Ferruh Yigit <ba8734c3c506d2e3557bd4ac8fdaccd25bdb9aa7@intel.com>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+facebookexperimental/eden,e0d6f05072e9198522989b35f7119d81aae0c773,"hgweb: build the ""entries"" list directly in filelog command","
+
+There's no apparent reason to have this ""entries"" generator function that
+builds a list and then yields its elements in reverse order and which is only
+called to build the ""entries"" list. So just build the list directly, in
+reverse order.
+
+Adjust ""parity"" generator's offset to keep rendering the same.
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+helm/charts,ae6bf300362c8d1a69235f045ee8bb15251fb117,[stable/falco] Disable ebpf by default (#12762),"
+
+* Disable ebpf by default
+
+This reverts the change made on 0.6.0
+
+Signed-off-by: Néstor Salceda <34878d517dcf8383b76cc472991a9d3528a150c7@sysdig.com>
+
+* Specify in CHANGELOG that we are reverting the previous change.
+
+The vast majority of our users are using the kernel module approach and
+we can cause some troubles with this change.
+
+Signed-off-by: Néstor Salceda <34878d517dcf8383b76cc472991a9d3528a150c7@sysdig.com>
+
+* Explain WHY we activated the ebpf module by default
+
+Signed-off-by: Néstor Salceda <34878d517dcf8383b76cc472991a9d3528a150c7@sysdig.com>
+",TRUE,FALSE,subject in message,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+google/llvm-propeller,13d7728c3df43bdcfb200277273dfb056be07ba3,Remove log2 dependency when building against Android API-9 SDK,"
+
+Android's API-9 SDK is missing log2 builtins. A previous commit added
+support for building against this API revision but this requires log2l
+to be present.  (And it doesn't seem to be defined, despite being in
+the headers.)
+
+Author: pasaulais (Pierre-Andre Saulais)
+
+Differential Revision: http://reviews.llvm.org/D9884
+
+llvm-svn: 238111
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+vinriviere/m68k-atari-mint-binutils-gdb,4966c17c42738b367edb99d49a4653cf5d35b301,Lint fixes from Paul Eggert (eggert@twinsun.com):,"
+
+* command.c (do_setshow_command):  var_uintegers are unsigned.
+* sparc-tdep.c (save_insn_opcodes, restore_insn_opcodes):
+unsigned, since they use hex values with the high bit set.
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+dslutz/qemu,d8f9d57dbd0caf225c47f12e9faea9180e79fe2a,Merge remote-tracking branch 'remotes/maxreitz/tags/pull-block-2020-05-13' into staging,"
+
+Block patches:
+- zstd compression for qcow2
+- Fix use-after-free
+
+# gpg: Signature made Wed 13 May 2020 15:14:06 BST
+# gpg:                using RSA key 91BEB60A30DB3E8857D11829F407DB0061D5CF40
+# gpg:                issuer ""mreitz@redhat.com""
+# gpg: Good signature from ""Max Reitz <mreitz@redhat.com>"" [full]
+# Primary key fingerprint: 91BE B60A 30DB 3E88 57D1  1829 F407 DB00 61D5 CF40
+
+* remotes/maxreitz/tags/pull-block-2020-05-13:
+  block/block-copy: fix use-after-free of task pointer
+  iotests: 287: add qcow2 compression type test
+  qcow2: add zstd cluster compression
+  qcow2: rework the cluster compression routine
+  qcow2: introduce compression type feature
+
+Signed-off-by: Peter Maydell <313afa09ce093b19ae1dd74f57c1ebd94508584c@linaro.org>
+",FALSE,FALSE,merge,TRUE,comsum_random_batch_9_july_2021,,FALSE,FALSE,Leshem
+facebook/mysql-5.6,fa9f2a773b6e20219c711e06cd09817359d19a03,"WL #1034 update - fix one bug found by PeterG, namely bug #51","
+
+#there is a major problem currently after removing the specialised DYNAMIC_ARRAY as 
+  storage for the events. I have to reintroduce similar storage, this time probably some
+  linked list or maybe some API on top of DYNAMIC_ARRAY.
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+domoticz/domoticz,bc9489121a3cf2ab2d1bca503c89e48c66e33fc0,Fix install path,"
+
+Change install path from default /usr/local to /opt/domoticz. Apparently the set() function FORCE option is needed to overwrite existing entries, including the default value of CMAKE_INSTALL_PREFIX which is /usr/local",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+phacility/phabricator,27c75357be847496f548522eebbeb02ffbebeb34,Weekend header labels in month view should have darker backgrounds instead of dark actual weekend days.,"
+
+Summary: Closes T8186, Weekend header labels in month view should have darker backgrounds instead of dark actual weekend days.
+
+Test Plan: open month view, observe weekend labels having a darker background.
+
+Reviewers: chad, epriestley, #blessed_reviewers
+
+Reviewed By: epriestley, #blessed_reviewers
+
+Subscribers: Korvin, epriestley
+
+Maniphest Tasks: T8186
+
+Differential Revision: https://secure.phabricator.com/D12860
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+GNOME/epiphany,eb55fc7974c51d26ec5e539d7214787d1fac9a07,Use accessor functions instead direct access,"
+
+Substitute GTK_WIDGET_MAPPED() and GTK_WIDGET_REALIZED()
+GTK+ required version bumped to 2.19.5
+
+https://bugzilla.gnome.org/show_bug.cgi?id=595791
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+chef/chef,c9d4b51860ebb05091dec6d441686b57245f61a6,Improve knife status,"
+
+* Optionally show run list (-r)
+* Show node name by default, with OS, FQDN and IP
+* De-dup highline statements
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+libvirt/libvirt,249992876b279f4fd3400571eb1e847457643b62,qemu: agent: Reuse virJSONValueObjectCreateVArgs in qemuAgentMakeCommand,"
+
+Since the code is now separated into the common helper, we can reuse it
+instead of maintaining two copies.
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,FALSE,FALSE,Leshem
+videolan/x265,b563952fdaaabdc747c22c0b249534189c3281e0,asm: intra_pred_ang16_12 improved by ~20% over SSE4,"
+
+AVX2:
+intra_ang_16x16[12]     15.16x   777.51          11785.44
+
+SSE4:
+intra_ang_16x16[12]     11.51x   976.41          11238.16
+",FALSE,FALSE,"message is details but code, not English",TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+AndyGrant/Ethereal,482c811d98558cc8c259baf4460c0b1bc83f5036,Converted to Fancy Magic BitBoards,"
+
+I was sort of doing this before, but in the worst way imaginable. I have implemented it in its proper form using index look up tables for the database, instead of a 2D database.
+No longer allocating OccupancyVariations[Rook/Bishop] on the stack. Now dynamically allocating and then free'ing at the end of initalizeMagics.
+movegen macro functions updated accordingly. Passes perft tests.
+
+Slight speed up from saving cache misses. Only a few hundred milliseconds for a 20second search
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+GNOME/gthumb,477d9780411d79dc676aa49b2e027d89caeb6358,Revert crash-causing changes.,"
+
+2008-05-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+        * src/gth-viewer.c: (open_with_menu_item_activate_cb),
+        (viewer_update_open_with_menu):
+        Revert crash-causing changes.
+
+
+svn path=/trunk/; revision=2331
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+zephyrproject-rtos/zephyr,f10cbe5ee9e22126846cfdac05e3ffc268b7c898,"logging: Print 7, 8 or 9 parameter macros properly","
+
+The log prints for 7, 8 and 9 parameters were not properly printed.
+
+Signed-off-by: Jukka Rissanen <f9f077d1da4c7aa947f9864fa5a28c3588f6a45d@linux.intel.com>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+CZ-NIC/turris-os,9022ccd275f1e6d047f282d3daca247318fd7b00,ramips: add basics for Poray devices,"
+
+This commit adds the basic elements to support Poray brand routers.
+It contains a tool to do the encryption/obfuscation that is used in
+Poray routers.
+
+Support for Poray devices was worked on by:
+
+Felix Kaechele <heffer@fedoraproject.org>
+Luis Soltero <lsoltero@globalmarinenet.com>
+Michel Stempin <michel.stempin@wanadoo.fr>
+
+Signed-off-by: Felix Kaechele <heffer@fedoraproject.org>
+
+git-svn-id: c673a1a018ba15e3442847f58d2337db82164816@37635 3c298f89-4303-0410-b956-a3cf2f4a3e73
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+Shade-Zepheri/Nougat,5dda6356c713416abc6e97336bbd2c5e1b2f7e32,[Localization] Update base localizations (#32),"
+
+* [Localization] Update Romanian translations
+
+* [Localization] Update Serbian (Cyrillic) translations
+
+* [Localization] Update Dutch translations
+
+* [Localization] Update Dutch translations
+
+* [Localization] Update Norwegian translations
+
+* [Localization] Update Norwegian translations
+
+* [Localization] Update Polish translations
+
+* [Localization] Update Polish translations
+
+* [Localization] Update Portuguese translations
+
+* [Localization] Update Portuguese translations
+
+* [Localization] Update Russian translations
+
+* [Localization] Update Russian translations
+
+* [Localization] Update Serbian (Cyrillic) translations
+
+* [Localization] Update Swedish translations
+
+* [Localization] Update Korean translations
+
+* [Localization] Update Swedish translations
+
+* [Localization] Update Turkish translations
+
+* [Localization] Update Turkish translations
+
+* [Localization] Update Ukrainian translations
+
+* [Localization] Update Ukrainian translations
+
+* [Localization] Update Chinese Simplified translations
+
+* [Localization] Update Chinese Simplified translations
+
+* [Localization] Update Chinese Traditional translations
+
+* [Localization] Update Chinese Traditional translations
+
+* [Localization] Update Vietnamese translations
+
+* [Localization] Update Vietnamese translations
+
+* [Localization] Update Portuguese, Brazilian translations
+
+* [Localization] Update Korean translations
+
+* [Localization] Update Japanese translations
+
+* [Localization] Update Romanian translations
+
+* [Localization] Update Danish translations
+
+* [Localization] Update French translations
+
+* [Localization] Update French translations
+
+* [Localization] Update Spanish translations
+
+* [Localization] Update Spanish translations
+
+* [Localization] Update Afrikaans translations
+
+* [Localization] Update Afrikaans translations
+
+* [Localization] Update Arabic translations
+
+* [Localization] Update Arabic translations
+
+* [Localization] Update Catalan translations
+
+* [Localization] Update Catalan translations
+
+* [Localization] Update Czech translations
+
+* [Localization] Update Czech translations
+
+* [Localization] Update Danish translations
+
+* [Localization] Update Japanese translations
+
+* [Localization] Update German translations
+
+* [Localization] Update German translations
+
+* [Localization] Update Greek translations
+
+* [Localization] Update Greek translations
+
+* [Localization] Update Finnish translations
+
+* [Localization] Update Finnish translations
+
+* [Localization] Update Hebrew translations
+
+* [Localization] Update Hebrew translations
+
+* [Localization] Update Hungarian translations
+
+* [Localization] Update Hungarian translations
+
+* [Localization] Update Italian translations
+
+* [Localization] Update Italian translations
+
+* [Localization] Update Portuguese, Brazilian translations",TRUE,TRUE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+kwsch/PKHeX,1779420af13f729894c43cfac09fa30a5910d013,"Add gen3 personal info, move object refs","
+
+All PersonalInfo arrays are referenced from PersonalInfo's class instead
+of Legal
+
+Fixed a few bugs in the process (species translation, gen switch)
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+google/llvm-propeller,18408d5e7986fcda4d7ac2e3533a07f7c43a5d72,[CodeGen] Add MMOs to statepoint nodes during SelectionDAG,"
+
+The existing statepoint lowering code does something odd; it adds machine memory operands post instruction selection. This was copied from the stackmap/patchpoint implementation, but appears to be non-idiomatic.
+
+This change is largely NFC. It moves the MMO creation logic into SelectionDAG building. It ends up not quite being NFC because the size of the stack slot is reflected in the MMO. The old code blindly used pointer size for the MMO size, which appears to have always been incorrect for larger values. It just happened nothing actually relied on the MMOs, so it worked out okay.
+
+For context, I'm planning on removing the MOVolatile flag from these in a future commit, and then removing the MOStore flag from deopt spill slots in a separate one. Doing so is motivated by a small test case where we should be able to better schedule spill slots, but don't do so due to a memory use/def implied by the statepoint.
+
+Differential Revision: https://reviews.llvm.org/D59106
+
+llvm-svn: 355953
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,TRUE,FALSE,Leshem
+bitcoinj/bitcoinj,50dd5af0c8661f6d6035c49ff42b9484b9da9d41,Add more javadocs.,"
+
+Delete the wallet integration code - it's good, but we won't ship it in 0.10 as it's not finished.
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+tprrt/linux-stable,300bde79f3d86b1af6fcde7b7b2439ecffccbff4,ARM: dts: add CPU OPP and regulator supply property for exynos4210,"
+
+For Exynos4210 platforms, add CPU operating points and CPU regulator
+supply properties for migrating from Exynos specific cpufreq driver
+to using generic cpufreq driver.
+
+Cc: Doug Anderson <49983c4a76b998672954ed5edf4a62db4a336502@chromium.org>
+Cc: Andreas Faerber <e2dd33448c0d502d92fa832c8b393532a3b3f74b@suse.de>
+Cc: Sachin Kamat <1c3b1584a6008857f36c03c58f657c0fc16fc09e@linaro.org>
+Cc: Andreas Farber <e2dd33448c0d502d92fa832c8b393532a3b3f74b@suse.de>
+Cc: Javier Martinez Canillas <039000e09e601bba70626bd0fbe59654c9cf8cac@collabora.co.uk>
+Signed-off-by: Thomas Abraham <d1b8f0fdcf98a613f0a493cb7d77cc13bb1f4fac@samsung.com>
+[b.zolnierkie: removed exynos5250 and exynos5420 support for now]
+Signed-off-by: Bartlomiej Zolnierkiewicz <24970bf3d8506c473367e9292a8e5eb43a40bda0@samsung.com>
+[k.kozlowski: Rebased, moved cpu nodes to alphabetical position]
+Signed-off-by: Krzysztof Kozlowski <1a8531307367602b8284517edb33d53d54e5ce8e@samsung.com>
+Signed-off-by: Kukjin Kim <025cfe326dd94d6c85bc39050c0efed47f247d2a@kernel.org>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+GNOME/grilo-plugins,ac1835687edd32cf1da5eb7c05974503a9c2009f,test: Add two test cases to thegamesdb,"
+
+Add thumbnail tests for:
+- Kirby's Dream Land on Game boy
+- Sonic th Hedgehog on Master System
+
+https://bugzilla.gnome.org/show_bug.cgi?id=766678
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+systemd/systemd-stable,6e3136b209679d88c4347ce2f6d5e22c031e4d3e,shared/install: fix DefaultInstance expansion in %i,"
+
+We should substitute DefaultInstance if the instance is not specified.
+
+Test case:
+[Install]
+DefaultInstance=bond1
+WantedBy= foobar-i-%i.device
+
+$ systemctl --root=/ enable testing4@.service
+Created symlink /etc/systemd/system/foobar-i-bond1.device.wants/testing4@bond1.service
+ → /etc/systemd/system/testing4@.service.
+(before, the symlink would be created as
+/etc/systemd/system/foobar-i-.device.wants/testing4@bond1.service)
+
+Fixes #4411.
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+dart-lang/sdk,eeb903499d72dfab73397606314c0755791445e2,Test more for-each downward inference corner cases.,"
+
+Note that the annotation ""/*@target=C::aField*/"" is duplicated in the
+test due to #31790.
+
+Change-Id: Ie3cf2dea7efb9ae46310ee069a588feb37855201
+Reviewed-on: https://dart-review.googlesource.com/32862
+Reviewed-by: Konstantin Shcheglov <09e4d7516628963212bf4aace2f97603d2b706e4@google.com>
+Commit-Queue: Paul Berry <72d414e3a99fb120308437779d51667bcc0984eb@google.com>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+openstack/rally,703da6c6375db7b7ee6ba9d5bc498271d10223e2,Add name() to ResourceManager,"
+
+This will allow us to perform cleanup based on the name.
+
+Change-Id: I400fa73743367f075f7fd4cb1ff0a254a38c6785
+Implements: blueprint cleanup-refactoring
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+tprrt/linux-stable,b11ffdc538be3f817aa79768420ecc396f65c695,net: mvpp2: cls: Move C2 read/write helpers around,"
+
+Move C2 read/write helpers higher in the file to ease future work that
+rely on these helpers
+
+Signed-off-by: Maxime Chevallier <4d075fc8e96710be3ebe6e88a3241012ff91e096@bootlin.com>
+Signed-off-by: David S. Miller <fe08d3c717adf2ae63592e4c9aec6e3e404d8e3e@davemloft.net>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+chromium/chromium,ab23393d7d6b09562a0abc60b6f727060a3d5d26,[iOS] Consolidate sizes in favicon loader,"
+
+The request to the Google server for favicons now uses the size in
+pixels as the API requires.
+Bookmarks now request the icons in points an the logic to get the pixel
+size is consolidated in favicon_loader. Previously it was requesting in
+pixels, so the image retrieved had the right size, but the call
+subsequent call to FaviconForUrl would multiply again the size and
+scale .
+
+Change-Id: I59c0deacd173f9433d14a8ff3446ac7bed857d56
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/1535885
+Commit-Queue: Javier Ernesto Flores Robles <1bdfa27212cc321f950fafb6ef91d6e87f0bdd56@chromium.org>
+Reviewed-by: Sergio Collazos <f0832025030dda7e79f9f55af48aed0ae68635cb@chromium.org>
+Reviewed-by: edchin <356d0f6616a794c32c1c41860a7add0083666ffc@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#645231}",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+Skyscanner/backpack,7720d9c8c187a8d4b3b7449ae3108ec2dff22b4c,Merge branch 'forms-tokens' into 'master',"
+
+BPK-62 - Tokenised form mixins
+
+https://gojira.skyscanner.net/browse/BPK-62
+
+See merge request !66",FALSE,TRUE,merge,TRUE,comsum_random_batch_9_july_2021,,,,
+gem/oq-engine,210b133d12916894c5027af2b92e2893a4a327c4,Fixed a merge error,"
+
+
+Former-commit-id: 1f7343eac4259618b92cb445220c9dfa50d6e721 [formerly a05eb1ef11ccac047ee262b6d6e4a516138d91bc]
+Former-commit-id: ff9fa9f49fedc10ff3c6ba3ce2c831f079a9d556",FALSE,FALSE,message is by reference,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+grivet/dpdk,5a8bb6e9020fa336d00171f72077f814088be0f0,vhost: claim to support any layout feature,"
+
+The VIRTIO_F_ANY_LAYOUT feature indicates the device accepts arbitrary
+descriptor layouts. The vhost-user lib already supports it, but the
+feature declaration is missing. This patch fixes the mismatch.
+
+Signed-off-by: Zhihong Wang <efad9c89b3a8db7900a2572fdee08ebbff3cfc6b@intel.com>
+Acked-by: Maxime Coquelin <9a2667dee3b90866bbc9c2696cff2b7d5616c95a@redhat.com>
+Acked-by: Yuanhan Liu <5219796f50b7b6a5f4ac3e8f0a0f9501ee64a87c@fridaylinux.org>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+couchbase/libcouchbase,17c74a784aa1200e28e8c453d8eb59266bca9559,Additional README fixups,"
+
+Fix bad path in cmake/unix example
+Fix broken link for LCB doc page
+
+Change-Id: I8ed71d5f3ca2d1fd5df3be19ed80abf9742d9e82
+Reviewed-on: http://review.couchbase.org/43646
+Reviewed-by: Sergey Avseyev <87f6d5e4fd3644c3c20800cde7fd3ad1569370b3@gmail.com>
+Tested-by: Mark Nunberg <e7d42768707bf23038325b0b68d4b577e5f6064a@haskalah.org>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+mne-tools/mne-python,0d99a0d199a1f7a954003e86974ff88ed28b36d4,[MRG] fix brainvision markers (#5442),"
+
+* read '###' as well as 'S###'. Do not cut whitespace when warning about unparsed mrks
+
+* accept SOR###, adjust docstrings
+
+* adjust tests
+
+* accept any single prefix plus '###' except blacklisted
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+keybase/client,21670bfcce45afb2045aa180644336a2d08408b6,add more debugging to resolution pathway,"
+
+- more debugging to trace when we resolve and what side effects happen
+- don't allow caching a 0 UID
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+tprrt/linux-stable,29c78f609e661e663a239a37923adb1d61f6386c,"Partially revert ""drm/i915: tune the RC6 threshold for stability""","
+
+This reverts commit 351aa5666d02062b52329bcfe4bcf9d1f882fba9.
+
+It breaks rc6 on at least one snb machine. Since we don't yet have a
+report for ivb let's keep it there for now.
+
+Bugzilla: https://bugs.freedesktop.org/show_bug.cgi?id=71656
+Cc: Stéphane Marchesin <e16f69845633a0cf74affe1e5a677caa6296c937@chromium.org>
+Cc: c195b508e6f0c57aeafdb5e96947e2b79e6a4b40@vontaene.de
+Signed-off-by: Daniel Vetter <c1b6782c4af8f0673da8923a0702a1832e5940f4@ffwll.ch>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+openstack/cinder,80b14a54710dad659fde3e319f8b0cf0e673acdd,Allow scheduler pool information to be retrieved,"
+
+With pool support added to Cinder, now we are kind of in an awkward
+situation where we require admin to input exact location for volumes
+to-be managed (imported) or migrated, which must have pool info, but
+there is no way to find out what pools are there for backends except
+looking at the scheduler log.  That causes bad user experience, and
+thus is a bug from UX POV.
+
+This change simply adds a new admin-api extension to allow admin to
+fetch all the pool information from scheduler cache (memory), which
+closes the gap for end users.
+
+This extension provides two level of pool information: names only or
+detailed information:
+
+Pool name only:
+GET http://CINDER_API_ENDPOINT/v2/TENANT_ID/scheduler-stats/get_pools
+
+Detailed Pool info:
+GET http://CINDER_API_ENDPOINT/v2/TENANT_ID/scheduler-stats/get_pools
+\?detail\=True
+
+Closes-bug: #1364279
+
+Change-Id: I445d4e472c83db2f2d8db414de139c87d09f8fda
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+avocado-framework-tests/avocado-misc-tests,443a82707bc738f2d21cf8266723541e11b4d5ec,"Add page migration tests with normal pages,hugepages and thp","
+
+This test validates migration of
+a) normal pagesize
+b) hugepages
+c) hugepages with overcommit
+d) transparent hugepages
+
+Signed-off-by: Harish <067593f58491c1a57a54a0dcd26f34c5890837f5@linux.vnet.ibm.com>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+dart-lang/sdk,25d733144391019d5b1d5e6e4193e24ab435706b,Pass --force-nnbd-checks whenever NNBD experiment is enabled,"
+
+This is a preliminary step before removing the flag completely.
+
+Bug: https://github.com/dart-lang/sdk/issues/40980
+Change-Id: Ib2135180aa0f30dd301beaacb842105096f8948c
+Reviewed-on: https://dart-review.googlesource.com/c/sdk/+/139289
+Reviewed-by: Johnni Winther <0f64ef784d57ffb064b634040f9eeba0d33d0be4@google.com>
+Commit-Queue: Dmitry Stefantsov <95a4b7e39916a54bd6477bec6a6de014b977db32@google.com>
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+arenaoftitans/arena-of-titans-api,d8e4c80916330db33eafc6f1dbe3bd7eb5d404e5,feat(api): improve last_action response to ease use in history.js,"
+
+- Refactor code to have only one place where the last_action message is
+created.
+- Add the player_index property
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+tprrt/linux-stable,44ec95425c1d9dce6e4638c29e4362cfb44814e7,[SCSI] sg: cap reserved_size values at max_sectors,"
+
+This patch (as857) modifies the SG_GET_RESERVED_SIZE and
+SG_SET_RESERVED_SIZE ioctls in the sg driver, capping the values at
+the device's request_queue's max_sectors value.  This will permit
+cdrecord to obtain a legal value for the maximum transfer length,
+fixing Bugzilla #7026.
+
+The patch also caps the initial reserved_size value.  There's no
+reason to have a reserved buffer larger than max_sectors, since it
+would be impossible to use the extra space.
+
+The corresponding ioctls in the block layer are modified similarly,
+and the initial value for the reserved_size is set as large as
+possible.  This will effectively make it default to max_sectors.
+Note that the actual value is meaningless anyway, since block devices
+don't have a reserved buffer.
+
+Finally, the BLKSECTGET ioctl is added to sg, so that there will be a
+uniform way for users to determine the actual max_sectors value for
+any raw SCSI transport.
+
+Signed-off-by: Alan Stern <75ea6bb7bfc1186f92d26164de5f9268c9a45b59@rowland.harvard.edu>
+Acked-by: Jens Axboe <165ab144a3ccfd9429d5c6466b275f24fafdb114@oracle.com>
+Acked-by: Douglas Gilbert <963f268e7a1bdc4d8e33d801712bc4fd67ee1d46@torque.net>
+Signed-off-by: James Bottomley <407b36959ca09543ccda8f8e06721c791bc53435@SteelEye.com>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+oVirt/vdsm,cf75e511473a82bca703a77dde5642e0574d63ca,tests: Use assertXMLEqual for XML comparison in vmOperationsTests,"
+
+Change-Id: I1eb072e065e954c3b8672c5f0b3ec807daf03b7b
+Signed-off-by: Milan Zamazal <490d919800feed3c1679a7211c91d85af7443380@redhat.com>
+Reviewed-on: https://gerrit.ovirt.org/58896
+Reviewed-by: Francesco Romani <c7100b580e6017ef67482ace46578cdd2d2e0dfe@redhat.com>
+Continuous-Integration: Jenkins CI
+",FALSE,TRUE,Administrative message,TRUE,comsum_random_batch_9_july_2021,,,,
+nwjs/chromium.src,c6de2418fe775125acc7d62376ed0f194e8debe1,Renaming unit_test function RegisterMockedURLLoad to not collide.,"
+
+There is a shared RegisterMockedURLLoad in URLTestHelpers and a couple of
+local ones imported with ""using"" or locally declared. That is
+normally no big deal but in jumbo builds they
+can be compiled in the same translation unit and then the functions
+will collide. This patch removes a ""using"" and renames a function
+to make the names more unique.
+
+R=3f4bb586f04a0c1d93eadab9363a8a3183b4860c@opera.com
+
+Change-Id: I6866f13bd1903e42269b7286645a9f07396b68a8
+Reviewed-on: https://chromium-review.googlesource.com/574180
+Reviewed-by: Fredrik Söderquist <3f4bb586f04a0c1d93eadab9363a8a3183b4860c@opera.com>
+Commit-Queue: Daniel Bratell <ba2a1cfc52df68b9fd0faeb952ec0afa917b114d@opera.com>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#487056}",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+mbedmicro/mbed,8982ff197126caae361c00fbbbd10e833690169d,[dev_i2c] Fix I2C byte transfer API to enable Master/Slave test on F411RE,"
+
+i2c_byte_write could be used to send byte and address.
+In case used for address, ADDR Flag should be reset.
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+opensheetmusicdisplay/opensheetmusicdisplay,eccf6d7b8dbddd775d75e242f6ce59983d295b5b,"update generate:current and blessed npm commands, pin vexflow to a version, updage generateDiffImages","
+
+without pinning vexflow to a version, you can't set it to an older version and install again.
+we want to pin vexflow to a version anyways, because it's critical for rendering differences.
+generateDiffImages now goes over all samples except Actor prelude, and uses file name instead of sample name with spaces
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+go-gitea/gitea,26d6c153007f799951ee3c50322f334ba51a2bc3,Fix arc theme label backgrounds (#13267),"
+
+* Fix arc theme label backgrounds
+
+* Add specific style to yellow labels (background + border color)
+* Remove !important from label's background rule to avoid breaking user
+  defined labels. Make the rule more specific to override fomantic UI
+  default white background
+
+* Remove unnecesary selector
+
+Co-authored-by: zeripath <6a547fdd28db89120bdd70d4af1f9ba672ccd43a@cantab.net>",TRUE,FALSE,subject in message,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+jitsi/jitsi-videobridge,8094491a3e0efc67e17e1e76f2e4d98333741e6d,Octo relay config (#1038),"
+
+* port octo bind address prop
+
+* port octo bind port prop
+
+* port octo public address property
+
+* add enabled property, make others conditional
+
+* make bindaddress, bindport and publicaddress all required
+
+* move validation of octo port to prop
+
+* remove unused properties
+
+* remove use of ConditionalProperty
+
+after some discussion, we've realized CondtionalProperty isn't really
+doing what we want, which is to mark properties with no sensible default
+as 'optional' but required when some other condition is true (e.g. an
+'enabled' property is set to true)
+
+* don't try to start octo if it isn't enabled
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+dart-lang/sdk,a032a4c952b5dd9e2c14034b2a1d75d11413f545,"Revert ""Fix file name handling on windows""","
+
+This appears to break on bazel.
+
+BUG=
+R=nshahan@google.com
+
+Review URL: https://codereview.chromium.org/2422403002 .
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+facebookresearch/ParlAI,1b0807e84e26b99c8654b916f10d5a9f2d585f4a,Make suggested changes to PR,"
+
+-Allow loading/saving of vectorized candidates
+-Remove check if loss > 0 before adding to report
+- Return candidate prediction list during train for automatic metrics calculations
+",FALSE,TRUE,no word to word generic subject but the content is common,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+bestpractical/rt,99608123b410d197c359eff5bef72dd77bfe0867,Wrap and/or in a label,"
+
+    I hesitate to use a <label for=""""> since this seems a lot more
+    likely than other templates to show up on a page a bunch.
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+nwjs/chromium.src,8400dbfc0a44d96ab007313f4c4aeac3d32c8bf9,Roll src/third_party/pdfium/ cb92dc762..1df1efa39 (2 commits).,"
+
+https://pdfium.googlesource.com/pdfium.git/+log/cb92dc762d5c..1df1efa39218
+
+$ git log cb92dc762..1df1efa39 --date=short --no-merges --format='%ad %ae %s'
+2016-09-07 dsinclair Fixup CPDFSDK_PageView and CPDF_Page interactions.
+2016-09-07 tsepez Maybe avoid a copy in CPDF_RenderStatus::SelectClipPath
+
+BUG=632709
+
+TBR=dsinclair@chromium.org
+
+Review-Url: https://codereview.chromium.org/2323443002
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#417007}
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+department-of-veterans-affairs/vets-website,41bd4e9f8716eb7a452175bebb89c86819929be7,Mocha v8.2.1 (#13982),"
+
+* Upgrade to Mocha 8.1.1.
+
+* Attempt to convert configuration to Mocha 8.
+
+* Some setup fixes.
+
+* Increased timeout.
+
+* Testing Mocha 8 parallel tests in Jenkins.
+
+* Disabled parallel tests by default.
+
+* Run full coverage in both Jenkins and Circle.
+
+* Fixed NPM script argument syntax.
+
+* Corrected script path in Circle job.
+
+* Removed comment to make Mocha config a valid JSON file.
+
+* Added Choma to Mocha config requires.
+
+* Minor version bump.
+
+* Reordered requires to be the same order as the opts config.
+
+* Reverted ordering of requires.
+
+* Disabled problematic tests.
+
+* Fixed breaking Pre-need tests.
+
+* Removed references to mocha.opts.
+
+* Removed unused helper.
+
+* Removed unused script.",FALSE,TRUE,"product name, a bit of a reference, a bit of details",TRUE,comsum_random_batch_9_july_2021,Idan,,,
+eworm-de/claws-mail,b0f145111680db675589299faf16cc02f9d3aefc,2007-10-31 [paul]	3.0.2cvs110,"
+
+	* src/ldapupdate.c
+		fix bug 1375, 'Impossible to modify e-mail
+		in LDAP addressbook twice'
+		Patch by Michael Rasmussen
+",FALSE,FALSE,Subject contnet by reference,TRUE,comsum_random_batch_9_july_2021,,,,
+openshift/origin,b43072fd877b7cfaaa919442758c457533ed8e95,Update all permissions,"
+
+Add scheduled jobs to all roles, new endpoints to cluster-reader role
+Deployer should be able to read replicas
+Add disruption budgets and storage classes to cluster admin
+Regen permissions
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+facebook/mysql-5.6,3e8418745eca76ba13d71aa6875a69896dc2e65f,part of WL#6189 Turn InnoDB persistent statistics ON by default,"
+
+Use DEBUG_SYNC_C_IF_THD() instead of DEBUG_SYNC_C() in
+row_ins_check_foreign_constraints(). That function is now also called
+from the background stats gathering thread and DEBUG_SYNC_C() would crash
+there because it calls ""_current_thd()"" and expects it to be != NULL.
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+octokit/octokit.net,1eaef584d2f94a8bb01e1f95e8c58195a17eff3f,Add GetPage and GetAll method for Repositories,"
+
+This is a direction I'm experimenting with. Note that GetAll is defined
+entirely by the response API.
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+angular/angular.js,63249a0aaf2673596e2b8b6fa7d670891c0a0178,docs(ngBind): irrelevant text removed from ngBindHtml’s example,"
+
+The ngBindHtml’s example had a copied line from ngBindTemplate’s that’s irrelevant here.
+
+Closes #8668
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+yonadev/yona-server,0f246c64b78d0c830638d5f2462e1f1859e8a884,K8s updates (#367),"
+
+* Fix mobiconfig template sring / string typo
+* Update to template the Apple Mobiconfig vpn user cert
+* Various clean ups and move to more templated values in the mobile config
+* Change global.release to global.values - Add more labels to deployment objects
+* Add Batch Services url env variable to app deployment yaml
+* Add in some more application properties in prep for prod
+* Add batch services url env to admin server
+* Add the Apple WWDRCA to apple security bundle
+",FALSE,TRUE,low content subject,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+apache/commons-beanutils,82791d722cdb148090cbcb4fed9f7cdef27d9b85,Bump actions/setup-java from v1.4.0 to v1.4.2 (#35),"
+
+Bumps [actions/setup-java](https://github.com/actions/setup-java) from v1.4.0 to v1.4.2.
+- [Release notes](https://github.com/actions/setup-java/releases)
+- [Commits](https://github.com/actions/setup-java/compare/v1.4.0...8bb50d97d6b4d316daf284fdf8eafbfc988421fc)
+
+Signed-off-by: dependabot[bot] <5bdcd3c0d4d24ae3e71b3b452a024c6324c7e4bb@github.com>
+
+Co-authored-by: dependabot[bot] <1c358da00a777d4e9898c1280ab801e2df165188@users.noreply.github.com>",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+chromium/chromium,bdb56ebbf5a0cd3464c814cb9f563c7c989c89de,[iOS] Remove unused notification kAuthenticationServiceNotification.,"
+
+Fixed: 464306
+Change-Id: I561a1465616f16103c285620e8689b761f5a07a2
+Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/2385338
+Reviewed-by: Eugene But <bb025fd15c252eb28418847a17f9a409ee64be86@chromium.org>
+Commit-Queue: Nohemi Fernandez <78d213a83b5bb7229a2a4d3ecc39b60c3473f0a5@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#803183}
+",FALSE,FALSE,Administrative message,TRUE,comsum_random_batch_9_july_2021,,,,
+gem/oq-engine,d7d8ed61f95cc2669f1dda5c6f6f38d0a9f11f78,[Doc] Recommend shallow clone for Win dev installation [skip CI],"
+
+Update installation instructions for development on Windows to recommend a shallow clone of the engine repo.
+
+Former-commit-id: c70c66f136f6c502b244eb15ec8f813a01f0e4b5 [formerly a777959d7df61b83e75198e41f15ddca0b62dff9]
+Former-commit-id: 818a1bf16e666a5c98e1b6609b2646e407bbf63f",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+facebook/folly,7cc28784d1749283b7eb78399a0f0a77594dbc14,Relax the limits for StackTraceSizeLimitTest.,"
+
+Summary: Apparently it's flaky...
+
+Differential Revision: D24179337
+
+fbshipit-source-id: 75416adaf8dbd37fc9ddeaa0500ddfaeb80cffa9
+",TRUE,FALSE,"change/reason, the reason is a bit general",FALSE,comsum_random_batch_9_july_2021,Idan,,,
+twbs/bootstrap,56a5b19cdb63e1e76478a628eab774b0c3e93f98,Fixes #17911: Explicitly remove margin-bottom from cards in .card-deck,"
+
+Here we're doing some margin swapping, so it looks a little funky. All this does is match the margin implementation and rendering across our table and flex versions of card decks.
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+GNOME/dia,9d044c291563b47bc29b0e37e8bbd5ad0b85b201,using dia_font_new_from_style(),"
+
+	* objects/SADT/*.c:
+	* objects/UML/association.c: (one instance forgotten)
+	* objects/UML/large_package.c:
+	using dia_font_new_from_style()
+",TRUE,FALSE,message in subject,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+strapdata/elassandra,0362550fd7c5a06c297eae064100404f51606269,Update indices-query.asciidoc,"
+
+The current description of the query seemed confusing to some people (e.g. https://twitter.com/wielinde/status/654582620630687744), this is just a proposal to simplify it.",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+appbaseio/reactivesearch,be6ee0584ffc70eac9d811744188b3f55fbb9744,maps: Fix streaming support,"
+
+- Fix streaming hits handling in ReactiveMap component
+- Add support for streamAutoCenter prop
+- Fix defaultPin initialisation
+",TRUE,FALSE,message in subject,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+tprrt/linux-stable,76b99080ccc964163b4567fac2bb8619f5ed789f,crypto: caam - fix uninitialized edesc->dst_dma field,"
+
+dst_dma not being properly initialized causes ahash_done_ctx_dst
+to try to free unallocated DMA memory:
+
+caam_jr ffe301000.jr: DMA-API: device driver tries to free DMA memory it has not allocated [device address=0x0000000006513340] [size=28 bytes]
+WARNING: at lib/dma-debug.c:1080
+Modules linked in: caamhash(+) [last unloaded: caamhash]
+CPU: 0 PID: 1373 Comm: cryptomgr_test Tainted: G        W     3.16.0-rc1 #23
+task: ee23e350 ti: effd2000 task.ti: ee1f6000
+NIP: c02889fc LR: c02889fc CTR: c02d7020
+REGS: effd3d50 TRAP: 0700   Tainted: G        W      (3.16.0-rc1)
+MSR: 00029002 <CE,EE,ME>  CR: 44048082  XER: 00000000
+
+GPR00: c02889fc effd3e00 ee23e350 0000008e c1de3478 c1de382c 00000000 00029002
+GPR08: 00000007 00000000 01660000 00000000 24048082 00000000 00000018 c07db080
+GPR16: 00000006 00000100 0000002c eeb4a7e0 c07e1e10 c0da1180 00029002 c0d9b3c8
+GPR24: eeb4a7c0 00000000 effd3e58 00000000 c078ad4c ee130210 00000000 06513340
+NIP [c02889fc] check_unmap+0x8ac/0xab0
+LR [c02889fc] check_unmap+0x8ac/0xab0
+Call Trace:
+[effd3e00] [c02889fc] check_unmap+0x8ac/0xab0 (unreliable)
+[effd3e50] [c0288c78] debug_dma_unmap_page+0x78/0x90
+[effd3ed0] [f94b89ec] ahash_done_ctx_dst+0x11c/0x200 [caamhash]
+[effd3f00] [c0429640] caam_jr_dequeue+0x1c0/0x280
+[effd3f50] [c002c94c] tasklet_action+0xcc/0x1a0
+[effd3f80] [c002cb30] __do_softirq+0x110/0x220
+[effd3fe0] [c002cf34] irq_exit+0xa4/0xe0
+[effd3ff0] [c000d834] call_do_irq+0x24/0x3c
+[ee1f7ae0] [c000489c] do_IRQ+0x8c/0x110
+[ee1f7b00] [c000f86c] ret_from_except+0x0/0x18
+--- Exception: 501 at _raw_spin_unlock_irq+0x30/0x50
+    LR = _raw_spin_unlock_irq+0x2c/0x50
+[ee1f7bd0] [c0590158] wait_for_common+0xb8/0x170
+[ee1f7c10] [c059024c] wait_for_completion_interruptible+0x1c/0x40
+[ee1f7c20] [c022fc78] do_one_async_hash_op.isra.2.part.3+0x18/0x40
+[ee1f7c30] [c022ffb8] __test_hash+0x318/0x6c0
+[ee1f7de0] [c0230388] test_hash+0x28/0xb0
+[ee1f7e00] [c02304a4] alg_test_hash+0x94/0xc0
+[ee1f7e20] [c022fa94] alg_test+0x114/0x2e0
+[ee1f7ea0] [c022cd1c] cryptomgr_test+0x4c/0x60
+[ee1f7eb0] [c00497a4] kthread+0xc4/0xe0
+[ee1f7f40] [c000f2fc] ret_from_kernel_thread+0x5c/0x64
+Instruction dump:
+41de01c8 80a9002c 2f850000 40fe0008 80a90008 80fa0018 3c60c06d 811a001c
+3863f4a4 813a0020 815a0024 4830cd01 <0fe00000> 81340048 2f890000 40feff48
+
+Signed-off-by: Horia Geanta <6135224f23789828bd8d3b771a2745286516a2b5@freescale.com>
+Acked-by: Kim Phillips <4dbb162515b917285c0a29b08c706fd5ea64dadc@freescale.com>
+Signed-off-by: Herbert Xu <ef65de1c7be0aa837fe7b25ba9a7739905af6a55@gondor.apana.org.au>
+",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+mne-tools/mne-python,3c8f49dd750c425d564d13e5481e1448233e2fcb,WIP: Fix bugs in Brain (#8361),"
+
+* Update _add_mesh
+
+* Update mne/viz/backends/_pyvista.py
+
+Co-authored-by: Eric Larson <14e6e0d1a6421c3f4a71ec06bfae870e115e40b0@gmail.com>
+
+* Show the plotter when ready
+
+* Remove empty line
+
+* Fix save_movie action
+
+* Fix show
+
+Co-authored-by: Eric Larson <14e6e0d1a6421c3f4a71ec06bfae870e115e40b0@gmail.com>",TRUE,FALSE,change/details,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+GerritCodeReview/gerrit,b335e35d0e8fe7583520f580bb17fb63ef606de8,Add go key as a modifier check,"
+
+When processing keyboard combos, we check if the existing go key
+was pressed as a modifier.
+This fixes the bug where pressing `g + i` resulted in the listener
+for `i` being called. The bug was not visible since we always
+navigated to a different page after pressing the go key.
+Each component using the behaviour now listens for the go key.
+
+Change-Id: I9d1c3c32b4512ee702cea4a3e46cdfb110fa6bfd
+",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+chromium/chromium,adf31eb3e54893f0ca322d6fba941c3ebc9853e9,Replace base::hash_map with std::unordered_map,"
+
+base::hash_map is alias of std::unordered_map now.
+
+I applied following command to make this CL.
+
+$ git grep -l 'base::hash_map' | fgrep -v base/ | xargs sed -i -e 's/base::hash_map/std::unordered_set/g' -e 's/\(#include <[a-z_]*>\)/\1\n#include <unordered_map>/' -e 's/BASE_HASH_NAMESPACE/std/'
+$ git cl format
+$ # Added IntPairHash and replaced BASE_HASH_NAMESPACE with std in some places.
+
+TBR: 16123c1b20e8652874389dd38d18c4766d539508@chromium.org
+Bug: 576864
+Change-Id: I38941d9f9bcb05ec474b8dee5230c4c5dcd2211f
+Reviewed-on: https://chromium-review.googlesource.com/c/1390892
+Commit-Queue: Takuto Ikuta <71927f930fca81015e0f496c65cd126ab1a692e3@chromium.org>
+Reviewed-by: Daniel Cheng <16123c1b20e8652874389dd38d18c4766d539508@chromium.org>
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#620124}",TRUE,FALSE,change/reason,TRUE,comsum_random_batch_9_july_2021,Idan,,,
+nwjs/chromium.src,264e791e873bf3ffd104a820597bfadb429e048b,ChromeOS: Enable Gaia v2 API by default.,"
+
+BUG=709244
+
+Review-Url: https://codereview.chromium.org/2970463002
+Cr-Original-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#483877}
+Committed: https://chromium.googlesource.com/chromium/src/+/30815d143e71eb731bea80ba5fbd236d628ee9f3
+Review-Url: https://codereview.chromium.org/2970463002
+Cr-Commit-Position: 972c6d2dc6dd5efdad1377c0d224e03eb8f276f7@{#486617}
+",FALSE,FALSE,Administrative message,TRUE,comsum_random_batch_9_july_2021,,,,
