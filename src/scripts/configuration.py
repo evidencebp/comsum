@@ -12,6 +12,7 @@ sys.path.append(BASE_PATH)
 
 DATA_PATH = os.path.join(BASE_PATH, r'data')
 FULL_DATA_PATH = os.path.join(DATA_PATH, r'dataset')
+SAMPLES_PATH = os.path.join(DATA_PATH, r'samples')
 SPLIT_DATA_PATH = os.path.join(DATA_PATH, r'split')
 AUX_DATA_PATH = os.path.join(DATA_PATH, r'aux_datasets')
 LABELS_PATH = os.path.join(DATA_PATH, r'labels')
