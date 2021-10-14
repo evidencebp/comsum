@@ -1,0 +1,9 @@
+repo_name,commit,subject,message_without_subject,Is_Summary_1,Is_Summary_2
+GNOME/gedit,b6d77ad8aa897a1e028c34021b760662662c9359,removed a debug message,"
+
+2006-02-18  Paolo Maggi  <paolo@gnome.org>
+
+	* gedit/gedit-message-area.c (style_set): removed a debug message
+
+	* gedit/gedit-view.c (reset_searched_text): ditto
+",False,True
