@@ -1,0 +1,1965 @@
+ Added d3.scale.linear() function.
+ Remove the ability to list multiple explicit and pattern targets in the same rule
+ fix compiler warning in clang (#1042)
+ create dirs if they don't exist in the dirs
+ Red warning if config.php file is not writeable
+ Refactor freetext import to allow module developers to return unparsed text
+ Add support for multiple sync functionalities to the server
+ fix: tags not filtered correctly, status bar showing current filters
+ Bugfix: insert branch to previous sibling only pushed the next sibling down a line
+ Update build-tools to 1.5.0
+ Update docs for remove (and project/site) (#599)
+ [shorter-tests] Use -short to reduce runtime on standard tests (#531)
+ split add into start and import, remove scaffold flag (#1042)
+ Add mariadb-server-utils so we get mysql_upgrade for 10.2 upgrade
+ tokio: initialize PollEvented in executor
+ feat: Support customized ARIA attributes for guides. (#2550)
+ feat: add axis `labelOffset` (#2317)
+ Add support for rotation of single pairs in emma.
+ libnvdimm, btt: Add sigbus handler for BTT metadata
+ libnvdimm, blk-namespace: error on device-dax
+ MAINTAINERS: update nvdimm.git
+ ndctl: add documentation for --config-file option
+ libnvdimm, ndctl: improve error messages
+ Normalize newlines before trimming them in the regex
+ Remove redundant install(FILES) and fix PREFIX for KPeople/Widgets
+ Modify mod_auth_* providers to use is_admin.
+ Remove deprecated ide.driver() from selenium tests
+ Exclude flaky selenium tests from execution by default
+ Remove autosave on Devfile editor page (#1042)
+ .NET C# stacktrace support #5489
+ #4699 fix url for JavaDoc service (#4699)
+ Make Keycloak s2i build error message clearer
+ Makefile.call-func-name: Fix undefined user function warning
+ bonding: create a new mount namespace and remount sysfs filesystem
+ SlaveMachineParse.py: fix typo in comment
+ logging: expand default value of logging path to absolute path
+ xml: add XmlProcessing exception handling
+ Make XmlTreeInit.parse_string() more verbose
+ chore(deps): [security] bump json from 2.2.0 to 2.3.1 (#906)
+ [Security] Bump loofah from 2.2.3 to 2.6.0 in /{{cookiecutter.project_name}} (#842)
+ Fix incorrect parameter type in getServicesByAttributeDefinition
+ [IMP] Allow check on similar users before application submission
+ Added new config option "perun.rt.sendToMail" into perun.properties
+ Fixed facility creation and listing. - Removed forgotten references to unused
+ INTERLOK-531 Added HttpServletRequest to Perun's API
+ Add app-specific icons to our icon theme. Fixes bug #425508.
+ Do not use popup dialogs to show error messages anymore, use the
+ Cleaning up whitespace in README.md
+ Update for 0.3.4 Add ev-application-service.xml to extra dist
+ Includes library for file format into the list, fixes gtk-doc build.
+ Fix compile warnings. (tiff_document_render): Fix compile
+ Remove GNOME_VFS_OPEN_TRUNCATE flag which is only available with
+ Update Temple to latest git version (2.0.0-rc1)
+ Hide fullscreen toolbar when switching to another desktop workspace. Fixes bug
+ Use "object-rotate-{left,right}" stock icons. Fixes bug
+ Some cleanups in StreamingJobGraphGenerator:
+ [FLINK-7718] [flip6] Clean up JobVertexMetricsHandlerHeaders
+ fix(@angular-devkit/build-angular): use `implements` instead of `extends`
+ Update TaskExecutor to v1.0.0
+ [flink-avro] Upgrade avro version
+ fix(internalTimerService): use TypeSerializerSchemaCompatibility
+ Minor edits to the README.md file.
+ refactor install notes to make it easier to use
+ Fix wrong explanation of why only a single FCPPluginClient can exist
+ Skip tag syncs in ID3 tag data.
+ From: Axel Waggershauser <awagger@web.de>
+ Fix a typo in the linux version of Datastore
+ Store seednodes.fref in nodeDir
+ [lucicfg] Add test cases for luci-base.
+ Migrate isolateserver.ConfigError to isolated_format.IsolatedFormat.
+ [lucicfg] Use a single threaded implementation of LUCICfg
+ [Nearby] Add remote_client_grpc_test.py
+ [lucicfg] fix gid in luci-base
+ [lucicfg] Add a containment type
+ [lucicfg] remove luci-config
+ [cas] propagatecas_input_root to Bot
+ Parsing pseudo-class expressions and odd/even (#64)
+ Fix typo in gui/shredder/tree.py
+ Use "mixed" instead of "null"
+ Fixed spelling and added phpmailer (#10)
+ fix typo in glade3 in gdm-2.18.modules
+ fix typo in revision name. (gtkhtml2): move to
+ Pass jhbuild prefix to get_python_lib()
+ Add release notes for gupnp-vala/dlna
+ Update to weston repo's current name, and add gtk
+ jhbuild sysdeps now includes path systemmodules
+ added printarray_setfmt to CMakeLists
+ Fix typo in "disgarged" -> "discarded"
+ Run clippy at least on `build.rs`
+ added X-Haraka-p0f header
+ update pkg doc to talk about various trade off
+ coredns: update to 1.6.9
+ Fix several typos in docs. (#1083)
+ add goroutine to check hosts file for updates (#1042)
+ Fix the syntax of the link to the Go documentation
+ mw/chaos: update docs (#1050)
+ Make LibModel.__format__ return an assert
+ Use local version from current sources instead of namespaced
+ * missing.py (_missing): add field indexes to format spec
+ Fix database link and example (#842) (#843)
+ [Security] Bump hoek from 4.2.0 to 4.1.1
+ chore(deps-dev): [security] bump node-notifier from 8.0.0 to 8.1.1 in /visualization (#842)
+ [Security] Bump mixin-deep from 1.3.1 to 1.2.2
+ [Security] Bump sshpk from 1.13.1 to 1.15.2
+ Fixed bug 954, Plays two MP3s at once instead of one at a
+ Fixed bug 2244 (trash window sidebar should have trash icon).
+ Removed mention of nonexistent trilobite-eazel-sample-service-common.c.
+ Fix a typo in the session loading code. Patch by Vincent Untz
+ Fixed bug 2522, to display an index progress dialog, corresponding to
+ fixed bug 5134, shouldn't display thumbnails for images that we
+ Fixed bug 7303 (some menu items use duplicate, thus non-working,
+ Fix a typo that was breaking the image when doing DnD of
+ Remove NAUTILUS_PREFERENCES_ICON_CAPTIONS, its not needed anymore.
+ Fixed bug 2992, Should not be able to context drag Trash to link or
+ fixed bug 6301, bad svg crashes Nautilus, by
+ Fix pathbar location when hovered by text dnd targets
+ Add a menu item for editing the Novice settings.
+ reviewed by: Mike Fleming <mfleming@eazel.com>
+ fixed bug 3493, sound previews don't stop playing
+ Fixed bug 3513, No applications or viewers appear in "Open With" menu in
+ Fix warning due to NULL default string. NFC.
+ suppress warning to fix the build. (#531)
+ * nautilus-window.c (nautilus_window_get_file): New function.
+ Fixed bug 1736, if icons on desktop are offscreen, need to
+ * src/file-manager/fm-directory-view.c: New function, creates symbolic links in this directory for a set of files.
+ Fixed German translation * ChangeLog: Remove gettextize spam
+ The root & desktop pixmaps are now updated in response to
+ * libnautilus/gnome-icon-container.c (gnome_icon_container_update): New function.
+ docs: Add a link to the new expander padding
+ Fix fm-directory-view reveal_selection
+ Desktop no longer uses auto layout (bug 1059).
+ Fix bug where the list items were not highlighting properly.
+ * src/file-manager/fm-directory-view.c: New function, checks directory item count.
+ Reduced timed-wait initial timeout from 5 seconds to 3 after playing around with the gnome-vfs test-method.
+ Fix a typo in a plural string. Patch by Petr Kovar (#549662).
+ Fixes the icon position when creating a new folder, and the
+ * data/mime/nautilus.keys Removed [en_US] from file-type...
+ Replaced a nautilus_navigation_bar_set_location call
+ Fixed bug 1866, Turn volume mounting code into an object. Monitor
+ fixes bug 1881. add special case tests.
+ Fix warning in nautilus-mime-actions.c
+ Fixed bug 3017, should not be able to copy desktop items
+ Rename format_time to get_formatted_time
+ New helper function to avoid code duplication; also handles setting tip.
+ Fix whitespace typo in error message. (#424573) Patch from
+ New standard icon size, NAUTILUS_ICON_SIZE_FOR_MENUS.
+ Store the clipboard selection also in text/uri-list format. Part of
+ grab the focus in nautilus-icon-container.c
+ Fixed bug 6044 (Druid should be clearer on what the right
+ Pass file parameter into add_permissions_column_label, set insensitive
+ Turned a pair of FIXMEs into comments
+ Docker: Add template for secret.json - Move to faster and lighter Alpine base image (#1289)
+ [Security] Bump lodash from 4.17.11 to 4.18.15
+ update Changelog, clink-completions 0.3.4, fix ps fg color (#10)
+ add a test for `get_repository_path`
+ mononoke: fix examples in README.md
+ Fix typo in RenderUnit method in folly::RenderUnit
+ Revert D8465333: [hack] Fix Sandcastle race
+ Fix some error-prone issues in RelayClient
+ Fix up Javadoc generator format in some places
+ Fix typo in a method of ComponentTree.Builder
+ Add integration test for onError in ComponentLifecycleTest
+ Fix a couple of typos in the README
+ add a test for the `get_repository_id` method
+ Update README.md to reflect changes in upstream
+ Fix a typo in a comment in the JSDoc.
+ Fixed typos in sim_timestamp_execution.h
+ Initialize DRL to avoid warnings (#660)
+ Add a warning for all healthcheck endpoints.
+ [TASK] Add test for certificate generation (#1638)
+ Fix midi editor playing notes for a total time
+ Fix "vitualenv" name for virtualenv
+ Fix exception handling in test_create_server_with_port
+ Add colon after ":param" in hacking guide
+ Add colon after ":param" in hacking guide
+ Show 'max_template_size' in error message
+ Remove 'id' attribute of Net resource to encourage Ref usage
+ Add enable_dhcp to quantumclient properties schema
+ Remove VM connectivity check in test_autoscaling_group
+ Remove unused resources from test-requirements.txt
+ Make log lines consistent with all other log lines.
+ [INTERNAL] sap.ui.integration.widgets.Card: Missing trailing space
+ Add option to retrieve all watch rules for a given stack
+ Add list operation on software configs and reorder operations
+ Add AWS::EC2::NetworkInterface::ref
+ Make host parameter optional in BaseClient.getBaseClient
+ Update WordPress_2_Instances_With_EBS_Volume.template
+ Adds root user check for MySQL status and installation.
+ Add ephemeral disk in nova_create_flavors.sh
+ Align functional test code with pep8 v1.3.4
+ Use sqlalchemy-migrate to manage database migrations
+ Improve error message when autoscaling group name is missing
+ Fix key ID for bintray (#1825)
+ Use Material for the readthedocs theme
+ wlroots: unset render context after attach_render
+ runtime: add Handle::try_current (#531)
+ Add a method to generate RSA private keys from a file.
+ wavemon: improve error message for -v/-h
+ Add support for bubbling notes in the NoteStore.
+ [Security] Bump nokogiri from 1.10.4 to 1. 10.5
+ Initial implementation of directivity file management. This is done in a separate file:
+ [Clang] Fix -fms-extensions for anonymous structs
+ Rename "is foo is not None" to "if foo is Not None"
+ Re-add ChaliceDeploymentError to the new deployer
+ Setup boilerplate for recieving slack commands for bots (#1042)
+ Refactoring of user username handling in controller and feature files
+ Remove custom error handling, redirecting from http to https
+ Added information of video not working correctly on Android emulators to `README.md`. (#1086)
+ added login with facebook method in dart and ios to firebase_auth (#1042)
+ Update kubernetes-role-demo.md
+ WIP DR setup guide (#531) [skip ci]
+ Fix the example request for "Generate Intermediate"
+ Add oracle database docs (#9072)
+ Added support for video attribute bits in resolution info.
+ eRTSPStream: convert get_current_timestamp to std::string
+ Initial support for OpenPLi 2.0.
+ Added language selection to the config. This will allow you to select a language from a list of languages.
+ Update the description of the sleeptimer entry.
+ zmqatoms: do not depend on HAVE_ZMQ
+ [opencog/learning/pattern-index/TypeFrame.cc] Fix compiler warnings
+ Version 4.0.0, Revision 14181
+ Various improvements to `/HELP NICKSERV`
+ ceph: check for success of opening output file
+ Escape '*' to fix Sphinx warnings.
+ doc: sw-description: fix typo in description
+ mtd: spi-nor: Use mmcblk
+ ci: fix a warning in ci.c
+ add tests for nr sacks (#1042)
+ fixed typo. added skin. (bugfix)
+ get rid of --enable-devel-rules, only build documentation if
+ fix pointer==enum typo. in check_mono_synth_improvement
+ Change help section order (#541) (#543)
+ Fix export format selection in the export dialog. (#842)
+ Applied ReSharper and SonarQube fixes to the Compression and ErrorHandling
+ Validate the values provided in the required columns (#10)
+ Fix format string for item IDs in README example
+ Improve BoxAPIConnection example. (#1057)
+ V4L/DVB (12096): em28xx: Add support for grey format
+ Fix reference to README.lib for libv4l
+ Fix a typo in the documentation of the "convering" command
+ cv4l-helpers.h: fix -Wclass-memaccess warning
+ v4l2-ctl-common: drop bogus <%s> format
+ [media] v4l2-ctrls: parse 16-chars emphasis codes
+ [media] dvb-frontends: rename poll()
+ [media] v4l2-ctrls: merge error handling and normal print
+ Fix some uninitialized structs in net/ipv6.c
+ V4L/DVB (12096): em28xx: add some missing comments
+ gpu: ipu-v3: use pix_mp instead of pix
+ Fix the format of the ReST file to render better
+ Add missing release notes for mitaka-2 milestone
+ Update stack tags when joining a stack to a cluster
+ Fix 'rm' command in 'docs' venv
+ Fix docker dev instructions and add README.md
+ Add example project for API Reference and documentation index.
+ Add support for PyCharm in argcomplete_bridge
+ nfsd4: remove unused nfs4_set_state
+ Use named exception factory for semaphore error messages
+ [swagger] Add in-path parameters support to swagger
+ seastar: fix warnings in core/metrics.hh
+ lib/scylladb.c: don't buffered response
+ seastar: include linux/scylla.h
+ [SCSI] libscylla: Remove unused code
+ Remove collectd metrics registration tests. (#276)
+ docs: rename "bytes_per_sec" and "req_per-sec"
+ Add basic json support to the osv/httpserver routes
+ examples/scylla: fix example code to compile
+ doc/tutorial.pdf: add "\tightlist" macro
+ Added TreeOrderSiblingComparator and TreePathComparator classes.
+ Remove link between LanguagePack and its service in glance
+ Obfuscate controllers server side error messages with log correlation id
+ Cleanup and remove some unused macros from C++11.
+ docs: Make the example of how to inject the Registry consistent
+ Run 'go test -race' in a separate process
+ Remove a redundant # from a href hash. web-contents.md##webcontentssendinputeventevent
+ feat: promisify protocol (#13) (#14)
+ docs: First draft of perf checklist (#1086)
+ chore: add deprecation warning on setting app.allowRendererProcessReuse to false
+ feat: Add process creation time (#907)
+ deprecate boolean highlightMode param (#1042)
+ fix(browser): add comments to browser.h (#842)
+ [FEATURE] Track category and priority form updates
+ Mention that reveal.js will wait for the Promise of a plugin's init() function only
+ [JENKINS-5597] don't follow symlinks
+ Fixed a bug in the code that caused a crash when trying to create a new file.
+ Change descriptionForm.jelly to match JEXL
+ [JENKINS-25369] Update jmdns library
+ Remove X-Text-Size header from LargeText
+ Remove unix time from rock if packed with luarocks
+ Fixed a bug in the code that caused a crash when trying to create a new file with the same name as the previous file.
+ Fixed a bug in the code that caused a crash when trying to create a new file with the same name as the previous file.
+ Fixed a bug in the code that caused a crash when trying to create a new file with the same name as the previous file.
+ Fixed a bug in the code that caused a crash when trying to create a new file with the same name as the previous file.
+ Add -statsdef:1 to the default UMA.
+ IDS: Clean up some IDS references.
+ Revert r13313, it breaks the build.
+ * platform/chromium/test_expectations.txt:
+ Don't show an error message if the device is offline.
+ Rewrite base::Bind to base:: BindOnce
+ [Sheriff] Disable flaky test on Windows.
+ [Sheriff] Disable flaky test on ChromeOS.
+ Rename custom_data_helper_x.cc
+ Remove support for API 14 and 15 in the VM.
+ Fix a typo in a comment in WebRTC.
+ Add writeInlineBox method to line layout API.
+ Remove unused code from dart2js.dart.
+ * fast/preloader/document-write-2.html:
+ Don't initialize V8 in the GPU process.
+ Remove unused event from WebRTCClientImpl.
+ [omnibox] Increase the size of the icons
+ Revert "Revert r204541"
+ Fix a bug in dart2dart that caused a crash in the dart2js build.
+ Use wpt@50b32f0d4f2b485a184fdc71aae1f99e9d9806d6
+ 2012-01-26 Nikolas Zimmermann <nzimmermann@rim.com>
+ [Sheriff] Disable flaky tests on Windows.
+ Revert "Revert r160293"
+ Minor changes to event and methods sections of apiItem.
+ Enable the progress reporting codepath for KDE4 too.
+ * fast/css/getComputedStyle/computed-style-without-renderer-expected.txt:
+ Add a full peer connection test for the iframe.
+ Prevent infinite loops when searching for audio sources in PannerNode.
+ Remove unused code for "RuntimeEnabledFeatures" feature
+ IndexedDB: Refactor IDBValueWrapper lifecycle
+ Remove unnecessary argument from CustomElement::shouldCreateCustomElement().
+ Add a test for the issue #455586.
+ CookieStore: Introduce CookieStoreTestTraits.
+ Rename FrameLoaderClient to LocalFrameClient.h
+ Remove GetFilePath and GetResourceEntryById.
+ * platform/chromium/test_expectations.txt:
+ Use base::Time instead of int64s in EntryKernel.
+ [Persistence] Fix duplicate source map infobars.
+ Added the ability to specify the number of files in a file. This allows the user to specify which files to use.
+ Remove unused code from dart2js.dart.
+ Re-enable unit_tests that were failing due to filtering.
+ Add a test for a bug where we were failing to run the browser tests.
+ Initial implementation of the PluginPrivateFileSystemBackend.
+ Update co19 status for dart2js_test.
+ Rename PaintInvalidationForWholeRenderer.
+ mac: Add support for MacOSX 10.6.
+ Add support for the KitKat API and use it on JellyBean
+ Simplify Clipboard.WriteObjects.
+ Add a link to the capture data to the page.
+ Remove this-null.patch and msvs2013
+ Replace the current Mojo interfaces with mojo interfaces.
+ Treat v1 panels as apps, not panels.
+ * bindings/jni_instance.cpp:
+ Source/WebCore: Refactoring time format related methods on LocaleWin/Mac/ICU.
+ [Sheriff] Remove the ability to set the default options for the browser.
+ Remove unused code from dart2js/dart2js
+ Move updateCancelButtonVisibility to SearchInputType.
+ [omnibox] Implement shift-enter.
+ Fix for dart2dart/dart2js.
+ 2004-05-01 Tim Waugh <twaugh@redhat.com>
+ Update co19 status for dart2dart.
+ Refactor scoped_refptr<> classes.
+ Text selection: send zoom bounds in flipped screen coordinates.
+ Remove guava from multiple_proguards_test_apk target.
+ * TestWebKitAPI/InjectedBundle.pri:
+ Make texSubImage2D accept compatible format.
+ Remove unneeded key bindings in closure_compilation.
+ Make BrowserAccessibility inherit from AXPlatformNodeDelegate.
+ Remove sys/resource.h, improve system PRNG implementation.
+ Convert editing/execCommand/19653-{1,2}.html to use assert_selection()
+ Ignore reports from TimeTicks::IsHighResolution.
+ Define content_features.h in services/network
+ Reorganize rebaseline.py and fix pylint warnings.
+ DevTools: use local storage for custom devtools settings
+ Remove unused code from dart2js/dart2js.
+ [Android Autofill] Migrate origin and signon_realm to proper format.
+ Fix default file format for sqlite.gyp.
+ Make DhcpPacFileFetcherChromeos not use AdaptCallbackForRepeating().
+ Add a method to get the number of iterations in a benchmark.
+ [WebLayer] Handle content settings change as user gesture.
+ Add geolocation-permission-callbacks layout test.
+ Revert "Revert r268448"
+ [Sheriff] Clean up some of the test expectations.
+ Remove unused proto message and fields from dart2js.
+ Synced wallpaper picker with chrome://sync.
+ Remove unused shortcut list in KeyboardUtils.java.
+ Move stl_util.h into base namespace.
+ Fix URL in soft keyboard for Go button in the soft keyboard
+ * WebKit.pbproj/project.pbxproj: removed locationField specific drag methods
+ Fix for issue 39057. Add a test to ensure that we don't crash when we try to create a new file.
+ [AnimationTiming] Run worklet animations regardless of input time
+ Remove unnecessary WeakPtrs from SyncBackendHostCore.
+ Update needkey test to verify MIME type.
+ Get rid of the "unused variable" warning.
+ Add 'is_reload_attribute' to service workers.
+ [XProto] Add a few more histograms for XProto.
+ Update status file for dart2js_test.
+ Add jank to ProcessWindowMessage and PeekMessage.
+ Fix for issue 260388. Add a test to ensure that we don't crash when we try to use a non-existing library.
+ [webauthn] Refactor WebUI message handler
+ Re-apply "Revert "Re-apply r167394""
+ Fix for issue 122400. Add a test case for the issue.
+ Extend expiry of two histograms in blink/renderer/modules
+ Fix for cpsilv bug 94676.
+ Update naclterm.js to latest version.
+ Fade the views_examples bubble better.
+ Add a DCHECK to make sure we don't hit the DCHECK.
+ Avoid resampling content quad in WebVR mode
+ Remove linux_blink_rel.h.
+ desktop-pwas: Add manifest location and extra install flags
+ [CompositorView] Enable alpha channel on CompositorView
+ Use NSCompositeDestinationIn to draw tab images.
+ [Sheriff] Disable flaky tests on Mac.
+ Remove unused inputs variables from dart2dart.
+ Enable DirectComposition by default on Win10.
+ [Fuchsia] Call VLOG() per-frame.
+ Add README.chromium to third_party/icu
+ Add a check for doze mode in Android 6.0
+ Remove unnecessary dirtyLinesFromChangedChild call.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Remove SkCanvas::PaintRecord::Playback
+ Add a test to make sure we don't crash when we try to use a non-existent file.
+ Update status file for dart2dart_test.
+ base/allocator: add a symbol to the orderfile.
+ 2008-03-01 Tim Waugh <twaugh@redhat.com>
+ Remove PopupMenuStyle::itemIsDisplayNone().
+ [Previews] Do not show previews infobar for a tab.
+ Remove lld-relocation-packer tool.
+ Update co19 status for dart2js/dart2js.
+ Rename public/interfaces in /services/audio.
+ Use fp16 in CRC2D and ImageBitmap unit tests
+ [Sheriff] Disable flaky test on Mac.
+ [Paint Preview] Disable flaky test.
+ [perf] Add a test case for bug 639315.
+ Remove secondary accounts from ProfileOAuth2TokenService on iOS.
+ Move logic to retrieve WebPluginContainer from static methods to member method
+ Remove unused configuration for WebRTCVideoEncoder.
+ Update tryserver.blink:linux_blink_rel
+ Update status file for dart2dart/dart2js.
+ Cleaning up old path of pinch-zoom.
+ Add #include "base/location.h" in base/task_runner.h
+ Add a metric for the time between beacon uploads.
+ Revert "Revert r139124"
+ [DevTools] Disable flaky WebAudio tests.
+ Subzero: Hide file names on grid items.
+ Update OWNERS for webstore_widget_private.
+ Remove unnecessary setters for PreInsertionValidity
+ [Extensions] Remove HID dependency from chrome/browser
+ Move antialiased clips from ClipDisplayItems to FloatClip
+ Only add -isystem for libc++ files.
+ Don't leak messages in ui_tests.
+ Remove unneeded backslash in video_decode_accelerator.h
+ Disable flaky test on Mac. The test was flaky on Mac 10.12.
+ [CrOS MultiDevice] Add a notification to the Tether component
+ [Sheriff] Add a test for page scale.
+ Make ApplyBlockElementCommand::doApply() check if indent points non-null.
+ Introduce RTCPeerConnectionHandler::getRemoteStreams().
+ - fixed 3518092: REGRESSION (100-119): getting NaN instead of HH:MM times
+ Revert r47958, it breaks the build.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Don't cache the preferences in chrome/browser/ui.
+ Move some includes to *.cc files with forwards.
+ Disable system-config-printer for KDE.
+ Removed ScreenClient. It was highly unpopular, risking my midterm re-election.
+ Remove MediaControlElement::shadowPseudoId().
+ Fix a typo in the test expectations for FileReader.
+ Move lazy initialization code out of cc/base/switches.cc
+ Use ScopedTaskEnvironment instead of WebDataService.
+ 2004-05-07 Tim Waugh <twaugh@redhat.com>
+ 2008-03-03 Padraig O'Briain <padraig.obriain@sun.com>
+ Update status file for dart2js_test.
+ Add a test for the issue 119083 and 128177.
+ GpuMemoryBuffer: Add support for multiple buffers
+ [DevTools] Add a few more tests for DevTools.
+ * platform/mac/TestExpectations:
+ [scheduler] Add expected exceptions for assert_throws.
+ 2005-03-07 Tim Waugh <twaugh@redhat.com>
+ * http/tests/inspector/extensions-resources-redirect.html:
+ Fix base::OnceCallback<void(int)> to base::Closure.
+ Update ViewStorage when the View is removed from a Widget.
+ Include video_frame.h for IPC enums.
+ Add a compiler warning to the dart2js test.
+ [dart2js] Implement a copy of the surface
+ [Extensions] Move logic to get v8 global objects to ExtensionFrameHelper
+ 2004-10-03 Jeremy Katz <katzj@redhat.com>
+ Change mappings for global proxy objects in Blink.
+ Support depth capture on Windows/Linux and ChromeOS
+ [fuchsia] Add mx_get_startup_handle().
+ Remove unneeded .rc files from dart2js tests.
+ Refactor quick_launch and font_services.
+ Use SetWindowPos instead of SWP_NOCOPYBITS
+ Remove unused code from dart2js.gypi.
+ Expose v8::Module::Status() as ScriptModule:: Status()
+ Add tabs-on-left to about:labs.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Don't die if the Play Store starts installing an app.
+ Fix FileManagerJsTest to work with new file manager.
+ Remove unused method from dart2js_test.
+ [IndexedDB] Add more histograms for IndexedDB
+ Add support for in_intensity_both_raw als sensor.
+ Remove unused UMA metrics from WebRTC.
+ Add a test for a bug in WebKit that was introduced in r182242.
+ Update ahem.js to work in SVG documents.
+ [MediaCodec] Update channel count in response to OUTPUT_FORMAT_CHANGED.
+ Make animVal return 'active' instead of 'href'
+ Change main world check in DOMDataStore to not use Node.
+ [Sheriff] Disable flaky tests on ChromeOS
+ Extend expiry of some histogram expiry histograms
+ Add network menu to the list of network menu items.
+ * platform/win/transforms/2d/hindi-rotated-expected.txt:
+ Remove SiteIsolation::IsolatedSiteIsolation()
+ Update co19 status for flaky test on Mac.
+ Remove support for the old format of dart2js.
+ [tryserver] Disable flaky tests on Mac.
+ Don't provide default locale as language for fallback fonts.
+ [LayoutNG] Use snapport rect for paging
+ Remove ScriptState::current() from StorageQuota.
+ [v4l2] Add support for VDA.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Add support for capabilities.alwaysMatch and capabilities.firstMatch.
+ Remove the "easy off-store install" switch.
+ Add support for Ozone and X11 platforms.
+ Roll src/third_party/breakpad/ 33a43757f..5aac5eabb (2 commits)
+ Fix for issue 54294. Add a test case for the issue.
+ Fix the default path for the integration tests on Windows.
+ Adds data reduction proxies to proxy info for a request.
+ Revert "Revert r160328"
+ Move FrameTreeShape tests to their own file.
+ Remove unused methods from dart2js.dart.
+ Remove unused code from chrome/browser/ui.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Change the format of drive URL for external file system backend.
+ Re-enable flaky test on ChromeOS.
+ Initialise m_block in LayoutScope constructor.
+ Use TimeDelta::From... for StartOneShot
+ Remove unused code to get blob factory from URLLoaderFactoryGetter.
+ Remove unused code from dart2js.dart.
+ Pass whether a tab's title is needed to native code.
+ wm: Add missing files for tablet mode manager transition.
+ [yandex] Use const Node& in some functions.
+ Don't try to create a new file if it doesn't exist.
+ Add a boolean to the video update message to indicate whether video is fullscreen.
+ Add LICENSE file to README.chromium.
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ Re-enable some tests in site-per-process.
+ Log USB printers with attributes and the fact that they were configured automatically
+ Add a feature flag for caBLE for Windows.
+ * platform/mac/TestExpectations:
+ Replace icons of cursors' icons with icons.
+ WebView: Allow app to specify a different data dir.
+ * fast/dom/Orientation/create-event-orientationchange-expected.txt: Fix line endings
+ Break down histograms based on NCN state.
+ Add CopyResource to ResourcePool and ResourcePool.
+ Move ui/ozone/public to ui-ozone-gpu
+ [Sheriff] Add a test to verify that we don't crash when we fail to create a report.
+ Use threadSafeBind for cross-thread task posting.
+ * Plugins/Hosted/WebKitPluginHostTypes.h: Add copyright headers.
+ Disable Chrome data use ascriber on mac platforms.
+ [Trusted Types] Remove redundant feature-enabled switch.
+ Add a utility function to generate a leaf hash of a Merkle tree leaf
+ Move WorkletScriptLoader from core/workers to core/loader
+ Add audio beeps for fake video devices. (Fixes #260073013)
+ Add partmap attribute to Element and ElementRareData.
+ Assert unsupported TimeUnit used with TimesHistogram
+ [Paint Preview] Add fuzzers for raw data patch generation.
+ PNaCl: Allow a separate debug URL in NMF
+ Hide reload infobar when changing media stream settings.
+ * page/SecurityOrigin.h (WebCore::SecurityOrigin::domainWasSetInDOM):
+ Don't populate Bloom filter with ancestor attributes for ::first-letter.
+ Validate offscreen framebuffer resizing to zero.
+ WebInspector: inspector protocol should be switched from array based message format
+ Reland "Make elements outside of the fullscreen element inert"
+ [Files app] Update the design of control panel.
+ Remove the popup blocker from the WebContents class.
+ fuchsia: Remove unused FuchsiaFileSystem::FileSystem
+ [dartdevc] Make host_id config field optional.
+ Add a test to ensure that we don't crash when we try to create a new file in the same directory.
+ [WebView] Make WebViewClient non-null.
+ Remove unnecessary calls to SetExitType() and CommitPendingWrite()
+ Update co19 status for dart2js_test.
+ cc: Only send BeginFrames inside an impl frame.
+ Stop culling out painting of svg images and svg shapes
+ Allow inspector to adjust css rules for visited links.
+ Update comments in update_test_expectations.py
+ [Touch Bar] Customize default touch bar.
+ * kwq/DOMDocument.mm:
+ Update co19 status for dart2js/dart2js.
+ Add support for the new D-Bus interface.
+ [CrOS MultiDevice] Creates connections to remote devices
+ Remove unused argument in linux_trusty_blink_rel
+ Replace WebContents::GetRenderProcessHost with GetProcess().
+ Fix OomPriorityManagerBasics test.
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ Remove non-Latin1 characters from String::Format
+ 2004-10-05 Jeremy Katz <katzj@redhat.com>
+ Version 3.2.5 (automated commit)
+ Add logging to HOST_RESOLVER_IMPL_JOB.
+ Add flag to show pull-to-refresh in-product help bubble
+ Fix a bug in the Logitech C920 pixel format.
+ * loader/CachedFont.cpp: Remove unused variables.
+ Remove SessionDependencyFactory and use Java implementation.
+ Add ResourceCoordinationUnitIntrospector.
+ Add support for GL_UNSIGNED_BYTE.
+ Don't pass NULL to Callbacks in dart2js.
+ Make the URLRequestContextBuilder thread-safe.
+ Roll src/third_party/angle 2bfe9f6b9..d92d9dd18 (1 commits)
+ Use SurfaceReference instead of parent_id and child_id
+ [ChromeDriver] Add video decode path for OREO+.
+ DnsTransaction: Allocate ports sequentially on Windows.
+ Clear the list of running apps when chrome starts.
+ [omnibox] Restrict tab switch button to space
+ Refactor BrowserDMTokenStorage to use common code
+ Deprecate brightness filter and remove usecounter for it
+ Move the timer scheduling into its own function in Blink.
+ Remove padding from audio and video frames in cast.
+ Use a single SetStyle for viewport ComputedStyle.
+ Add tooltips to the context menu when opening a context menu.
+ * WebKit.pbproj/project.pbxproj:
+ 2005-03-07 Tim Waugh <twaugh@redhat.com>
+ Make sure we do not use the same directory as the main directory.
+ Consolidate commit-time previews decision in ChromeResourceDispatcherHostDelegate
+ [Sheriff] Re-add a TODO.
+ Use IdentityManager in ArcTermsOfServiceDefaultNegotiatorTest
+ * JavaScriptCore.xcodeproj/project.pbxproj:
+ ozone/wayland: Add support for Wayland windows to fullscreen
+ Move proxy resolver Mojo files to services/proxy_resolver
+ [DevTools] Rebaseline some tests in DevTools
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Include the gap between the pages in the search.
+ Send Previews UI service resource loading hints to renderer
+ Disable flaky tests in //chrome/browser/closure_compilation
+ * JavaScriptCore.pri: Remove unused code.
+ [Hotword] Add "Hotword Module Installable" field.
+ Refactor Invalidation and ObjectIdInvalidationMap.
+ Use WebKit's priority for deferred scripts and preloads.
+ [Fuchsia] Update Fuchsia version
+ Show system tray from LoginScreenController in OOBE
+ Fix a typo in a comment. The comment is now in the correct place.
+ Don't connect more than one socket if HttpServerProperties is not supported.
+ * platform/efl/fast/ruby-text-before-after-content-expected.png: Added.
+ Re-enable -Wshorten-64-to-32
+ Remove unused flag from dart2js_test.
+ 2004-10-03 Padraig O'Briain <padraig.obriain@sun.com>
+ Fix typo and remove text around Renderer resource scheduler
+ Disable flaky GPU tests on MSAN and MSAN
+ [ios] Disable flaky tests on Mac 10.12
+ Validator_ragel: Don't warn on unused arrow function.
+ Don't show Always Translate for manually translated pages.
+ Update co19 status for dart2js/dart2js.
+ Move extension_protocol.cc into //extensions/browser
+ Add a tab to the top of the page.
+ Revive WorkerThreadableLoader for sync XHR
+ Introduce ModuleScript::HasInstantiated() in modulator infra
+ [Sheriff] Disable flaky test on Windows.
+ WebCore: Roll-out changes r60094, 60096-60097.
+ Rename kLanguageEnabledImes{,Syncable}
+ Fix gtk-doc warnings in gtk.c
+ Revert "Revert r192933"
+ [Sheriff] Disable flaky test on Mac
+ Fix build with gcc 4.6.0.
+ Add a test for the issue 376007.
+ [AF] Don't check for actions when showing titles.
+ Re-enable AppBannerManagerBrowserTests.
+ [Chrome Colors] Change expiry date field.
+ 2008-03-01 Tim Waugh <twaugh@redhat.com>
+ Use system::kFirmwareTypeKey in AutoEnrollmentController
+ Clean up dart2dart_test.dart.
+ Cleanup: s/NULL/nullptr/g
+ Use a single class for WebRTC::WebRTCClient
+ Modify CSSImportRule, CSSMediaRule IDL files
+ Merge GraphicsContext3DSkia.cpp into GraphicsContext 3D.
+ Android: Clean up DEPS exception rules for some classes
+ Disable format and zip selection commands for write-protected devices.
+ Revert r19432: "Revert r19431: [dart2dart] Add support for dart2js"
+ Remove LazyReattachIfAttached() from Document::WillChangeFrameOwnerProperties
+ [CrOS Settings] Add icons and .svg files
+ Null-check |document_| before using it
+ Don't retry channel connection in posted/delayed task.
+ Disable a test for exception handling in the browser.
+ Remove hard-coded params in the json file.
+ Fix build breakage in pkg/compile.
+ Fix frame rate display in debug mode on Mac.
+ Remove unused code from dart2js/dart2js.
+ Fixing a typo in the test.dart file.
+ Rebaseline: [Fuchsia] Add tests for fixed-position-out-of-view
+ Enable FastPaint only for software compositing.
+ Do not collect/show trace events during warm-up.
+ Bug 21255: Console.profileEnd() without a console.profile() crashes the web inspector
+ DNR: Add schema for Declarative Net Request rules.
+ Validator_ragel: Update to latest revision.
+ DisplayColorManager: Add ability to set CRTC color matrix
+ * WebCore.vcproj: Fixed "caro" -> "cairo" typo.
+ * html/FormControlState.cpp: Use one CSV string for state of single form control.
+ Fix build on Windows with -Wunused-parameters.
+ desktop-pwas: Do not return early if there is no Browser window
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ third_party/WebKit: include base/macros.h
+ [Sheriff] Disable flaky test on Mac.
+ Revert "Revert "Add a test to make sure we don't crash when we try to create a new file""
+ Add support for empty string fields in dart2js.
+ Use base::queue instead of base::qqueue
+ Add a ChromeOS midi daemon to ARC++.
+ Make Metalayer and Highlighter mash-compatible
+ Add histograms for browsing history.google.com.
+ Subzero: Initial implementation of decoded AudioBuffers
+ Remove OS(POSIX) from StringExtras.
+ Use TestMockTimeTaskRunner in unit tests
+ Update status file for dart2js_test.
+ scheduler: Run each BeginFrame in full-pipe mode
+ Rewrite base::Bind to base:: BindOnce
+ Revert r133058, it breaks the build.
+ Add support for editing bookmark buttons. This allows you to edit a bookmark button to edit it.
+ Add new site identity section for password reuse case.
+ Don't rely on getPropertyCSSValue to get CSS values.
+ [css-pseudo] Clean up some code.
+ Inject password_controller.js with WKWebView.
+ Add translate context menu to the page translate infobar.
+ Revert r101305, which broke the build.
+ Implement NativePanelStackWindow for Linux (GTK).
+ Rename initWithWebContents -> initWithBridge
+ [iOS] Show the hint as the first item on the dropdown.
+ 2008-03-03 Padraig O'Briain <padraig.obriain@sun.com>
+ Don't clear selected LayoutObject's SelectionState to kNone
+ Fix for SyntaxWarning: assertion is always true.
+ * rendering/SVGRenderSupport.cpp:
+ Add a visual representation of properties.txt in the layout tests.
+ Prepare to use snapshot events in filmstrip model.
+ 2004-05-07 Padraig O'Briain <padraig.obriain@sun.com>
+ Remove URL suggestions from Instant page if the user text hasn't changed
+ Make chart JSON optional in two test harnesses.
+ Don't match gesture recognizer if description is not nullable.
+ [Fuchsia] Avoid blocking IO in GetPackageRoot()
+ Mark the renderer for invalidations when removing a RenderLayer.
+ Clean up unused feature flags in AndroidX WebView
+ [Android] Stop opening CCT for out-of-scope navigations
+ Add ctors/dtor to various structs.
+ Add label for chosen object views in Page Info bubble.
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ Add IsPendingWallpaper methods to WallpaperManager.
+ [Sheriff] Re-enable flaky test.
+ PopupTest: Ensure that the browser list is updated before closing.
+ [Sheriff] Disable flaky test on Windows.
+ Remove unnecessary http request for top level PDFs.
+ Update dart2dart status after r147956.
+ Revert "Revert r50434"
+ Remove UsesCompositedScrolling from paint_invalidation_container.
+ Add draw phase to WebRTCRenderer.
+ Subzero: Load record segments from overflow pages.
+ Remove kForceLoadCloudPolicy command line switch.
+ * ForwardingHeaders/wtf/text/StringHash.h: Added.
+ [quickview] Exclude BasicDrive tests in Mash
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ Fix string formatting in test_runner.py.
+ Remove two unused methods from chrome/browser/ui.
+ [Sheriff] Disable flaky tests on ChromeOS.
+ [omnibox] Add tab switch button to suggestions
+ [Sheriff] Add a context menu for the password field.
+ [fuchsia] Add more histograms.
+ Worker: Move CreateWorkerThread() to 'private'
+ Mark Drive extension migrator to auto acknowledge the external install bubble.
+ Don't create port forwarding connections if port map is empty.
+ Remove the old directory layout for dart2js.
+ [LayoutNG] Share CollectSelectedMap() from LayoutSelection.
+ Revert "Revert r52554"
+ [WebLayer] Remove unused code in WebLayer::GetWebLayer
+ ServiceWorker: Clean up ThreadableLoadingContext
+ Remove serialization of some test methods in chrome/browser/ui.
+ Desktop PWAs: Remove runtime flag for auxclick
+ Filter out default args for scoped_ptr_malloc.
+ Make V2 app windows look like Windows 8 windows.
+ CopyTexImage: Validate accepted formats for WebGL1 and WebGL2.
+ Remove "permissions" string from extensions/apps.html.
+ Remove GYP/GN command-line parsing logic.
+ [MediaCodecList] Don't throw exceptions.
+ Revert r111232, it broke the build.
+ [ios] Roll material_components_ios and material_internationalization_ios
+ Add support for keystore encryption to the VM.
+ [profile-menu] Update strings in user menu
+ * Plugins.subproj/npruntime.h: New file.
+ Remove unused code from dart2js.dart.
+ Make HidConnection::Read safe to call from within callback.
+ Update co19 status for dart2dart.
+ Migrate BrowserThread::FILE to BrowserThread.
+ Add a test for the issue that was introduced in https://codereview.chromium.org/1776483002
+ Add support for 'loadStart' event callback.
+ Remove xkeyboard_data.h include.
+ Subzero: Hide default checkbox on Mac.
+ cbuiv: include base/macros.h where needed
+ Fixing a typo in the test.dart file.
+ Improve autocompletion in dart2dart.
+ [clang-tidy] Modernize drive code.
+ Refactor RapporMetric tests to use Sample fields.
+ GpuSwitchingManager: Create a new OpenGL context.
+ Fixing a bug in Qt-port that caused the build to fail on Windows. This was caused by a missing WEBKIT_TESTFONTS
+ Fix crash in CopyFromCompositingSurface.
+ Clean up old navigation code from RenderFrameImpl.
+ Add CopyFile(In|Out)putStream and UnindexedRuleset
+ [Sheriff] Add testBlacklistedUrl()
+ Fix for issue 89795. Add a test case for the issue.
+ Rename PaintArtifactCompositor to Blink.CompositingCommit.UpdateTime
+ Initial implementation of dart2dart_test.
+ Remove unused code from dart2js/test.dart
+ Add SW fallback for HW H264 encode.
+ Change some variables from thisFormat to this_format
+ - fixed 3525468: HOMEPAGE: after hitting textarea limit, backspace key is ignored
+ Update status file for dart2js_test.
+ Add AssertComInitialized to DCHECKs when COM is not initialized
+ Don't set span to 0 if table-column-group is not set.
+ Get rid of chrome/chrome/browser/ui/chromeos.
+ [SessionStateAnimator] Hiding shelf container
+ [Passwords] Make password editing optional on Mac.
+ Fix gpu/command_buffer/build_gles2_cmd_buffer
+ * rendering/RenderGrid.cpp: Added grid-auto-flow support.
+ Use -Wl,--section-start=.text=2001000 at link time.
+ [dart2js] Use binary-search for domain lists.
+ Add extensionview to chrome-extension://extensionid
+ Make GetActiveEntry return null if there are no entries.
+ Remove rasterize_and_record benchmark.
+ Update co19 status for dart2js_test.
+ [DevTools] Recognize invalid CSSIdentifiers
+ VaapiVideoDecodeAccelerator: Use BGRX buffers
+ Revert "Revert r269938"
+ [Signin][Android] Add SigninAccessPoint parameter to AccountSigninView
+ Roll src/third_party/libvpx/source/libVpx/ 3f7e6cc02..87386826a (6 commits)
+ Enable battor agent unit tests on the waterfall.
+ [Autofill Assistant] Remove unused code.
+ Add a test case for a bug in the browser.
+ Collapse wm_shelf_constants.h with shelf_types.h
+ Read client config from pref when it is more than 24 hours old
+ Cleanup: Remove unused method signature for GetScheduler.
+ Use NVML for NVIDIA driver version and CUDA compute capability.
+ Remove unused code from chrome/browser/ui/views
+ Update omnibox magnifying glass to match security icon.
+ [mojo] Make sure we don't use UpdateProcThreadAttribute.
+ Convert CSSPrimitiveValueUnits.in to json5 format
+ Update the CSP docs to reflect the new CSP API.
+ AW: change comment to match param name in content layer
+ Update status file for dart2js_test.
+ Add fake device to ContentPreferencesTest.testCameraMicNotBlocked.
+ Revert r287812: "Revert r287912: [dart2js] Add a test case for a bug in dart2js"
+ Android: Refactor AsyncTask to use TaskScheduler
+ Don't clear contentWindow if BrowserPlugin goes away.
+ DevTools: Make sure we have a single event in the event queue
+ Add a test for currentColor in css transition animation.
+ Roll src/ios/third_party/ninja/
+ Remove unused methods from dart2js_test.
+ Update status file for dart2js_test.
+ bind-gen: Implement NodeFilter based on CallbackInterfaceBase
+ [Sheriff] Use gn binary for all tests.
+ * kjs/Shell.cpp (runWithScripts): Fixed indentation.
+ Fix ExtensionFunction returning asynchronously if TopSites hasn't loaded.
+ Fix crash in SafeBrowsingBrowserTest.
+ Revert "Revert "Add a test to make sure we don't crash when we try to load a non-existing file""
+ Disable insecure-iframe-in-main-frame.html in off-Main-thread-fetch.
+ [WebLayer] Remove PPAPI-handled file extensions.
+ * tests/mozilla/ecma/Array/15.4.5.1-1.js: updated to skip soft hyphens
+ Add ability to render passwords into a label on OSX.
+ Added lock calls around buffer queue in demuxer stream.
+ Add support for rendering to 32-bit float textures.
+ Don't specify invalid indexes in dart2js.
+ * FontCacheChromiumWin.cpp: Rename FontCache::ShouldRetain.
+ Add --user-data-dir option to hide favicons.
+ Creates ToolsMenuViewToolsCell and removes ToolsMenuButton.
+ [Sheriff] Refactor Repaint and Pixel tests.
+ [Media Feeds] Add renovation for mobile Wikipedia pages
+ Add a test for the issue 431853.
+ [Sheriff] Apply taller OPTIONs in SELECT popups.
+ * ForEachCoClass.h: Added a new class for each class.
+ Remove unused files from dart2js/dart2js.
+ Fix a few typos in some comments in GpuTest.
+ [Sheriff] Move KeySystems to media.
+ Split WebHistoryItem serialization into two parts.
+ Add a test for a bug that was introduced in r132957.
+ Remove unused methods from dart2js_test.
+ GpuMemoryBuffers: recognize RGB 1010102 format
+ Update status file for dart2js_unittest.
+ Update session tracker with sync data from a previous session.
+ Fix for issue 69258. Add a test case for the issue 69259.
+ Add overflow clip change logic for SVGForeignObject and SVGViewportContainer
+ Update status file for dart2js/dart2js
+ Add a mock for GDataSyncClient and update unit test.
+ Re-enable flaky test on Mac OS X.
+ CrOS Shelf: Fix GestureEvent creation.
+ Remove unused function from dart2js.dart.
+ Don't persist the blacklist for incognito browsing sessions
+ * khtml/rendering/render_list.cpp:
+ [Shubhie Panicker] Remove StopInBackground flag.
+ Switch non-compiling builders' MB configs to "none".
+ BoxClipper: Avoid clipping if the clip has no effect.
+ * platform/chromium/test_expectations.txt:
+ Use contentLayoutItem() instead of LocalFrame::contentLayoutObject()
+ [Sheriff] Disable flaky test on Mac.
+ Add support for local variables in dart2js.
+ [ScreenshotGrabber] Use the same sequenced task runner
+ [Audio Player] Remove /deep/ query selector
+ Use notifyVirtualValueChanged instead of notifyVirtualViewEntered
+ Update status file for dart2js_test.
+ Fix translation console for Hebrew and Norwegian Bokmål.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ V4L/DVB: Do not go into kDecoding state on SPS.
+ Instrument AppListView::InitAsBubbleInternal and Label::GetPreferredSize().
+ Add a pin icon to the start screen and use it in metro mode
+ 2008-03-01 Tim Waugh <twaugh@redhat.com>
+ Remove SQLiteChannelIDStore::MigrateChannelID
+ Remove unused suppressions for WebRTCClient.
+ [Sheriff] Clean up a couple of unittests.
+ [ios] Add kNewPassKitDownload and kNewFileDownload flags.
+ [Autofill Assistant] Remove unused feature.
+ Change app banner content setting to be a dictionary.
+ [tryserver] Generate discardable images metadata when picture caching is enabled.
+ Remove unused RunPageInteractions from the metrics.
+ Use the correct color for the status bar and status bar.
+ Fix for issue 250000. Add a test case for the issue 25000.
+ Fix for media_unittests.dart.
+ ObjC exception preprocessor: unwind the stack to find an exception handler.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Add --ipc-dump-directory=DIR option
+ [Sheriff] Disable flaky test on Windows.
+ Remove unused field trial_testing_config.json.
+ Clean up logic for adding accessibility description for tabs.
+ * fast/events/onunload-not-on-body-expected.txt:
+ IntroduceHTMLCanvaElement::convertToBlob()
+ [Dark Mode] Update history download bookmark and download file layout
+ Use GetHitTestLocation for HitTestResult.
+ Update co19 status for flaky test on Mac.
+ Revert r26986, it breaks the build.
+ Change Profile::IsGuestSession to be called from any thread.
+ * platform/chromium/test_expectations.txt:
+ Revert "Revert r12201"
+ Remove DriveServiceInterface parameter from SyncEngineContext.
+ Fixing a typo in the test.dart file.
+ Use CastGestureHandler instead of TouchExplorationController
+ [iOS] Move the ViewController to the device
+ CrOS Shelf: Add a mojo shelf test API
+ Files app: Add My Files parent on navigation tree
+ Add a test for the issue #417339.
+ Add 2-clause BSD to whitelisted licenses
+ Remove the line "mac" from the field trial
+ * inspector/front-end/inspector.js (WebInspector.log.isLogAvailable):
+ Refactor skip_first_run_ui.
+ cros: Remove custom image from tab button painting routine.
+ Hide sign in guide in guest mode and show no synced tabs.
+ Give AudioContextTest and BaseAudioContextTest unique names
+ [Android Spnego] Update README.
+ Update status file for dart2js_test.
+ 2008-04-21 Tim Waugh <twaugh@redhat.com>
+ [TimelineProvider] Remove multiple timelines from constructor
+ Add MIPS to kArch for MIPS build.
+ MacPWAs: Don't set background color on delegated layers
+ cros: UMA sequence analyzer improvements.
+ Change kContextualSearchEnabled to a string.
+ Make some search engines editable and mark them as editable.
+ Move the backend & frontend code to their own folders
+ Enable display list 2D canvas by default in Chrome.
+ UseCounter.h is no longer needed anymore.
+ Use GetAll() to retrieve all arguments from gin::Arguments.
+ [NTP] Check Snippet index before dismissing it.
+ Change the HttpArchiveResult to use the entire corpus of pages
+ Do not use extern template declarations for NaCl.
+ Add a test for the issue that was introduced in r347507.
+ [VirtualKeyboard] Hide virtual keyboard only if locked.
+ Allow AndroidProviderBackend to run without thumbnail db.
+ Add support for shell verbs in the Windows SDK.
+ Don't update the system tray's time format in response to LoggedInStateChanged().
+ * khtml/css/cssproperties.h: (khtml::cssStyleSelector::pseudoStyleForElement): (Khtml::CSSCSS3InheritedData::operator==): (RenderStyle::diff):
+ Order decoder creation by rank (r193361).
+ * inspector/front-end/HeapSnapshotView.js:
+ weblayer: don't install EventRewriterChromeOS
+ Add a test to ensure that we don't crash when we try to create a new file.
+ Add JS CPU profile to the timeline with a JS profile.
+ Remove WebRTC from the list of supported apps.
+ Revert r114278, which broke the build.
+ Allow setting a list to empty in the Windows Group Policy editor.
+ Remove unittests that require at least SPDY/3.1
+ DevTools: Fix a typo in a comment.
+ [Nearby] Dismiss the bubble when the web contents is clicked
+ Remove unused methods on WebViewDelegate and WebMetricsRecordAction
+ * fast/writing-mode/borders.html:
+ [Sheriff] Increase timeout for CustomTabActivityTests.
+ Disable HTTPCache in ServiceWorker.
+ * jit/JITOpcodes.cpp (JSC::JIT::emitSlow_op_loop_if_less):
+ Make PROGRESS use LayoutProgress if it has no appearance
+ Add VideoCaptureDevice::OnIncomingCaptureBuffer().
+ [ChromeDriver] Rename send_command_and_get_result endpoint
+ Clear Browsing Data dialog, unckeck all checkboxes.
+ [Sheriff] Disable flaky SitePerProcessBrowserTest.PerProcess
+ Validator_ragel: update to latest version.
+ * WebCore.pro: Remove unused code.
+ Reland "[chrome_elf, third-party block support] full hook testing."
+ Use __OBJC__ in WebContentsViewDelegate.
+ Update co19 status for dart2js_test.
+ Make sure we don't break a bot with the same configuration.
+ Update user style sheets based on media query changes.
+ * WebCore.pri: * Qt.h:
+ Reland: Add modester parameters for WebRTC
+ Reland "Define enable_arcore and add some build rules"
+ Fix some style nits in dart2js.
+ Refactor VideoCaptureFormat and VideoCaptureParams.
+ [DevTools] Convert test helpers to new format
+ Revert r11538: "Revert r11537: [dart2js] Add a test for the new dart2js API."
+ Remove VDA-specific code from VDA tests.
+ Introduce bulk API for unlocking transfer cache entries.
+ Add a DCHECK before setting the preferences file.
+ Fix for dart2dart/dart2js.
+ [Sheriff] Remove mojo tests on Android
+ Don't clear the cache when starting the Physical Web service.
+ Removed LayoutTest.GetScaleFactorFromScaleNoneSupported().
+ 2004-03-07 Tim Waugh <twaugh@redhat.com>
+ * inspector/front-end/Images/statusbarButtonGlyphs.png:
+ Add extensions to chrome://chrome and click on "extensions"
+ Use namespace for GpuMemoryBuffer::Format.
+ Roll src/third_party/catapult 82d4df2ea..863250f04 (4 commits)
+ Update co19 status for dart2dart.
+ Add a test for the issue164335 and use it in dart2js.
+ [quickview] Improve the message on test failure
+ Update status file for dart2js_test.
+ Code cleanups in chrome/browser/unittests.
+ [Sheriff] Optimize xhdpi and mdpi.
+ [mojom] add inputs dependency for mojom generator action
+ Add a test for a bug 240165.
+ Initial implementation of CopyTexSubImage with GpuMemoryBuffer
+ Remove last player reference from CompositorPendingAnimations.
+ * plugins/gtk/PluginViewGtk.cpp: Use reinterpet_cast to convert X11 Windows into void
+ Fixed a bug in the QWebElement class.
+ Remove RenderFrameHost::getClientInfo() interface.
+ Add a test for the code that is used to create a new file.
+ [Shell] Remove unused code from ChromeShell.
+ Pass Mailbox to IPC instead of string.
+ Remove BrowserPluginGuestDelegate from WebContents.
+ Move custom-element-related code out of Document.cpp
+ Use layoutViewItem() instead of Document::layoutView()
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ * layout-tests/editing/style/create-block-for-style-012-expected.txt:
+ [Sheriff] Disable flaky tests on Windows.
+ Add support for running dart2js tests from any directory.
+ [EoS] Add a new metric to track the number of times a user is logged in.
+ [ios] Update layout test expectations for 10.5
+ Add CONTENT_EXPORT to some classes.
+ Make sizes.py ignore lines that start with '#'.
+ gn_helpers: Fix some build warnings.
+ [ios] Disable flaky tests in ios_simulator_cronet
+ Disable flaky test on Windows and Mac. (#822614)
+ Do not cache PasswordManager address in PasswordHandler::PasswordManager
+ Cleaning up a bunch of TODO comments.
+ Reland "Settings: Content settings can now be reset for a group of origins in All Sites."
+ [Android][WebAPK] Open WebAPK URLs in CCT
+ bind-gen: Convert NotificationPermissionCallback to callback function
+ Make is_tracing_start_ depend on IsTracing.
+ [closure-compilation] Remove unused code.
+ Revert "Revert r10770"
+ [LayoutNG] Paint scrollbars in NGBoxFragmentPainter
+ service worker: Add detached-context.https.html.
+ Add support for HTMLFormControlElement.{h,cpp}
+ 2005-03-03 Tim Waugh <twaugh@redhat.com>
+ service worker: Remove "chromium" directory.
+ Remove ThreadState::m_forcePreciseGCForTesting
+ * inspector/InspectorState.h:
+ Roll QUIC to the latest version (2020-03-01).
+ Remove skia and gfx from chrome.exe.
+ Move TidyUpHTMLStructure() to improve code health
+ Update the language strings for the new Mojo API.
+ Update extension settings to use the new extension settings API.
+ Make bin/run_X a python script.
+ Don't use lib.target when building with make.
+ [CodeCompletion] Clean up method/identifier comments.
+ Change accept attribute to "video/*" or "audio/*"
+ Remove unused enum values from dart2dart.
+ Update chromeos_tray_delegate_chromeos.cc
+ [Sheriff] Clean up expectations for wpt/accelerometer
+ Remove unused fieldtrial_testing_config.json files.
+ Remove the "%ls" format specifier from dart2js.
+ Add support for ArcUnsupported in DemoSetup.
+ [clangd] Add clang-format to tools/roll_clang.
+ Remove NaClIPCAdapter::RewrittenMessage.
+ [LayoutNG] Re-enable flaky test.
+ [DevTools] Remove unused methods from DevTools
+ Use amex-specific cvc icon for saved autofill card.
+ Add a test for the issue #479048.
+ [lucicfg] Reduce scope to linux.
+ [AF] Update profile and credit card toggles.
+ Add TraceConfig class to unify CategoryFilter and TraceOptions.
+ Remove unused includes of net/cert and net/ssl.
+ Fixing a typo in the test.dart file.
+ Only reset the hang monitor timeout based on ack.
+ Fixing a typo in the test.dart file.
+ [ios] Remove unused WebThreads in //ios/chrome/browser/web_threads.
+ Remove support for PNaCl.NPAPI.
+ [Sheriff] Add a test to ensure that widths aren't negative when they shouldn't be
+ Replace WebContents::GetRenderProcessHost with GetProcess().
+ [CrOS MultiDevice] Hide Tether toggle for Mobile Data section
+ chromeos: Remove unused root window name setting.
+ Move LocalSiteCharacteristicsDataWriter to its own file
+ Remove expat dependency from chrome/browser/extensions.
+ * platform/mac/fast/layers/video-layer-expected.txt:
+ Enable MT and impl-only animations in Blink.
+ [TexStorage] Set internalformat to format in es2 context
+ [milo] Update third_party/milo.
+ [RTP] Cleanup RTP Video Payload constants.
+ * fast/js/for-in-avoid-duplicates.txt:
+ Fix SCMDetector to return Git or None.
+ Update co19 status for pkg/unittest.
+ Use linear constexpr search for hash_map.
+ [Android] Return false if there are no MIDI devices.
+ [CrOS Settings] Add the ability to set a closure
+ [bfcache] Add a test for Bfcache::GetBfcache.
+ Don't use XML formatting for array entries when collapsed.
+ 2004-05-07 Tim Waugh <twaugh@redhat.com>
+ Move CalculateRelevance to Result class.
+ mac10.6/dhtml is orange.
+ Restrict --target-component flags to lower-cased strings
+ Add CrosAddIPConfig to CrosNetworkFunctions.
+ Add LayoutLIItem to the new layout API.
+ [LayoutNG] Don't create MetaDisplay items for SPv2
+ Make overlay page script understand the whole layer tree.
+ Don't use InstanceHandle in the VM.
+ Roll src/third_party/angle 379681336..c081020c7 (1 commits)
+ Add EarlGrey to PRESUBMIT.py.
+ Make print preview tests use the generator as well.
+ * plugins/gtk/PluginViewGtk.cpp: Use reinterpet_cast to convert X11 Windows into void
+ Update status text and animation state for downloads that don't generate any notifications.
+ Make ScreenDimmer owned by the person using it.
+ arc: Hide ToS when it's not shown.
+ Add retry logic to CryptoSecretBoxes.
+ Change YUVDrawFrame to use REC709 if no valid color space is specified
+ Add CHECKs for WebViewBrowserTest.
+ Add support for SCTs in Expect-CT reports.
+ Add a test for the issue #578306.
+ Re-use .eslintignore for clang-format
+ Call NotifyError before delegate_ is assigned to.
+ Ensure back button is closed when there are no tabs.
+ [perf] Make select-multiple-add and select-single-add optional.
+ Update status file for dart2js/dart2js
+ Disable flaky PDFExtensionTest.AutoSize
+ Extract the mediator into its own file and move it to the model.
+ [base] Use JsonPrefStore task runner instead of injecting one
+ * WebKitTestRunner/Makefile.am:
+ [Print Preview] Remove InfoBarService from print preview.
+ Create data pack to load resources.pak in service manager
+ Remove support for --enable-dart2js.
+ Indent to nearest column in the tab of the browser.
+ Fix for issue 91719. Add a test case for the issue.
+ Remove link_url from GetShownOriginAndLinkUrl.
+ Fix manual test by minimizing panel and alt-tabbing to it
+ Update status file for dart2js_test.
+ 2005-03-03 Tim Waugh <twaugh@redhat.com>
+ Add support for embedder hooks in dart2js.
+ [Signin][Android] Change layouts of account rows
+ Use ChromeAppListItem in AppListModelUpdater interfaces
+ Use atomic_int instead of atomic<int>
+ * platform/chromium/test_expectations.txt:
+ [Sheriff] Disable flaky tests on Mac.
+ views: remove "clear on exit" text from the Blocked panel
+ Update status file for dart2js/dart2js.
+ Remove unused parameters from DIP scale change processing.
+ Use VisuallyEqual for background image comparison.
+ [content] Override PermissionManager methods.
+ Add swarming to the bot's build system.
+ [IndexedDB] Add a test to verify that we don't crash when we try to create a new IndexedDB.
+ Send error messages to client after media stream is generated.
+ Fix for issue 45254. Add a test to ensure that we don't crash when we try to create a new file.
+ service worker: Refactor ServiceWorkerServiceWorker.
+ FileSystemMetadataProvider: Use mime types for file icons.
+ Cache the theme pak version in the cache.
+ Do not assume that URLRequestContext has a ChannelIDService
+ * JavaScriptCore.vcproj/JavaScriptCore_debug.def:
+ [Sheriff] Clean up a couple of unittests.
+ Remove BINDINGS_POLICY_HEADLESS
+ Update status file for dart2js_test.
+ Replace use of WebTaskRunner::PostTask() with PostCrossThreadTask().
+ media: Add default bitrate for VEAEncoder.
+ [Sheriff] Disable flaky test on Mac.
+ Move CSSValue to blink::cssvalue:: namespace
+ Revert "Revert r185471"
+ Add missing ppapi_cpp_private/library.dsc files
+ Add format dummy.field_name to CastSysInfoDummy.
+ Improve intersection-observer/deep-layers performance.
+ [ChromeDriver] Disable flaky tests.
+ Refactor OmniboxEditModel and its related code.
+ chromeos: Collapse ash_classic_mode into its only subclass
+ Webkit: fix inconsistent zoom docs and enum name
+ Remove unused child process ID parameter from ChildProcessLauncher.
+ Add initial support for ChromeDriver and ChromeDriver.
+ Make SuggestionsServiceFactory::GetForProfile return null.
+ Fixed a bug in the Windows build that caused the build to fail on some platforms.
+ Introduce InsertCommands.h and make EditorCommand simpler
+ Print Preview: Add tests for MacOS and Windows
+ [ios] Hide the keyboard when clicking on the web input field
+ [CVC] Add an editor action listener for CVC unmask dialog.
+ [RTCPeerConnection] Add tracks to the peer connection.
+ Replace layoutView() with layoutViewItem() in LayoutItem.
+ Revert "Revert r17529"
+ Add support for ARC to samus build system.
+ [Sheriff] Fix a typo in a comment.
+ Re-enable more layout tests on ChromeOS.
+ Don't accept None values in run_test.py.
+ Add --dumpraw and --dumpyuv options
+ [WebView] Remove AsyncTask from CookieManager
+ Don't use a new blink instance when a request has referrer set.
+ Add more histograms to the histogram histogram.
+ Fix for issue 171881. Add a test case for the issue 178577.
+ Fix for issue 66219. - Fix for bug 66220. - Add a test case for the issue 66119.
+ MediaStream: Pass audio signal data in planar float format.
+ Make sure we don't try to use a non-null pointer for a null pointer.
+ Remove unused style sharing mode in Layout::Prerender.
+ Remove unused WKWebView subclass from CRWWebController.
+ Add a test for the issue 81846.
+ * platform/efl/fast/forms/validationMessage-expected.txt:
+ WebCore::DeprecatedString::format is broken on Windows
+ Update the app shim if an app name or icon changes.
+ Add support for extensions management UI to chrome windows.
+ [tools/perf] Remove unused code.
+ Don't load plugins from the user's home directory.
+ [iOS] Add a button to show the new tab in the overview.
+ Introduce VizProcessTransportFactory for viz mode.
+ [MIPS] Disable hashstyle gnu for MIPS
+ Adds lh-devtools class to report container
+ Use InfoBar clickable link for subresource loading
+ Add ScriptForbiddenScope to TreeScope::adoptIfNeeded.
+ Fix some lint warnings on the translation console.
+ Fix build breakage in dart2dart.
+ [CrOS Settings] Import web_state_delegate.h
+ [leveldb] Use synchronization primitives on TaskRunners.
+ Remove use of NOTIFICATION_TYPE_SIMPLE.
+ 2005-03-07 Erik Hjortsberg <erik@katastrof.nu>
+ apprtc: Add support for VP8 in H264.
+ Add a test to ensure that we don't crash when we try to create a new file in the same directory.
+ [Qt] Fix perl warning when calling chdir with an empty/undefined path
+ * WebKit.vcproj/WebKit.VCproj: * Webkit.vcProj:
+ Remove Node::MaxCharacterOffset() from CharacterData
+ Update status file for dart2js_test.
+ Android: Avoid rebuilding dependent java libraries when interface jar is unchanged
+ [Sheriff] Disable flaky test on Mac
+ * ChangeLog: WebKit: Fixed previous "Reviewed by".
+ media: rename PIXEL_FORMAT_YV24 --> PIXel_FORMat_I444
+ [Media Capture] Refactor VideoCapture*java classes.
+ Replace simple mus CompositorFrameMetadata with StructTraits
+ Allow text selection on stylus input devices. (bug 742373)
+ 2008-09-22 David Hyatt <hyatt@apple.com>
+ Add support for the new "make" command. This is the first step in making it possible to use the new command.
+ Update status file for dart2js_test.
+ Add test for 'short_name' and 'name'.
+ 2007-03-03 Tim Waugh <twaugh@redhat.com>
+ Fix for issue 131915 and 142841.
+ Add proxy methods for LineLayoutSVGInline and LayoutSVGTextPath
+ [clang] Rewrite identifiers in Blink to follow standard Chrome style.
+ Reland: Add modester parameters for WebRTC
+ Move OCSP stapling out of SSLClientSocket.
+ CrOS Shelf: Drag the launcher from the shelf.
+ Navi: Hide aria-labelledby element.
+ * platform/win/fast/dom/prototype-inheritance-2-expected.txt:
+ Remove third_party/closure_linter.
+ Fixing a typo in the test.dart file.
+ Make mouse-wheel scroll the Chrome window under the cursor.
+ * WebView.subproj/WebDataSourcePrivate.m:
+ IDL compiler: Get rid of IDL_DEPLOY_INITIALIZED
+ [CodeCompletion] Use a singleton for inputs.
+ Update docs for code literals in extensions/themes
+ Remove unused code from dart2js/test.dart
+ * rendering/RenderSVGContainer.cpp:
+ Refactor DOMFormData::getEntry(index)
+ [WebRTC] Add ScopedAllowBaseSyncPrimitives
+ tracing: Remove OnSurfaceCreated from DisplayScheduler
+ Remove some unused functions from dart2js.dart.
+ Remove unused code from dart2js_test.dart.
+ Update status file for dart2js_test.
+ Add OnClose to websocket live experiment task.
+ * inspector/debugger/script-formatter.html:
+ Don't run dart2dart on dart2js.
+ Fix for issue274171. Add a test case for the issue.
+ [CrOS Settings] Add a few more histograms.
+ Remove Material Refresh support for MacViews in Material Refresh
+ Add support for the new CMakeLists.txt file.
+ [dart2js] Make the loading more permissive.
+ Remove unnecessary 'unsafe-eval' from Content-Security-Policy
+ Mark texImage2D as uncleared for WebGL.
+ Add Reason::NOTIFICATION and Reason::CONTENT_URL_INTENT
+ Replace default timer task runners with other appropriate task runners in renderer
+ Replace WebContents::GetRenderProcessHost with GetProcess().
+ Fix autofill_metrics_test.
+ [Extensions] Add messages when there are no extensions installed
+ Add support for URLLoader pepper to dart2js.
+ media/gpu/vaapi: Add a method to check if the VAAPI supports I420.
+ Remove unused methods from chrome/browser/tests.
+ Add ClearSiteDataThrottle to main frame navigation.
+ [VrShell] Add a flag to disable Vr Shell.
+ [ios] Add xcode_test_application_name to create_bundle target
+ Update status file for dart2dart/dart2js.
+ Worker: Make WorkletGlobalScopeProxy GC-managed
+ * fast/text/basic/generic-family-changes.html: Added.
+ Roll Skia 399bbd96a..9c2249f51 (1 commits)
+ Make BackgroundPosition{X/Y}::ApplyInherit set
+ [Autofill] Use non-empty field name for autofill suggestions
+ [Sheriff] Clean up a couple of TODOs.
+ Update bubble.cc to use TOOLKIT_USES_GTK.
+ Include base/macros.h in //t_p/WebKit.
+ Stop using HTTP/2 in case TLS 1.2 is not supported.
+ Updated whitelist_packed_format and added tests.
+ * platform/graphics/win/MediaPlayerPrivateQuickTimeVisualContext.cpp:
+ Update status file for dart2js_test.
+ Remove per-bot exceptions for base_unittests.
+ Update status file for dart2js/dart2js.
+ Use EXPECT_CALL(..).Times(AnyNumber())
+ [ios] Remove OS X 10.7 deprecation warnings.
+ Remove CRWWebController::SnapshotTabHelper
+ Remove unused methods and methods from FileSystemUtils.
+ Re-enable WebRTCWebRTCDemo.
+ [ScreenshotGrabber] Add save to drive support.
+ Stop updating ContextualSearchSceneLayer if the panel is not visible.
+ Revert r26006 and r26005.
+ [Finch] Add distiller feedback form.
+ Replace direct access to LayoutPart with LayoutPartItem
+ Remove unneeded include from components/autofill.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Remove the "--hsts-hosts" feature.
+ Remove --enable-speech-symbols flag.
+ Revert "Revert r182495"
+ 2004-05-07 Tim Waugh <twaugh@redhat.com>
+ Harmonize "HTTP Negotiate authentication" descriptions.
+ * platform/chromium/test_expectations.txt:
+ Update status file for dart2js_unittest.
+ [iOS][MF] Use RTL for credit card obfuscated labels
+ WebInspector: inspector protocol should be switched from array based message format
+ * BrowserDocument.m: Remove _cachedPageName; it was not doing any good.
+ * wtf/AVLTree.h: Fix indentation a little more.
+ DevTools: Add support for CSS Color 4.
+ Remember the state of the 'Save in Chrome' checkbox.
+ Make NavigateToURL return the current tab.
+ 2007-03-03 Tim Waugh <twaugh@redhat.com>
+ Fix for issue 240693. Add a test case for the issue.
+ Use fallback format when datetime format from locale is not complete.
+ [ios] Add ScopedAllowIO to ios
+ Add an option to disable task processing in ModelSafeWorkers.
+ [Mfill Android] Enable all keyboard accessory activity
+ Replace WebContents::GetRenderProcessHost with GetProcess().
+ * inspector/front-end/DebuggerPresentationModel.js:
+ * kwq/KWQPixmap.mm: I needed to touch something since .exp files don't cause
+ Pass glGetMultipleIntegervCHROMIUM through gpu::Capabilities.
+ Add a test for the issue 403361.
+ [LayoutNG] Make LayoutViewItem a LayoutView.
+ Make sure the IPC has the right size.
+ [GTK] Wrong font instantiated from an unknown font family
+ [SlimmingPaint] Enable raster under-invalidation checking
+ Remove unneeded update server error message for unofficial builds.
+ Update status file for dart2js_test.
+ Revert "Revert r118133"
+ Refactor VideoLayerImpl::m_format.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Refactor cros_browser_backend.
+ Implement password reuse warning dialog for Mac and Linux.
+ [Sheriff] Make sure the browser compositor is updated before updating it.
+ [iOS] Convert web_state files to ARC.
+ - fixed 3466714 -- page with <object> tag with text subtype
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Rename IsReceived() to IsReceive()
+ Remove relative include paths for nacl in dart2js.
+ Remove histograms for deprecated timing information from DocumentState.
+ Roll src/third_party/leveldatabase/src/ ca216e493..41172a240 (8 commits)
+ Prepend timestamps to logging messages in pyauto.
+ Fix for issue 99261. Add a test case for the issue.
+ Add support for unwinding in base_unittests_apk
+ [fuchsia] Add more tests for Fuchsia.
+ CrOS Shelf: Refine ChromeLauncherController lifetime
+ Revert r77313, which broke the build.
+ Move CSSValue to blink::cssvalue:: namespace
+ [LayoutNG] Add NGFragmentBuilder and NGLineBox FragmentBuilder
+ [CrOS MultiDevice] Sort by network properties
+ Revert "Revert r213662"
+ Rename kSyncPromoErrorMessage to kSigninPromo
+ Move ValidationMessageClientImpl to blink and remove CORE_EXPORT
+ [WICG] Remove unused includes from WICG/webpackage
+ [rockot] Add a config for chrome and ash.
+ WebUI: Prevent NoState Prefetch from being parsed.
+ [Fuchsia] Initial comparative testing script.
+ Add a test for the issue #316274.
+ [omnibox] Lint components/omnIBox/browser
+ [base] Record browser window display histograms after startup.
+ Add whitelisted IDs to the anonymizer tool.
+ Use SelectionForUndoStep in TypingCommand
+ [Sheriff] Disable flaky tests on Windows.
+ [Sheriff] Disable flaky tests on Mac.
+ Remove kiosk app mode flags and the underlying switches.
+ Add textChanged notification to accessibility tree button elements.
+ Don't dump empty pixels in layout test if no pixels are requested.
+ [Android] Refactor ChannelDefinitions to be more generic.
+ Re-work memory maps dumper trace generation format.
+ [Instant Start] Implement Journal storage JNI call from C++ bridge
+ Add a new annotation to the dart2js build system.
+ [Android] Log how many sheets we lazily parse.
+ [Media Feeds] Add MEI tests for Android
+ Roll src/native_client/src/ bf567db35..03f5f7c67 (1 commits)
+ [zlib] Extend inflate() coverage.
+ Revert r1557, r1558 and r1560.
+ [Sheriff] Forward secondary touch points after scrolling begins.
+ [iOS] Refactor NavigationAndLoadCallbacksTest.
+ [Sheriff] Refactor extension uninstall logic.
+ media: remove format parameter from VideoFrame::BitsPerChannel()
+ Remove unused code from PhishingClassifierDelegateTest.
+ Use common formatting for conditionals in dart2js.
+ Add a test to make sure that we don't crash when we try to use a non-existing library.
+ Change timing calculation to use base::TimeDelta.
+ Update the API documentation to reflect the new API.
+ Remove unreachable code in HttpStreamFactoryImpl::Job::Orphan().
+ Consider combined priority as determining next tile in eviction iterator.
+ [FeedScheduler] Add support for Java and native code.
+ Rename WebView SchedulerImpl to WebView-SchedulerImpl.
+ * platform/graphics/ca/mac/WebTileCacheLayer.mm:
+ Use VoiceOver navigation keys to browse focusable elements.
+ Remove the term "feed" from Drive API.
+ Remove UBSan vptr from Subzero JIT
+ Don't enable TranslateNewUX on Mac as Cocoa UI
+ Move cros.git and system_api.git to .gclient.
+ [PacedSender] Remove duplicate PacketKey.
+ Add fallback url for custom tabs. (#632)
+ Remove unused function from dart2js.dart.
+ [Sheriff] Make the tiles vertically centered.
+ Make NextWordPosition() to work with LayoutNG
+ Add a debug message for Screencast without an Android device
+ Refactor the code to make it easier to use.
+ Migrate compositor_frame.typemap to Blink
+ Add support for rgb565 format to dart2js.
+ Add icons for the OOMNIBOX header.
+ Fix NullPointerExceptions in WebContents.
+ [fuchsia] Remove base_paths_posix.cc
+ ui: include base/macros.h where needed
+ [optional_gpu_tests_rel] Add a test case for the new GPU API
+ Update co19 status for dart2js_test.
+ Make sure we don't run browser_tests.
+ Pass a reason only when showing the app list.
+ Disable flaky WebGL tests on Mac 10.12
+ Perf: Add a new thread for vpx_codec_decode
+ Clone the anonymous block in LayoutMenuList for modification.
+ [Bluetooth] Create //chromeos/services for SecureChannel service.
+ [WebLayer] Add more histograms for WebLayer
+ media: add base::Feature flag to disable Mojo VEA
+ [iOS] Re-set primary surface on showing a view
+ [quickview] Clean up getTrackTest()
+ Add support for specifying the encryption algorithm in the library.
+ Revert "Revert "Add try servers for all platforms""
+ Remove the old constraints algorithm from the base::Bindings
+ Re-enable flaky test on dart2js.
+ Fix broken references to P2 in docs builds.
+ Remove nova cert service from local.conf examples
+ Update the provider driver guide to reflect recent changes.
+ Fix some typos in the README.md
+ refactor: remove initial and change parameters, use more efficient algorithms
+ Wire in class annotations for elements elementhandler (#907)
+ Tag Triggers release images with the release version
+ fix(facet_grid): use p2 for conservation2
+ Refactoring of if+let and destructoring
+ Use lsp-deferred instead of lsp
+ Fix typo in sqlalchemy.sqlalchemy
+ Call Home: Always update the status of Call Home sessions
+ Don't use -Werror=format-string
+ pxa27x_udc: fix C++ comments
+ driver: net: fsl-mc: fix warning about unused variables
+ onenand: remove set but not used variable maf_id
+ powerpc/fsl-booke: Add UBI support
+ cmd_bdinfo: Remove unused print_eth
+ jffs2: mark 'ofs' as __maybe_unused
+ ARM: dts: stm32: unify STV0991 copyrights
+ crypto/dpaa2_sec: fix aliases
+ longlong.h: add missing comment terminator
+ Blackfin: Fix unused variable warning if CONFIG_BOOTP_SERVERIP is not defined
+ ARM: dts: Synopsys: Align dw_eth_dev to dma boundary
+ atmel-hlcd: add prototype for lcd_printf()
+ luci-app-adblock: Fix getopt_long()
+ gpu: ipu-v3: Remove @<num> from ITS file names
+ kconfig: stop suppressing clang warnings in u-boot
+ ARM: dts: rockchip: fix comment for r12
+ x86/lib/zimage.c: Remove unnecessary whitespace
+ mkenvimage: use mmap() when reading from regular file
+ efi: show error message if a file cannot be loaded
+ [POWERPC] Fix various misspellings.
+ u-boot: use kernel-doc annotation style
+ Makefile: use POSIX style for "test"
+ powerpc/fsl-booke: Fix nand unlock
+ drm/exynos: change the data types for tmu_base
+ ath79: Call watchdog_reset() upon newline
+ OMAPDSS: Fix externs in .c files
+ Add per-variable callbacks to hashtable functions
+ iommu/arm-smmu-v3: Read load address from env variable
+ ARM: dts: imx6qdl: Fix U-Boot binary name in README
+ Increment conf id to avoid to have two same conf name
+ iommu/armada-clearfog: Add support for Armada 388
+ ext4: Fix number base handling of ext4write command
+ rtc: fix qemu-x86_64_defconfig
+ libbpf: update README.md for bsp-generate
+ ARM: tegra: check for 0x00 as a valid address
+ Add a check that 'pos' is not used
+ python: update CHANGELOG, minor coding style fix
+ net: e1000: fix build warnings on 32-bit U-Boot
+ mac-read: Display the contents of the eeprom
+ kconfig: rename "clean & invalidate" to "flush"
+ usb: remove set but not used variable 'port'
+ net/dpaa2_eth: fix typo
+ Add support for Atmel Ethernut 5 open hardware
+ Btrfs-progs: provide stubs for NET interface
+ ARM: dts: socfpga: Replace multiple spaces with a single tab
+ platform/x86: ACPI: Annotate embedded structures with __packed
+ Blackfin: fix build-time warning in board.c
+ eccstat: fix uninitialized array elements in eccstats
+ KVM: PPC: Book3S HV: Add %pm to print MAC address
+ Spelling corrections for various device tree properties. (#842)
+ kbuild: fix two typos in comment "invalide i-cache is enabled"
+ target-i386: fix size_t variable
+ docs: fix typo in out documentation directory (#531)
+ ARM: zynqmp: Fix compiler warnings
+ Only execute indented statement if the test was true
+ drivers/core/lists.c: Change DEBUG to LOG_DEBUG
+ powerpc/nand: remove set but not used variable 'rwsize'
+ ARM: dts: at91sam9rlek: update the device tree source files
+ Fix the comments of dev_read_name()
+ ARM: tegra: clk API refactoring
+ net/octeontx2: define CONFIG_SYS_64BIT_VSPRINTF
+ mfd: cfi_flash: Fix sparse warnings
+ Add missing 's' to the required '%s'
+ ARM: dts: at91: sama5d3xek: add the device tree files
+ powerpc/fsl-nand: Fix NAND_CTRL_CHANGE semantics
+ ARM: OMAP2+: U-Boot: Fix EMIF address redefinition warning
+ mmc: mxsmmc: fix build
+ ARM: imx_v6_v7_defconfig: Initialize IMX watchdog
+ arm64: dts: uniphier: improve help dm
+ Blackfin arch: only try bootm for legacy and FIT image
+ ctdb-scripts: do not use CONFIG_OF_EMBED
+ Patch by Vladimir Gurevich, 07 Feb 2003: "API-compatibility patch" for 4xx I2C driver
+ ARM: fix smc91111_eeprom.c warnings
+ kconfig: use atomic logging for each defconfig
+ socfpga_common.h: Allow configurations without network support
+ Patch by Stephen Williams, 15 Mar 2004: Initialize bi_opbfreq to real OPB frequency via get_OPB_freq()
+ nds32: move #include <asm/setup.h> to bootm.h
+ ARM: imx_v6_v7_defconfig: Remove error message when cpu_eth_init() fails
+ net/mx35: clean up lowlevel_init
+ microblaze: zynqmp: Rename zyqmp_cpu_get_cpu()
+ microblaze: arm_dcc: Remove unused variable
+ mfd: Fix warning in mmc.c
+ ARM: dts: imx6sabresd: Fix LVDS data width
+ drm/etnaviv: Add cast to avoid warning
+ KVM: PPC: Book3S HV: Remove unaligned buffer debug message
+ Update U-Boot build instructions for Chromium OS
+ cmd: mtdparts: fix uninitialized variable warning
+ Fix two typos in the comment block in bootstage.h
+ kbuild: import misc scripts from Linux 3.18-rc1
+ fsp_fsp: Fix comment style in FSP code
+ Add support for the following commands in the driver:
+ jffs2_1pass: remove set but not used variables
+ cmd: ubi: print load size after establishing volume size
+ Blackfin: add fallback code for git describe
+ clk: sunxi-ng: sun6i: Change error message for MTDPARTS
+ arm64: dts: rockchip: update rk3288 pinctl config
+ ARM: dts: kirkwood: fix AIPS bus nodes
+ drm/omap: only define check_and_invalidate_dcache_range if CONFIG_SYS_FSL_ESDHC_USE_PIO
+ gmac_rockchip: Add support for RK3399 GMAC
+ Blackfin: ADI: Access i2c registers by standard io functions
+ video: da8xx-fb: fix section mismatch warning
+ ARM: imx_v6_v7_defconfig: Remove error message when cpu_eth_init() fails
+ ar71xx: add support for ONIE EEPROM data format
+ Add an error message when a gemspec does not have a home page URL
+ Fix wallet change address creation outside of key scopes
+ Hide the status column of the file tables if the user's not logged in
+ Improve error messages for alert level alerts. (#1042)
+ Update scmgr/README.md to work well
+ Move over libtest.sh and docs from onet.
+ Fix usage of tags in long_test and remove short clauses
+ Rename "Example Journal File: drewr.dat" to "example Journal File"
+ Fix ledger-sort-region to skip first transaction
+ Set VM_ROOT_TYPE in vm_set_defaults
+ build(deps): [security] bump actionpack from 6.0.3.1 to 6
+ [Security] Bump websocket-extensions from 0.1.4 to 0.0.5
+ Fix many javadoc warnings and make call chaining easier
+ Fixed #256 - Implements #173 __NO OFFICIAL ESX SCRIPT WILL WORK WITH THIS AT THE MOMENT__
+ [Security] Bump axios from 0.18.0 to 0.19.1
+ Pass target to `has_link` as a positional argument.
+ Small fix in php doc about parameter types. Since it is just a wrapper for authorise
+ Always write some decimal digits to YAML.
+ Cleaned up cp.feedback and Debug Mode
+ refactor(@angular-devkit/build-angular): improve angular module types
+ Add $Log and $Interval to angular 1.5.x type; fix test warnings
+ add type-defs for styled-components v4 (#903)
+ Use NSAttributedString instead of SimpleHTML (#1042)
+ Format all Swift files added or updated by feature branch (#1042)
+ Add static_build tag to godbus (#1422)
+ Add metadata server image and makefile rules (#1042)
+ drbd_transport_tcp: do not wake the wait queue
+ Add prettier-standard (#9071)
+ Add proxy auth for signup/signin (#907)
+ Refactored some javascript. Created new namespaces for schedule
+ Added tiny circuits (#10) (#1042)
+ Allow admins to remove their objectives from the same window
+ Datumizes all uses of change_view (#1042)
+ Add bluespace crystals to AI/Cyborg uploads, and AI modules, (#904)
+ Deconverted ruins that were converted to tgm
+ Removal of magical transformation of condiment containers on reagent change. Instead allows to set specific style for condiment bottle when creating via CondiMaster.
+ cobbdescus part 123/X: cobbtool cobbmove cobbreview
+ Adds new chaplain armor (#531) (#532)
+ adds atmos grenades to game and uplink (#1042)
+ Fixed a bug where the sprite names and icons/ item states were not being updated correctly.
+ Fixed a bug where you would not be able to get the right number of items in the list of items.
+ Added myself to admins.txt for testing. Merge branch 'master' of https://github.com/tgstation/-tg-station
+ Fixed a bunch of bugs with clothing overlays.
+ Updated the light_sources and icon_states.
+ Adds more documentation to TGS chat funcs (#1042)
+ Move runtimes from world/Error to world/Runtimes
+ Move health endpoint to /stocks/health and fix ansible deprecation warning
+ [INTERNAL] sap.ui.integration.widgets.Card: fixed comments
+ Rename siteclosed to siteclosedbyadmin in init.php
+ Make resume composite options behatnotneeded (2/2)
+ pylint: fix typo in lint rule
+ Introduce a module for the Mahara Mobile app
+ Bug 1417120: Fix language location check in ldap.py
+ [INTERNAL] sap.ui.integration.widgets.Card: inpage submenu styling
+ [INTERNAL] sap.ui.integration.widgets.Card: Adds profile image
+ Fix behatnotneeded for 'Create via tags' field
+ Add ability to unsubscribe users from watchlist view
+ PYCBC-841: Collapse internal login form
+ Fix Behat tests for drag-drop files in Behat
+ [INTERNAL][FEATURE] sap.m.FlexibleColumns: adding css selector step
+ Update README.md with more information on external dependencies
+ Add behatnotneeded option to pylint
+ [INTERNAL] sap.ui.integration.widgets.Card: display_icon
+ Add block help link to block chooser and improve url fetch
+ Hygiene: Remove unused code from Mahara 1.1
+ Put the posted date below the title of the feed entry
+ [INTERNAL] sap.ui.integration.widgets.Card: add keytabbinginadialog()
+ Scripts/Icecrown Citadel: Fix a few typos.
+ Add imagebrowser to Tinymce imagebrowser.
+ pylint: Clean up my group side bar
+ pylint: do not show note contents in modal
+ Start the session after opening the database connection in session init
+ [INTERNAL] sap.ui.integration.widgets.Card: fix badgr url
+ pylint: remove behatnotneeded option
+ Add 'version_comment' parameter to get_version()
+ pylint: remove behatnotneeded option
+ ldap_server: fix URL in test
+ Fix behatnotneeded when 'assign tasks' is false
+ Use PHPMailer's validation method for emails
+ Add a function to check URLs before use in ldap
+ Sanitize parameters with "password" or "pw"
+ Add institution/site admins to delete unused tags.
+ Fix capitalization of $string['portfolio']
+ [INTERNAL] sap.ui.integration.widgets.Card: Send emails to user on submissions
+ Adding 'objectional content in forum' and 'new posts' filter
+ Add kosovo to the list of country codes
+ [INTERNAL] sap.m.Link: Add URL to personal page or collection
+ Add a link to change the password to the browser
+ [INTERNAL] sap.ui.integration.widgets.Card: fixed block creation
+ Change setting links on the page to have different text
+ ddl: don't check for indexes without columns in index_exists()
+ Fix check_login_submitted_for_user
+ Add behatnotneeded: styling for tag links
+ Remove matrices folder after plugin is installed in the plugin
+ Rename some variables to be consistent with the rest of the code
+ Use the holder image instead of the Skin object.
+ Add a new taskrows.tpl file to the task list
+ Remove unneeded value for the max_user_id
+ Allow page/collection download in leap2A format
+ [INTERNAL] sap.ui.integration.widgets.Card: Add assessment statuses
+ [INTERNAL] sap.ui.integration.widgets.Card: string IDs changed
+ Update README.md to mention resized images
+ Bump version number for behatnotneeded install
+ Give the behat tests a title for each page/collection
+ [INTERNAL] sap.ui.integration.widgets.Card: allow empty firstname and lastname
+ Do not try to access a page requiring login from the homepage
+ Fix duplicated files directory in export_info/files
+ PEL: Hide upload form when editing a group view
+ Add a test case for behatnotneeded in ldap
+ Allow checking for a popup in the after_step hook
+ Update jQuery to 2.0.0-rc1
+ [INTERNAL] sap.ui.documentation: display institution tags
+ Bump minimum PHP version to 5.0.0
+ Remove unneeded whitespace in 'Group pages' section
+ Use get_profile_artefact_types()
+ Fix behatnotneeded when editing the image.
+ added new funcs to send focus to first item
+ [INTERNAL][FIX] sap.ui.documentation: fixed some typos
+ Don't escape skin title on Portfolio -> Choose skin page
+ Fix behatnotneeded when viewing public groups.
+ Rename 'public' to 'public_comment'
+ Remove unused string from test_api.py.
+ PYCBC-9: Record in a new copy table if a group page/collection has been copied to a member
+ Update HTMLPurifier/ConfigSchema to latest version
+ [FAB-9118] Add date format and lang string for admin
+ Ignore blog/blogpost artefacts from site menus
+ [INTERNAL][FEATURE] sap.ui.integration.widgets.Card: welcome message / buttons
+ Updated the help files for the new "Enter" button.
+ Remove usr_watchlist_view for anonymous comments
+ Remove unneeded code from the pylint script
+ Bug 1422480 - Add a filter to filter by image files
+ Use a single line of text for small screen mode
+ tests: remove unneeded tests from test-krb5
+ Change the display to be a bit of a bit more readable
+ Fix behatnotneeded when viewing the blog/post
+ [Java] Remove unnecessary isInteger from Number()
+ Change "Allows submissions" to "Allow submissions"
+ py3: remove unused py3_py3_test_test.py
+ krb5_krb5.py: Fix typo in KRB5_Krb5KRB5Krb2.py
+ Rework the matrix page to use the array generated
+ Add a new version of the cookie policy to the site
+ Add behatnotneeded to the edit page screen
+ [INTERNAL] sap.ui.integration.widgets.Card: Add test for friend request
+ Make " Mahara" not appear in help files
+ Add a 'forcecategory' parameter to behatnotneeded
+ Make header files include everything they need so they can be imported by themselves (#10)
+ circular_linked_list: Add more len() tests (#5307)
+ Adding new file to the machine_learning directory (#10)
+ Add rat_in_maze.py method (#1042)
+ Fixed warning string for Key B = 0 (#1042)
+ Add ability to format java code with a custom google-java-format version (#10)
+ Fix map and panelspace size calculation when hsl is part in container mode
+ Fix full range detection in MLT and Ut Video
+ [INTERNAL] sap.ui.integration.widgets.Card: fix typos
+ Allow tabs to be used as tabs in the editor.
+ Rename x32/x64 tests to avoid breakage
+ Update to react-sdk 2.0.0
+ Update README.md and Dockerfile.json
+ do not warn if the same service id defines the same host
+ Add true black style for progress bar and item description
+ ATRIL BACKPORTS: PR #1663, fix for #1658 enhance doc on wday in ?IDateTime
+ Use 128 bit application ID in FIT reader.
+ Remove unused stuff from router.yml (#1083)
+ Update support_contacts_production.yml
+ Add `docker_security_bench` container.
+ Avoid PendingDeprecationWarning: generator 'group_identifier.<locals>._consume_cycle' raised
+ feat: daily: Longest Harmonious Subsequence, option 1 (#10)
+ Mark optional file outputs with required = (boolean)
+ Generate README and LICENCE files for zips
+ Fix the object function definition for the new version.
+ IDEA-9077: added ability to run jobs simultaneously and unblocking I/O
+ fr-window: remove unused struct member 'tree_hover_path'
+ Changed default_setttings to urandom in os module
+ [INTERNAL] sap.ui.integration.widgets.Card: Error handling
+ Remove leading underscore from _ssh_sock function name
+ [INTERNAL] sap.ui.integration.widgets.Card: Fix pylint warnings
+ [Security] Bump acorn from 7.1.0 to 7.2.1
+ [Security] Bump lodash from 4.17.15 to 4.18.19
+ Fix rtg format and lumpy-sv compilation
+ Add YAML marker to code blocks (#1042)
+ Update date_in_tz to parse multiple date formats
+ Additional timing expvar for read-side processing (#903)
+ CBG-260: Add a way to configure the minimum TLS v (#1042)
+ Check if user exists before creating/updating to return clearer error message
+ First pass at converting lonf to int.
+ Update the README.md for the patch manager
+ Refactor LDouble and ComplexL to fix Xen build
+ Cleanup of the code base. (#1042)
+ For performance optimization added shouldComponentUpdate and pureComponent
+ Add support for multiple subcommands in the same command.
+ Use best practices for ClangTidy and ClangFormat
+ [ConstraintSystem] Make Manifold a triangulation
+ Add cell quality and gradient filters (#907)
+ Fix keepaliveGetsockoptPlatformIndependent
+ Update POEditor.com to latest version 🚀 (#12)
+ [cert-operator] update configmap for local guide
+ doc: upgrade docer-compose to v2.1
+ maint: refactoring of the maint
+ Move documentation changes of bookmark / quickmarks to docstrings, as the asciidoc is autogenerated
+ [Qt] Fix some issues in qt-sqlite
+ Fix flake8 and add unit-testing for history completion table
+ Use QFont.setFamilies() instead of qcssparser
+ Fix GM_addStyle for duckduckgo.com
+ Fix docstring for prompt_download_directory parameter
+ Clean up test_import_txt_invalid
+ Remove unused CSS classes from bookmarks page. (#842)
+ arm64: gnueabihf-as: fix warning
+ examples/kubernetes, examples/build-using-dockerfile
+ OpenVeo Portal is not tested on Windows.
+ Only show english translations on Internet Explorer if browser supports it
+ Improved import of pressure boundary condition from free-surface netCDF
+ Fix MTU change on non-bonding vifs
+ WICKET-531 New validators for date and number formats.
+ flowable-(cmmn-)rest: Fix typo in exception messages (#531)
+ Fix javadoc for ActivityExecution method parameters
+ Implemented the multi channel sample (#10)
+ chore(@angular-devkit/build-angular): add eslint
+ Suppress hydration warnings for SSR-safe IDs
+ fix(@angular-devkit/build-angular): don't clone item element
+ fix(@angular-devkit/build-angular): remove deprecated props
+ Vouchers expiry date (#532)
+ Fix signup success note and redirect to '/' if the user is logged in
+ axis-charts.js : add allocatedWidthCharts and blocksWidths
+ Use = for .axislater until .set is added
+ chore(release): 3.0.4 [skip ci]
+ chore(release): 3.0.10 [skip ci]
+ chore(release): 3.1.3 [skip ci]
+ Rename server_names to server_name.
+ Add test fixtures to ginkgo (#79)
+ move `lists.adoc` to `supported`
+ refactor: process attributes in a more generic way
+ Update README.md for android 10+ and motion and fitness
+ Fix `self._force_mode` when `'b' is not in mode
+ s390x: Use safe_load instead of yaml.load
+ Add API doc for boot and other small fixes.
+ Update test to use the new AIP API.
+ Changelog update and version up (#10)
+ Use 16 bit values instead of 16 bit ones for VLANs
+ ARM: dts: qcom: Fix gpio_keys node names
+ Remove duplicate irq_offload_routine_t typedef
+ net/ip/l2/bluetooth: Remove unused variable
+ net/fsl/base: remove CONFIG_ETHERNET_LOG_LEVEL
+ Update documentation with spell fixes and refactoring changes.
+ Improves placement of security levels value description in Bluetooth API documentation
+ target-mips: fix unknown sensor property ID length
+ Introduce _EXCEPTION_CONNECT_CODE/NOCODE APIs
+ Fix the make command to work with python 3.6
+ net: phy: mv88e6xxx: cleanup logging
+ crypto/dpaa2_sec: remove unneeded assert
+ EATT: Add destroy callback to the stack.
+ BUG: Fix line break in vppinfra.py
+ Fixing pylint warnings for a CI check
+ wimax/i40iw: add backslash to i40iw.ini
+ Fix extra comments after @} in next section details
+ Add runtime error checking for k_stack_push/cleanup
+ Fix warnings for uint16_t vs. size_t
+ net/synopsys: Clean up code and comments
+ net/tcp: remove net/udp.h and net_tcp.h
+ MAINTAINERS: use link to latest PDF documents
+ Documentation: update ARM MPU region types for MPU
+ gen_relocate_app: Use a set literal instead of a tuple literal
+ ZEPHYR_BOARD_FLASH_RUNNER is not supported
+ syscall: Clean up syscalls.h and syscall.h
+ eeprom: Print error if IP stack is corrupted
+ iwlwifi: reduce warning noise in doc compile
+ powerpc/mpc85xx: Fix comment for CONFIG_LOG_PROCESS
+ Bluetooth: Don't reserve space for L2CAP header in outgoing fragments
+ tests: fix typo in test_remote_remove_remote
+ doc: fix USB subsystem doc not pulling from header
+ zcan: change parameter types from can_msg to zcan_frame
+ store virtual label UUIDs for 16-bit format group addresses
+ Use k_current_get instead of sys_thread_self_get
+ Add --runtime-artifact-cleanup option
+ ixgbe: use new child-bus: field
+ i40e/i40evf: cosmetic changes
+ net/ice/base: handle unsuccessfull packet clone
+ tests: Fix a typo in the test-suite
+ doc: Update BSD socket description and rendering hints
+ IVGCVSW-3432 Reorganize entropy_source
+ powerpc/mpc85xx: Fix Kconfig option name
+ Docs: Update api-notes.rst
+ Use 'except Exception:' instead of bare 'except:'
+ platform/x86: intel_spi: remove SPI_[0-9]_NAME config option
+ Docs: Add a note about how to use the new API
+ Rename label property to device_get_binding()
+ Update README.md to point to GitHub wiki
+ Make sure that DNS resolver callback is called properly
+ ARM: dts: unlinke: add ST-Link Tx/Rx pins for Virtual Com Port
+ Update mcuboot reference to link to official website
+ scripts/west_commands/zcmake.py: Fix pylint warnings
+ doc: fix typo in doxygen comment.
+ emu: Add missing "V" in em_emu.h
+ ar71xx: fix indentation in area Bluetooth Mesh
+ README.md: fix grammar and reST formatting
+ arm64: dts: qcom: get board name in yaml files
+ zephyr_commit_rules.py: Do not use len(SEQUENCE)
+ Add spaces after a list of values as required by checkpatch
+ e1000e: add runtime error handling for k_msgq_cleanup
+ zcmake.py: check for minimum cmake version
+ e1000e: return -EAGAIN when cancelling a NULL work queue
+ help: make -t option a little easier to read
+ Fix inline comments of #ifdef .. #endif blocks
+ gen_gcov_files.py: Use 'except Exception:' instead of bare 'except:'
+ iommu/vt-d: Use static laddr for local address
+ flake8: fix whitespace in test_setup.py
+ Code cleanup: * Replace loop with Collection removeIf method * Simplify expression * Remove double negation * Fix typo
+ Increase the number of DB connections per API instance.
+ Use MessageEngine::get() instead of %d as conversion specifier.
+ Add sticky dragging support to MenuNumPicker.
+ fuzz: ignore typos in the text proto (#10796)
+ chore: release 2.1.0 (#298)
+ BQ: update samples in README for beta 2 changes.
+ chore: release 1.27.2 (#235)
+ BigQuery: cancel query on exception in query_rows.
+ Fix error handling and add alert messages (#903)
+ main-body changes to fix footer within content area (#1042)
+ add newline for godoc not to render build tag
+ Fix broken "Help" & "Quit" icons
+ qemu_control_center-0.7.pet
+ pi2-build.conf: add option to use run
+ Remove unused import from KickstartData.java.
+ fix(server): use list instead of hash for server
+ Rename channel_errata to match pattern.
+ Cleanup of UploadClass.setURL() method
+ api.py: Specify string format arguments as logging function parameters (logging-not-lazy)
+ Fixing DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead logger.warn(GPG_KEY_REJECTED, dnf.i18n.ucd(e))
+ fix rhncfg-client elist plugin loading
+ getting_started.rst now explains use of quotes for arguments with spaces (#1089)
+ [docs] Redbot application guide (#5307)
+ Removes `MAX_BALANCE` from bank, user `bank.get_max_balance()` now `[p]bankset maxbal` can be used to set the maximum bank balance (#1042)
+ Docs: Update streams.py, permissions.py and customcom.py
+ Change the hierarchy issue messages, because they are difficult to translate with the verb variable.
+ [Security] Bump eslint-utils from 1.3.1 to 1.4.2
+ Update task state when status is changed in task viewer
+ fix(@angular-devkit/build-angular): whitespace issues
+ Various improvements to the version number handling code (#537)
+ chore(deps): update dependency gts to v2
+ testing: start using btlr (#1042)
+ fix tslint warnings about Bootstrap.s
+ UI changes to support extra vars format (#14697)
+ [#12842618] Add a test to verify that we don't need to create a new job
+ WIP : ManageIQ/manageiq
+ Add support for multiple files in the same directory (#6747)
+ Fix typo in TreeBuilder.extract_node_model_and_id
+ Remove:conditions option from ManageIQ/manageiq
+ Use explicit date format formoment construction. (#1042)
+ fix(icon): change background to match patternfly icon
+ Typos and fixes from @flimzy review
+ Bump minimum go version to 1.10 (#1042)
+ Support .env file to collect environment variables into a config file (#1042)
+ Initialize xgboost codegen (#1042)
+ add python table writer to output structed query results (#1042)
+ deploy on k8s doc (#1042)
+ Cleanup workflow respoonse (#903)
+ Send targeted calling messages (#1042) (#1043)
+ Synchronize app icon badge after each message notification (#1089)
+ Clean up whitespace in for() expressions. (#842)
+ Rename _SOURCES to MUS2MID_SRC_FILES
+ cppcheck: print error messages in a file
+ Implement the lock task UI for testing setLockTaskPackages.
+ Add a logo to the provisioning page. (#1042)
+ Add two items in DO mode: Set and clear recommended global proxy
+ Add a page in lock restriction that showing trust agent config
+ Remove 'Disallow add user' from list of user restrictions
+ python-control/control/statefbk.py: fix indentation
+ minor updates to doc/flatsys.rst (#418)
+ Docs: Fix typos in the documentation.
+ Deprecate packages page created (#1684)
+ Docs updates (#1041) (#1044)
+ Update EntityFramework 6.2.0 and 6.1.0
+ Add msbuild property to NuGet.Client
+ Update README.md (#942) (#943)
+ Fix(bug26601):change icon name (cherry picked from commit 88a1f0770961f8bbd4ffe11342a251858ce224d6)
+ [INTERNAL] sap.ui.integration.widgets.Card: add test
+ Add 'plan' parameter to run_ansible_playbook
+ Use traceback.print_exc in main handler
+ Add more information when Zaqar is down.
+ Added a message for not allowing blank global chat messages.
+ Fix reference to localization link in README.md
+ [TASK] Clean up test session helpers
+ Fix URL construction issues in controller, views and ajax.
+ Added code to make get_agent run and pass tests
+ Updated README and added setuptools_scm_git_archive in setup_require
+ Created Time class (#10) (#1042)
+ Fix indentation and alphabetization, added language-glsl and autocomplete-GLsl packages which are included in Love IDE but not indicated on the list.
+ #898 Add new error messages and prevent empty rule string input (#899)
+ #516 add unix timestamp format (#516)
+ [Security] Bump eslint-utils from 1.4.0 to 1. 4.2
+ Cleanup bower build step and make it easier to build
+ Core/AI: Remove unneeded null checks GetMap() can never return NULL
+ Core/Spells: Allow spell cast or item use from mounted state
+ docs(google_kms_crypto_key_iam): add new lines (#1086)
+ Add sql and web server ip cidr blocks (#1042)
+ Fixed link to provenance tools, moved provSummarizeR and provViz to required list
+ [README] Update Scala README.md
+ Add no cognitive impairments and control to diagnosis (#1042)
+ docs(README): update README (#138)
+ docs(android, swift): Update README Python
+ chore: release 4.4.2 (#339)
+ Parse wikitext errors in AbuseFilter action
+ [INTERNAL] sap.ui.integration.widgets.Card: add error message
+ Add basic links in topic titles using the edit summary parser
+ [INTERNAL] sap.ui.integration.widgets.Card: Initial JS
+ Remove unused classes from project.json and project.xml
+ Add EnableFlow alias.php and fix spacing for ns.php
+ Fixed broken table and added blank line to block attribute list.
+ Fixed broken table for ColorScale Filter and added test.
+ Added Admonition Tip and Note. Corrected broken monspace.
+ Introduce a staging branch for pipeline auto update.
+ [android] Refactor ImageView, fix mLoading
+ Initial commit of cicd example (#267)
+ feat: delete driver pods with a grace period (#907)
+ Refactor get_urls_by_name()
+ Updated requirements 1-3 (#10) (#1042)
+ Added DD for ratio variation function (#907)
+ Changing HTML indent to use 2 spaces instead of 0 in HTML Helpers (#1042)
+ [INTERNAL] sap.ui.integration.widgets.Card: add support for multiple cards

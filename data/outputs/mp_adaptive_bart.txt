@@ -1,0 +1,1569 @@
+ Add example to preserve scales across multiples. (#1042)
+ Fix invisible resizers and remove 1-pixel fudge factor
+ Fix outliers computation for Morley-Michelson
+ Replace some wrong strncmp calls with strcmp (#1042)
+ Fix cookieTimeout setting and some translation calls for setting errors
+ Fixed CSV caching and fixed incorrect pathing of attributes
+ [FEATURE] Add a pull command to pull events
+ Don't count empty discussion threads as active threads.
+ Add custom tls certs page to docs (#1042)
+ Add mariadb-server-utils so we get mysql_upgrade for 10.2 upgrade
+ Bump upstream php packages to get xdebug 3.0.0
+ tokio: initialize PollEvented in executor
+ xia2-debug: re-use compiled pattern
+ ndctl: move firmware update and overwrite messages to stderr
+ Use the darkish orange background for the notification icon
+ Allow deploying the Keycloak and Postgres servers
+ Add tracing to bootstrap servers and wait running and check servers
+ pool: fix prompt for pool directory after every machine
+ Fix mobx administration for objects (#1092)
+ [Security] Bump loofah from 2.2.3 to 2.6.0 in /{{cookiecutter.project_name}} (#842)
+ Add function to remove Tasks created for facility service
+ [FIX] Core/RegISTRAR: Parse common name only if matcher.find() returns true
+ Translation updated by Tino Meinen. (#10)
+ Updated Czech translation by Adrian Gunis. (patchset #1 id:1 of https://github.com/GoogleCloudPlatform/python-docs-samples/issues/1
+ Updated Catalan translation by Gil Forcada <gilforcada@guifi.net>.
+ Translation updated by Tino Meinen. (#10)
+ Updated Lithuanian translation. (patchset #1 id:1 of https://github.com/GoogleCloudPlatform/python-docs-samples/issues/1
+ Use g_timeout_add to increase duration resolution
+ Set slash action insensitive when appropriate in update_action_sensitivity
+ Updated Portuguese translation. (patchset #1 id:1 of https://github.com/GoogleCloudPlatform/python-docs-samples/issues/1
+ FLINK-1693 Add DEPRECATED annotations in Spargel APIs
+ Remove monolithic create_release_files.sh
+ AkkaRpcActor: Update state on termination
+ Add job config InputDependencyConstraint
+ Cleaned up and improved test-case naming.
+ chore(bower): update packages in bower.json
+ Some cleanups in StreamingJobGraphGenerator:
+ [flink-dist] Add link to final build assembly
+ Use a single certificate for all public CA certificates.
+ refactor: remove CharSets and Guava Preconditions
+ Add Ansible role for Kive's controller and worker servers
+ Add ServuceErrorPathMapping for pod volumeMount mountPath errors
+ refactor(FormReducer): Move reducers to separate files
+ Merge branch 'master' of https://github.com/freenet/Freenet
+ Rewrite the regression test to cover case where two elements are added in the "wrong" order
+ Replace use of *Impl with *JavaDoc.
+ Increase number of APIs returned from the default 25 to the maximum 500
+ dart2js cps: Add a test for the new getters/setters.
+ [milo] Move fix_protobuf_package() to appengine_config.py
+ [luci-py] Log an error for deprecated fields
+ Add zipped_archive.py to swarming_bot.zip
+ [dartdevc] Improve --daily-count.
+ [resultdb] Remove the result_uploader role.
+ Improve manuf loading in Scapy. (#1042)
+ Added bootstrap-notify for Dev Team Alert (#4067)
+ show latest updated of cases added before the past 24 hours
+ Cleaning up spec files and removing unused state factories
+ cogl-camel-provider: Don't relink against libcamel
+ Fix pwlib size / md5sum for latest release, I forgot to update
+ updated pyrex version since 0.9.4.1 has been removed
+ Fix RetryMiddleware::exponentialDelay by making it return milliseconds (#903)
+ add docker-compose to build the Nitrate docker image
+ plugin/forward: on demand healtchecking (#908)
+ Add 1.7.0 notes already (#1042)
+ Implemented "beet import -i"
+ Rename `reggae` to `roots reggae`
+ Update docs FAQ with component filtering (#1042)
+ 🚑 Reset password only update mandatory fields (#1042)
+ Create a map as a child of another map.
+ fixed bug where the "Reset Background" command in the icon view was
+ Updated Spanish translation. (from Google Cloud Storage)
+ Updated Norwegian (bokmål) translation.
+ Make the connect to server dialog a bit nicer.
+ Patch from Jamie McCracken <jamiemcc@blueyonder.co.uk>
+ Put the GIcon in the tree model and make the cell renderer display
+ Translation updated by Ivar Smolin (#14707)
+ Add image/bmp Nicer icon for nautilus-file-management-properties
+ 2006-03-01 Erik Hjortsberg <erik@katastrof.nu>
+ Return g_strdup ("") instead of NULL.
+ 2001-10-25 Alex Larsson <alexl@redhat.com>
+ Start splitting out drag&drop code common between icon view and list view into
+ * src/nautilus-main.c: Remove obsolete ENABLE_NLS comment.
+ NautilusWindowSlot: don’t try to bind to non-existing window slots
+ Fixed bug 7303 (some menu items use duplicate, thus non-working,
+ Fixed bug 3513, No applications or viewers appear in "Open With" menu in
+ Updated Canadian English translation. (patchset #1 id:1 of https://github.com/GoogleCloudPlatform/python-docs-samples/issues/2)
+ Don't eject when things are unmounted. Eject when we
+ gdbus: Handle empty result list in g_dbus_get_result()
+ Translation updated by Reinout van Schouwen.
+ Update test to reflect new icon size value. (#1042)
+ Remove icon XML string from HistoryItem. Use bookmark icon,
+ Removed mention of nonexistent trilobite-eazel-sample-service-common.c.
+ Use 'latest' version instead of 'release' version.
+ add Wrapper to internal node components list in InternalNode
+ Add compatibility with Android Studio 2.3.2
+ Add more info to Litho_null/Litho_preallocateLayout
+ only preallocate mount content handler if it is specified
+ Add integration test for onError in ComponentLifecycleTest
+ mononoke: add allow_many_files
+ Reset translationX/Y before recording the end value
+ mononoke: add a test to verify that we can run the test
+ Convert ExpandableElement sample to use list of items
+ Fix DisplayLists being created before a Context is available
+ @public Wraps enum definition in a single macro
+ Update async logic to update existing ComponentTreeHolders
+ Add TODO owners for toxcore and toxav TODOs
+ Refactor LOGGING to prepare data for waiting
+ Validate stack status in snapshot and restore operations.
+ Update documentation and openstack install script to work more smoothly
+ Add ADOPT to the valid list of actions
+ Add missing translation support in log messages for ipv6
+ Store stacks in the database before create()'d
+ Use get_console_url() to get console urls of server
+ Make lower-constraint requirements py3.8 compatible
+ Add colon after ":param" in hacking guide
+ Check if resource_id is valid before deleting network
+ Created a new icon for the icons on the desktop.
+ xdg-shell: update to latest stable
+ Use `tokio-timer` instead of `timer`
+ Remove the warning about aliases from the README.md
+ Store all alarms (repeating and not) (#1656)
+ Added require statement for formatDateISO8601-function
+ Update for activity invariant violation (see bug "Activity invariant violations")
+ Sign in and Sign in UI updates (#10)
+ Re-add ChaliceDeploymentError to the new deployer
+ Added a button to copy QA summary on Todo QA section (#1042)
+ Upgrade to Rails 5.0.0, remove rails-api gem
+ fix(secret-edit): catch the fromJSON error, display an error, and disabled the submit button
+ docs: update README.md (#531)
+ Update metrics config value to correct ones (#1042)
+ added retry to mssql testing (#1042)
+ Add matchHostnames alias for matchDomains #73 (#74)
+ cholesky_cuda: re-cloning A during adding jitter
+ Update service names and skinattributes to match awx
+ Add selection option to MovieSelection and MovieScanner
+ Add a writer and a reader to the parser.
+ Add : to short strings in the README.md
+ kconfig: remove kconfig_get_user_name()
+ Adapt progress client example to use progress_ipc{.c,.h}
+ Add cases to be reported to the caller on HTTP requests
+ README.md: update PKCS#11 library information
+ docs: add streaming support to the README.md
+ Update README.md with OE and libubootenv
+ Translation updated by Tino Meinen. (patchset #1 id:1 of https://github.com/GoogleCloudPlatform/python/issues/1
+ fallback to ladspa icon instead of noicon icon if the module
+ hide the toplevel notebook while reordering its children. this greatly
+ Updated Spanish translation. (bug #3247)
+ redesigned some basic things. data handles correspond to samples now,
+ Add help information to changelog (#10)
+ finagle-core: Add external TwitterServer example
+ finatra-doc: Update JsonCreator support
+ Tabix now uses IChromosome internally.
+ Improve BoxAPIConnection example. (#1057)
+ Add v4l-helpers.h and cv4l.h
+ Update cec-ctl manual page to latest version
+ cec-compliance: fix --test-standby-resume
+ Remove cluster_update_status state from cluster-update
+ Change the old_image of nova server to the image attribute
+ Add a location header to node join/leave response
+ Rename 'created_time' and 'updated_time'.
+ Add a location header for cluster-update api.
+ Added argparse argparse decorator to help.
+ Remove unneeded aliasing in import statements. NFC.
+ Use writeJSON instead of write + json.stringfy. Fixes #1117 (#1118)
+ Add support for mongodb and elasticearch queries
+ Changes travis configuration to use the chrome addon and clean up
+ Add Leak detector and cleanup URLRequestContextGetter
+ refactor: remove deprecated CreateWithCopiedBuffer (#1042)
+ Ajout de l'espace de la qd meme
+ glpi-bigdump-0.6.sql
+ Translations for SetupWizard (#531)
+ Use File.mkdirs() instead of file_dirs().
+ Clean up Jenkins.yml and Jenkins.py
+ Remove oldrc.log entries from maintenance action.
+ Update co19 status for dart2js_test.
+ Re-enable flaky test on ChromeOS.
+ Fix crash in content_unittests on Windows.
+ Port systemBeep to WebCore (bug33601).
+ Disable flaky tests on MacOS 10.10.
+ [WebMediaPlayerMS] Skip creating GMB backed frames
+ * blackberry/WebCoreSupport/JavaScriptDebuggerBlackBerry.cpp: Added.
+ Add idle wakeup count to Browser.cpu_stats output.
+ Add a test to verify that we don't crash when we fail to load a library.
+ Refactor WebGraphicsContext3DCommandBufferImpl to use CommandBufferProxy.
+ * class-list.js: Update m_classNamesForQuirksMode when the class attribute is cleared.
+ Add stable dates for M57, M58 and M59
+ Remove session and emit_login_prompt_ready from output dir.
+ Add deprecation warning for JS console. (#598109)
+ Only look for related frames in related browsing contexts.
+ Revert "Reverting r190965"
+ WebCore: Cleanup of WebScriptObject's _executionContext
+ WebInspector: bind resources to URLs upon adding them into the tree.
+ [LayoutNG] Implement DOM-to-TextContent offset mapping.
+ * platform/chromium-mac-leopard/printing/iframe-print-expected.png: Added.
+ WebXR: Add Geolocation layout tests.
+ Move run_test_cases.py into googletest/
+ Add help center link to NaCl infobar.
+ Remove make_scoped_refptr from Bind calls.
+ * platform/chromium-cg-mac-snowleopard: Removed.
+ Add GStreamer support to WebKitGTK+
+ Move debug logging and tracing logic off the command processing path.
+ Bug 101556 - month picker should keep selection position for first selected date node
+ WebCore: Fix Bug 14498: RenderContainer::positionForCoordinates contains an order of operations error
+ Add PNG icons for translation answers in ChromeOS.
+ XvfbDriver._next_free_display: account for X server binary.
+ Refactored BackgroundSyncManager and related code.
+ Update comments on TraceInCollectionTrait<HeapVector/HeapHashTable>
+ Make Arc opt-in code not broken or crashed
+ 2010-06-29 Eric Seidel <eric@webkit.org>
+ Reland "DevTools: Restore GPU tasks recording in performance profiles."
+ [Extensions] Move updating ExtensionActionAPI into ExtensionActionRunner
+ Replace all references to base::StringValue by base::Value
+ Fix for issue 7881. Fix for bug 7882.
+ 2010-08-24 Jeremy Orlow <jorlow@chromium.org>
+ ScopedTestNSSDB: Simplify slot getters.
+ [Sheriff] Refactor Repaint and Pixel tests.
+ Update third_party/blink/renderer/modules
+ [serialization] Remove IO thread from URLRequestContextGetter
+ * css3/calc/line-height.html: Added.
+ * UIProcess/API/qt/tests/qmltests/WebView/tst_preferences.qml:
+ 2004-10-05 Tim Waugh <twaugh@redhat.com>
+ Add a test case for the issue #21435.
+ [Extensions] Generate extensions with manifest_version 2
+ Add tab_node_id to TabWrapper.
+ Move font size conversion to StyleBuilderConverter.
+ WebCoreSupport: Add PlatformStrategiesWinCE
+ Remove anchord from EULA screen webview.
+ Use switch statement to detect changes to enum in future.
+ Remove disable_gcc_smartquotes.
+ [MIPS JIT] Enable MIPS YARR and YARR_JIT
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ Make BrowserAccessibilityManager notify that frame info is ready.
+ Roll src/third_party/skia a717ca970b25..0dd98a59df63 (1 commits)
+ Don't update counter graphs when GC is enabled.
+ WebKit2: Cancelling full screen early leaves full screen window up.
+ MacPWAs: Use auto& for latency infos
+ Wait for TabPageLoaded after using navigation buttons
+ Add 'Tristed Publisher' installation to the driver.
+ Remove TemplateURLService::AddAndSetProfile.
+ * bytecode/getByIdStatus.cpp:
+ Add an EarlGrey test for renderer-initiated back navigation.
+ * win/tools/scripts/auto-version2010.sh: Added.
+ Sync UI customize datatypes does not say "Please update your passhprase."
+ * platform/graphics/cairo/GraphicsContextCairo.cpp:
+ Re-add CHECK for parent IAccessible pointer.
+ Refactor GDataDirectory and GDataRootDirectory.
+ Reduce memory allocations and code complexity in SpdyStream.
+ Roll Catapult 28346a164..f3dc14e52 (1 commits)
+ Remove xdisplaycheck dependency from base_unittests_run
+ [Mac] Handle space key in play/pause buttons.
+ Add UMA to measure usage of password export progress bar
+ Move margin and padding shorthands and longhands to CSSPropertyParser.
+ Generate OSR exit code the first time it is executed
+ * khtml/html/htmltokenizer.cpp:
+ Add a histogram for the number of items inside a folder.
+ [closure-compilation] Fix build on Mac.
+ Add PointerCursor to the list of cursors
+ Update tel tag link context menu items for tel tags.
+ Fix a typo in a comment in dart:io.
+ Refactor CCLayerTreeHostCommon: clipRect(), usesLayerClipping(), and drawableContentRect()
+ [mac] Update test results for tokenElements.
+ * UIProcess/API/efl/ewk_view.cpp:
+ Remove GraphicsLayer::suspendAnimations() and WebLayer::resumeAnimations().
+ [security] fix xssAuditor and XSSInfo
+ [fast/css-generated-content] Add some tests to dumpAsText
+ <rdar://problem/4580583> Breaking blockquoted list should not automatically renumber the second list
+ Add a test for battery updates in device temperature.
+ Add UMA histogram for secure time queries.
+ Roll Chrome 1364 to r271 (Android log filtering change).
+ GLES2DecoderImpl: shake up scissor state on FBO0.
+ [ResourceLoader] Fix a race between ResourceLoader and MIME sniffing.
+ Preserve File's userVisibility in structured clone.
+ WebKit/mac, WebKitPluginClient.defs:
+ Rebaseline fixed-move-after-keyboard-scroll.
+ Clean up the RenderViewHost::WebContents::SavePackage.
+ Add descriptions of ownership in core/OWNERS.
+ Add script_shell_command to WebKitPort
+ Use setLayoutParams for MarginResizer.
+ Update pfeldman to 0.9.0.
+ Align requestContent methods to a single requestContent method.
+ [Web Store] Fix crash when sync items have unique positions.
+ Disable applying display zoom when the flag is disabled.
+ Drag and drop bookmarks to other folder's bookmark menu.
+ Remove OnKeywordSearchTermDeleted from HistoryServiceObserver
+ Annotation auditor's TSV output is updated.
+ 2008-03-01 Tim Waugh <twaugh@redhat.com>
+ Remove --target-arch from android_gyp.
+ [CAIRO] getImageData fails on a given rect bigger than the image rect
+ Add missing PPAPI_THUNK_EXPORT
+ * calendar-picker.js: Add support for RTL.
+ [asan] Fix memory leak in SdchManager
+ Use the size of the WebView for layout and rendering purpose.
+ Use PaintInfo in LayoutObject::selectionColor.
+ Avoid unnecessary layout work in WebFrameImpl::Layout().
+ Subzero: Fix memory leak in unit tests.
+ [LayoutNG] Always resolve BFC offset.
+ * platform/chromium-win/svg/custom/use-events-crash-expected.txt: Added.
+ Allow config visibility to be a list or a string.
+ 2011-04-25 Geoffrey Garen <ggaren@apple.com>
+ WebCore::ApplicationCacheGroup::checkIfLoadIsComplete: Only reset m_status after dispatching events.
+ [Android] Add support for large upload buffers.
+ Update clang to 6.0.0 and use our libc++ headers.
+ Add support for managed app policy for Chrome on managed devices.
+ * WebCoreSupport/WebEditorClient.mm: Use the selected frame to get the WebHTMLView.
+ Revert "Re-enable FormManagerTest."
+ Remove BrowserExtender from chrome_browser_extender.
+ Fix a crash in HTMLDocumentParser when inWrite() is true.
+ Explicitly require overrides in subclasses of gpu_tests.
+ Copy writing-mode when creating LayoutFullScreen.
+ Keep login screen open until the user switch has started.
+ 2011-10-21 Tim Waugh <twaugh@redhat.com>
+ Revert "Revert "Add support for JSC::RegExp::{lookupOrCreate,create}""
+ Avoid some v8 handle thrashing in IDBAny.
+ [Chromium] Fix offline request cleanup.
+ [WebGL2] Validate WebGL2OrES3Context
+ [mojo] Move media DecoderBuffers to DataPipe.
+ [Sheriff] Add more logging to CDM installer.
+ [dart2js] Improve timeout handling.
+ Add a test for the issue #267773.
+ [TASK] Remove support for -khtml CSS vendor prefix
+ * platform/chromium/TestExpectations:
+ Replace base::hash_map with std::unordered_map.
+ Re-enable flaky test on ChromeOS.
+ Report that extension exists with current installed version in cache.
+ Add YY_USE_CONST to all mesa targets.
+ Add token_info_url parameter to policy_testserver.py.
+ SelectorQuery should update distribution for cross tree scopes.
+ Add a WorkspaceLayoutManagerDelegate for fullscreen and shelf state.
+ Add overflow clip change logic for SVGForeignObject and SVGViewportContainer
+ Update all commands when drive status changes (online, offline).
+ Roll src/third_party/skia f3b9d4b03..8c86588d1 (2 commits)
+ [Sheriff] Clarify the wording of the new dialog.
+ * rendering/RenderText.cpp: Added check for NULL return from containingBlock.
+ Bug 21364: Remove the branch in op_ret for OptionalCalleeActivation
+ * fast/events/event-targets.html: Added.
+ [ios] Use AutofillTabHelper instead of Tab
+ Fix Mac overlay scroll bars not being fade out.
+ Add a method to update media queries when resizing.
+ Add a test to ensure that we don't crash when we try to use a non-existent file.
+ [closure-compilation] Remove unused code.
+ WebCore: Fix double linkage between a CounterNode and its display renderer
+ Fix some issues in dart2js.dart.
+ Re-enable Crashpad for relauncher processes.
+ [WebKit] Update run-bindings-tests expectations
+ Refactor ErrorCounters, SyncerStatus, SyncCycleControlParameters.
+ * qt-4.8/fast/block/positioning/047-expected.png: Added.
+ Revert r55899: "Revert r55898"
+ * gtk-fast-text.c (gtk_fast_text_decorations_with_text-combine-expected): Added.
+ Make ImeMenuTray observe InputMethod.
+ 2011-09-08 Tim Waugh <twaugh@redhat.com>
+ Add write barrier to EventTargetData and EventListenerMap.
+ Migrate SelectionTemplate to use SelectionTemplate::ComputeRange().
+ dart2js: Add a test for the case where we can't create a new file.
+ Add FingerprintChromeOS service to md-settings.
+ [Extensions] Create ScriptContextSet::GetMainWorldContextForFrame
+ Change the way we run the first update check after startup.
+ 2008-09-06 Tim Waugh <twaugh@redhat.com>
+ 2004-10-05 Padraig O'Briain <padraig.obriain@sun.com>
+ Revert "Mojo: Check for null on Watch creation"
+(1) When inserting a tab as the second-to-last tab, the size of tabs was incorrect.
+ Make shadows children of the root of the StackingController.
+ [dart2js] Update TODOs.
+ [base] Remove TestBrowserThreadBundle::RunIOThreadUntilIdle()
+ Initialize the buffer passed to write in dart2js.
+ WebStyle: Update expectations for http/tests/cache.
+ Refactor content_scripts to use UserScriptLoader.
+ Update comments to indicate that we don't need to use a deprecated method.
+ [Permissions] Remove permission delegation prototype code.
+ I. Updated the VulkanBrowserCompositorSurface parent type.
+ Simplify Box Alignment logic in Grid Layout.
+ * platform/chromium/test_expectations.txt:
+ - fixed 3154575 -- REGRESSION: Right sidebar on Yahoo! page in base PLT renders incorrectly
+ Add a test for a bug where we were failing to run the browser tests.
+ Roll src/third_party/catapult 1537dcedd..6eaec901b (1 commits)
+ * Scripts/webkitpy/tool/steps/update.py:
+ Move RendererSettings creation to ServerWindowCompositorFrameSinkManager
+ Add network traffic annotation to DevToolsUIBindings.
+ [DRT/Chromium] Increase the time out value
+ * platform/chromium/TestExpectations:
+ <rdar://problem/6277777>
+ Re-enable flaky tests on MacOS.
+ Make SVGMaskElement invalidate all its resources in the HashMap.
+ Move the async destruction of the |Channel| into a separate function.
+ Add a test for a bug where we were failing to run the browser tests.
+ Add Clear() method to ProcessMemoryDump.
+ [Sheriff] Disable flaky test on ChromeOS.
+ Fix for issue 147330. Add a test case for the issue 147230.
+ [Sheriff] Add the missing field in the test expectations.
+ Fix for issue 286542. Add a test case for the issue.
+ Add a test for the issue #472381.
+ Reland of "Land Recent QUIC changes."
+ [dart2js] Add support for split-select.
+ Refactor pyauto to obviate raising exception.
+ Make sure state is not disabled if the action is enabled.
+ 2004-05-07 Tim Waugh <twaugh@redhat.com>
+ Version 3.2.5 (automated commit)
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Fix a bug where ScrollingStateNodes would be re-routing when the root layer changes.
+ [NTP] Add first card animation to NTP.
+ Add a forward declaration to mojo_main.cc.
+ Fix flakiness in ui_test_utils::NavigateToURL
+ Remove ContextMenu.SelectedOption histograms.
+ [Sheriff] Disable flaky test on Windows.
+ Don't try to re-request a URL which fails due to cross-origin access check.
+ Remove the "noSuchMethod" warning from dart2js.
+ Remove SDCH code from net-internals and related test directories
+ Remove unused CredentialManagerClient from ChromeContentRendererClient
+ Update PasswordManagerDelegateImpl::AddSavePasswordInfoBar suppression.
+ [Android] Initialize ActivityViewModel in the constructor.
+ * khtml/editing/insert-3778059.cpp:
+ [Sheriff] Disable flaky test on Mac.
+ Updating documentation for chrome://settings/reminders.
+ [webnfc] add is_component flag
+ [ios] Disable flaky tests in ios_simulator_cronet
+ Increase the count of file read requests in the test.
+ Refactor webcore and webcore targets into separate files.
+ Make build/java_strings_grd.gypi a zipfile.
+ [Sheriff] Adjust icon position on Windows.
+ fuchsia: Update to latest Fuchsia
+ Roll src/third_party/skia ab00f4222..615af784a (2 commits)
+ * configure.ac: Update the tarball name.
+ Fix for issue 80053. The bug report was incorrect.
+ Update dart2dart status after r157131.
+ * platform/network/blackberry/CredentialBackingStore.cpp:
+ Change the image of the close button when it is pressed.
+ * rendering/RenderBox.h: * rendering: * render/RenderBlock.cpp: * RenderBlock.h (RenderBlock::availableLogicalWidth):
+ Reland of Fix gn check errors in //cc/* (patchset #1 id:1 of https://codereview.chromium.org/747273002/ )
+ Revert "[Reland] Use llvm symbolizer for stack script."
+ Fix for issue 141559. Add a test case for the issue 141459.
+ Use the actual GUID in the networkingPrivate implementation.
+ [Sheriff] Update dart2js to r283482.
+ Re-enable iterator debugging on windows dbg bots.
+ - fixed <rdar://problem/5133420> ASSERT in WebDocumentLoaderMac::decreaseLoadCount()
+ Revert "Add a test for the issue 371146."
+ Add SetBeforeFlushCallback method to CookieMonster
+ * platform/mac/fast/table/unbreakable-images-quirk-expected.txt: Added.
+ [FlexibleBox] Convert from box-align to align-items
+ Revert 235493 "Cast: Store more than one last sent RTCP report f..."
+ [ChromeDriver] Add metric for manual and automatic generation
+ Add a tool to annotate dependencies between two targets.
+ Add "encoded_body_length" property to ResourceRequestCompletionStatus.
+ Add GTK Linux 32-bit Release bot.
+ * platform/chromium-mac/css3/zoom-coords-expected.txt: Added.
+ Disable CustomDelteProperty and CustomEnumerateProperty in DOMWindow.idl.
+ Add a mechanism for GPU process clients to notify ahead of time that they are likely to draw.
+ Revert "[EoC] Update in-product help for slim peek"
+ Use the high-res icons in the resource pak.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ 2011-04-05 Erik Hjortsberg <erik@katastrof.nu>
+ Don't update GenericFontSettings if document() is null.
+ * WebCore.vcxproj/WebCore.filters: Add missing TimelineTraceEventProcessor.
+ [favicon] Update permission_warnings.html.
+ * editing/input/range-for-empty-document.html: Added.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Removed RenderDetails and RenderSummary from WebCore.
+ [ChromeNetworkDelegate] Clean up DomainReliabilityMonitor.
+ Roll src/third_party/skia 8364706c02c6..b423247bc239 (6 commits)
+ Refactor ping interceptor to support update checks.
+ * http/tests/misc/error404-expected.txt: Added.
+ Fix a typo in a comment in dart2js.
+ Provide versionPath and versionKey to ksadmin.
+ * qt-4.8/editing/deleting/merge-whitespace-pre-expected.txt: New file.
+ Remove MSVC_DISABLE_OPTIMIZE.
+ Add NotifyPassphraseAccepted in SyncBackendHost::SetDecryptionPassphrase
+ Revert of Sync Windows build flags between GYP and GN (patchset #1 id:1 of https://codereview.chromium.org/1185963004/ )
+ Disable flaky test WebRTCWebRTCBrowserTest
+ Fix crash in chrome://settings/certificates.
+ Update the version number of prepopulated_engines.json.
+ [Sheriff] Disable flaky test on Windows.
+ Remove rawDOMTemplate() from the DOM object.
+ WebCore::TypingCommand::markMisspellingsAfterTyping: Only start correction panel timer when the editing command is InsertText.
+ Add /d2FastFail to the compiler command line.
+ Move VideoFrameCompositor callbacks to VideoRenderer.
+ WebCore: Fix ASSERT crashes in accessibility/canvas.html
+ Disable copy_tex_sub_image_2d_partial_texture on Nexus 5X and 6P.
+ Add a test case for the issue 242290.
+ Speed up the apply method of functions by special-casing array and 'arguments' objects
+ Revert "Add heap profiling annotations in net/dns/"
+ PKCS#12: Fix bad password error code.
+ * platform/efl-wk2/TestExpectations:
+ Add command line flag to dump tile data into trace buffer.
+ Revert "Do histogram validation when processing Renderer death."
+ pwestin: add timeout argument to GetEncodedVideoFrame
+ Make bookmark menu look and feel similar to other menus.
+ SVG1DOM: Drop run-time flag.
+ Update VerifyLiveTilesRect and remove redundant RemoveTileAt.
+ Rename HttpStreamFactory to Http StreamFactoryImpl.
+ [AppCache] Add deprecation messages.
+ Render empty optgroup elements. (bug 24900)
+ * inspector/front-end/FlameChart.js:
+ Disable flaky test on Mac. (#30536)
+ Update co19 status for dart2js_test.
+ - fixed 3145317 - Unable to add or remove menu items on Site Menu page using Safari Beta
+ Roll in constants for multi-profile user-policy calls.
+ Use the same PID for sharing handles as the browser process.
+ Remove some presubmit checks from //third_party/blink/renderer
+ Roll Skia db64acacf..301dfc0bb (1 commits)
+ Split SVGPathSeg*.idl files into Abs and Rel pieces
+ Add passive option to PDF viewer touch event listeners.
+ * bindings/js/SerializedScriptValue.cpp:
+ Remove the check for nullptr in the catapult.
+ [LayoutNG] Introduce LayoutChild API surface.
+ * src/WebContentLayerImpl.cpp:
+ Re-enable WebRTCWebRTCDemo.
+ [mojom] Adds EchoEvent() to TraitsTestService.
+ * CanvasRenderingContext2D: Clear the canvas if the canvas is empty.
+ Roll src/third_party/catapult fe60316384dc..79eccf98e8fd (1 commits)
+ [WebLayer] Combine onSuccess(..., const WebData&)
+ Fix typo in CSSParser and add top-down test.
+ [Android] Update warning string before exporting passwords from Chrome settings
+ Web Inspector: Store heap snapshots in InspectorProfilerAgent.
+ Add IceCandidate and its WebCore/platform sibling
+ Add VAVDA bitstream parser for Chrome on Linux.
+ Implement RemoteFontStream's skip behavior (in FontCustomPlatformData.cpp)
+ Webkitpy: Add missing spaces before ':' in unit test.
+ [Sheriff] Disable flaky tests on Windows.
+ Revert of Reland #2 of Fail builds when lint warnings are generated (patchset #1 id:1 of https://codereview.chromium.org/2236313004/ )
+ Fix flaky test ClientLoFiFieldTrial
+ Update co19 status for pkg/unittest.
+ 2004-03-03 Tim Waugh <twaugh@redhat.com>
+ Remove unused code from base_unittests.
+ Remove fallback to defaultCharset in FormDataBuilder.
+ [Sheriff] Fix a typo in a comment
+ Extract HistoryListBehavior and refactor selection system.
+ * bytecode/BytecodeGenerator.cpp:
+ Move gtk_util before chrome/browser.
+ Add a MediaClient interface for embedders.
+ [ios] Refactoring of screen manager.
+ Add -m32 to the list of supported platforms.
+ [LayoutNG] Prune a call site of deprecated function
+ Remove calls to WebKit::Get/SetCookies.
+ Add a TODO for a new feature in chrome/browser/ui
+ Re-add __asan_unpoison_memory_region to asan_stub.
+ 2013-02-01 Tim Waugh <twaugh@redhat.com>
+ Add a test for wtc_unittest.
+ Refactor MediaQueryEvaluator.create().
+ Add a test for the issue #455872.
+ * kxmlcore/Assertions.h: Added.
+ Mus window should be shown in a correct display.
+ [infra] Add a flag to disable the build.
+ Remove "Disable mouse events when cursor is hidden" message.
+ Update co19 status for dart2js/dart2js.
+ Add whitelisted IDs to the anonymizer tool.
+ Fix issue 173301: Pending tree is not activated when tile manager is idle.
+ Use DrawQuad::needs_blending instead of opaque_rect
+ * platform/chromium-linux-x86/fast/ruby/select-ruby-expected.txt: Added.
+ Add switches for language detection and translation logging in the browser.
+ [webui][ntp] Generate Gltf mesh controller
+ AW: fix "system information" link in interstitials
+ Remove some unnecessary dependencies and correct header guard in photo_capabilities.
+ [WebCore] Fix crash on WK2
+ Add ShouldPreserveSelection/ShouldPreserveStyle enum types to CompositeEditCommand.
+ Remove unused methods from dart2js.dart.
+ Avoid collapsing anonymous blocks when normalizing a block.
+ Disable ES3 contexts for WebGL 1 testing.
+ Add support for extensions that are disabled by default.
+ Added RTL pseudo language support for subviews.
+ [Sheriff] Disable flaky test on Windows.
+ Reverting r148355, it breaks the build.
+ * qmake/mkspecs/features/features.prf:
+ Add layout test expectations for Chromium to exhibit support WebM types
+ Webkit: fix chromium_win unittest
+ Revert of Make Rebaseline/NeedsRebaseline/ NeedsManualRebASeline not conflict with Pass lines. (patchset #1 id:1 of https://codereview.chromium.org/1550703002/ )
+ Rebaseline selection-within-composited-scroller.html
+ [DevTools] Remove Object.values and Object.isEmpty
+ Fix for issue 224923. Add a test case for the issue.
+ [closure-compilation] Fix build on Mac.
+ Retire bug suppressions from valgrind.
+ Updating engine to use Dockerfile.base.
+ [quickview] Improve the message on test failure
+ build: Updating mediawiki/mediawiki-codesniffer to 29.0.0
+ Don't allow HTMLCanvasElement to create a new ImageBuffer
+ [DnsTransaction] Handle mismatched response in DnsUDPAttempt.
+ Update status text and animation state for downloads that don't generate any notifications.
+ Run run-webkit-tests in Windows with --disable-breakpad
+ Add DM_STATUS_SERVICE_MANAGEMENT_NOT_SUPPORTED to UserPolicySigninService.
+ sandbox: Add linux/filter.h system header.
+ Remove WKPageNamespaceRef and related code.
+ Avoid unnecessary containerShouldBeAutosized calls.
+ [Nassh] Move the icon to chromeos.
+ Reviewed by Eric. Bug 19588: CRASH doing open() on destroyed window
+ iExploder(#293): Crash in StringImpl::hash()
+ Add a flag to disable the flaky test.
+ CSS: Invalidate siblings of inserted/removed elements
+ Add a test to verify that we don't crash when we try to use a non-existent file.
+ Switch to using ephemeral ports in testserver.py
+ * http/tests/misc/bubble-drag-events-expected.txt:
+ 2003-03-03 Tim Waugh <twaugh@redhat.com>
+ 2007-08-25 Tim Waugh <twaugh@redhat.com>
+ * platform/chromium/TestExpectations:
+ 2011-03-01 Daniel Cheng <dcheng@chromium.org> Reviewed by David Levin.
+ * kwq/DOMDocument.mm:
+ [Sheriff] Update test expectations for Win7
+ Refactor WebFrameWidgetBase into WebViewFrameWidget
+ * platform/chromium/test_expectations.txt:
+ Roll src/third_party/webrtc c1d793b..67a934d (8 commits)
+ Re-land "Add a test for the new Overflow API"
+ Qt/KDE: Update to latest loader changes.
+ Revert of Add profiling to investigate jank in WebDataRequestManager::RequestCompletedOnThread. (patchset #1 id:1 of https://codereview.chromium.org/990933003/ )
+ Re-enable WebRTCWebRTCBrowserTest
+ [Android] Expose DownloadItem::DownloadState to Java
+ Add certificate details to NetworkManager.getCertificateDetails().
+ PDF Viewer: Remove unused code in PDFViewer
+ Add IDL interface for datagrid cell elements.
+ [md_browser] Add links to the md_browser documentation.
+ * platform/gtk-wk2/TestExpectations:
+ Fix a bug in dart2js that caused a crash on Windows.
+ Reland RemoteSuggestionsFetcherImpl to IdentityManager
+ Add a screen for the new user profile in the session.
+ Fix typo in test.dart for dart2js.
+ [avayvod] Show "start session" dialog when "start" is tapped.
+ Remove ASan-only verification for Persistent<>
+ Keyboard Shortcut Viewer: Refactor InputDeviceManager
+ Roll src/third_party/chromite f8268f7ccb65..4b9089142927 (8 commits)
+ 2007-02-05 Tim Waugh <twaugh@redhat.com>
+ Disable flaky tests on ChromeOS 10.10.
+ [SwiftShader] Fix GPU startup dialog.
+ Update the mtime of the symbol directory if we update the symbols.
+ 2011-12-02 Tim Waugh <twaugh@redhat.com>
+ Add abarth as a Blink/Chromium OWNER.
+ Roll chromium_revision eb686c79229ef3cf3b39e6a0807f4c98e3e93cf9 (3 commits)
+ [Qt][V8] Make QtWebKit with V8 build
+ [signin] Use USER_EVENTS in consent_sync_bridge_impl.
+ Clean up the StackingClient and DesktopStackingClient interfaces.
+ Add a few more tests to the test_runner.
+ 2004-05-01 Tim Waugh <twaugh@redhat.com>
+ qt5.0-wk2/Skipped:
+ Ignore the 'bloc' box in the initial implementation.
+ 2012-10-01 Padraig O'Briain <padraig.obriain@sun.com>
+ [OOPIF] Update session history on navigation.
+ * plugins/PluginStream.cpp (WebCore::PluginStream::startStream): Add a status line to the header.
+ * platform/mac-snowleopard/fast/regions/render-region-custom-style.png: Added.
+ Remove hardcoded Capabilities values from WebCore.
+ Remove unused methods from TableViewObserver and TableViewImpl.
+ Cleanup: Remove unused method signature for GetScheduler.
+ Fix a bug in the mouse pointer lock implementation.
+ Apply blur and dimming only on lock screen.
+ * WebCore.xcodeproj/project.pbxproj:
+ * media/video-frame-accurate-seek.html: New file.
+ [Sheriff] Disable flaky test on Mac.
+ 2005-03-07 Tim Waugh <twaugh@redhat.com>
+ [printing] Updating the comment for print_printing.py
+ media: Add default bitrate for VEAEncoder.
+ Wayland: Use begin frame callbacks and frame timestamps
+ [Sheriff] Add a WindowTreeHost to PlatformWindow*
+ [NTP] Provide category rank in onSuggestionOpened
+ Update status file for dart2js/dart2js.
+ Handle captureStream() case where frame rate is omitted.
+ Fix GeolocationNetworkProviderTest.{NoRequestOnStartupUntilWifiData|NewDataReplacesExistingNetworkRequest}
+ [scroll_predictor] Fix scroll resampling behavior
+ Update status file for dart2js_test.
+ * tests/qwebpage.cpp: Remove spurious </html> in beginning of the document.
+ Update status file for dart2js/dart2js.
+ Update status file for dart2js/dart2js.
+ Avoid resampling content quad in WebVR mode
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Remove unused code from dart2js.dart.
+ Add editing/input/reveal-edit-on-paste-vertically.html
+ Add testapi target to JavaScriptCore GYP build
+ Fix bad cast in TaskSetFinishedTaskImpl
+ Fix flakiness in tests for newlines.
+ WebCore: KURL should use String instead of DeprecatedString
+ Remove the kjs subdirectory of JavaScriptCore.
+ Revert "Revert r179789"
+ Include WebCoreSystemInterface using brackets, so that we can build on Lion.
+ WebCore: Move HistoryController to its own file
+ Add early-out for case mapping chopping of small caps
+ 2010-09-20 Martin Robinson <mrobinson@igalia.com>
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ * platform/chromium/fast/dom/HTMLAnchorElement/set-href-attribute-hash.html:
+ Disable flaky test on Windows. (#393331)
+ Introduce VisibleSelection::toNormalizedEphemeralRange()
+ Pass gfx::PointF by const ref.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Reland "Reland "Revert "Add temporary magic values for m_owner in Frame.""
+ [Sheriff] Fix a typo in a comment.
+ * loader/FrameLoader.h: Add a new enum for unloading and pagehide events.
+ 2006-03-01 Erik Hjortsberg <erik@katastrof.nu>
+ * platform/gtk/fast/dom/prototype-inheritance-2-expected.txt:
+ Roll src/third_party/skia 9db44ed0ef7f..4c6514490e96 (6 commits)
+ Revert "Revert r290259"
+ [Sheriff] Re-enable flaky test.
+ [Sheriff] Re-add a test that was missed in the chimera.
+ Revert "Revert r174315"
+ * Scripts/blame-malloc-history: Added.
+ Roll Flutter from 5a6ef50932db89d2cc754c615251c7286155b69d
+ 2008-03-03 Christian Stimming <stimming@tuhh.de>
+ Allow bookmark app icons to be resized as many times as necessary.
+ Improve file rescan performance in FilesystemManager.
+ Roll src/third_party/pdfium 9162ff85c..ce32acfa1 (4 commits)
+ Add ClearSiteDataThrottle to main frame navigation.
+ Roll src/third_party/catapult f79ab3845a7e..d35e4d092bb2 (1 commits)
+ Remove WebKitWebLoaderClient from public API.
+ weblayer: fix ash_unittests --mash
+ Fix a bug in the trace event for the updated element.
+ Lazily create DownloadInfobarController when needed.
+ Add a test for the issue that was introduced in https://codereview.chromium.org/1776483002
+ 2012-07-31 Tim Waugh <twaugh@redhat.com>
+ <rdar://problem/4172312>
+ Revert of Handle RenderProcessHostImpl::SetBackgrounded on Windows
+ * Drosera: breakpoint indicators disappear after the script is finished running.
+ Web Inspector: use call frame column to determine execution line in source frame.
+ RWHVMac: Rename scale factor functions.
+ * platform/chromium-gpu-linux/compositing/iframes/become-overlapped-iframe-expected.txt
+ Revert 281133 "chrome.hid: enrich model with report IDs"
+ * svg/hittest/svg-inside-display-table.xhtml: Added.
+ Unify SVGAnimateMotionElement transform invalidations.
+ 2008-08-05 Tim Waugh <twaugh@redhat.com>
+ Fixing a typo in the test.dart file.
+ Call setCenteredLook:NO on Yosemite.
+ Fixing a typo in the test.dart file.
+ Move PrerenderData into active_prerenders_ immediately after creating it.
+ Fix PrerenderBrowserTest.Prerender*Fragment*
+ [TaskScheduler] Add TaskLatency histogram
+ Add ShowUpdateIcon to system_tray.mojom
+ [TabPersistentStore] Save out tabs that have their closures canceled
+ Remove unused inputType() method in InputManager.
+ WebCore::base64Encode with String output
+ InspectorDOMDebuggerAgent: Added m_pauseInNextEventListener.
+ [optional_gpu_tests_rel] Remove unused code
+ * platform/graphics/mac/WebLayer.mm:
+ Update status file for dart2js_test.
+ IndexedDB: Do store/index deletion synchronously.
+ Open file link in the download manager when clicking a file link.
+ WebKit 5.5.27: Update expectations.
+ * inspector/timeline.js (initialize_Timeline.InspectorTest): Added.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Enable new-run-webkit-tests to run under Cygwin
+ DFG may get stuck in an infinite fix point if it constant folds a mispredicted node
+ Remove unused mojo includes from //chrome/browser/ui.
+ Rasterize cheap tiles immediately on the impl thread.
+ Update README file to include PRESUBMIT.py.
+ Enable SRC ClearKey tests in media pipeline.
+ * loader/WorkerMessagingProxy.cpp: Added the ability to post tasks using a mode.
+ Refactor SyncNotifier to use PushClientChannel.
+ Make sure we don't crash when deleting a bookmark.
+ RemotePlayback: Don't use backend for availability monitoring
+ Fix flingScroll() and add ContentViewTest.
+ Remove unused code from dart2js.dart.
+ Source/WebCore: - moves current execution context state into runtime model
+ Delay preconnection until DNS answer has been obtained.
+ [AppBanner] Fall back to short name for app banner.
+ Add the rest of the path to get the content view.
+ Add WebstoreResult and WebstoreSearchFetcher.
+ Android: Pass promise to InitializeCdm()
+ Fix exo crash when submits a frame.
+ Remove the line "mac" from the field trial
+ * platform/gtk/fast/dom/prototype-inheritance.txt:
+ * Scripts/webkitpy/layout_tests/models/test_expectations.py:
+ [Sheriff] Disable flaky test on Windows.
+ cros: Add missing 'not:([md-mode])' styles in md_screen_container.cc
+ Revert "Revert r26228"
+ Fix server-side image map coordinates for Firefox and IE
+ Make RenderWidget(Host|View)* visibility a construction-time parameter.
+ [fast/regions] Update expected images.
+ Add tangentialPressure and twist to WebMouseEvent
+ Don't create DriveSystemService if Drive is disabled.
+ Initial implementation of a SurfaceView for the GPU.
+ Update status file for dart2js_test.
+ Revert "Revert r132172"
+ Add speculative null check for BookmarkItem title.
+ Don't try to create a non-existent file if it doesn't exist.
+ * media/video-replaces-poster-expected.txt: Added.
+ 2011-05-25 Ryosuke Niwa <rniwa@webkit.org>
+ Add command line switch to specify content_shell size for windowless ozone platforms.
+ Remove redundant updateStyleAndLayout call in DragCaret.
+ Move summary creation to ResourcePrefetchPredictor.
+ Re-enable tests that were disabled due to crash reports.
+ Add RLS support to ScrollingCoordinator.
+ Enable EXT_multisampled_render_to_texture on Qualcomm devices
+ * RenderLayerBacking.cpp: Remove assertion about root layers.
+ Add webkit_compositor_bindings_unittests
+ Make FrameSelection to hold non-canonicalized DOM positions
+ Fix for issue 115510. Add a test case for the issue.
+ Cleanup of Oobe code and related code.
+ Re-add --host-config parameter to Me2Me host.
+ Disable ManagedBookmarkService when config_policy is 0.
+ Roll ffmpeg 2ab535183e2f..2f698edc4eb0 (1 commits)
+ <rdar://problem/3870317> REGRESSION(125.9-125.11) broken behavior
+ Upstream GoogleURL implementation of KURL. Added.
+ Remove dependency of SummaryBar on WebInspector.resourceCategories.
+ Add SendZygoteChildPing() library.
+ power: Rename GetPowerSupplyInfo() to RequestStatusUpdate()
+ Add missing call to InProcessBrowserTest::SetUp().
+ Fix re-attachment of foreignObject with <g> parent.
+ Add a policy for managing the Managed Bookmarks folder.
+ [zelidrag] add keyboard acclerators to login wizard
+ Remove unnecessary indirection in WebLayer::CreateFrame.
+ Renamed BytecodeInterpreter => Interpreter.
+ Update expectations for intl1/times/t
+ [Autofill] Use AutofillCounter instead of preference count.
+ Add "-all_load" to linker command lines.
+ 2010-08-28 Pratik Solanki <psolanki@apple.com>
+ Revert "Revert "Smart Lock: Add support for "MandatoryPaksToExtract".""
+ * bindings/npruntime.cpp:
+ 2010-02-09 Avi Drissman <avi@chromium.org>
+ Remove cross thread malloc/free pair from simple disk cache backend.
+ qt: skip failing test on Qt 5.6
+ DeleteBrowsingHistoryTest now passes on Windows.
+ Fix a bug where the doc icon would not be updated when the drive metadata is ready.
+ Use Event::create to set bubbles and cancelable.
+ Add always-visible black background to compact window mode.
+ Add a wrapper class for InputStream IOException.
+ Disable CTLogVerifierTest.VerifiesValidConsistencyProofsFromReferenceGenerator
+ Remove unused code from dart2js_test.dart.
+ [dart2js] Fix timeout attempts.
+ RenderTextHarfBuzz: Always break at whitespace.
+ Update SVGResourcesCache for root SVG renderers.
+ Add a test for ComputeSecWebSocketAccept.
+ Revert "Use the real mouse position when synthesizing mouse events."
+ 2011-01-25 Cris Neckar <cdn@chromium.org>
+ Add shouldAllowNavigationFromDrags to Plugin/PluginView/etc.
+ Removed KOI8-U encoding no longer supported.
+ Reland "Add new API to PowerSaveBlocker."
+ Initial implementation of multi-profile support in the browser.
+ DNR: Introduce "hosts" key.
+ Set root resource ID at DriveResourceMetadata's constructor.
+ [blinkpy] Introduce Monorail API
+ Remove NPAPI quirk for Mac OS X Wiki Server.
+ WebCore: remove file-reader-file-url-expected.txt
+ Start implementation of DownloadUkmHelper for downloads.
+ Add tests for dom-exceptions.html.
+ Add readonly keyword for CSSVariableReferenceValue.
+ Roll chromium_revision 1637 and 1638
+ CrOS Shelf: Synchronize ShelfModels
+ Add --kill-service-worker flag to ServiceWorker.
+ DevTools: update return value when paused at return position.
+ papi: Update chromoting input events. (Clang caught this).
+ Remove Web Intents from EFL WebKit2
+ 2007-03-03 Tim Waugh <twaugh@redhat.com>
+ [ContextualSearch] Add brightness filter to tab strip and toolbar.
+ Convert internal NTP panels to UIViewControllers
+ 2010-09-08 MORITA Hajime <morrita@google.com>
+ WebKit-CVS-2005-10-01 03-27-01 GMT.dmg
+ * plugins/win/PluginPackageWin.cpp:
+ Rename SpeechInputManager to SpeechRecognizer.
+ fuchsia: Update to latest Fuchsia SDK
+ Update Chrome breakpad to latest version (2018-03-01).
+ Add a test for the issue that was introduced in r556415.
+ Fix for issue 76401. Add a test case for the bug.
+ * WebView.cpp: Use the WS_CLIPSIBLINGS style.
+ Prevent infinite loops when searching for audio sources in PannerNode.
+ views: dismiss SimpleMessageBox when widget loses activation
+ Don't update popup content when mousedown event handler is called.
+ Import wpt@7e5e7e7d7e3f8b939652a6ad10b
+ * Source/CMakeLists.txt: Added missing ECORE_XXX_INCLUDE_DIRS.
+ * platform/chromium-cg-mac-leopard/fast/clip/overflow-border-radius-combinations-expected.png:
+ [webview] Remove undocumented resize event from <webview>
+ Remove ScrollableArea::handleGestureEvent.
+ Clean up rebaseline_cl and test.
+ Add a syscall wrapper for disk_cache_perftest
+ * loader/icon/IconDataCache.cpp: Use the new escapeSQLString()
+ Move StubSurfaceReferenceFactory to //cc/surfaces.
+ Revert of cc: Stop locking the raster scale factor at 1 after any change."
+ * plugins/win/PluginPackageWin.cpp: Add Citrix ICA Client plug-in to the blacklist.
+ Update dart2dart status for dart2js.
+ Re-enable a layout test that relies on sibling shadow root.
+ 2008-03-03 Padraig O'Briain <padraig.obriain@sun.com>
+ 2004-05-01 Tim Waugh <twaugh@redhat.com>
+ Update status file for dart2js_test.
+ * Modules/websockets/WebSocketFrame.cpp: Replace conditional compilation with UINT64_C.
+ Reland "Reland "VR: Add dynamically-toggled icon in Daydream Home""
+ Disable password-field pop-ups for forms without usernames.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Update status file for dart2dart_test.
+ Move DocumentTabModelImpl from downstream to findbugs.
+ Roll chromium_revision to r124649.
+ Add a test for a bug that was introduced in r210621.
+ Clean up default page scale limits in Blink (part 3/5)
+ Remove the read loop from the FTP read loop.
+ Remove TODO comments from wiki->docs/*.md.
+ DumpRenderTree should be able to keep URL history during runs
+ Add a test case for a bug that was introduced in r216050.
+ Add OWNERS for //ui/display/util
+ * RenderBlock.cpp: Added. (RenderBlock::clearFloats): Added.
+ Update mac-leopard/win baselines.
+ Restore focus when the user clicks on the Mac omnibox.
+ Support OPTIONS request in the ServiceWorker.
+ Revert of [Views] Forward mouse events in menus to the proper root view (patchset #1 id:1 of https://codereview.chromium.org/1407113002/ )
+ Refactor ChromotingHostContext to use TaskRunners.
+ Don't skip retryable errors when connect to proxy fails
+ * Webkitpy/WebkitPy/WebKitPy.py: Added --enable-hardware-gpu flag.
+ Implement fade transition for aura menu UI changes. (Graylog2/graylog-plugin-enterprise#122858)
+ - fix http://bugs.webkit.org/show_bug.cgi?id=15362
+ Move CALayerTree construction to AcceleratedWidgetMac.
+ Fix the status area tray focus advancing. (1) invisible focus between system tray and web notification tray.
+ Adding logic to add a column if there wasn't one.
+ Fix bug in Aero mode, when activated and deactivated.
+ Subzero: Introduce DownloadReservationTracker.
+ * DumpRenderTree/FrameLoadDelegate.mm: (decodeHostNameCallback): Put return value in a temporary JSRetainPtr to ensure it gets released.
+ [omnibox] Add test for double-click drags
+ Deferred startup handler should only record UMA once.
+ Don't call size-allocate if the chevron has changed.
+ Support setting event listeners for message ports in the worker process.
+ Don't include Inspector headers when Inspector is disabled (bug51789)
+ * platform/chromium/test_expectations.txt:
+ 2009-08-17 Shinichiro Hamaji <hamaji@chromium.org>
+ [TTS] Enable Smart Text Selection on WebView.
+ Remove the xml module from dart2js_test.
+ * xml/parser/MarkupTokenBase.h:
+ Update co19 status for dart2js/dart2js
+ WebCore::SocketStreamHandle::writeStreamCallback: ASSERT(m_state = Open);
+ Disable "Disconnect my account..." button on ChromeOS.
+ Version 3.2.5 (automated commit)
+ XSSAuditor::decodedSnippetForJavaScript: Don't return empty fragments.
+ Remove dead WallpaperManagerPolicyTest and CustomizationWallpaperDownloaderBrowserTest
+ Update co19 status for flaky test on Mac.
+ Remove the "easy off-store install" switch.
+ * frame-set-rotation-hit.html (frame_set_rotation_hit): New function.
+ Fix DevToolsAgentHost creation for WebContents.
+ Remove LibCrosService D-Bus service permissions
+ Add network traffic annotation to appcache_update_job
+ <rdar://problem/3990849>
+ [WebView] Add native JNI export mode.
+ Eliminate a call to DownloadProgressUpdated in DownloadManagerDelegate
+ Update status file for dart2js_test.
+ Use zygote instead of zypper.
+ Remove unused field trial configs from //chrome/browser.
+ * platform/chromium-cg-mac-snowleopard/fast/font-weight-bold-for-b-and-strong-expected.txt: Added.
+ * Plugins/WebBaseNetscapePluginStream.h:
+ BackingStore: break up the log message and add braces.
+ Update README.md for mini_installer and crash renderers.
+ gpu: Add CHECK and Alias for gpu_get_minidumps
+ * editor.h: * editor/JSEditor.cpp, editor/Frame.cpp:
+ [swiftshader] Don't include software_renderer.h from chrome-internal.
+ Fix the blinking of iframe contents in the iframe.
+ Move ui.gyp into ui/resources.
+ Fix for issue 17645. - Fix for bug 17645 - Make sure that we don't try to use a non-existent file.
+ Call OnTextInputTypeChanged on the input method.
+ Add a test to make sure that we don't crash when we try to use a non-existing library.
+ Disable flaky test on Mac. (#131315)
+ Revert of [Telemetry] Make page cyclers more telemetric.
+ [WPT] Fix 1,354 tests in external/wpt/selection/.
+ * Drosera/mac/DebuggerDocumentMac.h: Added.
+ cros: Put the mask layer behind a flag.
+ Roll Catapult 71633f4c8..7b509122f (1 commits)
+ * platform/mac/PasteboardMac.mm: The SharedBuffer may not have platform data. It may, for example, have a purgeable or regular buffer.
+ * platform/mac-snowleopard/svg/W3C-SVG-1.1/pservers-grad-10-b-expected.png: Added.
+ 2005-03-05 Erik Hjortsberg <erik@katastrof.nu>
+ Update session tracker with sync data from a previous session.
+ Reland of Added SyncToken command buffer trait to help with IPC messages.
+ weblayer: add WindowService-ChromeOS
+ Add autotest for desktopui_PyAutoLogin.
+ 2003-03-01 Tim Waugh <twaugh@redhat.com>
+ 2011-03-31 Anantanarayanan G Iyengar <ananta@chromium.org>
+ [chromiumcodereview.appspot.com] Refactoring: Add a new class for the field validation.
+ Exporting Internals::pageNumber symbols for the Gtk build.
+ Add the concept of "hovered" to aura::Windows.
+ Roll src/third_party/skia 0c15ae82f..edfe4a5ca (6 commits)
+ viz: Don't promote to overlays requiring no alpha blending
+ Disable flaky test on Mac. (#103365)
+ Revert of Generalize V4L2 HW video codec device names (patchset #1 id:1 of https://codereview.chromium.org/784553004/ )
+ Make sure to set-up transiency on mus windows.
+ Fix for issue 154400. Add a test case for the issue.
+ * khtml/editing.cpp: Fix for bug #3690704.
+ media: add enum typemapping for VideoEncodeAcceleratorError
+ Add a new method to get OS EV results on Sierra.
+ [Extensions] Add missing SetUpOnMainThread calls
+ Fix for issue 55772, 57395 and 57395.
+ PlzNavigate: Create temporary loader for provisional load notification.
+ [ Pepper] Refactor cursor & mouse-lock handling.
+ Add a DCHECK for non metadata trace events.
+ Renamed from Source/WebCore/dom/StreamEvent.
+ Add a test to verify that we don't crash when we try to use a non-existing file.
+ Revert "Layout table roles should provide name from contents when used recursively."
+ WebInspector.displayNameForURL() does not work as expected
+ [Sheriff] Disable flaky flaky test.
+ Update status file for dart2js_test.
+ 2005-03-07 Tim Waugh <twaugh@redhat.com>
+ [profile-menu] Update strings in user menu
+ Bookmarks: Fix bookmark icon on !CrOS.
+ [Sheriff] Disable flaky CFI tests.
+ IDL: Make nativeValue() return a nullptr
+ Roll src/third_party/chromite a6818c5b7..b272c6655 (1 commits)
+ 2005-03-07 Tim Waugh <twaugh@redhat.com>
+ Convert LayoutTests/editing/selection/4895428-1 and -4 to dump-as-markup
+ Remove ash::ShelfItemDelegate::CreateContextMenu.
+ Enable extensions in the management UI (chrome://extensions).
+ Fix for issue 66720 66539. The preview is fading out when instant is not active.
+ * ForwardingHeaders/JavaScriptCore/JSObjectRef.h: Added.
+ 2009-12-16 Dirk Schulze <krit@webkit.org>
+ Remove dead code from WebRTCDemo.
+ Remove LICENSE file from sqlite3.h.
+ * platform/chromium/test_expectations.txt:
+ [ozone/wayland] Add FakeDisplayDelegate to OzonePlatformWayland
+ Remove MessageLoop::PostTask/PostDelayedTask/DeleteSoon/ReleaseSoon
+ Fix "Edit" dialog buttons on Windows on Mac.
+ Add some notes about screenshots and label for BotHealth.
+ [ gaia] Refactor ProfileInfoCache accessors
+ Reject invalid timestamps in SourceBuffer::setTimestampOffset().
+ 2009-09-29 Kent Tamura <tkent@chromium.org>
+ Update dart2js to 0.9.0.
+ Refactor CandidateView and CandidateWindowView to use BoxLayout.
+ Fix TabModelObserver#onTabSelected()
+ [TaskRunner] Introduce TaskRunnerHelper::get()
+ WebCore::TextEvent class has to many flags
+ Add a toggle to show the site list in the browser.
+ Remove duplicate ChromiumAndroidTwoPortsTest.
+ [Sheriff] Disable flaky test on Mac.
+ * platform/chromium-mac-mountainlion/TestExpectations:
+ Set AutoConenct to true on first successful connect
+ 2011-12-01 Tim Waugh <twaugh@redhat.com>
+ 2004-03-07 Tim Waugh <twaugh@redhat.com>
+ Expand FrameSelection::isContentRichlyEditable()
+ Added 2011-02-18 Jeremy Orlow <jorlow@chromium.org>
+ [BREWMP] Port SharedTimer with IShell_SetTimerEx.
+ Validator_ragel: update to latest revision.
+ Add location bar background for Chrome Modern in the compositor
+ Bug 23674: Speed up some things based on profiling the page load
+ Revert r82812, it broke the build.
+ Update NaCl SDK when adding/removing PPAPI interfaces.
+ webkit-patch: rewire garden-o-matic and rebaseline* commands.
+ [iOS] Add accessibility trait button to popup menu cells
+ 2009-09-10 Tim Waugh <twaugh@redhat.com>
+ 2004-05-07 Tim Waugh <twaugh@redhat.com>
+ Re-add entries to ui/gfx/
+ Move HTMLEquivalent and its subclasses to EditingStyle
+ Add --delete-old-versions to setup.exe.
+ Fix for issue31132. - Add a test case for the issue. - Fix a bug in the test case.
+ Start TaskScheduler before starting full browser.
+ Add COMPILER(MSVC) guard for strnstr
+ Added a new property: contentsSize() which allows the user to specify the size of the contents of a file.
+ [DevTools] Add protocol log to DevTools.
+ Move base_test_support to base_switches.
+ Add BubbleIconViews to Chrome OS Desktop PWAs.
+ Source/WebCore: Correcting case by which a nested DOMWindow wouldn't clean up its event handler references
+ * html5lib/runner-expected.txt:
+ * kwq/KWQListBox.mm:
+ Add a test for a bug in dart2js.
+ Add stubs to disable dbus-dependent code
+ Fix for <rdar://5747529> - ObjC Exception can cause JSLock to never be released
+ * fast/canvas/Canvas-path-with-inf-nan-dimensions.txt: Added.
+ * platform/chromium-linux/svg/W3C-SVG-1.1/struct-use-01-t-expected.txt: Added.
+ Reland "cc: Throttle incoming begin frames in scheduler"
+ [Ajuma] Change key to map to record animation changes.
+ [Media Capture] Refactor VideoCapture*java classes.
+ Remove dead code from TeeHelper in BytesConsumer.cpp
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Decouple LANGUAGE_DISABLED_BY_AUTO_BLACKLIST overrides
+ Revert of Remove WallpaperManager dependency on Cryptohome. (patchset #5 id:80001 of https://codereview.chromium.org/1887523002/ )
+ [FetchFormDataConsumer] Introduce FormDataBytesConsumer
+ Download later: Do not create a unique pointer in Update call.
+ WebCore: Sort WebCore.gypi files
+ Roll src/third_party/breakpad/ 33a43757f..5aac5eabb (2 commits)
+ Fix for dart2dart build after r202275
+ Update co19 status for dart2js_test.
+ Use user's g+ profile image instead of avatar icon.
+ Move most of ArrayBuffer usage into a RawBuffer class.
+ DNR: Refactor RulesMonitorService to handle file sequence operations.
+ Move ValidationMessageClientImpl to blink and remove CORE_EXPORT
+ [Sheriff] Fix regex for finding commit revision.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Don't replace extension install error bubble and dialog alerts.
+ 2008-03-01 Tim Waugh <twaugh@redhat.com>
+ 2004-10-05 Jeremy Katz <katzj@redhat.com>
+ Disable UMA for the Physical Web feature on Android.
+ Convert selection-change-in-blur-event-by-remove-children.html to w3c
+ Disable flaky tests on ChromeOS due to flakiness.
+ Don't re-raster content on the active tree.
+ Update status file for dart2js_test.
+ Fix WebContentsViewAura not being called on Windows.
+ efivars: finish rebaselining fast/
+ Add a test for a bug where we were failing to run the browser tests.
+ [Sheriff] Remove the prefix from the sheriff-o-matic test.
+ Add Timeline tests for Layout, Paint, ParseHTML, MarkTimeline, and Style Recalculation
+ * dfg/DFGByteCodeParser.cpp:
+ [Signin][Android] Fix crash in AccountManagerFacade
+ 2010-07-07 Adam Barth <abarth@webkit.org>
+ * platform/fast/js/regress/integer-modulo-expected.txt:
+ Simplify thumb positioning logic in SliderThumbElement
+ Revert "Sampling profiler: disable GPU main thread profiling on OS X"
+ 2006-03-01 Tim Waugh <twaugh@redhat.com>
+ Add device manufacturer ID and serial# to x11_util
+ * platform/efl/tables/layering/paint-test-layering-1-expected.png:
+ * gtest/msvc: Added property svn:ignore.
+ AVDACodecImage::ReleaseOutputBuffer()
+ Include DWORD result code returned by ::CreateProcess.
+ * src/WebDevToolsAgentImpl.cpp:
+ Remove verbose:true from Should() and add brief:true to existing tests.
+ Use DRM device when importing native GMBs on Ozone.
+ Add onLoad and onUnload chrome events.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ Fix for issue 118670. Add a test case for the issue.
+ 2007-03-01 Tim Waugh <twaugh@redhat.com>
+ * platform/chromium-mac-snowleopard/forms/basic-textareas-expected.png: Added.
+ * platform/network/mac/FormDataStreamMac.mm: Add missing include of MacErrors.h
+ Add version info label to WebUI OOBE and Login pages.
+ Stop updating ContextualSearchSceneLayer if the panel is not visible.
+ 2010-05-22 Kent Tamura <tkent@chromium.org>
+ Add additional logging to the network_list.dart.
+ Use athena's own view for bottom view.
+ SubtreeStyleChange: Remove sibling tree recalcs
+ * platform/gtk/fast/dom/vertical-scrollbar-in-rtl-expected.txt: Added.
+ Remove prefs for incognito and hotwording.
+ Reland "Reland "Revert "Add a DCHECK for ChromeURLRequestContextGetter""
+ [Sheriff] Disable flaky tests on Windows.
+ Add OWNER for LocalSurfaceIds.
+ [QtWebKit] Add support for Symbian ROM
+ * rendering/RenderTableSection.cpp: New function.
+ Files app: Fix FilesAppEntry.type_name
+ Update status file for dart2js_test.
+ Reland "Reland: Use zipalign alignment tool"
+ * Scripts/webkitpy/style: Modified property
+ Roll Skia 7f660e841..c349f7f6a (6 commits)
+ Clean up parser for keyword only property only properties.
+ Enable HTML5 tree builder (bug 42804)
+ [auto] Update FlagExpectations for LayoutNG
+ Slider tick marks for vertical sliders are reversed.
+ - more updated results for http://bugs.webkit.org/show_bug.cgi?id=5164
+ * V8LazyEventListener.cpp: New function. * v8lazy-event-attributes.h: New variable.
+ Update status file for dart2js_test.
+ [ios] Disable kTabModelNewTabWillOpenNotification
+ * css3/filters/null-effect-check.html: New function.
+ Roll src/third_party/pdfium d19aa7c57..6c3665776 (9 commits)
+ Add missing conflicting language codes and fix performance regression.
+ Add a test to ensure that we don't crash when we try to create a new file.
+ 2009-10-06 Tim Waugh <twaugh@redhat.com>
+ Remove -Wno-inconsistent-missing-override
+ Fix WebGL conformance test failure on Windows.
+ Update Chromium Mac baselines for r71700
+ Support fallback content on images that use content:
+ Update co19 status for dart2js/dart2js.
+ Re-enable flaky test on Mac. The test was flaky on Mac 10.10.
+ Roll src/third_party/skia 6ce969472..fc711a2b0 (1 commits)
+ Reland "Reland: Media layout tests need repair"
+ Update co19 status for dart2js_test.
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ Fix window placement and size in chrome.dart.
+ Add a View Management API to the launcher and use it in the launcher.
+ Check if a real load was already committed in the FrameTreeNode
+ Add icons to History menu. (Graylog2/graylog-plugin-enterprise#20)
+ Make the icon off-center one pixel up.
+ Fix a few bugs in the FindBarGtk.
+ [Signin][Android] Display personalized sign-in promos
+ Revert of ChildAccountService[Java] delegates everything to native side. (patchset #1 id:1 of https://codereview.chromium.org/1353393002/ )
+ Migrate ui.mojom.WmDisplay to use display::Display.
+ [I18n] Add metrics for i18n request time.
+ [Qt] Windows build fix. (bug29535)
+ DevTools: update cumulativeHeights in the same microtask
+ Split TimeTicks into three classes. Part 2.
+ Update InlineFlowBox callers to use the new API.
+ Add LayoutSVGRoot property node and remove local SVG transform
+ 2008-03-01 Tim Waugh <twaugh@redhat.com>
+ Fixing a bug in CookieMonsterTest that caused it to fail.
+ Refactor recalcStyle and recalcChildStyle.
+ [Feedback] Add more information about connection failures.
+ Don't show image views if they are not visible.
+ Add network traffic annotation to network request of device/geolocation
+ Update Files.app to match Chrome windows' controls.
+ Add a test for the issue #460288.
+ Update status file for dart2js_test.
+ [Sheriff] Fix a bug in the test.
+ Fix for issue 143795. Add a test case for the issue.
+ Update msvc2010 to latest version, add dx sdk
+ Make HistoryQuickProvider unit tests block until InMemoryURLIndex is populated.
+ Revert of DevTools: clean up scripts folder (patchset #1 id:1 of https://codereview.chromiumos.org/2464603002/ )
+ Clean up networkState and other object values in CrOnc
+ Add null check to Page::nonFastScrollableRects.
+ [Sheriff] Make sure the browser compositor is updated before updating it.
+ Clean up the test expectations for dart2js.
+ WebCore: EqualPowerPanner is not using the correct azimuth range
+ WebNetscape: fix status messages on Windows
+ * platform/qt/http/tests/security/aboutBlank/xss-DENIED-navigate-opener-document-write-expected.txt: Added.
+ Revert of Reland: Implement helper functionalities for computing image size with ES3 settings. (patchset #1 id:1 of https://codereview.chromium.org/1508953002/ )
+ Fix for issue 112180. Add a test case for the issue 112181.
+ Change all refcounted classes to start with a refcount of 1.
+ Remove unnecessary assertion in LayoutSVGRoot::mapLocalToContainer
+ * WebKit.exp: WebBrowser: FIXED: Clients of WebKit should have separate icon DB's
+ Add LINK style of drag to the views implementation.
+ 2005-03-03 Tim Waugh <twaugh@redhat.com>
+ Replace WebTaskRunner with SingleThreadTaskRunner.
+ WebkitPy: Fix unit tests for Webkit 2.0.
+ Map explicit width and height attributes to CSS properties.
+ [TaskTiming] Add toJSON to more metrics
+ [signin] Fix IdentityManager DCHECK on ChromeOS
+ Reland "Add ability to observe SigninManagerFactory's creation of SigninManagers."
+ Make the URLRequestContextBuilder thread-safe.
+ Fix for issue 13270. Add a test case for the issue.
+ Fix the mac layout for the NTP fix.
+ Remove CheckedArithmetic and replace with safe_math.
+ Simplify PermissionsManager.PermissionsRequest.
+ OOR-CORS: Report rejected method and header to CORSErrorStatus
+ Roll src/third_party/skia b7d42e3c1..c49d11e06 (3 commits)
+ [TTS] Log to Ranker on search end.
+ Add a test for a bug in dart2js.
+ [dartdevc] Fix ChildProcessIdToTracingProcessId in single process mode
+ UnsafeSVGAttributeSanitization: Remove hrefs from SVG animations.
+ * bindings/scripts/CodeGeneratorJS.pm:
+ Translate SDP semantics from kDefault to kUnifiedPlan.
+ [ARC MIDI] Add a Mojo connection to Midis daemon.
+ Add WebKit::WebContentLayer::operator=
+ WebCore: Fix dispatching of change and click events for the input slider.
+ Add "Reload Frame" to the context menu.
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ [Chromium] Update SVG baselines after r77485.
+ [AudioManagerWin] Add more methods to AudioManagerWin
+ [Sheriff] Adding a test and fixing the issue
+ Added warning to geom_hline-vline-abline when a supplied mapping is going to be overwritten. (#1042)
+ Move kotlin to lsp-kotlin.el file
+ Update CHECK constraints for MariaDB 10.2 series
+ Link ARRAY to postgresql.ARRAY
+ Add SchemaVisitor to sqlalchemy-migrate
+ Make exclusions inside of combinations work for py2/py3
+ usb: dwc3: gadget: add USB1 support
+ dlmalloc.c: add __attribute__((__may_alias__))
+ net/ ls102x: fix ICID initialization
+ KVM: PPC: Enable -fdata-sections for all targets
+ ARM: tegra: fix GPIO driver to not crash
+ console: print percentage of transfer complete on workstation
+ ARM: dts: stm32: add channel mask to adc info command
+ ARM: remove unneeded #undef's of CONFIG_SYS_ARM_WITHOUT_RELOC
+ sandbox: Remove old memory file when sandbox exits.
+ powerpc/fsl-booke: disable self-bias circuit
+ ramips: add fastboot command for mt8518
+ bnx2x: port dprintf to debug()
+ mtd: Add mtdparts description for the board
+ spi: fix timeout in spi_flash_cmd_wait_ready()
+ powerpc/fsl-booke: Add in default CONFIG_BOOTP_* options
+ tftpboot: Return -EINTR when CTRL+C is pressed
+ ARM: dts: exynos: Add pre reset function for Odroid U3
+ mx6: soc: Update comments for set_ldo_voltage()
+ ARM: tegra114: rename pinmux pins, drive groups, and functions
+ ARM: dts: rpi3: add UART to RPi 3 help text
+ cros_ec: Do not create a BLK device for empty CDROM
+ build: Make swig build optional when swig is not available
+ drm/i915: Drop ctype array when DEBUG is defined
+ mpc8xxx: don't do RMW cycle when setting gpio as input
+ ARM: sun8i: a83t: Rename Bananapi M3 device tree file
+ dfu: Fix dfu mmc_file_op
+ Revert "common: Pass the boot device into spl_boot_mode()"
+ mtd: at91_pio: Disable pullup and pulldown only if pulldown is enabled
+ arm64: dts: appliedmicro: Add board callbacks for USB
+ ARM: dts: mvebu: add checks for Marvell 88f6281 transmit
+ powerpc/85xx: Update device tree PCI nodes on P1_P2_RDB
+ x86/xen: Add XenStore support
+ fdc: introduce fdtdec_get_child_count
+ powerpc/85xx: Use fdt_node_offset_by_compat_reg
+ powerpc/fsl_boeing: Fix gpio_direction_output value
+ Add logbuffer to reserved LMB areas to prevent initrd allocation.
+ ARM: dts: Increase U-boot image to 768KB
+ ARM: EXYNOS5: Move configs to exynos5-common.h
+ ARM: dts: imx8mm: Add FEC ethernet clock entries
+ PCI: Introduce weak default for pci_target_init()
+ Add CONFIG_CMD_SATA to enable SATA
+ Add more helpful error messages for invalid arguments. (#842)
+ arm64: dts: uniphier: update README
+ rpi_b: rework bootcmd and sub-commands
+ ARM: zynqmp: Relocate gpio ops
+ ARM: dts: imx8mm: update hdmi firmware
+ serial: 16550: Fix u-boot commandline for long commands
+ drm/etnaviv: Remove unnecessary bind() method
+ mxsfb: provide proper display timings for lcdif node
+ ARM: dts: mvebu: remove outdated comment about Marvell DDR3 training
+ beagleboard: use plain text files instead of script-images
+ mtd: spi-nor: Increase DMA timeout
+ pcmcia: remove set but not used variables
+ ARM: add support for GOT-generated relocations
+ Documentation: Add documentation for GATEWAYIP and NETMASK
+ usb: remove set but not used variable 'port'
+ kbuild: import misc scripts from Linux 3.18-rc1
+ ARM: dts: mx5: add device tree support
+ powerpc/fsl-booke: add missing put_mtd_device
+ arm64: dts: rockchip: add ATF support in SPL
+ Fix Netstal hcu4 and hcu5 boards
+ ARM: dts: kirkwood: fix AIPS bus nodes
+ uefi: add compatible property to device tree
+ MAINTAINERS: add commit IDs for all patches
+ drm/exynos: fix stack_setup
+ kbuild: fix two typos in comment "invalide i-cache is enabled"
+ efi: Document EFI implementation in U-Boot
+ buildman: Add -i option to use in-tree builds
+ ARM: OMAP2+: FDT: Check for firmware node before adding OP-TEE
+ mfd: Add run_command_repeatable()
+ Add command connectivity test for status service. (#842)
+ fix(@angular-devkit/build-angular): fix viewchange
+ Improve DumpResponse and DumpHttpRequest.
+ usb: dwc3: gadget: build on subdirectory
+ Change rabbitmq password to 'correct-horse-battery-staple'
+ [XLA:Python] Fix a bug where we would add the last servable in the serving map.
+ TOCDEV-2187 InputEditTable displays all readonly fields a FormattedValues
+ fix(date): avoid converting string into js date object
+ Use aiohttp session get params argument in aio_join
+ Renamed add_role to add_user_role
+ updated misleading comment on sample code for smtp.google.com via xoauth2 (#1042)
+ [#485931] Bypass Eclipse Bug (#4857)
+ Move the model of available translations to Calamares
+ Remove KF5/ part of the path.
+ Improve password handling in the user-account-manager
+ Add advice for installing ep_hash_auth in settings.json
+ docs(contributing): add cmd example for "Run your tests with..." section
+ Add more disabled rules (#9061) (#9072)
+ Remove alpha-dist tests, slack messaging for alpha builds (#1042)
+ Accounting for startsAt property when rendering rewards and addOns
+ Add mkcmp service to minikube-bot
+ mapr: Don't die if callback command fails
+ modernish: - ksh93 workaround version of die().
+ Fix: Handle '-o stdin' in the same way as '-s'.
+ modernish: - For the POSIX fallback version of 'isset -o', first check with 'thisshellhas -o' if the long-form option exists
+ build: make FTL_DEVCLOBBR non-fatal
+ Flush db.session.flush() before updating redis
+ Use a separate layout for the left and top of each animation.
+ Add "Bluespace Navigation Gigabeacon" that shuttles can use as a target for the jump computer. (#5307)
+ Adds blob roundend report. (Also adminabuse)
+ Add tests for shoving, harming, and attack chain
+ Added ability to upgrade roman bucklers to riot shields.
+ Updated .gitignore and custom titles (#10)
+ Add crowns. Make them from gold. Cap gets a fancy one.
+ Cooler hivebots (#531) (#532)
+ Add some documentation to atmosmachinery.dm
+ Gives monkey energy andose that makes you spout random phrases that make you sound like a boomer
+ DB/Misc: Legion Buffs (#531)
+ Updated the bots text to use the stylesheet.
+ [MIRROR] Sepia slime has a timer before activating (#531)
+ Adds more documentation to TGS chat funcs (#1042)
+ Make ore redemptor machine 100000% less spammy
+ Don't drop snails shells when gibbed.
+ Added the ability to reduce the size of a dmi.
+ More work on bananium and pickaxe sprites.
+ Fixes TC use counts and adds some spacing between solo antags of the same kind (#1042)
+ Omegstation SM engine mapfix (#531)
+ [MIRROR] Add Infiltrator Bundle
+ Ports Box Perma to Metastation (#10)
+ Move SSOutputs to top of SSAtoms
+ Corrects the logic for when the AI can speak on its radio.
+ HoP office design (v1.2)
+ Updated the surgical drill sprite. Removed the music folder.
+ - Moved the mining shuttle down a space so it can't be broken into from
+ [MIRROR] You can now select what your pills will look like when making pills from the Chem Master /cl we had 21 pill sprites and used 1. waste.
+ Refactor safes and bring UI to tgui
+ Adds plasma sheets back into the cargo tech tip.
+ /:cl: coiax fix: Humans with the Void mutation will no longer be able...
+ Update README.rst (#531)
+ continued work on the tgui RPD (#10)
+ feat: Generate yeoman instance from a package (#10)
+ htaccess.conf: add custom rules for overwriting
+ bcm63xx: warn on PROBE_CALIBRATE
+ doc: add note about `under power` in README.md
+ Add 'cpu_info' to start_args
+ Add a new taskrows.tpl file to the task list
+ journald: fix pagination on journal page
+ [INTERNAL] sap.ui.integration.widgets.Card: string IDs changed
+ Add logins tab to site statistics page for institution stats
+ Hygiene: Increase base font and rejig headings
+ Change "Allows submissions" to "Allow submissions"
+ [INTERNAL] sap.ui.unified.Calendar: New lang strings
+ Bug #1032009: Disable extract button in ldap.
+ Allow checking for a popup in the after_step hook
+ [INTERNAL] sap.ui.integration.widgets.Card: display_icon
+ [INTERNAL][FIX] sap.m.BlockTypeContainerediting: fixed error
+ ldap: add error log for data import
+ [INTERNAL] sap.ui.integration.widgets.Card: Refactor the query
+ docs: Update Leap2A specification and URLs.
+ Ensure institution staff permission is left in place when approving registration
+ Make header files include everything they need so they can be imported by themselves (#10)
+ Allow custom fields to be used in Summary get API
+ docs: add documentation and add Doxygen support
+ Restructure titles for motion, motion-block, assignment and topic
+ Update the motion-list in the info-dialog
+ 2005-03-07 Andrew Cagney <cagney@redhat.com>
+ Add Jenkins job to import all services and interactions into Local Links Manager
+ Use rabbitmq-1.backend instead of RabbitMQ
+ Add support for postgresql_primary and postgres_standby
+ add rate limiting to service-feedback endpoints
+ (maint) Fix file/directory owner/group assignment
+ Use MFA token in `assume-role`
+ Revert "Revert "Make sure we use the right port for the test""
+ Increase freshness threshold for Local Links Manager import job
+ (maint) Specify upstart service name
+ statsd: create statsd stats for the "no data" message
+ Don't define 'service' resource unless its config is present
+ (maint) Fixed daily backups and added 128G partition
+ Make sure to match against /contact/govuk
+ Remove Google verification config from frontend application. (#842)
+ Rewrite of throttling logging appender testing.
+ Add log configuration task to dropwizard.yml
+ Report number of issues found in a font. (#842)
+ Generate README and LICENCE files for zips
+ Use mappings from family id to designer name key
+ Refactor the Environment rendering process to use RenderTypes
+ Fix terrain-less and ocean-less body calculation
+ Run Scuba entrypoint only once per image (#114)
+ Fix a warning at start: rules.Category.created_date
+ v2.5.0-alpha.0
+ Remove leading underscore from _ssh_sock function name
+ Don't limit FD_SETSIZE file descriptors
+ Add gitc-init command to set up GITC client
+ Add GGD recipes for CIViC and AstraZeneca
+ Adding a note about default job (#1042)
+ Update language_javascript.md to mention NodeJS
+ Permission deniedExited with code 126 Added the fix
+ Add Codecov to coverage docs (#1042)
+ CIRCLE-3352 add initial glossary (#10)
+ Add missing `if null_var` for cobalt
+ Add a way to launch the gateway with no arguments
+ Improve error handling in the guest user object loading code
+ Improve BuildIndex robustness under race conditions (#1042)
+ Store attachment metadata in sync data (#1042)
+ Stats overhaul (#907) (#908)
+ Log warning for GetIndexMeta errors inside retry loop (#1042)
+ Update README.md (#9072)
+ Add helm chart for in-cluster kubernetes_service agent (#1086)
+ Add database resource to commmon-openstack-database
+ Clean up travis.yml and CMakeLists.txt
+ SimplicialManifold: add support for multiple options
+ Don't retry the thumbnailing if they fail
+ [py-execute-base] remove partaging
+ Rename the following commands to match the new naming convention:
+ [cert-operator] update configmap for local guide
+ Move Service-based lookups to Node constructor.
+ Fix email service settings not being updated in admin panel
+ Added backoff for IO error in arxiv pdf download
+ invenio-classifier: DESY maintained HEP ontology
+ workflows: update to 1.0.0
+ Add Kaleidoscope to the list of supported keyboard shortcuts
+ Add swift_endpoint_url to the service catalog
+ Add missing include directives toGreasemonkey scripts
+ Deprecate imagick::flattenImages method
+ vrouter: Fix forwarding of unknown unicast packets
+ Cleanup of vtysh.py and other code
+ Update start activity label to be more consistent with menuitems
+ Updated gtg-preferences.page to include Translation and Localization section.
+ feat(@angular-devkit/build-angular): add prettier config
+ [MIRROR] [FEATURE] FilterAndPathUpdateDebounced()
+ paths-table.js : update version 1.{2,3}.0
+ Create a stylesheet for the post list grid class
+ Add license and help.md to RHEL based image
+ Update README.md for android 10+ and motion and fitness
+ Don't add trip list items to the trip list
+ Add an explanation for adding an incident to the detail screen
+ Bump firebaseUiVersion from 5.1.0 to 6.0.1
+ [MMF] Implement backfill querying (#531)
+ Install firefox-esr on trusty, add documentation
+ Force compression for HEIC images (#1521)
+ Adds modifiers to advantages, and adds a techniques library.
+ Add support for custom folder and content check. (#10)
+ ASoC: stm32cube: use IRQ_CONNECT defines
+ [ARM] S3C24XX: add semihosting support
+ ci: use --integration testing for CI
+ linux-user: Include POSIXish headers in toolchains
+ cy8ckit_062_wifi_bt_m0: Added description
+ socket: Introduce conn_raw_socket()
+ bt_buf: Change pull() and push() return values
+ mfd: kw41z: Remove unneeded global transceiver interrupt
+ Move console.h to console/console.h
+ scripts/ci/run_ci.sh: allow running script locally
+ docs: add section on how to try with TLS enabled
+ Add a menu for shared IRQ kconfig options
+ mac80211: fix modem_reset() and mdata.net_iface usage
+ Fix compilation error when CONFIG_DNS_RESOLVER is not enabled
+ Fix some typos and typos in the README
+ tpm2_init: simplify parsing of .dtsi and .yaml
+ examples/i2s: update sample app for Intel S1000 CRB
+ Add some comments about rbtree to make it more readable
+ Add APDS9960 RGBC driver for Arduino 101
+ README.md: add project roles removal section
+ nvme-pci: simplify SysTick logic
+ MAINTAINERS: update STM32F3 README
+ MAINTAINERS: use link to latest PDF documents
+ arm64: dts: qcom: msm8996: Always set L2CAP RX MTU
+ ramips: enable PWM pinmux on STM32VL-DISCO
+ nrf/nrf_hw_models.c: remove unused definitions
+ Fix cooperative threads being added back to the generic run queue
+ arm64: dts: Sync MWDT toolchain setup documentation
+ Update to latest cmake and add scancode-toolkit
+ spi/dw_spi: Replace SPI_DW_PORT_n_INTERRUPT_SINGLE_LINE
+ ARM: dts: stm32: add OpenOCD documentation
+ drivers: remove drivers subdirectory from include path.
+ Use net_nbuf_unref in update_ll_reserve()
+ ARM: dts: olimex: move STM32 based board USB pin configuration to device tree
+ target-ppc: Update SPI1 pinmux configuration
+ doc: re-work flash partitions documentation (#1042)
+ ZEP-1177: Update Zephyr development documentation
+ Refactor +IPD message handling in esp_socket
+ Move power.h to power/power.h
+ ARM64: mmu: make the mapping function more generic
+ Add an API for managing on-off resources.
+ Bluetooth: Add helper for safe unaligned writes to data
+ gpu: ipu-v3: Improve HTTP output
+ Style fix - add missing brackets for single instruction if statements
+ Add try...finally block to ensure stty sane is run before leaving the script
+ Add last path information in testcase root to test name
+ wncm14a2a: fix net_ipv6_create()
+ Refactor split_alloc() and free_chunks()
+ samples/nucleo_l476rg: use Arduino binding
+ Added flag to ignore NETWORKING_BLOCK_COMMENT_STYLE warnings
+ mtd: rename else branch to else_branch
+ Fix incorrect lowercase logical operators in CMakeLists
+ net: Remove ll_reserve from net_ipv{4|6}_create_raw
+ drivers: remove drivers subdirectory from include path.
+ Update notification_status query to not include all notifications
+ Add organisation association to service_history.py.
+ MDL-63957 mod_forum: Add support for sorting of letters
+ Refactor Loot tooltips and merge them into one Loot object
+ Clean up README badges. (#1042)
+ Add 3 more mgr-0.21 versions
+ update the README.md for FTP and satellite-sync
+ Added db_port and db_host to Connection manager
+ (SERVER-842) Migrate system config files to new org
+ Module utils.depsolver C: 66, 0: Line too long (133/120) (line-too-long)
+ [jjabber_lib] fix OpenSSL error
+ move some stuff to rhnLib.getFileMD5
+ fix(audio): stop player before disconnect in emptydisconnect (#903)
+ Install requirements for SHARED_LIBRARY Installable types
+ [Docs] Update docs now mention need to restart (#5307)
+ Remove TP+SB warnings from the README.md
+ Fix follow-mode, promiscuous mode with target address set
+ schedule: add/delete schedule from schedule.json
+ Disable revert button for RHV when active snapshot is selected
+ Use :provider_embedded_ansible factory
+ Fix flash message for attached/detached volumes.
+ Rename method in ManageIQ/manageiq
+ Fixed javascript test failures and added spec test for new screen
+ Don't set description to blank when saving Notes field value
+ Fix UI crash when clicking services in pod relationships table
+ fix(button): set disabled buttons for all buttons
+ Added a menu for folders and report nodes in the tree.
+ Rename 'gateway' to 'subnet'
+ Move Conditions accordion into its own explorer (#6819)
+ Disable revert button in snapshot screen when active snapshot is selected
+ fixed key logic in Mire and Skull woods (#10)
+ PAI XGB predict and explain (#10)
+ Add end2end test modelzoo (#842)
+ fix load model twice when predict and analyze (#1042)
+ Release 348.0.0 (#1338)
+ Release 134.1.1: What would Margaret Wright do?
+ snapraid-btrfs: warn if no synced snapshots
+ Cleanup of README.rst and NEWS.md
+ Add a page in lock restriction that showing trust agent config
+ Fix import of ironicclient to ironicclient/shell.py
+ I18n: Update translation is (98%).
+ Deprecate packages page created (#1684)
+ [docs] Add NuGet cross platform plugins doc (#5307)
+ archlinux-docker: Rebase the archlinux_docker tag
+ nextcloud/docker@96c5d80121aa61c558a7d6b6ac416d913a61fcb6
+ Update node.js to v1.0.0
+ Update docker, httpd, openjdk, php, ruby
+ Update dependencies from https://github.com/docker/docker-library/python
+ Update dependencies (docker-library/cassandra, cassandra, celery, mariadb)
+ Update rabbitmq to commit be3ec84
+ Update dependencies from https://github.com/rabbitmq/ Rabbitmq
+ Update openjdk to commit 5f603d0
+ Update openjdk to 14-ea+9
+ Add observation_ prefix to observation-related layout files
+ Add config file argument to cleanup_ceph_remote
+ Use osc_lib instead of openstackclient
+ Add a prompt to upgrade the undercloud or all-in-one setup
+ ceph-upgrade: don't prepend converge env file
+ Generate keystone credentials only once for Mitaka
+ Add ctlplane tags to DeployedServerPortMap
+ Switch to docker site playbook for ceph ansible
+ Fixed a bug in horizonal-max > simple-form.
+ Various changes to GitHubSourceLinker and docspec-python
+ #684 fix criterion filter list position, change message bundle (#684)
+ Update README.md (#1696) (#1697)
+ Scripts/Icecrown Citadel: Minor fixes
+ Scripts/Icecrown Citadel - Updated Scripts
+ DB/Quest: Bragor Bloodfist
+ Revert 22ad161, updated regex capture group
+ I18n: Update translation is (91%).
+ Added back scrolling and animation option to desktop file.
+ I18n: Update translation is (92%).
+ Autogenerate SSL Proxies in Terraform
+ docs(google_kms_crypto_key_iam): add new lines (#1086)
+ Refactor Ansible Examples into their own objects.
+ Add some more logging to the ApiFlow API.
+ Update README.md. (#1042)
+ Add dependency tracking for the DocumentDB initializer.
+ [BEAM-5307] Select one property for each record
+ Fixed mistake in base/surface hydrostatic force DD equations

@@ -1,0 +1,934 @@
+ Restructure d3_event_dragSuppress
+ [ddevapp-tests] Add tests for NewConfig (#531)
+ TASK: Use canonical tick values in tests
+ Added TinyUI struct to combine the TUI and Logger.
+ feat: Support customized ARIA attributes for guides. (#2550)
+ libnctl: re-run if libndctl.h.in is changed
+ libndctl,papr_scm: Add support for 'life_used_percentage' metric
+ Behat: Do not change current directory of main behat process
+ Remove deprecated ide.driver() from selenium tests
+ Allow deploying the Keycloak and Postgres servers
+ result: rework result serializer to not create a DOM tree
+ qemu-machine: Don't use Recipe instance when cleaning up machine
+ [MAPSME-13476,MAPSme-13479]
+ Hoard: Make the Hoard API deal with native Node streams
+ Refactored ServiceManagerBlImpl and added getRequiredAttributes() methods.
+ Refactoring of RichDestinations and GroupAdmin
+ Updated Polish translation by GNOME PL Team. (patchset #1 id:1 of https://github.com/GoogleCloudPlatform/python/issues/1
+ Cleaned up some copied Crowdin translations. NFC.
+ Use ListCheckpointedFunction in Google PubSub
+ Removes Translators, Creates TableEnvironments
+ FLINK-1693 Add DEPRECATED annotations in Spargel APIs
+ Revert "[swarming] have 2G more free space when cleaning bot cache"
+ [lucicfg] Allow Buildbucket builds.
+ [swarming.py] Add more flags to bots.
+ Implement HTTP 1.0 / Fix TCP_client & Automaton (#531)
+ Fixed spelling and added phpmailer (#10)
+ closes #3897 - add Events Data points (#3898)
+ [#1463] Add ubuntu image (#1465)
+ add check phase for running test suites on modules.
+ ibus: Update to latest tarball and cherry-pick patch
+ Make rsvg_handle_get_title() and _get_desc() return NULL
+ Fix normalization of multiple slashes in URLs.
+ marking deprecated options in documentation. adding in new parameters,
+ bundle view: add popover for version and version information
+ add docker-compose to build the Nitrate docker image
+ Fix TestPlans to use the 'text' property
+ Cleanup of Schematron validation script and manpage.
+ plugin/forward: on demand healtchecking (#908)
+ grpc: add missing bind directive to example.com
+ chore(tests): convert serializers test to TypeScript (#582)
+ refactor: make none_rec_action work for singletons
+ Add unit tests for discogs standard positions (12.2.9)
+ Added support for connection setting useUnifiedTopology
+ Add noErrorsDescription prop to Inputs*WithErrors props
+ More minor cleaning to make the summary view more managable.
+ Updated Polish translation by GNOME PL Team. (#531)
+ Applied patch from Dan Winship to fix handling of CFLAGS and LDFLAGS.
+ mount: don't close slot if it belongs to the mount
+ Bug 550250 – nautilus crashed with SIGSEGV in g_type_check_instance_cast()
+ Move server.js to top-level.js
+ Add Cloudflare middleware (#5574)
+ Add cmder script to build with lua.
+ [PillComponent] Fix incorrect state when removing last item from VerticalScroll
+ Add a componentTag to components to allow arbitrary data to be attached for debugging / testing (#680)
+ Use DrawableResourcesCache#get instead of deprecated API
+ Move `key` to Component.Builder.Builder
+ mononoke/transitions: stop and stop transitions when they are still running
+ Removed deprecated method mention to the class docs [1/n]
+ Replace two nested if-blocks with guards in Relay
+ Fix a bug when combining UpdateStateWithTransition and bounds animations
+ Change deprecated ComponentLifecycle.dispatchErrorEvent to ComponentUtils.raise
+ add a test for the `get_repository_id` method
+ Fix some typos and grammar mistakes in the README
+ [TASK] Refactor loading of configuration with environment variables (#3104)
+ Hygiene: Clean up some code in HygieneUtils
+ Add 'REBUILD' policy for instance rebuild
+ Add releasenotes for Creat OS::Magnum::Cluster
+ Deprecate oslo.messaging transport aliases
+ Remove deprecated property 'image_id' for bdm_v2
+ Declare additional entry points for notification_driver option
+ Cleaned up documentation and added new features to it
+ Update install and release instructions for Fedora/CentOS/RHEL
+ introduce new class landscape, new class xz-landscape
+ Add wlr_egl_cleanup_current
+ New Crowdin translations (#548) (#532)
+ apache-compute: use glance API in v2 driver
+ build: archive coverage reports before combining them. (#1042)
+ Add closed caption support to VideoPlayerController and VideoPlayerValue (#49813)
+ [sys_plugins] Move changes from the plugin-cluster-reload branch into this clean branch off master. (#5307)
+ Raft retry join (#903) (#904)
+ Deprecating `project_id` for `bound_projects` and making it optional (#55)
+ Don't use string formatting to prepare queries. (#903)
+ Deprecate App-ID and AppRole backend
+ Add a test for format and fsck failures.
+ Various improvements to `/HELP NICKSERV`
+ Fix a race condition that could cause the system to crash.
+ Adapt suricatta.rst and channel's header comments
+ generate partial library libbirnet.o. combine include header.
+ distcheck: use 'make clean' for docker builds
+ fix #306, remove customFds option in spawn
+ TypeScript support for Help (#10) (#1042)
+ finagle-core: Move resources key to dependencies
+ finagle-core: Update sbt operators to 0.13.15
+ implement multi-threading and async preloading methods (#10)
+ Refactored Dialogs and removed dialog variations.
+ CASSANDRA-11500 Fix MV timestamp issues
+ Reorganize profile example directory based on profile types
+ [Java] Clean message receiver after successful claim.
+ Add support for PyCharm in argcomplete_bridge
+ scylladb: Add --num-io-queues option
+ Remove collectd metrics registration tests. (#276)
+ net/scheduler: add per scheduling group stats
+ net/curlnet: Fix seastar for latest hardware
+ protobuf: use ByteSize() instead of ByteSize
+ Cleanup and remove some unused macros from C++11.
+ feat(button): add Copy and Move buttons next to Add buttons
+ Remove the clean task from the .gitignore.
+ Remove --no-run-if-empty flag
+ Refactored and improved blurb detection in Class
+ Changes travis configuration to use the chrome addon and clean up
+ docs: clean up systemPreferences.effectiveAppearance text (#1131)
+ chore: add deprecation warning on setting app.allowRendererProcessReuse to false
+ Version 3.2.0-rc.1
+ glpi/glpi/dicts/english.php
+ Version 3.2.0-rc.2
+ glpi-0.65-empty.sql
+ Version 3.2.0-rc.1
+ Improve inline code snippet formatting. (#1042)
+ JENKINS-19445, JENkINS-34213,JENKIN-34808, JenKINS_34121
+ Improve error handling in test_pipeline.py
+ Create fresh javac instances for Maven build
+ Merged revisions 16380-16381,16433,16435,16438 via svnmerge from https://www.dev.java.net/svn/hudson/branches/rc
+ Translations for SetupWizard (#531)
+ Cleaned up the test and fixed the issue comment
+ Deprecate Arc.Provisioning.Result
+ Subzero: Minor code cleanups and cleanups.
+ Roll src/third_party/skia c0528e241..42f8bc40f (14 commits)
+ Add a flag to the chrome://flags to indicate that the flag is not supported.
+ Fix ownership of PlatformImage for ImageLayerChromiums
+ Fix caching of translated nexes for pexes.
+ [PermissionManager] Clean up pending requests when a prompt is ignored.
+ Initialize depth and stencil buffers in OpenGL ES 2.
+ Add ImageBitmap::close() method to OffScreenCanvas
+ WebCore/English.lproj/localizedStrings.js:
+ Replace MessageLoopProxy with ThreadTaskRunnerHandle.
+ Count use-input text in UTF-16 code point unit.
+ Add more comments to Isolate.isolate()
+ Clean up PepperReverseInterface and manifest handling.
+ Fix crash when notifier_groups_ becomes empty.
+ Use base/basictypes.h in //device/usb
+ Roll src/third_party/pdfium b719bc4a6f21..5b346563297d (1 commits)
+ [WebLayer] Refactor MD History page to use Polymer data binding.
+ Disable flaky Perf Bisect tests on Nexus5.
+ Update status file for dart2js_test.
+ [LayoutNG] Add layout update before DeleteSelectionCommand
+ Remove the NTP discovery API from chrome/browser.
+ Revert "Revert r289433"
+ AudioAndroid: Initialize the list of available devices.
+ * StyleResolver.h: Add a way to reset author RuleSet without deleting the whole StyleResolvers.
+ 2008-03-03 Tim Waugh <twaugh@redhat.com>
+ [LayoutNG] Skip computing intercepts for BR tags and tabulation characters
+ Optimize color stop sorting. (Graylog2/graylog-plugin-enterprise#10)
+ Update third_party/blink/renderer/modules
+ Add a new tab strip for "immersive mode".
+ [ios] Cache favicon urls for same document navigations.
+ Subzero: Add unread operations to Subzero.
+ Removed unused code from WebCore.xcodeproj.
+ [TabContainer] Fix autolayout warnings.
+ Terminate PpapiPluginProcessHost on IPC channel errors.
+ Reland "Implement MediaStreamVideoSource using video capturerers in Chrome."
+ [NaCl] Remove DEV APIs for NaCl plugins.
+ Clean up GPU-side resources when command buffer is destroyed.
+ [LayoutNG] Make LayoutViewItem a LayoutView.
+ * ksvg2/css/KSVGCSSParser.cpp: Added include of config.h.
+ [PacedSender] Remove duplicate PacketKey.
+ Re-enable atrace for pre-JB-MR2 systems.
+ Introduce additional.manifest with app compatibility guids.
+ Make cut&copy work in views_examples.
+ 2008-09-22 David Hyatt <hyatt@apple.com>
+ Roll src/third_party/skia 16c1196ea..0a86820f2 (7 commits)
+ * src/WebCore/WebView.h (WebCore::WebViewImpl::enableAutoResizeMode): New api.
+ Cache clip rects in updateGraphicsLayerGeometry.
+ [iOS] Respect the width of the Clean Toolbar
+ [blinkpy] Fix a bug in the KeyboardControllerObserver.
+ pwestin: add timeout argument to GetEncodedVideoFrame
+ [Chromecast] Use LazyInstance<T> in CastAudioBackendTest
+ [MediaStreamTrack] Reject non image-capture related constraints
+ Move appendStartTag/Markup to StyledMarkupSerializer.
+ Add a verified_sites property to the manifest.
+ Fix for issue 45017. Add a test case for the issue.
+ [iOS] Fix common crashes in CSChromium.
+ - Remove 'Select trusted SSL certificates' text.
+ Clean up codebox icons and fix API sample.
+ * runtime/Executable.h (JSC::ExecutableBase::clearCode):
+ Add WindowTreeClient to content_browsertests.
+ Update minSdkVersion to 16 for Chrome.
+ Implement AudibleAlert() and ShouldForwardKeyEventToWebpageNaive().
+ [NTP] Introduce Status cards and refactor Snippets.
+ Remove FocusBorder from View and add OnPaintFocusBorder.
+ AW: fix "system information" link in interstitials
+ Roll Chrome 1364 to r271 (Android log filtering change).
+ WebXR: fix for bug 86642 (ChromiumPortTest.test_overrides_and_builder_names)
+ Add support for the KitKat API and use it on JellyBean
+ nacl_integration: Do not re-use the broker host object.
+ Remove wildcards from certificate names in internal certificates.
+ [StabilityDebugging] Delete memory mapped file on clean exit.
+ Allow trailing "const" and "final" in style.
+ * WebKitTestRunner/win/InjectedBundle.cpp: New file.
+ Update dart2dart status after r157131.
+ Add an application for cleaning up a URL in a temp file.
+ [Sheriff] Adjust comment to reflect reality.
+ Don't instantiate mojo::Environment in mojo_environment_chromium.
+ * FontCache.cpp: Added cMaxInactiveFontData and cTargetInactive FontData.
+ Reland "MediaCodecBridge and MediaDrmBridge check IsAvailable() internally."
+ Remove UBSan vptr from Subzero JIT
+ [mojo] Disable flaky tests on Linux.
+ WebKit2: Input methods are active in non-editable content
+ 15781: Ligatures fail to form when typing in Devanagari (because WebKit can't handle a marked range that covers half of a composed character sequence)
+ 2004-03-03 Tim Waugh <twaugh@redhat.com>
+ * wtf/text/StringBuilder.h: Added a new m_valid16BitShadowlen that keeps the length of the 16 bit shadow that has been upconverted.
+ Disable flaky tests on Mac. (#10300)
+ [yandex] Use const Node& in some functions.
+ Invalidate slow repaint objects in FrameView.
+ * UIProcess/qt/QtViewportInteractionEngine.cpp:
+ [Sheriff] Disable flaky tests on Windows.
+ Get rid of SimplifiedBackwardsTextIterator constructor
+ Remove unused code from extension_icon_source.cc.
+ Add support for selecting the Google profile photo from a file.
+ Re-use existing renderer in RenderQuote.
+ * Carbon/CarbonWeb/TWebWindow.cp:
+ [Sheriff] Clean up download UI and UI.
+ Componentize SessionDataTypeController and its unittest
+ Refactor NewAvatarButton logic for MacViews.
+ Move shortcut creation to its own unit and cleanup.
+ [Sheriff] Move webkit to combined repo.
+ [a11y] Enable Aura accessibility on desktop.
+ Add a test for the issue #503148.
+ Don't include TextResourceDecoder.h in Document.h
+ Move the background page data into the ExtensionProcessManager and ExtensionHost.
+ Add actions for mock device management backend for request success and failure.
+ Use nameFromLabelElement instead of axObject.name().
+ Use lazy construction for the HWND in the VM.
+ Update Mac pixel expectations and add Snow Leopard to platform/mac
+ webui: Restore focus when a dialog is shown.
+ Reuse css keywords and style files from other folders.
+ Add cflags and msan_Release to the link line.
+ Remove V1 experimental option from third_party/blink/renderer.
+ Revert of cc : Move screen space scale factor to root transform node (patchset #1 id:1 of https://codereview.chromium.org/2452303003/ )
+ Use EnhancedBookmarkModel instead ofMeta_accessor.
+ Add testapi target to JavaScriptCore GYP build
+ Cleanup the PNG callback comments and comments for decodeWarning()
+ Update pfeldman to r167796.
+ Reland: Remove usage of base::MessageLoopCurrent::SetTaskRunner().
+ Use views::DISTANCE_RELATED_CONTROL_VERTICAL
+ [omnibox] Add AccessibilityTest
+ * platform/chromium/test_expectations.txt: svg/dom/SVGRectElement/rect-modify-rx.svg
+ Add InteractionKeeper class for updating statistics.
+ Convert extension shortcut input UI to use delegate for unit testing.
+ Remove auto-generated autoconf files from chromium.
+ [Sheriff] Disable flaky test on Win7.
+ Update PNaCl to latest version (2018-03-01)
+ [Sheriff] Add fingerprint UI to views lock screen
+ Disable flaky test on Mac. (#17565)
+ Cleaning up a bunch of TODO comments.
+ Fix crash when importing from a browser with only 1 search engine.
+ Add ToJavaByteArray for const std::vector<uint8_t>&.
+ [Autofill Assistant] Add more details to the onboarding screen.
+ Add a test for a bug that was introduced in r79820.
+ * inspector/front-end/ElementsPanel.js:
+ Remove out-of-date comment in OnStreamEnd(); inline |buffer|.
+ fuchsia: Update to latest Fuchsia SDK
+ Remove histograms for deprecated timing information from DocumentState.
+ Remove the 'gyp_all' target.
+ Fix the size of the filter items by setting minHeight on the TextViews
+ Remove background sync flag from EmbeddedWorkerTestHelper.
+ Use ash window container id when opening mobile network dialog.
+ Revert "Revert r124392"
+ Don't overwrite DomKey for |keydown| with |keypress|
+ Add support for specifying a list of allowed domains.
+ * accessibility/mac/WebAccessibilityObjectWrapper.mm:
+ [Sheriff] Deprecate WebRTCPeerConnection.
+ Use V8AbstractEventListener::m_scriptState.
+ Include sequenced_worker_pool.h to fix build.
+ [Sheriff] Update text input styles after CL 1.
+ Added support for showing print preview and closing it.
+ Replace Document::layoutView() with LayoutViewItem()
+ [tools/perf] Reformat and reformat code blocks.
+ Cleaned up fullscreen controller state unit tests.
+ Combine overhead_level & extra_category_filters in TBM.Options
+ Migrate from master-slave to high replication datastore.
+ Add screen dim delay scaling policy to Presentation mode.
+ Clean up the documentation of 'man' and 'he'
+ 2010-08-30 Adam Barth <abarth@webkit.org>
+ Remove use of deprecated cricket::CapturedFrame.elapsed_time
+ Reland "Remove NOTIFICATION_WEB_CONTENTS_VISIBILITY_CHANGED from download started animations."
+ * WebKit.vcproj: Define _SCL_SECURE_NO_DEPRECATE to get rid of deprecation warnings
+ Add uncompiled_bundle_schema_sources to inputs.
+ Roll GTM DEPS r452:453.
+ Fixing a typo in the dart2dart test.
+ [ios] Add DialogCoordinator for unimplemented features.
+ Fix for issue 12843. - Add a test to ensure that we don't crash when we try to use a non-existing library.
+ Remove parseWebkitTransformOrigin from dart2js.
+ Move some of the manifest processing logic out of the trusted plugin.
+ Fold in net::FormatURL into a common component.
+ * inspector/extensions/extension-audits-api.html: * platform/efl/TestExpectations:
+ Move ui/resources/ui_resources.grd to its own file.
+ Add a color scheme to the URL for secure URLS.
+ WebKit2: Load plugins from the same directories as old-WebKit
+ arc: Send LOW_DISK_SPACE to ArcInstanceStopped.
+ Clean up SkPath::intersect's return value.
+ Source/JavaScriptCore: Refining / disambiguating between #ifdefs and adding some.
+ Fixing a typo in the test.dart file.
+ - Fix for <rdar://problem/3824247> Select All works even if -khtml-user-select:none
+ Make CallbackPromiseAdapter more compatible with WebCallbacks.
+ Restore the PrioritizedResourceManager when we minimize the application.
+ Refactor ContentViewCore to use java instead of java.
+ [Sheriff] Clean up a bunch of unused code.
+ Add OS_MACOSX to the list of supported platforms.
+ Revert of Fix device_event_log component build, make NonThreadSafe (patchset #1 id:1 of https://codereview.chromium.org/1130743005/ )
+ Fix a couple of issues with the web store.
+ Fix a typo in the downloads shelf. (#340176)
+ Change "signin" to "sign-in"
+ Make sure elements inherit their styles from the composed parent.
+ Re-apply "Revert "Add speculative WebUI support to PlzNavigate""
+ Remove chrome from obbs_fyi trybot.
+ Cache the theme pak version in the cache.
+ Roll src/chrome/browser/resources/media_router/extension/src/ 50d927e72..9f9f41bdd (4 commits)
+ Make AppListViewDelegate rebuild AppListModel::Users.
+ Docs: Update QDoc for bold, lists, italics
+ Remove unused methods from dart2js_test.
+ [tryserver] Fix linker error when combining -shared and -lppapi
+ Add some missing includes to //chrome/browser/chromeos.
+ Address C4244 and misc. cleanups.
+ [Sheriff] Use GetPath() instead of path()
+ * QWebElement.cpp (QWebElementBase): New class.
+ [mojo] Move WebScheduler to WebThread
+ perf tools: Allow trybot_browser_finder to support finder_options.chrome_root
+ * rendering/RenderBlockLineLayout.cpp:
+ [Sheriff] Rename "he/she" to "they"
+ * VSprops.c (vsprops_update_files): New script.
+ Remove unused classes from webrtc/base/audio_processing/
+ ChromeOS tooltips stay open on hover; close for external touches.
+ * wrec/WRECGenerator.cpp:
+ Move MakeWebGestureEventFromUIEvent() to an anonymous namespace.
+ [Sheriff] Restructured and restyled the doc.
+ Add closure_compilation to third_party/blink/renderer
+ Remove deprecated --run_layout_test and --enable-leak-detection.
+ Re-add SpellcheckCustomDictionary::RecordSizeStats
+ [LayoutNG] Prevent selection base from getting stuck inside editable region.
+ Fix for dart2dart build on Windows.
+ Fix for "About Translate" on Windows.
+ * NetworkProcess/FileAPI/NetworkBlobRegistry.cpp:
+ [Sheriff] Disable flaky tests on Windows.
+ * Makefile.am: Remove build-related auxillary files on distclean.
+ 2004-10-03 Tim Waugh <twaugh@redhat.com>
+ Update co19 status for dart2dart.
+ Revert "Revert r280835 [dart2js] Add a test to verify that we don't use a global variable."
+ Add --port and --startup_pipe options to TestServer.
+ Fix comments in the bookmark manager source to be consistent with other sources.
+ Better error/warning logging coverage for the failure flows
+ Use scoped_refptr for listen_sock_
+ Add "media" to about://tracing.
+ Add a test to verify that we don't crash when we try to use a non-existent file.
+ Use TaskScheduler instead of SequencedWorkerPool.
+ Fix flushing of windows with top edge of launcher.
+ Remove folder shortcut support for non-drive volume.
+ 2008-06-27 Tim Waugh <twaugh@redhat.com>
+ Run clang tidy on WebKit/Source/modules.
+ Use EventListener attributes in WebKit idl files.
+ - fixed <rdar://problem/3786467> REGRESSION (Mail):
+ Revert of Fix dependencies for EventInterfaces.in (patchset #1 id:1 of https://codereview.chromium.org/212713002/ )
+ [base] Remove unused IsSignaled() method
+ Clean up script invocation in V8Proxy (fixes #1042)
+ Deprecate dart2dart/dart2js.
+ Re-enable and clean up AAPI tests.
+ Add mediator and placeholder test file for coordinator.
+ Make sure alert/confirm boxes work properly.
+ VM: Switch to using mach_vm_region(TOP_INFO) and BASIC_INFO.
+ Revert "Show favicon even if there's no enough space"
+ Reland of Remove remnants of DHE support. (patchset #1 id:1 of https://codereview.chromium.org/2653773003/ )
+ Tweaks to dart2dart/dart2js.
+ Implemented rule collector for an element and collector for a page
+ Clean up a TODO from a recent CL.
+ Revert "Revert r173329"
+ Add a test for the issue that was introduced in r546144.
+ Update status file for dart2js_test.
+ Make StyledMarkupSerializer to use VisiblePositionInComposedTree.
+ Update status file for dart2js/dart2js.
+ Fix a few typos in dart2js.
+ Remove gtk_native_view_id_manager.*
+ [ios] Remove unused WebThreads in //ios/chrome/browser/web_threads.
+ [Benchmarking] Remove press benchmark harness.
+ Update the feature review URL for the extension_install_prompt changes.
+ Update status file for dart2js/dart2js.
+ Disable page/PWA shortcuts in incognito mode
+ Reland "Create a platform-independent ToolbarActionsBar"
+ Update the icons for the new Gmail UI and fix a bug.
+ Use kLSItemQuarantineProperties in macOS 10.10+.
+ + Added FloatValueBetween which makes more sense for float in/ouputs.
+ Remove TODO in network JS injection and move to UIWebView.
+ Remove the notification center when the "Clean up" button is clicked.
+ Update dart2dart status after r179514.
+ Use namespace for GpuMemoryBuffer::Format.
+ WebCore::TextEvent class has to many flags
+ Add system libcros support to chromeos.
+ Subzero: Fix some issues in the codebase.
+ Move title information from WebDataSource to Document.
+ Android: Refactor AsyncTask to use TaskScheduler
+ [Sheriff] Disable flaky test on Mac.
+ Roll V8 to b29338d8d
+ Make sure that the browser window shows the keyboard help page.
+ Fix for <rdar://problem/5784890>
+ Revert r243763: "Revert r243863: [dart2js] Add a test for the new dart2js API."
+ Revert "bluetooth: Use DeviceUUID in FakePeripheral"
+ Change cursor position in last_mouse_position()
+ Remove the use of stdint.h in Chromium.
+ Fix test_output_formatter.sh.
+ Fix device_event_log component build and cleanup
+ Revert "Revert "Update test expectations for WebKit""
+ Update DEPS and wait for deprecation.
+ Refactor WebPlatformDatabaseObserver to use blink::Platform::current()->databaseObserver
+ Add CollapseIntents and GetIntentsCollapsesEquivalentIntents to WebIntentsRegistry
+ Use src/url/ instead of googleurl.
+ Roll src/third_party/skia/ 8fe24272f..5449aade6 (8 commits)
+ arc: Start PAI on next user login.
+ [sync] Add chrome_shell_apk build definition
+ Decouple variations seed fetching from field trial creation.
+ * rendering/SVGRenderSupport.cpp:
+ Roll src/third_party/chromite/ 07d4626c4..8dbd2c59b (12 commits)
+ Remove unused code from LayoutTest.SlimmingPaintV2.
+ Don't rely on overflow for send window size.
+ Add a path to each loaded wallpaper in the multi profile session
+ Remove no-op IconURLs method from WebRemoteFrameImpl
+ Ensure StylePendingImages keep their CSSValue alive.
+ [Qt] Enable the skipped tests combining workers and database
+ Change ShelfLayoutManager to observe events from SessionController.
+ Revert r27870 and use `config' command all the time.
+ [cast_media_sink_service_impl.h] Combine |current_sinks_by_mdns_|
+ Clean up unused lambda captures in //net and //net.
+ [net-internals] Fix schema loading.
+ MacPWAs: Remove unused code and add missing include.
+ Re-enable valgrind test on Linux.
+ Remove StyledMarkupAccumulator::serializer.
+ Use EditingInComposedTree::parent for appendText.
+ Various fixes to the README.md file.
+ [Sheriff] Fix a typo in a test.
+ cros: Remove |highResolutionURL| from old wallpaper picker images
+ Move GetDxDiagnostics into a COM STA Task Runner
+ Update status file for dart2js_test.
+ Display the "preview loading" message when initiator tab is closed.
+ Add DuplicateFinder to cloud import pipeline.
+ WebCore should use CFNetwork-based loader on Mac
+ Don't clear the cache when starting the Physical Web service.
+ Remove SkPictureRecorder. beginRecording.
+ build-webkit: use SHARED_PRECOMPS_DIR
+ Make sure that background views stick around after closing the last window.
+ Add support for trace call validation in traceAfterDispatchImpl().
+ Remove obsolete scripts for building WebKit and Chromium.
+ [fastbuild] Undo "if clang {} else {}"
+ Roll src/third_party/skia 84d823a5e..9d57afd93 (10 commits)
+ [TaskScheduler] Add TaskLatency histogram
+ Remove support for the old format of dart2js.
+ Fix infobar arrow colors and colors in dart2js
+ WebInspector: Reset timeline after panel is scrolled down
+ Remove deprecated userSpaceScaleFactor logging from dart2js.
+ Remove unused methods from HTMLImport and LinkResource classes
+ Rename settings-site-list to site-list.
+ Remove LayerCompositingThread::destroyOnCompositorThread.
+ * kwq/KWQPixmap.mm: I needed to touch something since .exp files don't cause
+ Roll Skia 463c848f3..320573f8f (3 commits)
+ Revert "[Sync] Switch processor/worker to pull model"
+ Source/WebCore: Expose isTreeScope symbol.
+ [LayoutNG] Mark RootInlineBox objects dirty when removing floating objects.
+ * wtf/MathExtras.h:
+ Add a link to the capture data to the page.
+ [Android Remote Desktop] Add InputStub and InputEventSender
+ Don't send zero-byte packets to the demuxer.
+ Replace MessageLoopProxy with SingleThreadTaskRunner.
+ Rename MediaStreamUIProxy::OnStarted.
+ Adjust BrowserActionApiTest.DynamicBrowserAction
+ Run pylint as a presubmit step
+ Re-enable pkasting test on Mac.
+ Make sure to use a method-only change.
+ Move media permission prompt logic into MediaStreamDevicesController.
+ Docs: Format Terms of Service as the norm for Google APIs
+ Copy RasterDecoderImpl to GLES2
+ Clean up and double the number of lines sent in a feedback report.
+ Add MainThreadLoad to PageAlmostIdle signal.
+ Add new styles of text for suggest responses in the browser.
+ Postpone createTouchList removal to M69 intent
+ [DevTools] Clean up DevTools console docs
+ WebKitLandingScripts: Re-factor shared landing logic
+ [DevTools] Fix tools menu in showcase.
+ Compress rather than fallback when width > ~1em
+ Add support for NTP background theme in NTP
+ [Mash Shelf] Initial implementation of Shelf View.
+ Fix unit test fixture to use HeliumTest fixture.
+ Fix CompositeFilterTest.test_composite_filter.
+ Update FFmpeg version to 0.9.0.
+ Remove the document title from the resuming of an upload.
+ ClearSyncDataPreferences: Supress deprecation warning.
+ Add a test for the new dart2dart API.
+ Introduce BrowserPluginHost and GuestBrowserPluginHost.
+ [Fuchsia] Migrate QuitCurrent*Deprecated() tests to RunLoop::Quit*Closure().
+ [ios] Send key events to remote host.
+ Clean up and document DocumentWriter::replaceDocument code path
+ WebUI Polymer 2: Add backward compatible no-search pattern.
+ Reland "Roll src/third_party/perfetto/ a6f6a3133..d1fe1ee42 (39 commits)"
+ Update status file for dart2js_test.
+ Remove base::SupportsWeakPtr from PacedSender.
+ gn: Don't delete the shell's current directory.
+ dart2js cps: fix a typo in a comment.
+ Fix app_shell_lib build on Mac.
+ Fix for issue 124858. Add a test case for the issue.
+ Add "waitFor" action to Autofill iOS automation.
+ Retire TopSitesDatabase::GetAllSites().
+ Consider combined priority as determining next tile in eviction iterator.
+ Add AppSearchProvider and AppResult to SearchResult.
+ Always try to read user's wallpaper index from local state.
+ Add RAII for deferring repaints in FrameView.
+ [ChromeDriver] Strip out AND mask from 32-bit images.
+ Fixed the performance issue in the browser_tests.
+ Convert screen-locking logging to VLOGs.
+ [Sheriff] Fix a typo in a comment.
+ Disable flaky browser_tests on gpu bots.
+ [docserver] Add a P0 to the docserver.
+ [Sync] Do not forward page_urls to local tab
+ Rename SVGElement::parseAttribute() to SVGElements::parseString()
+ * Makefile.am: Clean based on all, not all-am.
+ * platform/chromium-mac-leopard/http/tests/security/mixedContent/insecure-video-in-main-frame-expected.txt: Removed.
+ Roll GN to 3d7a60db.
+ [NTP] Remove support for local NTP
+ Refactor ChangeListLoader into smaller classes and make it more readable.
+ Re-land "Add support for resizing background-position"
+ WebKit2 should load plugins specified in the MozillaPlugins registry key
+ [GpuDriver] Disable transparent visuals on all drivers.
+ Update pixel expectations for chromium-mac port.
+ [Fuchsia] Use BrowserThread::GetBlockingPool() inDesktopMediaListAsh
+ - moved XSLT code from Document to DocumentXSLT.
+ Remove fallback to defaultCharset in FormDataBuilder.
+ Split NTP into full page and full page.
+ Suppress E:0210: Missing docs for parameter.
+ [Audio Player] Remove /deep/ query selector
+ Reland "Relativize cros compiler path"
+ Validator_ragel: Adding support for null intents.
+ Attempt to SIGTERM any running subprocess.
+ Updating third_party/blink/renderer/modules/html to 4.0.0
+ Remove references to deprecated guessForWord: method.
+ Add CHECKs and destroy order to the controller.
+ Roll Skia 57bc1e7bc..7f9c29a88 (6 commits)
+ Introduce DownloadPage and Refactor DownloadManagerUi.
+ [Mfill Android] Introduce keyboard replacement sheet
+ Move author style from DocumentRuleSet to StyleResolver.
+ Harmonize "HTTP Negotiate authentication" descriptions.
+ Roll src/third_party/skia 05814de6b..6410d29e1 (13 commits)
+ Remove Layer::SetNeedsCommitNoRebuild
+ Roll src/third_party/skia cb88470d8..ec77963bf (8 commits)
+ Fix test flakiness in MessageLoopRunner.
+ Cleanup README.md and remove unused files.
+ Report GVR waitForPreviousRender times to VrShellGl
+ Replace MessageLoopProxy with ThreadTaskRunnerHandle.
+ Add a new extension to the dart2js extension.
+ Improve bookmarks.html and bookmarks_list.html.
+ 2005-08-23 Tim Waugh <twaugh@redhat.com>
+ [BackgroundSync] Rename 'name' to 'tag'
+ 2008-03-01 Tim Waugh <twaugh@redhat.com>
+ Update status file for dart2js_test.
+ drm: Refactor HardwareDisplayPlaneManagerAtomic
+ [Android] Update hightlights only for containers.
+ [Chromium] Add a test for the new C++11 API.
+ Add use counters for 2D Canvas features.
+ 2010-08-09 Adam Barth <abarth@webkit.org> Reviewed by Eric Seidel.
+ Introduce the Gin class and use it in mojo.
+ Navi: Combine XSS and Polymer strings.
+ Remove the UMA that was removed in the previous commit.
+ Rename kPublicSHA256 variables in //chrome/browser
+ svg: Cleanup animation code, remove last remaining crufts of old setAttribute()
+ Remove "Recently visited" header when no custom search engine to show
+ Update status file for dart2js_test.
+ Flush denormals on arm and x86.
+ Fix for 3726524, crash in updateLayerPosition.
+ [iOS] Update fullscreen to not perform an animation if a scroll ends.
+ [Gtk] Code cleanup in MediaPlayerPrivateGStreamer.cpp|h
+ [Android] Refactor ManifestIconSelector.
+ Fixed a bug where a client with type X disabled would not be able to quiesce with other clients.
+ Merge RenderObject::element() and RenderObject_node()
+ [bookmarks] Use flat_set instead of set.
+ Add Flash.PluginInstanceCreated UMA to track JavaScript usage.
+ Use FileSystemContext for Media fetches on ChromeOS.
+ Extend timeouts for Nexus 4s.
+ Roll PDFium dc40c40f4..c40697b24 (1 commits)
+ Fix for issue274171. Add a test case for the issue.
+ Fix some typos in native_client_sdk.
+ Add extension preferences to MediaFileSystemRegistry.
+ Remove unused code from dart2js/dart2js.
+ Remove a stale TODO, and use -preferredSize.
+ Revert "Revert r186698"
+ * khtml/editing.cpp: Removed moveToStartingSelection and moveToEndingSelection functions.
+ Trigger a reload of UserCrosSettingsProvider.
+ [ios] Move ios/clean/chrome to //ios/chrome/
+ Refactor the Pepper interface to be thread-safe.
+ Warn about Left/Right attributes in dart2js.
+ Deprecate v8::HeapProfiler::TakeSnapshot
+ Rename WindowTreeHost* to PlatformDisplay*
+ Re-enable SAML auth extension manifest on Chrome OS.
+ Fix for issue 77922. Add a test case for the issue 78222.
+ Roll Catapult from c3f257573 to 4b83eaf63 (2 revisions)
+ Remove ServiceWorkerRegistration.wait_for_update.
+ Clean up use_emulator option and add --emulator_count.
+ Use a background thread in JavaBridgeDispatcherHost.
+ Change font to Ahem to prevent platform differences.
+ Reland: Set inner window size rather than outer one.
+ Deprecate brightness filter and remove usecounter for it
+ Breakpad: Update to latest Breakpad version.
+ - IconDatabase: Close the database if the schema is newer than the current
+ Cleaned up the stale .scons and SConstruct ignores
+ Android: Add system headers to .ninja deps
+ Refactor custom icon functionality for Chrome extension and ARC app.
+ [Sheriff] Update dart2js expectations.
+ [iOS WebUI] Implement require.js library.
+ Clean up test utils in dart2js.
+ Convert editing/style/non-inheritable-styles to dump-as-markup
+ Update SmartReconnector to use base.OneShotTimer
+ Add one-click signin to GMail.
+ Fixing a bug in the rendering of the "baseline" search path
+ Update co19 status for dart2js/dart2js.
+ Use new mojom wrapper types for web_bluetooth
+ * fast/js/array-foreach.html: Add missing id to div, change its text, and change the resulting text.
+ Replace MessageLoopProxy with ThreadTaskRunnerHandle.
+ Update status file for dart2js/dart2js.
+ Add a flag to enable the Scheduler in skyostil.
+ Move ProfileIOData's cleanup to the right place.
+ Remove use of deprecated method in pkg/unittest.
+ Revert "[iOS Clean] Created OverlayService."
+ * Misc/WebIconDatabase.c (WebIconBase):
+ Revert of Cross-process iframe accessibility. (patchset #1 id:1 of https://codereview.chromium.org/558943002/ )
+ Revert of Replicate to all renderers the accepted languages set by a layout test. (patchset #1 id:1 of https://codereview.chromium.org/1851483002/ )
+ Remove usage of V8::Context::HasOutOfMemory().
+ * rendering/style/RenderStyle.cpp: (WebCore::RenderStyle::operator==):
+ [Instant Start] Fix the add-to-homescreen dialog.
+ Makefile.am: make sure we don't modify the timestamp.
+ * fileapi/WebCore::WebKitBlobBuilder.cpp:
+ Deprecate ScopedAsyncTaskScheduler.
+ chrome://crash: Fix favicon animations.
+ Allow WebKit clients to specify how to use the VFS.
+ Add gdk_x11_window_lookup_for_display.
+ Add a test to ensure that we don't crash when we try to use a non-existent file.
+ Make EventInterfaces.in depend on event IDL files
+ 2011-05-01 Adam Barth <abarth@webkit.org>
+ Remove stray empty line from CheckLibraryLoadFromApkSupport()
+ [ProxyLock] Fix a bug where a Callback bound by RunWhileLocked would release the lock.
+ Subzero: Cleanup of the code in the codebase.
+ Replace direct access to LayoutPart with LayoutPartItem
+ WebCoreJS: remove libWebCoreJS.la when doing make clean
+ Replace direct access to LayoutPart with LayoutPartItem.
+ Remove offline page UMAs and move UMA reporting to model.
+ WebInspector: improve performance of ElementsTreeElement
+ Add additional logging to the network_list.dart.
+ Update status file for dart2js/dart2js.
+ * WebKit/WebCoreSupport/WebInspectorClient.cpp:
+ EFL port: Use WebKit coding-style for pointers and references.
+ [chromecast] Fix infinite layout in calcRowLogicalHeight.
+ Make overlay page script understand the whole layer tree.
+ * WebCoreSupport.subproj/IFImageRenderer.m:
+ Update Mac pixel expectations for fast/block/margin-collapse
+ Remove PasswordForm::other_possible_usernames.
+ Update co19 status for co19-chromium.
+ Temporarily disable uploads to the XML server.
+ Convert Calculator to use innerBounds.width.
+ Add a test to verify that we don't crash when we try to load a non-existing file.
+ [Sheriff] Disable flaky tests on Windows.
+ Update status file for dart2dart/dart2js.
+ Use src/build/{Debug,Release} for develoeprs.
+ Remove the use of auto_ptr and deprecated APIs.
+ Fix crash of document.documentElement in execCommands.
+ Mark some tests as flaky on mac only.
+ Remove deprecated RenderViewHost and ExtensionFunctions.
+ Removed file path parameter from style error handler functions.
+ [iOS] Add mode information to Recent Tabs and Bookmarks coordinators
+ Remove manual deletes and comments about who owns forms.
+ Webkit tests: add Gtk+ support to DRT
+ Remove comments from IDL files due to bug 307023.
+ Use openstack client commands instead of neutron client commands
+ Add 's' and 'S' control directives
+ fix #834: make sure that we don't try to match twice
+ kconfig: Move Kconfig option to Kconfig
+ device-tree: Pass device serial number to kernel
+ fsp_fsp: Fix comment style in FSP code
+ gpu: ipu-v3: Improve debugging
+ ARM: dts: socfpga: Fix dangling checkpatch issues
+ ARM: fix smc91111_eeprom.c warnings
+ ARM: zynq: Enable GPIO_DM support
+ powerpc/fsl-booke: clean up flash bank setup
+ build: fix rodata section handling for older binutils
+ drm/exynos: add max8997 controller for Driver model
+ ARM: dts: rockchip: Move rk3399-pci to Kconfig
+ Fix whitespace issue in cppcheck.c
+ bus/fslmc: add timeout for L3 cache flushing
+ Add support for the following commands in the driver:
+ bnx2x: port dprintf to debug()
+ Blackfin: warn people who have yet to convert to boards.cfg
+ build: fix compiler warnings (externs should be avoided)
+ arm64: dts: am654x-evm: Create basic U-Boot environment
+ ARM: OMAP2+: Combine OMAP3 and OMAP4 Makefiles
+ kconfig: Move Kconfig option to Kconfig
+ kconfig: Move Kconfig option to Kconfig
+ configs/octeontx2: rearrange configs
+ kbuild: import misc scripts from Linux 3.18-rc1
+ kconfig: rename "clean & invalidate" to "flush"
+ ARM: ux500: add default U-Boot script
+ ARM: tegra: remove BUILD_TAG from KBUILD_CFLAGS
+ Use const * instead of const * in some places
+ MAINTAINERS: Remove miiphy driver
+ drm/rockchip: Use max-frequency
+ mvsata: Add new SATA driver for Marvell Kirkwood and Armada 370 / XP
+ ARM: OMAP2+: Kconfig: Move CONFIG_MEMORY_SCHEDULING to Kconfig
+ ARM: dts: Add support for Femto BSC9131 and BSC9130
+ [PATCH] U-Boot dns implementation
+ arm64: dts: stm32: Keep board description clean
+ efi_loader: Initialize info to NULL
+ gpt: fix memory leak on H3ULCB-KF
+ Use raw strings for regex and Unicode strings for complex tests
+ ARM: dts: Add AMCC Acadia eval board support
+ ext4: Fix number base handling of ext4write command
+ powerpc/fsl-booke: Add in default CONFIG_BOOTP_* options
+ spi/spi-xilinx-spi.inc: Update comment style
+ drm/exynos: change the data types for tmu_base
+ [rspec-tests] restructure and add job
+ Refactoring of the media_resources_controller specs
+ Added an automation for checking exercise 1 in linux intro (#353)
+ Move Gemfile generation to the Git skeleton. (#10)
+ wallet: Wait for the wallet to finish before rescan
+ Disable/hid 'exit' buttons for now.
+ Dockerized conodes and Protobuf investigation.
+ Add "make" and "make clean", "make upload" or "make emulator"
+ Fix many javadoc warnings and make call chaining easier
+ Rearrange search form buttons in admin search form (task #1282)
+ Load libs separately for each view. (#842)
+ istanbul: move files so that they get ignored
+ Fix external event `onSelectChange` with selected/deselected rows
+ Added rport bool and implemented composing or received address
+ modified: src/FCN/JointFCN.cxx
+ Update README.md to mention deprecated keyword arguments
+ refactor(viewpages): move ViewStep implementations to viewpages/
+- Support translations of the "language (country)" format
+ Docs: Fix the heading level of the docs.
+ Update README.md (#3717) (#3718)
+ db/DB.js: extract more changes in boolean conditions
+ Added default shortcut for Select All Timeline Clips Forwards & Backwards
+ Adding compatibility for React updates in Flow v53+ (#1042)
+ Support stateless functional component style in `react-css-modules` (#1089)
+ Added Koala tracking event for pledge view (#1042)
+ Use backing from personalization over making network request (#1042)
+ [WIP] Swift 3 compatibility for Kickstarter-Framework target (#33)
+ rebuild tarballs to include latest dashboard image (#9129)
+ find-ok.sh: - Bugfix: Support multiple arguments, not just one.
+ Initial work on Query.alias deprecated EntitySet.where
+ Clean up chessground CSS and CSS files. (#907)
+ Add missing SimpleSAML_Logger class.
+ Fixes bomb-proof wall on toxins test site (#10896)
+ refactor: refactor /icon loading to use a single function
+ Revamps MetaStation Brig (#1042) [skip ci]
+ Added ability to spawn a terrain with a few rocks
+ [MIRROR] Update effects_explosion.dm (#5307)
+ Added myself to admins.txt for testing. Merge branch 'master' of https://github.com/tgstation/-tg-station
+ Fixes more belt missing texture crap (#51010)
+ Cleaned up the login and logout procs.
+ Added chemical_reactions_list andchemical_reagents_list.
+ Syndicate lavaland base now has a single self-destruct bomb
+ New tgui based orbit menu (#1042)
+ Fixes issue with area power alerts, related to many space ruins
+ Various changes to the gangtools.py script:
+ Fixes whisper sanity. (#842) (#843)
+ Datumizes all uses of change_view (#1042)
+ refactors deathsounds, adds 2 new ones
+ SC-396 Separate docstrings (#531)
+ Remove month selector from manage_posts.py.
+ Use sanitize_html() instead of sanitization_html().
+ Added overrides for editable() and deletable()
+ Update README.md with new information. (#842)
+ Move health endpoint to /stocks/health and fix ansible deprecation warning
+ bgpd: Separate out buffer management code
+ Make resume composite options behatnotneeded (2/2)
+ Added string under the 'general view stuff' section
+ Add a function to check URLs before use in ldap
+ Make sure all artefact IDs are integers in get_artefacts()
+ samba-tool: don't fill empty href attribute
+ Make uploadcsv.php work with non-ASCII characters
+ Add "Done" button to block editing page.
+ [INTERNAL][FEATURE] sap.m.FlexibleColumns: adding css selector step
+ Add ability to override owner of 'note' artefacts
+ Use MongoBinData::BYTE_ARRAY for BinDataType
+ Add extra parameter to DocumentRepositoryGenerator->writeDocumentRepositoryClass
+ Use transport_url instead of rpc_backend
+ Update DispatcherMiddleware and MultiDict import paths
+ Revert "Revert "Add the ability to create a new version of the pipeline""
+ Test: Use default threescale_utils in integration test
+ Pass TARGET_APPLICATION to service-manual_rebuild_search_index job
+ Add a deploy efg job to trigger the rebuild deploy job
+ Run govuk-cdn-logs-monitor directly
+ (MODULES-1473) Deprecate Memcached::type()
+ Remove trailing underscore from puppet.run_duration metric
+ Add postinstall.sh to baseboxes.sh
+ Reduce default Gemstash cache expiration to 1200 seconds
+ Remove the app from the list of apps that have been removed.
+ Delete dashboards which are missing most of the data or not reporting it correctly
+ Jenkins GIT plugin: don't delete .git directory on every build
+ Merged remote-tracking branch 'origin/master' into master
+ Add jhbuild to the final RPMs.
+ Polishes and other small updates (#12) (#13)
+ [INTERNAL] sap.ui.integration.widgets.Card: Fix pylint warnings
+ Use context manager for cookie file cleanup in persistent proxy
+ Show the working tree when there is no output at all
+ chore(bundle install): clean unused gems by default
+ Align left side of search results with header/nav
+ [docs] add new doc (#531)
+ Support session creation for authenticated user w/out JSON username/password (#1042)
+ Add benchmark for writing x bytes to logger, and then optionally rotating with or without compression (#10)
+ Add tests for Sync Gateway on Windows 8 and remove SG service
+ CBG-724: Deletions of empty documents are not imported
+ Use `make goinstall` instead of `make make`
+ Teleport: clean up child processes on SIGQUIT and SIGKILL
+ Move mouse hover event and remove cursor UP and DOWN flags
+ Refactor LDouble and ComplexL to fix Xen build
+ Deprecate signing_dir for removel
+ [ggj][codegen] feat: read spatial index for unsharded skeletons
+ feat: cloudvolume can upload "scalars" cv[:,:,:] = 5 for example
+ Add support for multiple subcommands in the same command.
+ Updated the beaker nodesets to use the support platforms.
+ Improve display of conflicting nodes in preferred trees. (#270)
+ Clean up travis.yml and CMakeLists.txt
+ [INTERNAL] sap.ui.integration.widgets.Card: Fix recomposition
+ Deprecate Window#getModelerDirectory and related methods
+ Only compose MRLs with MRL reserved characters
+ Make the thumbnail generation more deterministic by creating a failure record
+ Add Pylint to the list of PyCheckers
+ doc: upgrade docer-compose to v2.1
+ mmadhouse-project: drop unused keymap variables
+ Remove IRC notifications from Travis and README.md
+ Remove IRC notifications from Travis and README.md
+ Add RESERVED bit and rearrange event handling
+ Remove IRC notifications from Travis and README.md
+ Install UCA liberty repository in RDO and UCA
+ Deprecate revocation_cache_time for removel
+ Remove deprecated verbose option in ocata.yaml
+ Update jsx version to 0.9.0
+ Update rubinius-3.69.md
+ Remove unused CSS classes from bookmarks page. (#842)
+ Embed Mailvelope message container for encrypted messages and full pgp-mime messages
+ examples/kubernetes, examples/build-using-dockerfile
+ DefaultDatabase: don't require a full JDBC URL
+ Add back spud.git as a submodule
+ Add radiation model to Fluids.F90.
+ Cleaned up command group documentation and bug fixes.
+ Bump bazel version to 0.20.0
+ Updated the Delete and Dismiss pages. (#10)
+ automl: add base set of samples (#5307)
+ Drop version specific trees and make addon work like any other addon
+ fix SA1505 and SA1508 (#1042)
+ Add support for running commands after a process or port is available
+ Add yAxisTextScale() to combine scaling with rotation
+ Add the IPs list to the AbuseIPDB blacklist
+ Add basic port for reading for 7 days and use bar charts.
+ Use local-only referral storage for referral code.
+ fix(freshplayerplugin): rebuild if icu is changed
+ tests: Fix warning about deprecated BaseException.message
+ s390x: Use safe_load instead of yaml.load
+ Deprecate sleep statements with context manager wait_for_page_load
+ SrcClass codegen fixes/changes (#10)
+ doc: clean up release tagging procedures and document tabs
+ slip: add missing Kconfig and Makefile changes
+ ARM: dts: qcom: Fix #include <base64.h>
+ arm64: dts: allwinner: ble: add CCM register accesses
+ Remove casting between void * arguments to thread functions and integer types
+ eal/platform: add support for multiple interrupts
+ Rewrite the manager to use the new architecture.
+ L2CAP: fix security manager not being able to use Security Manager
+ zephyr: deprecate the old API
+ net/synopsys: Clean up code and comments
+ test: clean up "prevent interruption" test
+ kconfig: Make malformed .config lines an error
+ i40e/i40evf: put priviledged stack at the end of RAM
+ arm64: dts: allwinner: ble: use HAL for PPI registers
+ IVGCVSW-3432 Reorganize entropy_source
+ Remove Bootstrap Discovery references from Device Management Discovery procedure
+ e1000e: use CRB in the name
+ net/bluetooth: Refactor directed advertising
+ core: clean up names of system power management functions
+ target-mips: do not cache RX buffer accounting list
+ update sms_senders migration script for new datbases
+ Add new command: rebuild_char_character.
+ Use django.urls instead of urlresolvers
+ Clean up README badges. (#1042)
+ Pass foreignkey data to domain_filter_pattern (#1089)
+ Update Transifex translations (#10) (#1094)
+ Clean up Calico README.rst (#842)
+ Remove negative height from the list of supported height values
+ Rename mimeapps.list to defaults.list
+ Fix help links in rhn-il8n-guides
+ Clean up the bootstrap file system a bit.
+ Release google-cloud-docs-samples v1.0.0 (#569)
+ Use explicit date format formoment construction. (#1042)
+ Feature column interface (#907) (#908)
+ fix load model twice when predict and analyze (#1042)
+ Add end2end test modelzoo (#842)
+ respect hide preview setting (#842) (#843)
+ chore(deps): update dependency google-cloud-datacatalog to v0.6.0 (#2148)
+ Add prelude for 2.0.0 release
+ l10n: Updated Chinese (China) (zh_CN) translation to 97%
+ Release 4.8.0 (#1041)
+ [docs] Add NuGet cross platform plugins doc (#5307)
+ Deprecate packages page created (#1684)
+ use new flags isFirstBlock and isLastBlock
+ Don't call URI.open via Kernel#open
+ Upgrade cratedb to 3.3.5.
+ Cleanup CephFS data and metadata pools for manila
+ Add deprecation warning for oslosphinx
+ Clean up tempest config in tempest_test
+ Remove NeutronEnableTunneling from openstack command line
+ Remove RepairUnit UUID from RepairRun and Schedule tables
+ Created Time class (#10) (#1042)
+ Reorganized categories to be in alphanumeric order
+ Core/Auras: Don't reset removed aura counter when removing auras
+ Icons: Combines the original element icon with a linked icon for virtual elements
+ l10n: Updated Chinese (China) (zh_CN) translation to 97%
+ l10n: Updated Chinese (China) (zh_CN) translation to 76%
+ l10n: Updated Chinese (China) (zh_CN) translation to 97%
+ Add ubuntu docker image for the bazel test suite
+ [INTERNAL] sap.ui.integration.widgets.Card: new SVG's added
+ Clean up undefined method warnings in the Container class.
+ build: Updating mediawiki/mediawiki-codesniffer to 29.0.0
+ Deprecate get_user_id_by_name
+ Deprecate the render_info param in the JS
+ Add a hook to manipulate the timestamp in EnhancedRC
+ Update README.md. (#1042)
+ Fixed bug and added similar dialog to submit task dsl
+ Refactor Application Insights dependency tracking for DocumentDB
+ Fix codec issue for ios to improve battery life (#1076)
+ Update documentation for `onParticipantDisabledAudioTrack`
+ Initial commit of cicd example (#267)
+ build: Updating mediawiki/mediawiki-codesniffer to 29.0.0
+ Add deploy script to deploy website. (#10)
+ vcs: refactor code, add version control system
+ Translated using Weblate (Polish)
