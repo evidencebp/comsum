@@ -1,11 +1,14 @@
 from os.path import join
 import pandas as pd
 
-from configuration import DATA_PATH, SEMANTIC_COMMITS_SUMMARY
+from configuration import OUTPUTS_PATH, AUX_DATA_PATH, MERGE_COMMIT_FILES
+
+from administrative_message_identifier import label_df_as_administrative, ADMINISTRATIVE_COL
+from df_to_latex_table import df_to_latex_table
+
 from adaptive_model import is_core_adaptive, is_adaptive
 from corrective_model import is_core_bug, is_fix
 from refactor_model import built_is_refactor, is_core_refactor
-from df_to_latex_table import df_to_latex_table
 
 MEANING_COLUMN = 'is_bug'
 
@@ -13,19 +16,19 @@ CORE_COLUMN = 'is_core_bug'
 
 summaries = [{'model' : 'Bart'
                 , 'dataset' : 'Corrective'
-                , 'file': '/Users/idan/src/Commit-Summarization/outputs/bart/corrective/corrective.txt'
+                , 'file': join(OUTPUTS_PATH, 'mp_corrective_bart.txt')
                  , 'core_classifier' : is_core_bug
                 , 'meaning_classifier' : is_fix
                 }
               , {'model' : 'Bart'
                 , 'dataset' : 'Refactor'
-                ,'file': '/Users/idan/src/Commit-Summarization/outputs/bart/refactor/refactor.txt'
+                ,'file': join(OUTPUTS_PATH, 'mp_refactor_bart.txt')
                  , 'core_classifier' : is_core_refactor
                 , 'meaning_classifier' : built_is_refactor
                 }
             , {'model' : 'Bart'
                 , 'dataset' : 'Adaptive'
-                ,'file': '/Users/idan/src/Commit-Summarization/outputs/bart/adaptive/adaptive.txt'
+                ,'file': join(OUTPUTS_PATH, 'mp_adaptive_bart.txt')
                          , 'core_classifier': is_core_adaptive
                          , 'meaning_classifier': is_adaptive
                }
@@ -43,13 +46,25 @@ def evaluate_meaning_preserving(summary_file: str
     # Strips the newline character
     for line in Lines:
         stats.append((line_count
+                      , line
                       , bool(core_classifier(line) > 0)
                       , bool(meaning_classifier(line) > 0)))
 
         line_count += 1
 
     df = pd.DataFrame(stats
-                      , columns=['line', CORE_COLUMN, MEANING_COLUMN])
+                      , columns=['line'
+            , 'message_without_subject' # This is really the output. Use the name hardcoded in filtering
+            , CORE_COLUMN, MEANING_COLUMN])
+    print("original df", len(df))
+
+    # Removing administrative commits
+    filtered_df = label_df_as_administrative(df)
+    filtered_df = filtered_df[(filtered_df[ADMINISTRATIVE_COL] == False)]
+    df = filtered_df
+    print("filtered df", len(df))
+
+
     df[CORE_COLUMN] = df[CORE_COLUMN].astype(bool)
     df[MEANING_COLUMN] = df[MEANING_COLUMN].astype(bool)
 

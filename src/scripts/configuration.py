@@ -5,6 +5,8 @@ ANALYSIS_PATH = '/Users/idan/src/analysis_utils'
 sys.path.append(ANALYSIS_PATH)
 
 
+LANGUAGE_PATH = '/Users/idan/src/commit-classification'
+sys.path.append(LANGUAGE_PATH)
 
 BASE_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
 # e.g. BASE_PATH = r'/Users/idan/src/comsum/'
@@ -14,6 +16,7 @@ DATA_PATH = os.path.join(BASE_PATH, r'data')
 SAMPLED_DATA_PATH = os.path.join(DATA_PATH, r'samples')
 FULL_DATA_PATH = os.path.join(DATA_PATH, r'dataset')
 SAMPLES_PATH = os.path.join(DATA_PATH, r'samples')
+OUTPUTS_PATH = os.path.join(DATA_PATH, r'outputs')
 SPLIT_DATA_PATH = os.path.join(DATA_PATH, r'split')
 AUX_DATA_PATH = os.path.join(DATA_PATH, r'aux_datasets')
 LABELS_PATH = os.path.join(DATA_PATH, r'labels')
